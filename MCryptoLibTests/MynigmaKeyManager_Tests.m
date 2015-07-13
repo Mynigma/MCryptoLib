@@ -54,12 +54,16 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <MailCore/MailCore.h>
+
 #import "MynigmaKeyManager.h"
 #import "UnitTestKeychainHelper.h"
 #import "TestHelper.h"
-#import <MailCore/MailCore.h>
 #import "MynigmaEncryptionEngine.h"
 #import "MCOAbstractMessage+Convenience.h"
+
+#import "MynigmaEncryptionEngine+MailCore.h"
+
 
 
 

@@ -54,8 +54,6 @@
 
 #import <Foundation/Foundation.h>
 #import <MProtoBuf/FileAttachmentDataStructure.h>
-//#import "BasicEncryptionEngineProtocol.h"
-#import <MailCore/MailCore.h>
 
 
 
@@ -63,15 +61,6 @@
 
 
 - (instancetype)initWithFileName:(NSString*)fileName contentID:(NSString*)contentID decryptedData:(NSData*)decryptedData hashedValue:(NSData*)hashedValue partID:(NSString*)partID remoteURLString:(NSString*)remoteURLString isInline:(BOOL)isInline contentType:(NSString*)contentType;
-
-+ (MynigmaAttachmentEncryptionContext*)contextForDecryptedAttachment:(MCOAttachment*)attachment;
-
-+ (MynigmaAttachmentEncryptionContext*)contextForEncryptedAttachment:(MCOAttachment*)encryptedAttachment;
-
-- (MCOAttachment*)encryptedMimePart:(NSNumber*)index;
-
-- (MCOAttachment*)decryptedMimePart;
-
 
 
 + (MynigmaAttachmentEncryptionContext*)contextForMissingAttachment;

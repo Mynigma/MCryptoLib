@@ -52,72 +52,39 @@
 //
 
 
-#import <Foundation/Foundation.h>
+#import "MynigmaMessageEncryptionContext.h"
 
-#import "MynigmaError.h"
+#import "BasicEncryptionEngineProtocol.h"
 
-
-@class SessionKeys, PayloadPartDataStructure, MCOAbstractMessage;
-
-@interface MynigmaMessageEncryptionContext : NSObject <NSCoding>
-
-
-+ (MynigmaMessageEncryptionContext*)contextForDecryptedDeviceMessageWithPayload:(NSData*)payloadData;
+#import <MProtoBuf/PayloadPartDataStructure.h>
 
 
 
 
 
-//decrypted messages have their payload part set, containing body, subject, attachment meta data, etc...
-@property PayloadPartDataStructure* payloadPart;
+@class MCOAbstractMessage;
 
 
-@property NSData* decryptedData;
+@interface PayloadPartDataStructure (MessageParsing)
 
-@property NSData* signedPayload;
+- (instancetype)initWithMessage:(MCOAbstractMessage*)message withBasicEncryptionEngine:(id<BasicEncryptionEngineProtocol>)basicEngine;
 
-//encrypted messages have this set to the content of outermost HMAC structure
-@property NSData* encryptedPayload;
-
-//the attachment encryption contexts keep track of all data needed to encrypt/decrypt attachments
-@property NSArray* attachmentEncryptionContexts;
-
-
-//used to fill the template for safe messages
-@property NSString* senderName;
-@property NSString* senderEmail;
-@property NSString* messageID;
-@property NSDate* sentDate;
-
-
-@property NSDictionary* extraHeaders;
-
-
-//force particular boundary strings to ensure reproducibility of exact message data for unit tests
-@property NSString* alternativePartBoundary;
-@property NSString* relatedPartBoundary;
-@property NSString* mainBoundary;
+@end
 
 
 
-//used to generate encrypted session key table
-@property NSString* signatureKeyLabel;
-@property NSArray* expectedSignatureKeyLabels;
-@property NSArray* encryptionKeyLabels;
-@property NSArray* recipientEmails;
+@interface MynigmaMessageEncryptionContext (MailCore)
+
++ (MynigmaMessageEncryptionContext*)contextForDecryptedMessage:(MCOAbstractMessage*)message;
+
++ (MynigmaMessageEncryptionContext*)contextForEncryptedMessage:(MCOAbstractMessage*)message;
+
++ (MynigmaMessageEncryptionContext*)contextForIncomingMessage:(MCOAbstractMessage*)message;
 
 
-//remember these for attachment decryption
-@property SessionKeys* sessionKeys;
+- (MCOAbstractMessage*)encryptedMessage;
 
-@property NSArray* attachmentHMACValues;
+- (MCOAbstractMessage*)decryptedMessage;
 
-
-@property NSMutableArray* errors;
-
-
-- (void)pushErrorWithCode:(MynigmaErrorCode)code;
-
-- (BOOL)hasErrors;
 
 @end

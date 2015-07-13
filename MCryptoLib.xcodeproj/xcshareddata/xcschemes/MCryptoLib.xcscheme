@@ -53,6 +53,12 @@
             </BuildableReference>
             <SkippedTests>
                <Test
+                  Identifier = "KeyParser_Tests">
+               </Test>
+               <Test
+                  Identifier = "PGPKeyManager_Tests">
+               </Test>
+               <Test
                   Identifier = "SMIMEEncryptionEngine_Tests">
                </Test>
                <Test

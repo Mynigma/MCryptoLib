@@ -138,7 +138,7 @@
 - (NSString*)easyReadingFingerprintForKeyWithLabel:(NSString*)keyLabel;
 
 
-- (PublicKeyData*)getPublicKeyDataFromHeader:(MCOAbstractMessage*)message;
+- (PublicKeyData*)getPublicKeyDataFromExtraHeaderValues:(NSDictionary*)headerValues;
 
 
 @end

@@ -76,6 +76,7 @@
 
 
 
+
 @property MynigmaKeyManager* keyManager;
 @property id<BasicEncryptionEngineProtocol> basicEngine;
 
@@ -86,27 +87,14 @@
 
 
 
+- (void)processIncomingMessageContext:(MynigmaMessageEncryptionContext*)messageContext;
+
 
 
 - (BOOL)isRecipientSafe:(NSString*)recipientEmailString;
 
 - (BOOL)areRecipientsSafe:(NSArray*)recipientEmailStrings;
 
-
-
-
-
-- (MCOAbstractMessage*)processIncomingMessage:(MCOAbstractMessage*)message;
-
-- (MCOAbstractMessage*)processOutgoingMessage:(MCOAbstractMessage*)message;
-
-
-
-- (MCOAbstractMessage*)overrideErrorsForMessage:(MCOAbstractMessage*)message;
-
-- (MCOAttachment*)decryptAttachment:(MCOAttachment*)attachment forMessage:(MCOAbstractMessage*)message;
-
-- (MCOAbstractMessage*)overrideErrorsForAttachment:(MCOAttachment*)attachment message:(MCOAbstractMessage*)message;
 
 
 @end

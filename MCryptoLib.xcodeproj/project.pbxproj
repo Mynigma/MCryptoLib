@@ -181,15 +181,10 @@
 		1E395E4B1B1C75AC00D66920 /* PrivateKeychainItemRefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383DB1B11163E0033617D /* PrivateKeychainItemRefs.h */; };
 		1E395E4C1B1C75AC00D66920 /* PrivateKeychainItemRefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB383DC1B11163E0033617D /* PrivateKeychainItemRefs.m */; };
 		1E395E4D1B1C75B000D66920 /* MCryptoLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED4DE7D1B036418002535A4 /* MCryptoLib.h */; };
-		1E395E581B1C75C400D66920 /* MimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE476A21B150A5B004A204D /* MimeHelper.h */; };
 		1E395E591B1C75C600D66920 /* NSString+EmailAddresses.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE476DC1B1675FA004A204D /* NSString+EmailAddresses.h */; };
 		1E395E5A1B1C75C600D66920 /* NSString+EmailAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476DD1B1675FA004A204D /* NSString+EmailAddresses.m */; };
 		1E395E5B1B1C75C600D66920 /* CoreDataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E65DCBD1B1068E7000CFD52 /* CoreDataHelper.h */; };
 		1E395E5C1B1C75C600D66920 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E65DCBE1B1068E7000CFD52 /* CoreDataHelper.m */; };
-		1E395E5F1B1C75C600D66920 /* MimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE476A21B150A5B004A204D /* MimeHelper.h */; };
-		1E395E601B1C75C600D66920 /* MimeHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476A31B150A5B004A204D /* MimeHelper.mm */; };
-		1E395E611B1C75C600D66920 /* MCOAbstractMessage+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E69A6B31B17C3A800819181 /* MCOAbstractMessage+Convenience.h */; };
-		1E395E621B1C75C600D66920 /* MCOAbstractMessage+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */; };
 		1E395E631B1C75D300D66920 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E65DCBE1B1068E7000CFD52 /* CoreDataHelper.m */; };
 		1E395E641B1C75E800D66920 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E65DCAE1B1066A7000CFD52 /* NSData+Base64.h */; };
 		1E395E651B1C75E800D66920 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E65DCAF1B1066A7000CFD52 /* NSData+Base64.m */; };
@@ -236,13 +231,8 @@
 		1E65DCC01B1068E7000CFD52 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E65DCBE1B1068E7000CFD52 /* CoreDataHelper.m */; };
 		1E65DCC51B106946000CFD52 /* MynigmaMessageEncryptionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E65DCC31B106946000CFD52 /* MynigmaMessageEncryptionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E65DCC61B106946000CFD52 /* MynigmaMessageEncryptionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E65DCC41B106946000CFD52 /* MynigmaMessageEncryptionContext.m */; };
-		1E69A6AD1B178ECA00819181 /* MimeHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476A31B150A5B004A204D /* MimeHelper.mm */; };
-		1E69A6AE1B178ECC00819181 /* MimeHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476A31B150A5B004A204D /* MimeHelper.mm */; };
 		1E69A6B11B17BEA100819181 /* MimeHelper_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6B01B17BEA100819181 /* MimeHelper_Tests.m */; };
 		1E69A6B21B17BEA100819181 /* MimeHelper_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6B01B17BEA100819181 /* MimeHelper_Tests.m */; };
-		1E69A6B51B17C3A800819181 /* MCOAbstractMessage+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E69A6B31B17C3A800819181 /* MCOAbstractMessage+Convenience.h */; };
-		1E69A6B61B17C3A800819181 /* MCOAbstractMessage+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */; };
-		1E69A6B71B17C3A800819181 /* MCOAbstractMessage+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */; };
 		1E69A6B81B17C53300819181 /* MCOAbstractMessage+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */; };
 		1E69A6B91B17C53400819181 /* MCOAbstractMessage+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */; };
 		1E69A6BE1B18607000819181 /* EncryptionSmokeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6BD1B18607000819181 /* EncryptionSmokeTests.m */; };
@@ -472,6 +462,25 @@
 		1E8744271B2715B100187CA4 /* DeviceConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8744261B2715B100187CA4 /* DeviceConnectionDelegate.h */; };
 		1E8744281B2715B100187CA4 /* DeviceConnectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E8744261B2715B100187CA4 /* DeviceConnectionDelegate.h */; };
 		1E8A05611B52C19800973B07 /* fastctype.c in Sources */ = {isa = PBXBuildFile; fileRef = 1EE827C01B2C66E6003A8400 /* fastctype.c */; };
+		1E8A056A1B53FFCD00973B07 /* MCOAbstractMessage+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */; };
+		1E8A056B1B53FFD200973B07 /* MCryptoLibTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4DE8A1B036418002535A4 /* MCryptoLibTests.mm */; };
+		1E8A05731B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05721B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m */; };
+		1E8A05741B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05721B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m */; };
+		1E8A05751B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05721B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m */; };
+		1E8A05781B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05771B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m */; };
+		1E8A05791B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05771B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m */; };
+		1E8A057A1B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05771B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m */; };
+		1E8A057D1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A057C1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m */; };
+		1E8A057E1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A057C1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m */; };
+		1E8A057F1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A057C1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m */; };
+		1E8A05831B540D4D00973B07 /* MimeHelper+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05821B540D4D00973B07 /* MimeHelper+MailCore.m */; };
+		1E8A05841B540D4D00973B07 /* MimeHelper+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05821B540D4D00973B07 /* MimeHelper+MailCore.m */; };
+		1E8A05851B540D4D00973B07 /* MimeHelper+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8A05821B540D4D00973B07 /* MimeHelper+MailCore.m */; };
+		1E8A05861B540DF800973B07 /* MimeHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476A31B150A5B004A204D /* MimeHelper.mm */; };
+		1E8A05871B540DF900973B07 /* MimeHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476A31B150A5B004A204D /* MimeHelper.mm */; };
+		1E8A05881B540DFA00973B07 /* MimeHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476A31B150A5B004A204D /* MimeHelper.mm */; };
+		1E8A05891B540E0500973B07 /* MimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE476A21B150A5B004A204D /* MimeHelper.h */; };
+		1E8A058A1B540E0600973B07 /* MimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE476A21B150A5B004A204D /* MimeHelper.h */; };
 		1EB383C21B10B45A0033617D /* AppleEncryptionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C01B10B45A0033617D /* AppleEncryptionEngine.h */; };
 		1EB383C31B10B45A0033617D /* AppleEncryptionEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB383C11B10B45A0033617D /* AppleEncryptionEngine.m */; };
 		1EB383C51B10B4760033617D /* BasicEncryptionEngineProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C41B10B4760033617D /* BasicEncryptionEngineProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1049,8 +1058,8 @@
 		1E65DCC31B106946000CFD52 /* MynigmaMessageEncryptionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MynigmaMessageEncryptionContext.h; sourceTree = "<group>"; };
 		1E65DCC41B106946000CFD52 /* MynigmaMessageEncryptionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MynigmaMessageEncryptionContext.m; sourceTree = "<group>"; };
 		1E69A6B01B17BEA100819181 /* MimeHelper_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MimeHelper_Tests.m; sourceTree = "<group>"; };
-		1E69A6B31B17C3A800819181 /* MCOAbstractMessage+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCOAbstractMessage+Convenience.h"; sourceTree = "<group>"; };
-		1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MCOAbstractMessage+Convenience.m"; sourceTree = "<group>"; };
+		1E69A6B31B17C3A800819181 /* MCOAbstractMessage+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MCOAbstractMessage+Convenience.h"; path = "../MCryptoLib/MCOAbstractMessage+Convenience.h"; sourceTree = "<group>"; };
+		1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MCOAbstractMessage+Convenience.m"; path = "../MCryptoLib/MCOAbstractMessage+Convenience.m"; sourceTree = "<group>"; };
 		1E69A6BD1B18607000819181 /* EncryptionSmokeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionSmokeTests.m; sourceTree = "<group>"; };
 		1E69A6C11B1860E600819181 /* Message1.eml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message1.eml; sourceTree = "<group>"; };
 		1E69A6C21B1860E600819181 /* Message10.eml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message10.eml; sourceTree = "<group>"; };
@@ -1236,6 +1245,14 @@
 		1E8744181B27065C00187CA4 /* DeviceConnectionHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceConnectionHelper.h; sourceTree = "<group>"; };
 		1E8744191B27065C00187CA4 /* DeviceConnectionHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceConnectionHelper.m; sourceTree = "<group>"; };
 		1E8744261B2715B100187CA4 /* DeviceConnectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceConnectionDelegate.h; sourceTree = "<group>"; };
+		1E8A05711B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MynigmaAttachmentEncryptionContext+MailCore.h"; sourceTree = "<group>"; };
+		1E8A05721B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MynigmaAttachmentEncryptionContext+MailCore.m"; sourceTree = "<group>"; };
+		1E8A05761B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MynigmaMessageEncryptionContext+MailCore.h"; sourceTree = "<group>"; };
+		1E8A05771B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MynigmaMessageEncryptionContext+MailCore.m"; sourceTree = "<group>"; };
+		1E8A057B1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MynigmaEncryptionEngine+MailCore.h"; sourceTree = "<group>"; };
+		1E8A057C1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MynigmaEncryptionEngine+MailCore.m"; sourceTree = "<group>"; };
+		1E8A05811B540D4D00973B07 /* MimeHelper+MailCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MimeHelper+MailCore.h"; sourceTree = "<group>"; };
+		1E8A05821B540D4D00973B07 /* MimeHelper+MailCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MimeHelper+MailCore.m"; sourceTree = "<group>"; };
 		1EB383C01B10B45A0033617D /* AppleEncryptionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleEncryptionEngine.h; sourceTree = "<group>"; };
 		1EB383C11B10B45A0033617D /* AppleEncryptionEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppleEncryptionEngine.m; sourceTree = "<group>"; };
 		1EB383C41B10B4760033617D /* BasicEncryptionEngineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicEncryptionEngineProtocol.h; sourceTree = "<group>"; };
@@ -1941,6 +1958,23 @@
 			path = Frameworks/include;
 			sourceTree = SOURCE_ROOT;
 		};
+		1E8A05801B540C1F00973B07 /* MailCore */ = {
+			isa = PBXGroup;
+			children = (
+				1E69A6B31B17C3A800819181 /* MCOAbstractMessage+Convenience.h */,
+				1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */,
+				1E8A057B1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.h */,
+				1E8A057C1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m */,
+				1E8A05711B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.h */,
+				1E8A05721B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m */,
+				1E8A05761B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.h */,
+				1E8A05771B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m */,
+				1E8A05811B540D4D00973B07 /* MimeHelper+MailCore.h */,
+				1E8A05821B540D4D00973B07 /* MimeHelper+MailCore.m */,
+			);
+			name = MailCore;
+			sourceTree = "<group>";
+		};
 		1EB383BE1B10B4240033617D /* Low Level */ = {
 			isa = PBXGroup;
 			children = (
@@ -2081,6 +2115,7 @@
 				1EE476E11B167616004A204D /* NSString+EmailAddresses_Tests.m */,
 				1E69A71F1B18633900819181 /* Key Manager */,
 				1E395E291B1C6D6800D66920 /* Keychain */,
+				1E8A05801B540C1F00973B07 /* MailCore */,
 			);
 			path = MCryptoLibTests;
 			sourceTree = "<group>";
@@ -2417,8 +2452,6 @@
 			children = (
 				1EE476DC1B1675FA004A204D /* NSString+EmailAddresses.h */,
 				1EE476DD1B1675FA004A204D /* NSString+EmailAddresses.m */,
-				1E69A6B31B17C3A800819181 /* MCOAbstractMessage+Convenience.h */,
-				1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */,
 			);
 			name = Category;
 			sourceTree = "<group>";
@@ -2568,10 +2601,8 @@
 				1E65DCB01B1066A7000CFD52 /* NSData+Base64.h in Headers */,
 				1ED4DE7E1B036418002535A4 /* MCryptoLib.h in Headers */,
 				1EE8283F1B2C66E7003A8400 /* types.h in Headers */,
-				1E69A6B51B17C3A800819181 /* MCOAbstractMessage+Convenience.h in Headers */,
 				1E3455B51B31C0BE00F8EEF3 /* EmailAddress.h in Headers */,
 				1E3456031B31C78500F8EEF3 /* PGPCertificationSignature.h in Headers */,
-				1E395E581B1C75C400D66920 /* MimeHelper.h in Headers */,
 				1EB383C21B10B45A0033617D /* AppleEncryptionEngine.h in Headers */,
 				1E34558B1B31C0BC00F8EEF3 /* KeyExpectation.h in Headers */,
 				1EFD67CB1B0A041C0044558D /* PrivateKeyData.h in Headers */,
@@ -2589,6 +2620,7 @@
 				1E65DCB91B106767000CFD52 /* MynigmaError.h in Headers */,
 				1EE827F11B2C66E7003A8400 /* config.h in Headers */,
 				1EE828171B2C66E7003A8400 /* netpgpdigest.h in Headers */,
+				1E8A058A1B540E0600973B07 /* MimeHelper.h in Headers */,
 				1EFD67BB1B0A01740044558D /* DefaultEncryptionEngine.h in Headers */,
 				1EFD67DE1B0A05E50044558D /* PGPKeyManager.h in Headers */,
 				1EE4B2A11B139B0B0056091D /* MynigmaAttachmentEncryptionContext.h in Headers */,
@@ -2654,7 +2686,6 @@
 				1EE8281A1B2C66E7003A8400 /* netpgpsdk.h in Headers */,
 				1E395E3D1B1C75A800D66920 /* PGPKeyManager.h in Headers */,
 				1E3455B61B31C0BE00F8EEF3 /* EmailAddress.h in Headers */,
-				1E395E611B1C75C600D66920 /* MCOAbstractMessage+Convenience.h in Headers */,
 				1E3456041B31C78500F8EEF3 /* PGPCertificationSignature.h in Headers */,
 				1EE828401B2C66E7003A8400 /* types.h in Headers */,
 				1EE828181B2C66E7003A8400 /* netpgpdigest.h in Headers */,
@@ -2697,7 +2728,6 @@
 				1E7894F81B32008500B1C698 /* KeychainHelper+SMIME.h in Headers */,
 				1E87441B1B27065C00187CA4 /* DeviceConnectionHelper.h in Headers */,
 				1EE828F71B2C933D003A8400 /* ASN1Helper.h in Headers */,
-				1E395E5F1B1C75C600D66920 /* MimeHelper.h in Headers */,
 				1EE8282E1B2C66E7003A8400 /* packet.h in Headers */,
 				1EE828331B2C66E7003A8400 /* readerwriter.h in Headers */,
 				1EE828141B2C66E7003A8400 /* netpgp.h in Headers */,
@@ -2709,6 +2739,7 @@
 				1EE8280C1B2C66E7003A8400 /* memory.h in Headers */,
 				1E395E711B1C75F500D66920 /* SessionKeys.h in Headers */,
 				1EE827F71B2C66E7003A8400 /* create.h in Headers */,
+				1E8A05891B540E0500973B07 /* MimeHelper.h in Headers */,
 				1E395E3B1B1C75A800D66920 /* MynigmaKeyManager.h in Headers */,
 				1E395E6C1B1C75F500D66920 /* EncryptionEngineProtocol.h in Headers */,
 				1E395E771B1C75F500D66920 /* SMIMEEncryptionEngine.h in Headers */,
@@ -3514,13 +3545,12 @@
 				1EB383DE1B11163E0033617D /* PrivateKeychainItemRefs.m in Sources */,
 				1EE828201B2C66E7003A8400 /* packet-parse.c in Sources */,
 				1ED4DEA11B03C479002535A4 /* DataModel.xcdatamodeld in Sources */,
-				1E69A6B61B17C3A800819181 /* MCOAbstractMessage+Convenience.m in Sources */,
 				1EE826F31B275A11003A8400 /* SMIMEPublicKey.m in Sources */,
 				1EE828101B2C66E7003A8400 /* netpgp.c in Sources */,
 				1EE8270F1B275A11003A8400 /* SMIMEPrivateKey.m in Sources */,
 				1EB383D11B1100DD0033617D /* KeychainHelper+AttributeDictionaries.m in Sources */,
 				1EE827E41B2C66E7003A8400 /* mj.c in Sources */,
-				1E69A6AD1B178ECA00819181 /* MimeHelper.mm in Sources */,
+				1E8A05861B540DF800973B07 /* MimeHelper.mm in Sources */,
 				1EE8271F1B2799F2003A8400 /* ThreadHelper.m in Sources */,
 				1EFD67C61B0A022B0044558D /* SMIMEEncryptionEngine.m in Sources */,
 				1EE827DF1B2C66E7003A8400 /* fmemopen.c in Sources */,
@@ -3583,13 +3613,17 @@
 				1EE4B3ED1B13E3880056091D /* TestHelper.m in Sources */,
 				1EF40D181B402C360049B8CC /* KeyParser_Tests.m in Sources */,
 				1EE828FC1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m in Sources */,
+				1E8A05831B540D4D00973B07 /* MimeHelper+MailCore.m in Sources */,
 				1E69A71D1B18633000819181 /* UnitTestMynigmaKeyManager.m in Sources */,
 				1E2A6D5A1B1EF64D00CC9EE2 /* MynigmaEncryptionEngine_Tests.m in Sources */,
+				1E8A057D1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m in Sources */,
 				1E395E211B1C6CB300D66920 /* AppleEncryptionEngine_Tests.m in Sources */,
 				1EF40D2F1B431F0F0049B8CC /* MynigmaErrorFactory_Tests.m in Sources */,
 				1EE476E21B167616004A204D /* NSString+EmailAddresses_Tests.m in Sources */,
 				1E69A6B11B17BEA100819181 /* MimeHelper_Tests.m in Sources */,
 				1E3455181B2DAEB300F8EEF3 /* PGPEncryptionEngine_Tests.m in Sources */,
+				1E8A05781B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m in Sources */,
+				1E8A05731B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m in Sources */,
 				1EE8284E1B2C7E96003A8400 /* PGPKeyManager_Tests.m in Sources */,
 				1E69A6B81B17C53300819181 /* MCOAbstractMessage+Convenience.m in Sources */,
 				1EE828F11B2C9134003A8400 /* SMIMEKeyManager_Tests.m in Sources */,
@@ -3610,6 +3644,7 @@
 				1EE828431B2C66E7003A8400 /* validate.c in Sources */,
 				1E3455D51B31C0BF00F8EEF3 /* MynigmaPublicKey.m in Sources */,
 				1E395E781B1C75F500D66920 /* SMIMEEncryptionEngine.m in Sources */,
+				1E8A05881B540DFA00973B07 /* MimeHelper.mm in Sources */,
 				1EE8283B1B2C66E7003A8400 /* ssh2pgp.c in Sources */,
 				1E395E4A1B1C75AC00D66920 /* PublicKeychainItemRefs.m in Sources */,
 				1E395E721B1C75F500D66920 /* SessionKeys.m in Sources */,
@@ -3637,11 +3672,9 @@
 				1E395E2B1B1C73D100D66920 /* OpenSSLEncryptionEngine.m in Sources */,
 				1EE827EB1B2C66E7003A8400 /* bufgap.c in Sources */,
 				1EE8281D1B2C66E7003A8400 /* openssl_crypto.c in Sources */,
-				1E395E621B1C75C600D66920 /* MCOAbstractMessage+Convenience.m in Sources */,
 				1E395E6B1B1C75E800D66920 /* PublicKeyData.m in Sources */,
 				1E395E691B1C75E800D66920 /* PrivateKeyData.m in Sources */,
 				1E395E2A1B1C73CE00D66920 /* AppleEncryptionEngine.m in Sources */,
-				1E395E601B1C75C600D66920 /* MimeHelper.mm in Sources */,
 				1E395E3E1B1C75A800D66920 /* PGPKeyManager.m in Sources */,
 				1E395E401B1C75A800D66920 /* SMIMEKeyManager.m in Sources */,
 				1E395E3A1B1C75A800D66920 /* DefaultKeyManager.m in Sources */,
@@ -3678,6 +3711,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E34551A1B2DAEB300F8EEF3 /* PGPEncryptionEngine_Tests.m in Sources */,
+				1E8A05751B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m in Sources */,
 				1EFB90CB1B1C6095008C5E4D /* MimeHelper_Tests.m in Sources */,
 				1E395E231B1C6CB300D66920 /* AppleEncryptionEngine_Tests.m in Sources */,
 				1E395E821B1C76B600D66920 /* UnitTestMynigmaKeyManager.m in Sources */,
@@ -3685,14 +3719,19 @@
 				1E395E801B1C76AB00D66920 /* EncryptionSmokeTests.m in Sources */,
 				1EE828F31B2C9134003A8400 /* SMIMEKeyManager_Tests.m in Sources */,
 				1EF40D1A1B402C360049B8CC /* KeyParser_Tests.m in Sources */,
+				1E8A05851B540D4D00973B07 /* MimeHelper+MailCore.m in Sources */,
 				1EE23E491B1C4ED10066DF76 /* MCryptoMacTests.m in Sources */,
 				1EF40D3B1B4342B00049B8CC /* SessionKeys_Tests.m in Sources */,
+				1E8A057A1B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m in Sources */,
 				1E395E7F1B1C76A500D66920 /* TestHelper.m in Sources */,
 				1E395E811B1C76B300D66920 /* NSString+EmailAddresses_Tests.m in Sources */,
 				1E2A6D8A1B1FBC8100CC9EE2 /* UnitTestMynigmaKeyManager_Tests.m in Sources */,
 				1EF40D311B431F0F0049B8CC /* MynigmaErrorFactory_Tests.m in Sources */,
+				1E8A056A1B53FFCD00973B07 /* MCOAbstractMessage+Convenience.m in Sources */,
 				1E2A6D5C1B1EF64D00CC9EE2 /* MynigmaEncryptionEngine_Tests.m in Sources */,
+				1E8A056B1B53FFD200973B07 /* MCryptoLibTests.mm in Sources */,
 				1EE828FE1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m in Sources */,
+				1E8A057F1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m in Sources */,
 				1EE828501B2C7E96003A8400 /* PGPKeyManager_Tests.m in Sources */,
 				1EFB90CA1B1C5D62008C5E4D /* OpenSSLEncryptionEngine_Tests.m in Sources */,
 				1E395E281B1C6D6100D66920 /* UnitTestKeychainHelper.m in Sources */,
@@ -3716,6 +3755,7 @@
 				1E3455951B31C0BD00F8EEF3 /* SMIMEPublicKey.m in Sources */,
 				1EE8281C1B2C66E7003A8400 /* openssl_crypto.c in Sources */,
 				1EE4B3A71B13D1DA0056091D /* MynigmaEncryptionEngine.m in Sources */,
+				1E8A05871B540DF900973B07 /* MimeHelper.mm in Sources */,
 				1E8359C81B1E532800FDCB33 /* gzip_stream.cc in Sources */,
 				1EE828301B2C66E7003A8400 /* reader.c in Sources */,
 				1E835A111B1E532800FDCB33 /* atomicops_internals_x86_gcc.cc in Sources */,
@@ -3738,10 +3778,8 @@
 				1E8359F91B1E532800FDCB33 /* repeated_field.cc in Sources */,
 				1EE828211B2C66E7003A8400 /* packet-parse.c in Sources */,
 				1E8359B21B1E532800FDCB33 /* extension_set_heavy.cc in Sources */,
-				1E69A6B71B17C3A800819181 /* MCOAbstractMessage+Convenience.m in Sources */,
 				1E835A601B1E532800FDCB33 /* unknown_field_set.cc in Sources */,
 				1EE4B3A81B13D1DA0056091D /* SMIMEEncryptionEngine.m in Sources */,
-				1E69A6AE1B178ECC00819181 /* MimeHelper.mm in Sources */,
 				1E34560D1B31C80B00F8EEF3 /* PGPUserID.m in Sources */,
 				1EE827F41B2C66E7003A8400 /* create.c in Sources */,
 				1EE828291B2C66E7003A8400 /* packet-show.c in Sources */,
@@ -3824,13 +3862,17 @@
 				1EE23D7A1B1BB5FD0066DF76 /* MCryptoLibTests.mm in Sources */,
 				1EF40D191B402C360049B8CC /* KeyParser_Tests.m in Sources */,
 				1EE828FD1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m in Sources */,
+				1E8A05841B540D4D00973B07 /* MimeHelper+MailCore.m in Sources */,
 				1EE476E31B167616004A204D /* NSString+EmailAddresses_Tests.m in Sources */,
 				1E2A6D5B1B1EF64D00CC9EE2 /* MynigmaEncryptionEngine_Tests.m in Sources */,
+				1E8A057E1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m in Sources */,
 				1E395E221B1C6CB300D66920 /* AppleEncryptionEngine_Tests.m in Sources */,
 				1EF40D301B431F0F0049B8CC /* MynigmaErrorFactory_Tests.m in Sources */,
 				1E69A71E1B18633000819181 /* UnitTestMynigmaKeyManager.m in Sources */,
 				1E69A6B21B17BEA100819181 /* MimeHelper_Tests.m in Sources */,
 				1E3455191B2DAEB300F8EEF3 /* PGPEncryptionEngine_Tests.m in Sources */,
+				1E8A05791B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m in Sources */,
+				1E8A05741B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m in Sources */,
 				1EE8284F1B2C7E96003A8400 /* PGPKeyManager_Tests.m in Sources */,
 				1E69A6B91B17C53400819181 /* MCOAbstractMessage+Convenience.m in Sources */,
 				1EE828F21B2C9134003A8400 /* SMIMEKeyManager_Tests.m in Sources */,

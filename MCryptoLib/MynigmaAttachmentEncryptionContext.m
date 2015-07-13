@@ -74,41 +74,6 @@
     return self;
 }
 
-+ (MynigmaAttachmentEncryptionContext*)contextForDecryptedAttachment:(MCOAttachment*)attachment
-{
-    NSString* fileName = attachment.filename;
-    
-    NSString* contentID = attachment.contentID;
-    
-    NSData* data = attachment.data;
-    
-    BOOL isInline = attachment.isInlineAttachment;
-    
-    //se this later
-//    NSData* hashedValue = [basicEngine SHA512DigestOfData:data];
-    
-    NSString* contentType = attachment.mimeType;
-    
-    MynigmaAttachmentEncryptionContext* newContext = [[MynigmaAttachmentEncryptionContext alloc] initWithFileName:fileName contentID:contentID decryptedData:data hashedValue:nil partID:nil remoteURLString:nil isInline:isInline contentType:contentType];
-    
-    return newContext;
-}
-
-+ (MynigmaAttachmentEncryptionContext*)contextForEncryptedAttachment:(MCOAttachment*)encryptedAttachment
-{
-    MynigmaAttachmentEncryptionContext* newContext = [MynigmaAttachmentEncryptionContext new];
-    
-    newContext.encryptedData = encryptedAttachment.data;
-    
-    newContext.attachmentMetaDataStructure = [FileAttachmentDataStructure new];
-    
-    newContext.attachmentMetaDataStructure.contentID = encryptedAttachment.contentID;
-    
-    if(!newContext.encryptedData)
-        return nil;
-				
-    return newContext;
-}
 
 
 + (MynigmaAttachmentEncryptionContext*)contextForMissingAttachment
@@ -130,35 +95,6 @@
 }
 
 
-- (MCOAttachment*)encryptedMimePart:(NSNumber*)index
-{
-    if([self encryptedData].length == 0)
-        return nil;
-    
-    NSString* fileName = [NSString stringWithFormat:@"%@.myn", index];
-    
-    MCOAttachment* attachment = [MCOAttachment attachmentWithData:[self encryptedData] filename:fileName];
-    
-    [attachment setContentID:self.attachmentMetaDataStructure.contentID];
-    [attachment setInlineAttachment:NO];
-    [attachment setMimeType:@"application/mynigma-attachment"];
-    
-    return attachment;
-}
-
-
-- (MCOAttachment*)decryptedMimePart
-{
-    if([self decryptedData].length == 0)
-        return nil;
-    
-    MCOAttachment* attachment = [MCOAttachment attachmentWithData:self.decryptedData filename:self.attachmentMetaDataStructure.fileName];
-    [attachment setContentID:self.attachmentMetaDataStructure.contentID];
-    [attachment setInlineAttachment:self.attachmentMetaDataStructure.isInline];
-    [attachment setMimeType:self.attachmentMetaDataStructure.contentType];
-    
-    return attachment;
-}
 
 
 @end

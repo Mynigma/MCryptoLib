@@ -65,28 +65,6 @@
     return [NSString stringWithFormat:@"%@@mynigma.org", [NSUUID UUID]];
 }
 
-
-+ (NSMutableArray*)listAllSubpartsOfPart:(MCOAbstractPart*)part satisfyingCondition:(BOOL(^)(MCOAbstractPart* part))condition
-{
-    NSMutableArray* collectedParts = [NSMutableArray new];
-    
-    //iterate through multiparts
-    
-    if([part respondsToSelector:@selector(parts)])
-    {
-        for(MCOAbstractPart* subPart in [(MCOAbstractMultipart*)part parts])
-        {
-            [collectedParts addObjectsFromArray:[self listAllSubpartsOfPart:subPart satisfyingCondition:condition]];
-        }
-    }
-    else if([part isKindOfClass:[MCOAbstractPart class]] && condition(part))
-    {
-        [collectedParts addObject:part];
-    }
-    
-    return collectedParts;
-}
-
 + (NSData*)deviceMessageDataWithPayloadData:(NSData*)payloadData
 {
     return nil;
@@ -97,40 +75,3 @@
 
 
 
-@implementation MCOAbstractPart (Convenience)
-
-- (NSString*)contentIDGeneratingIfNeeded:(BOOL)generateIfNeeded
-{
-    NSString* contentID = self.contentID;
-    
-    if(contentID.length || !generateIfNeeded)
-        return contentID;
-    
-    //OK, generate one
-    contentID = [MimeHelper generateFreshMessageID];
-    
-    [self setContentID:contentID];
-    
-    return contentID;
-}
-
-- (BOOL)isPlainTextPart
-{
-    BOOL isPlainText = [self.mimeType.lowercaseString isEqual:@"text/plain"];
-    
-    BOOL hasFileName = [self filename].length != 0;
-    
-    return isPlainText && !hasFileName;
-}
-
-- (BOOL)isHTMLTextPart
-{
-    BOOL isHTMLText = [self.mimeType.lowercaseString isEqual:@"text/html"];
-    
-    BOOL hasFileName = [self filename].length != 0;
-    
-    return isHTMLText && !hasFileName;
-}
-
-
-@end

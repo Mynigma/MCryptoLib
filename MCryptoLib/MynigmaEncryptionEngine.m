@@ -841,68 +841,35 @@
     
 }
 
-- (MCOAbstractMessage*)processIncomingMessage:(MCOAbstractMessage*)message
+- (void)processIncomingMessageContext:(MynigmaMessageEncryptionContext*)messageContext
 {
     // first check if the message is safe
-    NSString* safeMessageHeaderIndicator = [message.header extraHeaderValueForName:@"X-Mynigma-Safe-Message"];
+    NSString* safeMessageHeaderIndicator = messageContext.extraHeaders[[@"X-Mynigma-Safe-Message" lowercaseString]];
     
     BOOL messageIsSafe = safeMessageHeaderIndicator.length > 0;
     
     if (messageIsSafe)
     {
-        MynigmaMessageEncryptionContext* context = [MynigmaMessageEncryptionContext contextForEncryptedMessage:message];
-        
-        [self decryptMessage:context];
-        
-        return context.decryptedMessage;
+        [self decryptMessage:messageContext];
     }
     else
     {
-        [self processPublicKeyInHeaders:message];
-        
-        return message;
+        [self processPublicKeyInExtraHeaders:messageContext.extraHeaders fromSender:messageContext.senderEmail];
     }
-
 }
 
 
-- (BOOL)processPublicKeyInHeaders:(MCOAbstractMessage*)message
+- (BOOL)processPublicKeyInExtraHeaders:(NSDictionary*)extraHeaders fromSender:(NSString*)senderAddress
 {
-    PublicKeyData* publicKeyData = [self.keyManager getPublicKeyDataFromHeader:message];
+    PublicKeyData* publicKeyData = [self.keyManager getPublicKeyDataFromExtraHeaderValues:extraHeaders];
     
     if (![self.keyManager addPublicKeyWithData:publicKeyData])
         return false;
-    
-    NSString* senderAddress = message.sender.mailbox;
     
     return [self.keyManager setCurrentKeyForEmailAddress:senderAddress keyLabel:publicKeyData.keyLabel overwrite:NO];
 }
 
 
-
-- (MCOAbstractMessage*)processOutgoingMessage:(MCOAbstractMessage*)message
-{
-    // first check if the message is safe
-    NSString* safeMessageHeaderIndicator = [message.header extraHeaderValueForName:@"X-Mynigma-Safe-Message"];
-    
-    BOOL messageIsSafe = safeMessageHeaderIndicator.length > 0;
-    
-    if (messageIsSafe)
-    {
-        MynigmaMessageEncryptionContext* context = [MynigmaMessageEncryptionContext contextForDecryptedMessage:message];
-        
-        if(![self decryptMessage:context])
-            return nil;
-        
-        return context.decryptedMessage;
-    }
-    else
-    {
-        [self processPublicKeyInHeaders:message];
-        
-        return message;
-    }
-}
 
 
 - (BOOL)isRecipientSafe:(NSString*)emailAddressString
@@ -921,22 +888,6 @@
     return YES;
 }
 
-
-
-- (MCOAbstractMessage*)overrideErrorsForMessage:(MCOAbstractMessage*)message
-{
-    return nil;
-}
-
-- (MCOAttachment*)decryptAttachment:(MCOAttachment*)attachment forMessage:(MCOAbstractMessage*)message
-{
-    return nil;
-}
-
-- (MCOAbstractMessage*)overrideErrorsForAttachment:(MCOAttachment*)attachment message:(MCOAbstractMessage*)message
-{
-    return nil;
-}
 
 
 

@@ -51,73 +51,73 @@
 //	along with M.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-
-#import <Foundation/Foundation.h>
-
-#import "MynigmaError.h"
-
-
-@class SessionKeys, PayloadPartDataStructure, MCOAbstractMessage;
-
-@interface MynigmaMessageEncryptionContext : NSObject <NSCoding>
-
-
-+ (MynigmaMessageEncryptionContext*)contextForDecryptedDeviceMessageWithPayload:(NSData*)payloadData;
+#import "MimeHelper+MailCore.h"
 
 
 
 
 
-//decrypted messages have their payload part set, containing body, subject, attachment meta data, etc...
-@property PayloadPartDataStructure* payloadPart;
+@implementation MimeHelper (MailCore)
 
 
-@property NSData* decryptedData;
-
-@property NSData* signedPayload;
-
-//encrypted messages have this set to the content of outermost HMAC structure
-@property NSData* encryptedPayload;
-
-//the attachment encryption contexts keep track of all data needed to encrypt/decrypt attachments
-@property NSArray* attachmentEncryptionContexts;
-
-
-//used to fill the template for safe messages
-@property NSString* senderName;
-@property NSString* senderEmail;
-@property NSString* messageID;
-@property NSDate* sentDate;
-
-
-@property NSDictionary* extraHeaders;
-
-
-//force particular boundary strings to ensure reproducibility of exact message data for unit tests
-@property NSString* alternativePartBoundary;
-@property NSString* relatedPartBoundary;
-@property NSString* mainBoundary;
++ (NSMutableArray*)listAllSubpartsOfPart:(MCOAbstractPart*)part satisfyingCondition:(BOOL(^)(MCOAbstractPart* part))condition
+{
+    NSMutableArray* collectedParts = [NSMutableArray new];
+    
+    //iterate through multiparts
+    
+    if([part respondsToSelector:@selector(parts)])
+    {
+        for(MCOAbstractPart* subPart in [(MCOAbstractMultipart*)part parts])
+        {
+            [collectedParts addObjectsFromArray:[self listAllSubpartsOfPart:subPart satisfyingCondition:condition]];
+        }
+    }
+    else if([part isKindOfClass:[MCOAbstractPart class]] && condition(part))
+    {
+        [collectedParts addObject:part];
+    }
+    
+    return collectedParts;
+}
 
 
+@end
 
-//used to generate encrypted session key table
-@property NSString* signatureKeyLabel;
-@property NSArray* expectedSignatureKeyLabels;
-@property NSArray* encryptionKeyLabels;
-@property NSArray* recipientEmails;
+@implementation MCOAbstractPart (Convenience)
 
+- (NSString*)contentIDGeneratingIfNeeded:(BOOL)generateIfNeeded
+{
+    NSString* contentID = self.contentID;
+    
+    if(contentID.length || !generateIfNeeded)
+        return contentID;
+    
+    //OK, generate one
+    contentID = [MimeHelper generateFreshMessageID];
+    
+    [self setContentID:contentID];
+    
+    return contentID;
+}
 
-//remember these for attachment decryption
-@property SessionKeys* sessionKeys;
+- (BOOL)isPlainTextPart
+{
+    BOOL isPlainText = [self.mimeType.lowercaseString isEqual:@"text/plain"];
+    
+    BOOL hasFileName = [self filename].length != 0;
+    
+    return isPlainText && !hasFileName;
+}
 
-@property NSArray* attachmentHMACValues;
+- (BOOL)isHTMLTextPart
+{
+    BOOL isHTMLText = [self.mimeType.lowercaseString isEqual:@"text/html"];
+    
+    BOOL hasFileName = [self filename].length != 0;
+    
+    return isHTMLText && !hasFileName;
+}
 
-
-@property NSMutableArray* errors;
-
-
-- (void)pushErrorWithCode:(MynigmaErrorCode)code;
-
-- (BOOL)hasErrors;
 
 @end

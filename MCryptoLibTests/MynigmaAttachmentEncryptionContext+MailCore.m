@@ -51,73 +51,79 @@
 //	along with M.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+#import "MynigmaAttachmentEncryptionContext+MailCore.h"
 
-#import <Foundation/Foundation.h>
-
-#import "MynigmaError.h"
-
-
-@class SessionKeys, PayloadPartDataStructure, MCOAbstractMessage;
-
-@interface MynigmaMessageEncryptionContext : NSObject <NSCoding>
+#import <MailCore/MailCore.h>
 
 
-+ (MynigmaMessageEncryptionContext*)contextForDecryptedDeviceMessageWithPayload:(NSData*)payloadData;
+@implementation MynigmaAttachmentEncryptionContext (MailCore)
+
++ (MynigmaAttachmentEncryptionContext*)contextForDecryptedAttachment:(MCOAttachment*)attachment
+{
+    NSString* fileName = attachment.filename;
+    
+    NSString* contentID = attachment.contentID;
+    
+    NSData* data = attachment.data;
+    
+    BOOL isInline = attachment.isInlineAttachment;
+    
+    //se this later
+    //    NSData* hashedValue = [basicEngine SHA512DigestOfData:data];
+    
+    NSString* contentType = attachment.mimeType;
+    
+    MynigmaAttachmentEncryptionContext* newContext = [[MynigmaAttachmentEncryptionContext alloc] initWithFileName:fileName contentID:contentID decryptedData:data hashedValue:nil partID:nil remoteURLString:nil isInline:isInline contentType:contentType];
+    
+    return newContext;
+}
+
++ (MynigmaAttachmentEncryptionContext*)contextForEncryptedAttachment:(MCOAttachment*)encryptedAttachment
+{
+    MynigmaAttachmentEncryptionContext* newContext = [MynigmaAttachmentEncryptionContext new];
+    
+    newContext.encryptedData = encryptedAttachment.data;
+    
+    newContext.attachmentMetaDataStructure = [FileAttachmentDataStructure new];
+    
+    newContext.attachmentMetaDataStructure.contentID = encryptedAttachment.contentID;
+    
+    if(!newContext.encryptedData)
+        return nil;
+				
+    return newContext;
+}
 
 
+- (MCOAttachment*)encryptedMimePart:(NSNumber*)index
+{
+    if([self encryptedData].length == 0)
+        return nil;
+    
+    NSString* fileName = [NSString stringWithFormat:@"%@.myn", index];
+    
+    MCOAttachment* attachment = [MCOAttachment attachmentWithData:[self encryptedData] filename:fileName];
+    
+    [attachment setContentID:self.attachmentMetaDataStructure.contentID];
+    [attachment setInlineAttachment:NO];
+    [attachment setMimeType:@"application/mynigma-attachment"];
+    
+    return attachment;
+}
 
 
+- (MCOAttachment*)decryptedMimePart
+{
+    if([self decryptedData].length == 0)
+        return nil;
+    
+    MCOAttachment* attachment = [MCOAttachment attachmentWithData:self.decryptedData filename:self.attachmentMetaDataStructure.fileName];
+    [attachment setContentID:self.attachmentMetaDataStructure.contentID];
+    [attachment setInlineAttachment:self.attachmentMetaDataStructure.isInline];
+    [attachment setMimeType:self.attachmentMetaDataStructure.contentType];
+    
+    return attachment;
+}
 
-//decrypted messages have their payload part set, containing body, subject, attachment meta data, etc...
-@property PayloadPartDataStructure* payloadPart;
-
-
-@property NSData* decryptedData;
-
-@property NSData* signedPayload;
-
-//encrypted messages have this set to the content of outermost HMAC structure
-@property NSData* encryptedPayload;
-
-//the attachment encryption contexts keep track of all data needed to encrypt/decrypt attachments
-@property NSArray* attachmentEncryptionContexts;
-
-
-//used to fill the template for safe messages
-@property NSString* senderName;
-@property NSString* senderEmail;
-@property NSString* messageID;
-@property NSDate* sentDate;
-
-
-@property NSDictionary* extraHeaders;
-
-
-//force particular boundary strings to ensure reproducibility of exact message data for unit tests
-@property NSString* alternativePartBoundary;
-@property NSString* relatedPartBoundary;
-@property NSString* mainBoundary;
-
-
-
-//used to generate encrypted session key table
-@property NSString* signatureKeyLabel;
-@property NSArray* expectedSignatureKeyLabels;
-@property NSArray* encryptionKeyLabels;
-@property NSArray* recipientEmails;
-
-
-//remember these for attachment decryption
-@property SessionKeys* sessionKeys;
-
-@property NSArray* attachmentHMACValues;
-
-
-@property NSMutableArray* errors;
-
-
-- (void)pushErrorWithCode:(MynigmaErrorCode)code;
-
-- (BOOL)hasErrors;
 
 @end

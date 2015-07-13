@@ -68,22 +68,9 @@
 
 + (NSString*)generateFreshMessageID;
 
-+ (NSMutableArray*)listAllSubpartsOfPart:(MCOAbstractPart*)part satisfyingCondition:(BOOL(^)(MCOAbstractPart* part))condition;
-
 + (NSData*)deviceMessageDataWithPayloadData:(NSData*)payloadData;
 
 @end
 
 
 
-
-
-@interface MCOAbstractPart (Convenience)
-
-- (NSString*)contentIDGeneratingIfNeeded:(BOOL)generateIfNeeded;
-
-- (BOOL)isPlainTextPart;
-
-- (BOOL)isHTMLTextPart;
-
-@end

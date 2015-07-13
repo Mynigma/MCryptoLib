@@ -51,73 +51,84 @@
 //	along with M.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+#import "MynigmaEncryptionEngine+MailCore.h"
 
-#import <Foundation/Foundation.h>
+#import <MailCore/MailCore.h>
 
-#import "MynigmaError.h"
-
-
-@class SessionKeys, PayloadPartDataStructure, MCOAbstractMessage;
-
-@interface MynigmaMessageEncryptionContext : NSObject <NSCoding>
-
-
-+ (MynigmaMessageEncryptionContext*)contextForDecryptedDeviceMessageWithPayload:(NSData*)payloadData;
+#import "MynigmaMessageEncryptionContext+MailCore.h"
 
 
 
 
-
-//decrypted messages have their payload part set, containing body, subject, attachment meta data, etc...
-@property PayloadPartDataStructure* payloadPart;
+@implementation MynigmaEncryptionEngine (MailCore)
 
 
-@property NSData* decryptedData;
-
-@property NSData* signedPayload;
-
-//encrypted messages have this set to the content of outermost HMAC structure
-@property NSData* encryptedPayload;
-
-//the attachment encryption contexts keep track of all data needed to encrypt/decrypt attachments
-@property NSArray* attachmentEncryptionContexts;
-
-
-//used to fill the template for safe messages
-@property NSString* senderName;
-@property NSString* senderEmail;
-@property NSString* messageID;
-@property NSDate* sentDate;
+- (MCOAbstractMessage*)processIncomingMessage:(MCOAbstractMessage*)message
+{
+    MynigmaMessageEncryptionContext* context = [MynigmaMessageEncryptionContext contextForIncomingMessage:message];
+    
+    [self processIncomingMessageContext:context];
+    
+    return context.decryptedMessage;
+}
 
 
-@property NSDictionary* extraHeaders;
-
-
-//force particular boundary strings to ensure reproducibility of exact message data for unit tests
-@property NSString* alternativePartBoundary;
-@property NSString* relatedPartBoundary;
-@property NSString* mainBoundary;
+- (BOOL)processPublicKeyInHeaders:(MCOAbstractMessage*)message
+{
+//    PublicKeyData* publicKeyData = [self.keyManager getPublicKeyDataFromHeader:message];
+//    
+//    if (![self.keyManager addPublicKeyWithData:publicKeyData])
+//        return false;
+//    
+//    NSString* senderAddress = message.sender.mailbox;
+//    
+//    return [self.keyManager setCurrentKeyForEmailAddress:senderAddress keyLabel:publicKeyData.keyLabel overwrite:NO];
+    
+    return NO;
+}
 
 
 
-//used to generate encrypted session key table
-@property NSString* signatureKeyLabel;
-@property NSArray* expectedSignatureKeyLabels;
-@property NSArray* encryptionKeyLabels;
-@property NSArray* recipientEmails;
+- (MCOAbstractMessage*)processOutgoingMessage:(MCOAbstractMessage*)message
+{
+    return nil;
+    
+    // first check if the message is safe
+//    NSString* safeMessageHeaderIndicator = [message.header extraHeaderValueForName:@"X-Mynigma-Safe-Message"];
+//    
+//    BOOL messageIsSafe = safeMessageHeaderIndicator.length > 0;
+//    
+//    if (messageIsSafe)
+//    {
+//        MynigmaMessageEncryptionContext* context = [MynigmaMessageEncryptionContext contextForDecryptedMessage:message];
+//        
+//        if(![self decryptMessage:context])
+//            return nil;
+//        
+//        return context.decryptedMessage;
+//    }
+//    else
+//    {
+//        [self processPublicKeyInHeaders:message];
+//        
+//        return message;
+//    }
+}
 
 
-//remember these for attachment decryption
-@property SessionKeys* sessionKeys;
+- (MCOAbstractMessage*)overrideErrorsForMessage:(MCOAbstractMessage*)message
+{
+    return nil;
+}
 
-@property NSArray* attachmentHMACValues;
+- (MCOAttachment*)decryptAttachment:(MCOAttachment*)attachment forMessage:(MCOAbstractMessage*)message
+{
+    return nil;
+}
 
-
-@property NSMutableArray* errors;
-
-
-- (void)pushErrorWithCode:(MynigmaErrorCode)code;
-
-- (BOOL)hasErrors;
+- (MCOAbstractMessage*)overrideErrorsForAttachment:(MCOAttachment*)attachment message:(MCOAbstractMessage*)message
+{
+    return nil;
+}
 
 @end

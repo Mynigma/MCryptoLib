@@ -54,7 +54,6 @@
 
 #import "MynigmaKeyManager.h"
 #import "KeychainHelper.h"
-#import <MailCore/MailCore.h>
 #import "NSData+Base64.h"
 #import "EmailAddress.h"
 #import "NSString+EmailAddresses.h"
@@ -788,10 +787,10 @@
     return [unBase64edKeyString dataUsingEncoding:NSUTF8StringEncoding];
 }
 
-- (PublicKeyData*)getPublicKeyDataFromHeader:(MCOAbstractMessage*)message
+- (PublicKeyData*)getPublicKeyDataFromExtraHeaderValues:(NSDictionary*)headerValues
 {
-    NSString* key = [message.header extraHeaderValueForName:@"x-myn-pk"];
-    NSString* keyLabel = [message.header extraHeaderValueForName:@"X-Myn-KL"];
+    NSString* key = headerValues[@"x-myn-pk"];
+    NSString* keyLabel = headerValues[@"x-myn-kl"];
     
     if (!key.length)
         return nil;

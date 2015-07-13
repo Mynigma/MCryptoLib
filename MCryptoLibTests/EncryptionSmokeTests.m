@@ -53,8 +53,11 @@
 
 
 #import <XCTest/XCTest.h>
-#import "TestHelper.h"
+
 #import <MailCore/MailCore.h>
+
+#import "TestHelper.h"
+
 #import "MynigmaEncryptionEngine.h"
 #import "UnitTestMynigmaKeyManager.h"
 #import "MynigmaMessageEncryptionContext.h"
@@ -62,7 +65,7 @@
 #import "AppleEncryptionEngine.h"
 #import "OpenSSLEncryptionEngine.h"
 
-
+#import "MynigmaMessageEncryptionContext+MailCore.h"
 
 
 @interface MynigmaEncryptionEngine()

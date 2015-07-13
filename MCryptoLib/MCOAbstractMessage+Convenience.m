@@ -52,7 +52,11 @@
 //
 
 #import "MCOAbstractMessage+Convenience.h"
+
 #import "MimeHelper.h"
+
+#import "MimeHelper+MailCore.h"
+
 #import <MProtoBuf/EmailRecipientDataStructure.h>
 #import <MProtoBuf/FileAttachmentDataStructure.h>
 

@@ -51,73 +51,21 @@
 //	along with M.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-
-#import <Foundation/Foundation.h>
-
-#import "MynigmaError.h"
-
-
-@class SessionKeys, PayloadPartDataStructure, MCOAbstractMessage;
-
-@interface MynigmaMessageEncryptionContext : NSObject <NSCoding>
-
-
-+ (MynigmaMessageEncryptionContext*)contextForDecryptedDeviceMessageWithPayload:(NSData*)payloadData;
+#import "MynigmaAttachmentEncryptionContext.h"
 
 
 
+@class MCOAttachment;
 
+@interface MynigmaAttachmentEncryptionContext (MailCore)
 
-//decrypted messages have their payload part set, containing body, subject, attachment meta data, etc...
-@property PayloadPartDataStructure* payloadPart;
++ (MynigmaAttachmentEncryptionContext*)contextForDecryptedAttachment:(MCOAttachment*)attachment;
 
++ (MynigmaAttachmentEncryptionContext*)contextForEncryptedAttachment:(MCOAttachment*)encryptedAttachment;
 
-@property NSData* decryptedData;
+- (MCOAttachment*)encryptedMimePart:(NSNumber*)index;
 
-@property NSData* signedPayload;
+- (MCOAttachment*)decryptedMimePart;
 
-//encrypted messages have this set to the content of outermost HMAC structure
-@property NSData* encryptedPayload;
-
-//the attachment encryption contexts keep track of all data needed to encrypt/decrypt attachments
-@property NSArray* attachmentEncryptionContexts;
-
-
-//used to fill the template for safe messages
-@property NSString* senderName;
-@property NSString* senderEmail;
-@property NSString* messageID;
-@property NSDate* sentDate;
-
-
-@property NSDictionary* extraHeaders;
-
-
-//force particular boundary strings to ensure reproducibility of exact message data for unit tests
-@property NSString* alternativePartBoundary;
-@property NSString* relatedPartBoundary;
-@property NSString* mainBoundary;
-
-
-
-//used to generate encrypted session key table
-@property NSString* signatureKeyLabel;
-@property NSArray* expectedSignatureKeyLabels;
-@property NSArray* encryptionKeyLabels;
-@property NSArray* recipientEmails;
-
-
-//remember these for attachment decryption
-@property SessionKeys* sessionKeys;
-
-@property NSArray* attachmentHMACValues;
-
-
-@property NSMutableArray* errors;
-
-
-- (void)pushErrorWithCode:(MynigmaErrorCode)code;
-
-- (BOOL)hasErrors;
 
 @end
