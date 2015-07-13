@@ -54,6 +54,8 @@
 
 #import "SMIMEKeyManager.h"
 
+#import "CommonHeader.h"
+
 #import "KeychainHelper+SMIME.h"
 
 #import "SMIMEPublicKey.h"

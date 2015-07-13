@@ -52,6 +52,8 @@
 //
 
 
+#import "CommonHeader.h"
+
 #import "MynigmaErrorFactory.h"
 #import "MynigmaError.h"
 

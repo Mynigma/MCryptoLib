@@ -55,6 +55,8 @@
 
 #import "BackupHelper.h"
 
+#import "CommonHeader.h"
+
 #import <MProtoBuf/BackupPasswordFileWrapperDataStructure.h>
 #import <MProtoBuf/PlainBackupDataStructure.h>
 #import <MProtoBuf/PrivateKeyDataStructure.h>

@@ -56,7 +56,7 @@
 
 
 
-@class MynigmaKeyManager, MynigmaEncryptionEngine;
+@class MynigmaKeyManager, MynigmaEncryptionEngine, CoreDataHelper;
 
 
 @interface BackupHelper : NSObject
