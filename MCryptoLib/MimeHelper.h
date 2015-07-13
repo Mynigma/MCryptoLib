@@ -53,8 +53,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import <MailCore/MailCore.h>
-
 
 #define MIME_TYPE_ENCRYPTED @"application/mynigma"
 #define MIME_TYPE_ENCRYPTED_PAYLOAD @"application/mynigma-payload"

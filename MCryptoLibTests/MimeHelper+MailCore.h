@@ -53,6 +53,13 @@
 
 #import "MimeHelper.h"
 
+#import <MailCore/MailCore.h>
+
+
+
+
+
+
 @interface MimeHelper (MailCore)
 
 + (NSMutableArray*)listAllSubpartsOfPart:(MCOAbstractPart*)part satisfyingCondition:(BOOL(^)(MCOAbstractPart* part))condition;
