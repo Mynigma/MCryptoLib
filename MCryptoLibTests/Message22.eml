@@ -1,0 +1,248 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp3409519wma;
+        Thu, 7 May 2015 02:00:53 -0700 (PDT)
+X-Received: by 10.180.92.42 with SMTP id cj10mr4748941wib.67.1430989253175;
+        Thu, 07 May 2015 02:00:53 -0700 (PDT)
+Return-Path: <debate-return-61104-roman.priebe=gmail.com@lists.ccc.de>
+Received: from mlmx.ccc.de (mlmx.ccc.de. [212.12.48.6])
+        by mx.google.com with ESMTPS id u9si2765261wiz.121.2015.05.07.02.00.52
+        for <roman.priebe@gmail.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Thu, 07 May 2015 02:00:53 -0700 (PDT)
+Received-SPF: none (google.com: debate-return-61104-roman.priebe=gmail.com@lists.ccc.de does not designate permitted sender hosts) client-ip=212.12.48.6;
+Authentication-Results: mx.google.com;
+       spf=none (google.com: debate-return-61104-roman.priebe=gmail.com@lists.ccc.de does not designate permitted sender hosts) smtp.mail=debate-return-61104-roman.priebe=gmail.com@lists.ccc.de
+Received: (qmail 17793 invoked by alias); 7 May 2015 08:59:34 -0000
+Mailing-List: contact debate-help@lists.ccc.de; run by ezmlm
+Precedence: bulk
+List-Id: CCC Diskussionsliste <debate.lists.ccc.de>
+List-Post: <mailto:debate@lists.ccc.de>
+List-Help: <mailto:debate-help@lists.ccc.de> 
+List-Unsubscribe: <mailto:debate-unsubscribe@lists.ccc.de>
+List-Subscribe: <mailto:debate-subscribe@lists.ccc.de>
+Delivered-To: mailing list debate@lists.ccc.de
+Received: (qmail 17785 invoked by uid 0); 7 May 2015 08:59:34 -0000
+Content-Type: multipart/signed; boundary="Apple-Mail=_184A892D-D440-4E60-853B-C9082D39C1DC"; protocol="application/pgp-signature"; micalg=pgp-sha512
+Mime-Version: 1.0 (Mac OS X Mail 8.2 \(2098\))
+Subject: Re: Die Vorratsdatenspeicherung kommt
+X-Pgp-Agent: GPGMail 2.5b6
+From: t3sserakt <t3sserakt@posteo.de>
+In-Reply-To: <9ABEA03E-B8DC-4A2B-836A-2CBE7F6ABC35@syndicat.com>
+Date: Thu, 7 May 2015 10:58:42 +0200
+Message-Id: <42D5CC12-1429-40C2-A0F0-BB69724AD409@posteo.de>
+References: <CAAeZfrSeHuzWHk6sZHUiziCetF1UwBaRJ3=-3dcjs1SbRj9CqQ@mail.gmail.com> <CAAeZfrQMKfpeEBnjzYTXDtw1H8EAV9hkB7fLf2X0kDF3pqgX6Q@mail.gmail.com> <20150429131828.GA21447@enterprise.kbojens.de> <1581926.AnTNTLi3W0@dogbox> <CAAeZfrRSs=yMOTP48dD-8wsquSkZWFGpOC1dXwvLK3MGJWSRLQ@mail.gmail.com> <9F8752AE-4D0D-49CB-B300-D262A11571B7@syndicat.com> <93724EBF-1A00-40E4-9D55-B108C1FD708C@posteo.de> <9ABEA03E-B8DC-4A2B-836A-2CBE7F6ABC35@syndicat.com>
+To: "debate@lists.ccc.de" <debate@lists.ccc.de>
+
+--Apple-Mail=_184A892D-D440-4E60-853B-C9082D39C1DC
+Content-Type: multipart/alternative;
+	boundary="Apple-Mail=_43D27E73-6A7A-4E7F-B2B1-85228BD53316"
+
+
+--Apple-Mail=_43D27E73-6A7A-4E7F-B2B1-85228BD53316
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain;
+	charset=utf-8
+
+>>>>=20
+>>> Am 07.05.2015 um 08:32 schrieb Niels Dettenbach (Syndicat IT & =
+Internet) <nd@syndicat.com <mailto:nd@syndicat.com>>:
+>>>=20
+>>> Am 6. Mai 2015 19:46:30 MESZ, schrieb Rat Frag <rat96frag@gmail.com =
+<mailto:rat96frag@gmail.com>>:
+>>>> Ich entnehme mal den Medienberichten =C3=BCber Merkels Handy (und =
+das sehr
+>>>> teure Krypto-Handy) und =C3=A4hnlichen, dass _grunds=C3=A4tzlich_ =
+auch die Daten
+>>>> der Politiker erfasst werden. Schon weil sie sich technisch nicht =
+von
+>>>> den Daten gew=C3=B6hnlicher Leute unterscheiden lassen.
+>>>=20
+>>> Dem ist wohl so.
+>>>=20
+>>> Bis heute ist keine fundierte geografische Zuordnung von =
+Internetkommunikation / -adressen m=C3=B6glich - auch f=C3=BCr Dienste =
+nicht - weder BND noch NSA. Hinzu kommt, das selbst =
+Hochleistungsfiltersysteme nur relativ begrenzt komplexe Regeln =
+performant bei den anfallenden Datenmengen/Bandbreiten umsetzen k=C3=B6nne=
+n.
+
+
+
+
+> Am 07.05.2015 um 09:10 schrieb Niels Dettenbach (Syndicat IT & =
+Internet) <nd@syndicat.com>:
+>=20
+> Am 7. Mai 2015 08:55:02 MESZ, schrieb t3sserakt <t3sserakt@posteo.de>:
+>> Das mit den Filtern wird von Menschen, welche die
+>> Snowden Dokumente gelesen haben, und von Snowden
+>> selbst aber anders dargestellt, nicht wahr.
+> erstaunlich,
+>=20
+> ich habe die Dokumente ebenfalls gelesen und kenne sogar einige Teile =
+der Infrastruktur (u.a. internationale Provider/Trunking-Carrier, =
+Hochleistungs-Filterger=C3=A4tschaften).
+
+Ich habe die Dokumente nicht gelesen. Ich gebe nur wieder an was ich =
+mich bei der Berichterstattung
+erinnere.
+
+>=20
+> Aber ich nehme an Du verwechselst hier Erfassung und Auswertung von =
+Daten. Um eine derart "gezielte" Auswertung von =
+Kommunikationsverbindungen - wie sie auch in den Snowden-Docs =
+beschrieben wird - an der vorhandenen Internetinfrastruktur =C3=BCberhaupt=
+ erm=C3=B6glichen zu k=C3=B6nnen, sind weitreichende Datenerfassungen =
+(und -speicherungen) erforderlich, die eben nicht mal eben geografisch =
+scharf lokalisiert werden k=C3=B6nnen.
+
+Ich bezog mich hier
+
+>=20
+>>> Bis heute ist keine fundierte geografische Zuordnung von =
+Internetkommunikation / -adressen m=C3=B6glich - auch f=C3=BCr Dienste =
+nicht - weder BND noch NSA. Hinzu kommt, das selbst =
+Hochleistungsfiltersysteme nur relativ begrenzt komplexe Regeln =
+performant bei den anfallenden Datenmengen/Bandbreiten umsetzen k=C3=B6nne=
+n.
+
+nur auf die generelle Filterm=C3=B6glichkeiten. Nicht auf die =
+M=C3=B6glichkeit der Lokalisierung. Ich erinnere mich, dass
+ich gelesen hatte, dass die Filterm=C3=B6glichkeiten so gut und =
+performant sein sollen, dass Aktivit=C3=A4ten von
+Zielpersonen "in Echtzeit=E2=80=9C in den Systemen der NSA angezeigt =
+werden. Diese angebliche Leistungsf=C3=A4higkeit
+hatte mich auch =C3=BCberrascht. Ich habe mir bisher nicht die M=C3=BChe =
+gemacht nachzuvollziehen, ob das m=C3=B6glich ist.
+
+Wie gesagt, was dann da tats=C3=A4chlich f=C3=BCr Informationen =
+verf=C3=BCgbar sind, und was in dem Kontext =E2=80=9Ein Echtzeit"
+hei=C3=9Fen soll wei=C3=9F ich nicht.
+
+>=20
+> Ebendies st=C3=BCtzt u.a. auch die Aussage des DE-NIC Chefs vor dem =
+Untersuchungsausschu=C3=9F.
+
+Mit =E2=80=9EEbendies" meinst du die Lokalisierung?
+
+vg
+
+t3sserakt
+
+--Apple-Mail=_43D27E73-6A7A-4E7F-B2B1-85228BD53316
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html;
+	charset=utf-8
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html =
+charset=3Dutf-8"></head><body style=3D"word-wrap: break-word; =
+-webkit-nbsp-mode: space; -webkit-line-break: after-white-space;" =
+class=3D""><div class=3D""><blockquote type=3D"cite" =
+class=3D""><blockquote type=3D"cite" =
+class=3D""></blockquote></blockquote><blockquote type=3D"cite" =
+class=3D""><blockquote type=3D"cite" class=3D""><blockquote type=3D"cite" =
+class=3D""><blockquote type=3D"cite" class=3D""><br =
+class=3D""></blockquote></blockquote><blockquote type=3D"cite" =
+class=3D"">Am 07.05.2015 um 08:32 schrieb Niels Dettenbach (Syndicat IT =
+&amp; Internet) &lt;<a href=3D"mailto:nd@syndicat.com" =
+class=3D"">nd@syndicat.com</a>&gt;:<br class=3D""><br class=3D"">Am 6. =
+Mai 2015 19:46:30 MESZ, schrieb Rat Frag &lt;<a =
+href=3D"mailto:rat96frag@gmail.com" =
+class=3D"">rat96frag@gmail.com</a>&gt;:<br class=3D""><blockquote =
+type=3D"cite" class=3D"">Ich entnehme mal den Medienberichten =C3=BCber =
+Merkels Handy (und das sehr<br class=3D"">teure Krypto-Handy) und =
+=C3=A4hnlichen, dass _grunds=C3=A4tzlich_ auch die Daten<br class=3D"">der=
+ Politiker erfasst werden. Schon weil sie sich technisch nicht von<br =
+class=3D"">den Daten gew=C3=B6hnlicher Leute unterscheiden lassen.<br =
+class=3D""></blockquote><br class=3D"">Dem ist wohl so.<br class=3D""><br =
+class=3D"">Bis heute ist keine fundierte geografische Zuordnung von =
+Internetkommunikation / -adressen m=C3=B6glich - auch f=C3=BCr Dienste =
+nicht - weder BND noch NSA. Hinzu kommt, das selbst =
+Hochleistungsfiltersysteme nur relativ begrenzt komplexe Regeln =
+performant bei den anfallenden Datenmengen/Bandbreiten umsetzen =
+k=C3=B6nnen.</blockquote></blockquote></blockquote></div><div =
+class=3D""><br class=3D""></div><div class=3D""><br class=3D""></div><br =
+class=3D""><div><blockquote type=3D"cite" class=3D""><div class=3D"">Am =
+07.05.2015 um 09:10 schrieb Niels Dettenbach (Syndicat IT &amp; =
+Internet) &lt;<a href=3D"mailto:nd@syndicat.com" =
+class=3D"">nd@syndicat.com</a>&gt;:</div><br =
+class=3D"Apple-interchange-newline"><div class=3D"">Am 7. Mai 2015 =
+08:55:02 MESZ, schrieb t3sserakt &lt;<a =
+href=3D"mailto:t3sserakt@posteo.de" =
+class=3D"">t3sserakt@posteo.de</a>&gt;:<br class=3D""><blockquote =
+type=3D"cite" class=3D"">Das mit den Filtern wird von Menschen, welche =
+die<br class=3D"">Snowden Dokumente gelesen haben, und von Snowden<br =
+class=3D"">selbst aber anders dargestellt, nicht wahr. <br =
+class=3D""></blockquote>erstaunlich,<br class=3D""><br class=3D"">ich =
+habe die Dokumente ebenfalls gelesen und kenne sogar einige Teile der =
+Infrastruktur (u.a. internationale Provider/Trunking-Carrier, =
+Hochleistungs-Filterger=C3=A4tschaften).<br =
+class=3D""></div></blockquote><div><br class=3D""></div><div>Ich habe =
+die Dokumente nicht gelesen. Ich gebe nur wieder an was ich mich bei der =
+Berichterstattung</div><div>erinnere.</div><br class=3D""><blockquote =
+type=3D"cite" class=3D""><div class=3D""><br class=3D"">Aber ich nehme =
+an Du verwechselst hier Erfassung und Auswertung von Daten. Um eine =
+derart "gezielte" Auswertung von Kommunikationsverbindungen - wie sie =
+auch in den Snowden-Docs beschrieben wird - an der vorhandenen =
+Internetinfrastruktur =C3=BCberhaupt erm=C3=B6glichen zu k=C3=B6nnen, =
+sind weitreichende Datenerfassungen (und -speicherungen) erforderlich, =
+die eben nicht mal eben geografisch scharf lokalisiert werden =
+k=C3=B6nnen.<br class=3D""></div></blockquote><div><br =
+class=3D""></div><div>Ich bezog mich hier</div><div><br =
+class=3D""></div><div></div><div><blockquote type=3D"cite" =
+class=3D""></blockquote></div><blockquote type=3D"cite" =
+class=3D""><div><br class=3D""></div><div><blockquote type=3D"cite" =
+class=3D""><blockquote type=3D"cite" class=3D"">Bis heute ist keine =
+fundierte geografische Zuordnung von Internetkommunikation / -adressen =
+m=C3=B6glich - auch f=C3=BCr Dienste nicht - weder BND noch NSA. Hinzu =
+kommt, das selbst Hochleistungsfiltersysteme nur relativ begrenzt =
+komplexe Regeln performant bei den anfallenden Datenmengen/Bandbreiten =
+umsetzen k=C3=B6nnen.</blockquote></blockquote></div></blockquote><div><br=
+ class=3D""></div>nur auf die generelle Filterm=C3=B6glichkeiten. Nicht =
+auf die M=C3=B6glichkeit der Lokalisierung. Ich erinnere mich, =
+dass</div><div>ich gelesen hatte, dass die Filterm=C3=B6glichkeiten so =
+gut und performant sein sollen, dass Aktivit=C3=A4ten =
+von&nbsp;</div><div>Zielpersonen "in Echtzeit=E2=80=9C in den Systemen =
+der NSA angezeigt werden. Diese angebliche =
+Leistungsf=C3=A4higkeit&nbsp;</div><div>hatte mich auch =C3=BCberrascht. =
+Ich habe mir bisher nicht die M=C3=BChe gemacht nachzuvollziehen, ob das =
+m=C3=B6glich ist.</div><div><br class=3D""></div><div>Wie gesagt, was =
+dann da tats=C3=A4chlich f=C3=BCr Informationen verf=C3=BCgbar sind, und =
+was in dem Kontext =E2=80=9Ein Echtzeit"&nbsp;</div><div>hei=C3=9Fen =
+soll wei=C3=9F ich nicht.</div><div><br class=3D""><blockquote =
+type=3D"cite" class=3D""><div class=3D""><br class=3D"">Ebendies st=C3=BCt=
+zt u.a. auch die Aussage des DE-NIC Chefs vor dem =
+Untersuchungsausschu=C3=9F.<br class=3D""></div></blockquote></div><br =
+class=3D""><div class=3D"">Mit =E2=80=9EEbendies" meinst du die =
+Lokalisierung?</div><div class=3D""><br class=3D""></div><div =
+class=3D"">vg</div><div class=3D""><br class=3D""></div><div =
+class=3D"">t3sserakt</div></body></html>=
+
+--Apple-Mail=_43D27E73-6A7A-4E7F-B2B1-85228BD53316--
+
+--Apple-Mail=_184A892D-D440-4E60-853B-C9082D39C1DC
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment;
+	filename=signature.asc
+Content-Type: application/pgp-signature;
+	name=signature.asc
+Content-Description: Message signed with OpenPGP using GPGMail
+
+-----BEGIN PGP SIGNATURE-----
+Comment: GPGTools - https://gpgtools.org
+
+iQIcBAEBCgAGBQJVSyldAAoJEEGgmIi0HP+FZBEP/jV3ji2VJmJgvs/eWolg0dxs
+bNmyeDjykpX+gjCRxVBQscQ3NRSuP/Xe3aHvwuKOQPkGHnT15s2uygYuEUnhpGWJ
+I4HxuJg1s9MIEpyHX5oB7kAF8Lc/5H8M/GW4PFDLhkuMub/guIs8mO43B58GzdUr
+3QmjHF5No2md+Uya5ca1lg8WMxGXhDJ0pAsP3v3BtRJozK+NLWhtro6sDHL5kS2m
+C/4wAykyH7AHzdsLuaqgUhBn12ASrpjTF/vXMZT4DG2SEuIXhFUTj52Phyaetkfx
+zgSwALMkZYag11GZUht36B2erYmIc0oOVF646SP2OvuUr7UnSByQSEUr0w2x/VXc
+aBiBB2YmGx0/dF53oA70LxoEdivdtFuEAMPnosyKVXFkGrhyL/YP+ILNUgCaLNKy
+2F5TzqJNMiQ5Z6+RkdSoLKUfffDWbehKJJoqmrIRvDDyHZOOgxG3GxAZmiWmuTxj
+VQyMkgbyeOSlhdNa+hM6waaFrCEzmT8xSBfL5c53PHlxGbOkO03XXEjj89ELapGn
+hezPhuThV+LsHbk0qspYw19GTGdfPoFnHG7jR5MKTSCEoL7goelMEBiSXn0TAGg9
+NWkSLJvNRYs2fImYJBwXuGNlkev3zyEqKCR8iHSoM2kNfRo4a7axuRq293Hxy+33
+s/MrMOD8JSxQ8F531zx7
+=d2bJ
+-----END PGP SIGNATURE-----
+
+--Apple-Mail=_184A892D-D440-4E60-853B-C9082D39C1DC--

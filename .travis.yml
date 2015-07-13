@@ -1,0 +1,18 @@
+language: objective-c
+
+xcode_project: MProtoBuf.xcodeproj
+xcode_scheme: MProtoBuf
+xcode_sdk: iphonesimulator8.1
+
+before_install:
+  - sudo easy_install cpp-coveralls
+  - gem install slather
+  # - brew uninstall xctool
+  # - brew update
+  # - brew install xctool --HEAD  
+
+script:
+  - xctool -project MProtoBuf.xcodeproj -scheme MProtoBuf -sdk iphonesimulator8.1 clean test ONLY_ACTIVE_ARCH=NO GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+
+after_success:
+  - slather

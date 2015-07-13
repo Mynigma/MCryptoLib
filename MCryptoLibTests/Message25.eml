@@ -1,0 +1,238 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp3448935wma;
+        Thu, 30 Apr 2015 16:39:17 -0700 (PDT)
+X-Received: by 10.140.151.15 with SMTP id 15mr7983143qhx.104.1430437156078;
+        Thu, 30 Apr 2015 16:39:16 -0700 (PDT)
+Return-Path: <SRS0=WHhl=FL=mailer.preyproject.com=return.811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836@srs.aluminati.net>
+Received: from hyena.aluminati.org (hyena.aluminati.org. [64.22.123.221])
+        by mx.google.com with ESMTP id e3si2106280yhq.165.2015.04.30.16.39.15
+        for <roman.priebe@gmail.com>;
+        Thu, 30 Apr 2015 16:39:16 -0700 (PDT)
+Received-SPF: pass (google.com: domain of SRS0=WHhl=FL=mailer.preyproject.com=return.811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836@srs.aluminati.net designates 64.22.123.221 as permitted sender) client-ip=64.22.123.221;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of SRS0=WHhl=FL=mailer.preyproject.com=return.811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836@srs.aluminati.net designates 64.22.123.221 as permitted sender) smtp.mail=SRS0=WHhl=FL=mailer.preyproject.com=return.811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836@srs.aluminati.net;
+       dkim=pass header.i=@mailer.preyproject.com
+Received: from localhost (localhost [127.0.0.1])
+	by hyena.aluminati.org (Postfix) with ESMTP id 2907322F26
+	for <roman.priebe@gmail.com>; Fri,  1 May 2015 00:39:15 +0100 (BST)
+X-Quarantine-ID: <YoykoZwHAcxt>
+X-Virus-Scanned: Debian amavisd-new at hyena.aluminati.org
+X-Spam-Flag: NO
+X-Spam-Score: 1.616
+X-Spam-Level: *
+X-Spam-Status: No, score=1.616 tagged_above=-9999 required=6.31
+	tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1,
+	HTML_MESSAGE=0.001, LONG_HEX_URI=2.737, SPF_HELO_PASS=-0.001,
+	SPF_NEUTRAL=0.779] autolearn=no
+Authentication-Results: hyena.aluminati.org (amavisd-new); dkim=pass
+	header.i=@mailer.preyproject.com
+Received: from hyena.aluminati.org ([127.0.0.1])
+	by localhost (hyena.aluminati.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id YoykoZwHAcxt for <roman.priebe@gmail.com>;
+	Fri,  1 May 2015 00:39:13 +0100 (BST)
+Received: from mailer.preyproject.com (mx2.preyproject.com [74.207.233.70])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by hyena.aluminati.org (Postfix) with ESMTPS id C24D522F0F
+	for <romes@cantab.net>; Fri,  1 May 2015 00:39:12 +0100 (BST)
+Date: Thu, 30 Apr 2015 19:39:12 -0400
+From: Prey Team <news@preyproject.com>
+To: romes@cantab.net
+Message-ID: <811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836@mailer.preyproject.com>
+Subject: =?UTF-8?Q?[Prey]_It=E2=80=99s_a_bad_day_for_thieves?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5542bd2069f1_2b49236c307a78995";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+List-Unsubscribe: <https://mailer.preyproject.com/u/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c>,
+ <mailto:unsubscribe.811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836@mailer.preyproject.com>
+X-Mailer: Tuktuk SMTP v0.5.4
+Bounces-To: <return.811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836@mailer.preyproject.com>
+Errors-To: <return.811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836@mailer.preyproject.com>
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailer.preyproject.com; q=dns/txt; s=dkim; t=1430437152; bh=bbsrNhe0jBoRu5USS/ILTmLo48PyQPb1zZzGra8erzI=; h=content-transfer-encoding:content-type:date:from:list-unsubscribe:message-id:mime-version:subject:to; b=Wcgj4Ld/MARrFgSo9NKzBOpAP2TTh5kXVGlHCarOE/6ZTQjq4biHRxRp05TC24QC3sR1LaiEeemhMxMaCeGhzqJVIsP2gIpRUvK81WpNrWo3O/nx9RHlC0aq+1xT97sYTLNgaAxkWbt7V+ORiKPMUQHUZlHe/Rrphnircc1EoQk=
+
+
+----==_mimepart_5542bd2069f1_2b49236c307a78995
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+The new Prey is now officially official!
+----------------------------------------
+
+Hi R,
+
+Prey team here. Remember us? You signed up for our theft protection service some time ago, and we wanted to reach out to tell you that you'll have a reason to feel like John Rambo this weekend.
+
+Thing is, today we're officially launching our new platform, long rethought, obsessively redesigned, and fully rewritten from the ground up. A fiercely battle-tested new Prey that offers smarter and better protection from thieves, and -- yes -- in a very-much-needed-thank-you simplified user interface. We did hear you.
+
+You could say it's awesome (and you just might be right), but we're not too fond of that word. We prefer to say it's holy-cow-splendiferous. Just like our new logo. :)
+
+ --> https://panel.preyproject.com/login
+
+About the new technolog-iferous
+-------------------------------
+
+You might remember that Prey works by connecting an agent, that runs on your phone or laptop, to a centralized server that sends over instructions at your command. In short, we've made substantial changes to when and how this communication is done, so that your device reacts to your requests with no delays in a real-time fashion (i.e. you can now get any device's location with a single click, but that's just the tip of the iceberg). 
+To achieve this, we rewrote the client-side software for desktops with a completely new set of tools and components. The result is a leaner, faster, more secure client that even has a lower memory footprint than the previous one.
+
+Upgrading your computers
+------------------------
+
+Despite the challenges of jumping from one technology to another, we've carefully sketched and laid out a migration process that ensures a smooth transition for all devices. What this means is that no action is required on your behalf -- if you have any laptops running an older version of Prey, and unless you manually disabled the auto-update option, they should automatically download and migration to the latest and greatest.
+
+Now, we're doing this in a gradual and very controlled way so it might take some time before your machine actually gets the update. So if you want to give the new Prey for a spin and see what it feels to be like John Rambo ASAP, you can always download and run the new installer manually from our website.
+
+ --> https://preyproject.com/download
+
+Just remember to put on a red bandana. ;)
+
+Happy hunting, 
+-- The Prey Team
+
+To unsubscribe from this list, follow this link: 
+https://mailer.preyproject.com/u/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c
+----==_mimepart_5542bd2069f1_2b49236c307a78995
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Prey Newsletter</title>
+</head>
+
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="width: 100% !important; -webkit-text-size-adjust: none; font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial; margin: 0; padding: 0;  background-color: #FFFFFF;" bgcolor="#FFFFFF">
+
+  <center>
+
+    <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="height: 100% !important; width: 100% !important; margin: 0; padding: 0;  background-color: #FFFFFF;" bgcolor="#FFFFFF">
+      <tr>
+        <td align="center" valign="top" style="border-collapse: collapse;">
+
+          <table border="0" cellpadding="10" cellspacing="0" width="600" style="background-color: #FFFFFF;" bgcolor="#FFFFFF">
+            <tr>
+              <td valign="top" style="border-collapse: collapse;">
+
+                <div width="100%" style="text-align: center; color: #666666; font-size: 12px; line-height: 100%; padding: 10px 0;" align="center">
+                  If this email not displaying correctly,
+                  <a href="https://mailer.preyproject.com/v/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c/55398a7b7b23a60e1a000cce" target="_blank" style="text-decoration: none; color: #336699; font-weight: normal;">View it in your browser.</a>.
+                </div>
+
+              </td>
+            </tr>
+          </table><!-- header table -->
+
+          <!-- main content -->
+          <table border="0" cellpadding="0" cellspacing="0" width="600" bgcolor="#ffffff" style="background: url(https://preyproject.com/mailing/logo.prey.png) top no-repeat; padding-top: 90px; padding-bottom: 40px; margin-top: 35px">
+
+            <tr>
+              <td align="center" valign="top" style="border-collapse: collapse;">
+                <table border="0" cellpadding="0" cellspacing="0" width="500">
+                  <tr>
+                    <td valign="top" style="border-collapse: collapse;">
+
+                      <div style="color: #505050; text-align: left; padding: 10px 0 50px; text-align: center">
+
+                        <h1 style="color: #202020; font-size: 28px; font-weight: bold; line-height: 100%; margin: 0; text-align:center; margin-bottom: 2.5em; letter-spacing: -0.05em;" align="left">
+                          The new Prey is now officially official
+
+                        </h1>
+
+<a href="https://mailer.preyproject.com/l/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c/dc5c82de60f0b8b2db23404c914f87937192d3ce59b0763eea35e07037a73859bdc9c91e3864c76c89e8d3faeb36508932ef3853aed5399c3e47ee797cbce37f58cfff060cdf1b9c93e011bde0c97d0372e9ab4e39d33ed1b0478c665d6abaa8d2fb76684f22a457f5d2c5fb8593ef095740cf" style="text-decoration: none; margin-bottom: 5px" target="_blank">
+                          <img src="https://preyproject.com/mailing/screen.panel.png" style="max-width: 500px; height: auto; line-height: 100%; outline: none; text-decoration: none; border: 1;" />
+                        </a>
+
+
+                        <p style="font-size: 16px; line-height: 22px; font-weight:normal; margin:3em 0 2em; text-align:left; color:#666666; line-height: 170%">
+                          Hi R,</p>
+<p style="font-size: 16px; line-height: 22px; font-weight:normal; margin:5px 0 10px; text-align:left; color:#666666; line-height: 170%">Prey team here. Remember us? You signed up for <strong>our theft protection service</strong> some time ago, and we wanted to reach out to tell you that you'll have a reason to feel like John Rambo this weekend.</p>
+<p style="font-size: 16px; line-height: 22px; font-weight:normal; margin:5px 0 10px; text-align:left; color:#666666; line-height: 170%">
+Thing is, today we're officially launching our new platform, long rethought, obsessively redesigned, and fully rewritten from the ground up. A fiercely battle-tested new Prey that offers smarter and better protection from thieves, and -- yes -- in a very-much-needed-thank-you simplified user interface. We <strong>did</strong> hear you.
+</p>
+<p style="font-size: 16px; line-height: 22px; font-weight:normal; margin:5px 0 30px; text-align:left; color:#666666; line-height: 170%">
+You could say it's awesome (and you just might be right), but we're not too fond of that word. We prefer to say it's holy-cow-splendiferous. Just like our new logo. :)
+                        </p>
+                          <br>
+
+                        <a href="https://mailer.preyproject.com/l/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c/dc5c82de60f0b8b2db23404c914f87937192d3ce59b0763eea35e07037a73859bdc9c91e3864c76c89e8d3faeb36508932ef3853aed5399c3e47ee797cbce37f58cfff060cdf1b9c93e011bde0c97d0372e9ab4e39d33ed1b0478c665d6abaa8d2fb76684f22a457f5d2c5fb8593ef095740cf" style="text-decoration: none; color: #FFFFFF !important; font-size: 18px; font-weight: 600; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; border:1px solid #3DB4CC; padding: 12px 90px; background-color: #3DB4CC; margin-bottom: 45px; margin-top: 3em" target="_blank">
+                          Log in now
+                        </a>
+                      
+                         <h1 style="color: #202020; font-size: 28px; font-weight: bold; line-height: 100%; margin: 0; text-align:center; margin-bottom: 25px; margin-top: 3em; letter-spacing: -0.05em;" align="left">
+                             About the new technolog-iferous
+                          </h1>
+                        <p style="font-size: 16px; line-height: 22px; font-weight:normal; margin:5px 0 10px; text-align:left; color:#666666; line-height: 170%">   You might remember that Prey works by connecting an agent, that runs on your phone or laptop, to a centralized server that sends over instructions at your command. In short, we've made substantial changes to <i>when and how</i> this communication is done, so that your device reacts to your requests with no delays in a real-time fashion (i.e. you can now get any device's location with a single click, but that's just the tip of the iceberg).                        <br>
+
+                        </p>
+                  
+                        <p style="font-size: 16px; line-height: 22px; font-weight:normal; margin-top: -15px 0 3em; text-align:left; color:#666666; line-height: 170%">
+                         To achieve this, we rewrote the client-side software for desktops with a completely new set of tools and components. The result is a leaner, faster, more secure client that even has a lower memory footprint than the previous one.
+     </p>
+
+<img src="https://preyproject.com/mailing/isotype.prey.png" style="max-width: 500px; height: auto; line-height: 100%; outline: none; text-decoration: none; border: 0;margin-top: 3em" />
+
+ <h1 style="color: #202020; font-size: 28px; font-weight: bold; line-height: 100%; margin: 0; text-align:center; margin-bottom: 25px; margin-top: 55px; letter-spacing: -0.05em;" align="left">
+                             Upgrading your computers
+                          </h1>
+
+<p style="font-size: 16px; line-height: 22px; font-weight:normal; margin-top: -15px 0 10px; text-align:left; color:#666666; line-height: 170%">
+Despite the challenges of jumping from one technology to another, we've carefully sketched and laid out a <a href="https://mailer.preyproject.com/l/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c/dc5c82de60f0b8b2db304b508d13988b0fdb6f13df448057e3dd20c994b06bb7752de6a46e6ab49e5407a211058ef7c44ed530266c50d7f3865c6ee6a89af2" target="_blank">migration process</a> that ensures a smooth transition for all devices. What this means is that <strong>no action is required on your behalf</strong> -- if you have any laptops running an older version of Prey, and unless you manually disabled the auto-update option, they should automatically download and upgrade to the latest and greatest.
+</p>
+<p style="font-size: 16px; line-height: 22px; font-weight:normal; margin-top: -15px 0 10px; text-align:left; color:#666666; line-height: 170%">
+Now, we're doing this in a gradual and very controlled way so it might take some time before your machine actually gets the update. So if you want to give the new Prey for a spin and see what it feels to be like John Rambo ASAP, <a href="https://mailer.preyproject.com/l/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c/dc5c82de60f0b8b2db304b508d13988b0fdb6f13df448057e5de38c0d7ed3ae207732aaa35b667dacf6d3fb7584b258546406996601afa226606e14159a39c331072a82f975d7b74913a8e48b83e50196954a5252efd6a429f810d1a0afad5bfb9307437fd99c492d0a052378464e9de" target="_blank">you can always download</a> and run the new installer manually from our website.
+</p>
+<p style="font-size: 16px; line-height: 22px; font-weight:normal; margin-top: -15px 0 10px; text-align:left; color:#666666; line-height: 170%">
+Just remember to put on a red bandana. ;)
+</p>
+
+                        <p style="font-size: 16px; line-height: 22px; font-weight:normal; margin-top: 10px 0 0px; text-align:left; color:#666666; line-height: 170%">  
+ Happy hunting,
+  <br>
+                          
+-- The Prey Team           
+      </p>
+   
+   
+                        
+                          </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+          </table><!-- content table -->
+
+          <table border="0" cellpadding="0" cellspacing="0" width="500" style="margin-bottom: 20px">
+            <tr>
+              <td align="center" valign="top" style="border-collapse: collapse;">
+                <div style="font-size: 13px; color: #999; text-align: center; margin-top: 10px;" align="center">
+                  <a href="https://mailer.preyproject.com/l/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c/dc5c82de60f0b8b2df35475d890485cff54aabb18f0d73f87c69f90e8224c0" style="text-decoration: none; color: #999;">
+                    Twitter
+                  </a> |
+                  <a href="https://mailer.preyproject.com/l/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c/dc5c82de60f0b8b2dc3559079b00948475f71e248fbb671870559395457d9cc44b2c0a61" style="text-decoration: none; color: #999;">
+                    Facebook
+                  </a> |
+                  <a href="https://mailer.preyproject.com/l/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c/dc5c82de60f0b8b2dc3559079108998a35df820fcfd87a084fc1323819dd3bbd5e34b733214660150a16" style="text-decoration: none; color: #999;">
+                    Linkedin
+                  </a> |
+                  <a href="https://mailer.preyproject.com/u/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c" style="text-decoration: none; color: #999;">
+                    Unsubscribe from this list
+                  </a>
+                </div>
+              </td>
+            </tr>
+
+          </table><!-- footer table -->
+        </td>
+      </tr>
+    </table>
+  </center>
+<img width='1' height='1' src='https://mailer.preyproject.com/i/811dc59777fba3fb47e8d094f79a05f44df52f96ff1f7836/c6479bcb608af4fc6fbc339f2718ea2c.gif' alt='' /></body>
+</html>
+----==_mimepart_5542bd2069f1_2b49236c307a78995--

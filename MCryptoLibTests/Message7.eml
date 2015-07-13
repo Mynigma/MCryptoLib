@@ -1,0 +1,182 @@
+Delivered-To: roman@mynigma.org
+Received-SPF: Pass (zoho.com: domain of notifications-noreply@bitbucket.org designates 131.103.20.165 as permitted sender )  client-ip: 131.103.20.165
+Return-Path: <notifications-noreply@bitbucket.org>
+Received: from lb01.bitbucket.org (lb01-ash.bitbucket.org [131.103.20.165]) by mx.zohomail.com
+	with SMTPS id 1431604333721225.81668999124076; Thu, 14 May 2015 04:52:13 -0700 (PDT)
+Received: from app02.ash-private.bitbucket.org (app02.ash-private.bitbucket.org [172.17.10.13])
+	by lb01.bitbucket.org (Postfix) with ESMTP id 7E2D3A8079A
+	for <roman@mynigma.org>; Thu, 14 May 2015 11:52:12 +0000 (UTC)
+Received: from app02.ash-private.bitbucket.org (localhost [127.0.0.1])
+	by app02.ash-private.bitbucket.org (Postfix) with ESMTP id 7E58A261101
+	for <roman@mynigma.org>; Thu, 14 May 2015 11:52:12 +0000 (UTC)
+Content-Type: multipart/alternative;
+ boundary="===============1882221497130234940=="
+MIME-Version: 1.0
+Subject: [Bitbucket] Commits pushed (romanAtMynigma/javamyn)
+From: "blueslee" <notifications-noreply@bitbucket.org>
+To: roman@mynigma.org
+Date: Thu, 14 May 2015 11:52:12 -0000
+Message-ID: <20150514115212.21725.37505@app02.ash-private.bitbucket.org>
+Auto-Submitted: auto-generated
+Precedence: bulk
+X-ZohoMail: SS_1 SFPD SFPP UW2468 UB2468 ZFF-PB_1 ZFF-AUSMT_1 COSF  ZCF-710BCNI ODL   SGR3_1_16045_113
+X-ZohoMail-Owner: <20150514115212.21725.37505@app02.ash-private.bitbucket.org>+zmo_0_<notifications-noreply@bitbucket.org>
+X-ZohoMail-Sender: 131.103.20.165
+X-Zoho-Virus-Status: 2
+
+--===============1882221497130234940==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+blueslee has pushed commits to romanAtMynigma/javamyn.
+
+You can view commits for this repository at the following link:
+
+https://bitbucket.org/romanAtMynigma/javamyn/commits
+
+Commits:
+
+https://bitbucket.org/romanAtMynigma/javamyn/commits/1dffc258d458
+Changeset: 1dffc258d4585f0ca0cf61ab111e4145dc47255c
+User: blueslee <marcoschreiber@gmx.net>
+Date: May 14, 2015, 11:52 a.m.
+Summary: Database added to DefaultKeyManager
+
+
+0 more commits.
+
+--
+
+Unsubscribe from commit emails for this repository.
+https://bitbucket.org/romanAtMynigma/javamyn/commits/unsubscribe/push/romanAtMynigma/00e24ea55626b5d85b863798fa79b3706e2f94ce/
+
+--===============1882221497130234940==
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+  </head>
+  <body style="font: 14px/1.4285714 Arial, sans-serif; color: #333;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <tbody>
+        <tr>
+          <td style="background: #f5f5f5; padding: 10px 10px 0; font: 14px/1.4285714 Arial, sans-serif;">
+            <table style="width: 100%; border-collapse: collapse;">
+              <tbody>
+                
+                
+                
+                
+                  
+                     <tr><td id="main" style="font: 14px/1.4285714 Arial, sans-serif; padding: 0; background-color: #ffffff; border-radius: 5px">
+    <div style="border: 1px solid #cccccc; border-radius: 5px; padding: 20px">
+      <table style="width: 100%; border-collapse: collapse"><tbody><tr><td style="font: 14px/1.4285714 Arial, sans-serif; padding: 0">
+              <table style="width: 100%; border-collapse: collapse"><tbody><tr><td id="avatar" style="font: 14px/1.4285714 Arial, sans-serif; padding: 0; width: 32px; vertical-align: top">
+                      
+                      <img width="32" height="32" alt="blueslee" src="https://secure.gravatar.com/avatar/cc2abb5a6177c98318ae1c18c9a89d76?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F753bdf2dcfcf%2Fimg%2Fdefault_avatar%2F32%2Fuser_blue.png&amp;s=32" style="border-radius: 3px"></td>
+                    <td id="content" style="font: 14px/1.4285714 Arial, sans-serif; padding: 0 0 0 10px">
+                      
+  <table style="width: 100%; border-collapse: collapse"><tr><td class="user-action" style="font: 14px/1.4285714 Arial, sans-serif; padding: 0; line-height: 1">
+      <span>
+        
+          <strong>blueslee</strong> pushed a commit to the repository:
+        
+      </span>
+      </td>
+    </tr><tr><td class="title" style="font: 14px/1.4285714 Arial, sans-serif; padding: 5px 0 0; font-weight: bold; line-height: 1.2">
+        <a href="https://bitbucket.org/romanAtMynigma/javamyn/commits" style="color: #3572b0; text-decoration: none">
+          romanAtMynigma/javamyn
+        </a>
+      </td>
+    </tr><tr><td class="commit-list-container" style="font: 14px/1.4285714 Arial, sans-serif; padding: 10px 0 20px">
+        
+
+<table class="commit-list" style="width: 100%; border-collapse: collapse"><tr><th class="user" style="border-bottom: 1px solid #ccc; text-align: left; font-weight: bold; padding: 5px; width: 132px">Author</th>
+    <th class="commit" style="border-bottom: 1px solid #ccc; text-align: left; font-weight: bold; padding: 5px; width: 50px">Commit</th>
+    <th class="message" style="border-bottom: 1px solid #ccc; text-align: left; font-weight: bold; padding: 5px">Message</th>
+    <th class="date" style="border-bottom: 1px solid #ccc; text-align: left; font-weight: bold; padding: 5px; width: 100px">Date</th>
+  </tr><tr><td class="user" style="font: 14px/1.4285714 Arial, sans-serif; padding: 5px; border-bottom: 1px solid #ccc; line-height: 24px; color: #707070; width: 132px">
+        
+          
+            
+              <img height="24" width="24" alt="blueslee" src="https://secure.gravatar.com/avatar/cc2abb5a6177c98318ae1c18c9a89d76?d=https%3A%2F%2Fd3oaxc4q5k2d6q.cloudfront.net%2Fm%2F753bdf2dcfcf%2Fimg%2Fdefault_avatar%2F24%2Fuser_blue.png&amp;s=24" style="vertical-align: top; border-radius: 3px"><span style="padding: 0 0 0 5px">blueslee</span>
+          
+        
+      </td>
+      <td class="commit" style="font: 14px/1.4285714 Arial, sans-serif; padding: 5px; border-bottom: 1px solid #ccc; line-height: 24px; color: #707070; width: 50px; font-family: Monaco, monospace; font-size: 12px">
+        
+        <a href="https://bitbucket.org/romanAtMynigma/javamyn/commits/1dffc258d4585f0ca0cf61ab111e4145dc47255c" style="color: #3572b0; text-decoration: none">1dffc25</a>
+      </td>
+      <td class="message" style="font: 14px/1.4285714 Arial, sans-serif; padding: 5px; border-bottom: 1px solid #ccc; line-height: 24px; color: #707070">
+        Database added to DefaultKeyManager
+      </td>
+      <td class="date" style="font: 14px/1.4285714 Arial, sans-serif; padding: 5px; border-bottom: 1px solid #ccc; line-height: 24px; color: #707070; width: 100px">
+        <div>
+          14 May 2015
+        </div>
+      </td>
+    </tr></table></td>
+    </tr></table></td>
+                  </tr></tbody></table></td>
+          </tr><tr><td class="actions" colspan="2" style="font: 14px/1.4285714 Arial, sans-serif; padding: 10px 0 0; border-top: 1px solid #cccccc; line-height: 1">
+      <a href="https://bitbucket.org/romanAtMynigma/javamyn/commits" style="color: #3572b0; text-decoration: none">View all commits</a>
+    </td>
+  </tr></tbody></table></div>
+  </td>
+</tr>
+                  
+                
+                <tr>
+                  
+
+<td style="padding: 20px 0; color: #707070;">
+  <table style="width: 100%; border-collapse: collapse;">
+    <tbody>
+      <tr>
+        <td style="padding: 0">
+          
+            
+            
+              
+                <a style="color: #3572b0; text-decoration: none;" href="https://bitbucket.org/romanAtMynigma/javamyn/commits/unsubscribe/push/romanAtMynigma/00e24ea55626b5d85b863798fa79b3706e2f94ce/">Unsubscribe from commit emails</a> for this repository.
+              
+            
+          
+          
+        </td>
+        <td style="padding: 0">
+          
+            
+
+  <img width="1" height="1" src="https://bitbucket.org/account/notifications/mark-read/154536589/f3a19b1dc50a1f39e43abec450aacae0f4c4ef36/">
+
+
+          
+        </td>
+        <td style="text-align: right; width: 100px; padding: 0">
+          <a href="https://bitbucket.org" style="color: #3572b0; text-decoration: none;">
+            <img width="100" height="18" src="https://d3oaxc4q5k2d6q.cloudfront.net/m/753bdf2dcfcf/img/email/logo.gif" alt="Bitbucket" />
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+--===============1882221497130234940==--

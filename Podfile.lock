@@ -1,0 +1,35 @@
+PODS:
+  - mailcore2-ios (0.5.1)
+  - mailcore2-osx (0.5.2)
+  - MProtoBuf (1.0.19)
+  - OCHamcrest (4.1.1)
+  - OCMockito (1.4.0):
+    - OCHamcrest (~> 4.0)
+  - OpenSSL (1.0.203)
+
+DEPENDENCIES:
+  - mailcore2-ios
+  - mailcore2-ios (~> 0.5.0)
+  - mailcore2-osx
+  - MProtoBuf (from `https://github.com/Mynigma/MProtoBufLib.git`)
+  - OCMockito
+  - OpenSSL
+
+EXTERNAL SOURCES:
+  MProtoBuf:
+    :git: https://github.com/Mynigma/MProtoBufLib.git
+
+CHECKOUT OPTIONS:
+  MProtoBuf:
+    :commit: e4b1e8ea2cb8febf99de420ed0d2147be3075838
+    :git: https://github.com/Mynigma/MProtoBufLib.git
+
+SPEC CHECKSUMS:
+  mailcore2-ios: f1c1cd3c91d8963293b6552ad11bf3c7cf8ef8a9
+  mailcore2-osx: b4380c33f2e155006db3f97b638b7a0d52344b15
+  MProtoBuf: 385ec88de9a0997a4ac3f8c1171ed2add956bf82
+  OCHamcrest: 6f03ffa81d12feab872638490a44ab0a6d3aca10
+  OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
+  OpenSSL: 65f5de70414ee909cea517ded684d8ef855b02b4
+
+COCOAPODS: 0.37.2

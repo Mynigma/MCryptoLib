@@ -1,0 +1,628 @@
+Delivered-To: info@mynigma.org
+Received-SPF: Pass (zoho.com: domain of bounce-287490_HTML-1126402292-74968030-132689-60@bounce.mailer.atlassian.com designates 66.231.88.91 as permitted sender )  client-ip: 66.231.88.91
+Return-Path: <bounce-287490_HTML-1126402292-74968030-132689-60@bounce.mailer.atlassian.com>
+Received: from mta.mailer.atlassian.com (mta.mailer.atlassian.com [66.231.88.91]) by mx.zohomail.com
+	with SMTP id 1431019106111227.9883487812964; Thu, 7 May 2015 10:18:26 -0700 (PDT)
+Received: by mta.mailer.atlassian.com id h9ef62163hsk for <info@mynigma.org>; Thu, 7 May 2015 11:02:48 -0600 (envelope-from <bounce-287490_HTML-1126402292-74968030-132689-60@bounce.mailer.atlassian.com>)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=200608; d=mailer.atlassian.com;
+ h=From:To:Subject:Date:List-Unsubscribe:MIME-Version:Reply-To:Message-ID:Content-Type; i=noreply@mailer.atlassian.com;
+ bh=lvQ71kx8l1+rnZwh085oEZW9sPQ=;
+ b=Rkn5KGaUIRs64TloG51q1v5HQnH6dd7NXgOAxX7NI79oSMjal+tJtzMhDPTppvcKBBezIATM5BJ3
+   dFsBXijrPoXw+c8T3yHiFcmk1DZAcQLqIy1FDRVXCzD3lixXHVrttG3Kk0WuXBI3loIerKYsKm+r
+   w7IbMLAX7vzP2ajEFCY=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=200608; d=mailer.atlassian.com;
+ b=LHrNo70tl9yp4m0vKzksLHvK9P70AGYyJbRS4v8Slh+zCCtfPeVZrHaokcsDSuyTnuT2+rIARtFu
+   ht/61Zie3RyiuZPaMD2n0yziLaU6qxMGN62YJ6TZOHGS0tM2dmJdVcWtYxPjVQn/dbSPlLVO4UVu
+   QUYYGyx7YfzijmEtUtc=;
+From: "Atlassian" <noreply@mailer.atlassian.com>
+To: <info@mynigma.org>
+Subject: Upcoming Events: May 7, 2015
+Date: Thu, 07 May 2015 11:02:48 -0600
+List-Unsubscribe: <mailto:leave-fcad167872600d7d1a4c342838-fe0215717762007d77167977-fe5a13747c620c7d7614-fec2157377620c74-ff991270@leave.mailer.atlassian.com>
+MIME-Version: 1.0
+Reply-To: "Atlassian" <reply-fe5a13747c620c7d7614-287490_HTML-1126402292-132689-60@mailer.atlassian.com>
+x-job: 132689_74968030
+Message-ID: <1fe4c6a7-7804-476a-a516-ed875fc32184@xtinmta101.xt.local>
+Content-Type: multipart/alternative;
+	boundary="jlZu9f7Z0SLr=_?:"
+X-ZohoMail: SS_1 SFPD SFPP UW2468 UB2468 COSF  ZCF-710IT ODL   SGR3_1_16045_105
+X-ZohoMail-Owner: <1fe4c6a7-7804-476a-a516-ed875fc32184@xtinmta101.xt.local>+zmo_0_<bounce-287490_HTML-1126402292-74968030-132689-60@bounce.mailer.atlassian.com>
+X-ZohoMail-Sender: 66.231.88.91
+X-Zoho-Virus-Status: 2
+
+This is a multi-part message in MIME format.
+
+--jlZu9f7Z0SLr=_?:
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Atlassian
+
+Upcoming events
+Join Atlassian on tour, online, or at a user group near you
+
+------------------------------------------------
+Meet Atlassian at an upcoming event
+Check to see if we're coming to a city near you! 
+------------------------------------------------
+
+**Atlassian Summit 2015** 
+
+Nov 3 - Nov 5, 2015 in San Francisco, CA 
+
+Call for speakers is open until May 15
+
+Whether you build great software, deliver IT services, or drive change in the modern workplace, we invite you to share how Atlassian products empower your team to work better together.
+
+Selected speakers gain free admission to Summit! 
+
+Submit your Summit talk:
+http://click.mailer.atlassian.com/?ju=fdee1670766d0c7570147873&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+
+------------------------------------------------
+Atlassian online
+Interactive & online - tune in from anywhere
+------------------------------------------------
+
+**Amplify your Bamboo workflow with Git** 
+
+May 19th at 10am AEST, CET, and PST. - Online
+ 
+We will walk through how to amplify your Bamboo workflow with Git by taking a look at the advantages of having Bamboo and Stash talk to each other bi-directionally. Learn how Bamboo and branching workflows work together to keep builds clean, how to ensure broken branches aren't merged to master by defining pull-request rules, and much more. 
+
+Register for the webinar:
+http://click.mailer.atlassian.com/?ju=fded1670766d0c7570147872&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+
+**Agile as a competitive advantage**
+
+May 27th at 11am AEST, CET, and PST. - Online
+ 
+A recent Harvard Business Review Report dubbed agile development the competitive advantage for a digital age. Join Jake Brereton, Sr. Brand Manager at Atlassian, as he discusses these HBR findings with Heather Flemming (Sr. Director, PMO, Gilt) and Nate Van Dusen (Engineering Program Management Director, Trulia); two seasoned agile experts who have successfully lead agile transformations and witnessed positive results firsthand.
+
+Register for the webinar:
+http://click.mailer.atlassian.com/?ju=fdec1670766d0c757014787d&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=
+
+**IT Manager panel: The secret to fast, agile IT service**
+
+May 28th at 10am AEST, CET, and PST. - Online
+ 
+Join a panel of 3 IT managers to learn how they enable fast, agile IT service with the Atlassian stack. 
+
+Register for the webinar:
+http://click.mailer.atlassian.com/?ju=fdeb1670766d0c757014787c&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+
+---------------------
+Atlassian User Groups
+---------------------
+
+**Community-led meetups that bring together users of Atlassian products**
+
+Join a user group near you! 
+http://click.mailer.atlassian.com/?ju=fdf31670766d0c7570147975&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Upcoming meetups:
+
+Denver, CO - May 12 
+http://click.mailer.atlassian.com/?ju=fdf21670766d0c7570147974&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Boise, ID  - May 13 
+http://click.mailer.atlassian.com/?ju=fdf01670766d0c7570147976&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+West Los Angeles, CA - May 13
+http://click.mailer.atlassian.com/?ju=fdef1670766d0c7570147971&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Philadelphia, PA - May 19 
+http://click.mailer.atlassian.com/?ju=fdee1670766d0c7570147970&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Tokyo, Japan - May 21 
+http://click.mailer.atlassian.com/?ju=fded1670766d0c7570147973&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Baltimore, MD - May  26  
+http://click.mailer.atlassian.com/?ju=fdec1670766d0c7570147972&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Richmond, VA - May 27  
+http://click.mailer.atlassian.com/?ju=fdeb1670766d0c757014797d&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Las Vegas, NV - May 28  
+http://click.mailer.atlassian.com/?ju=fdea1670766d0c757014797c&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Omaha, NE - June 9    
+http://click.mailer.atlassian.com/?ju=fdfb1670766d0c7570157075&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Kansas City, MO - June 16
+http://click.mailer.atlassian.com/?ju=fdfa1670766d0c7570157074&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+
+
+
+Read in browser  -
+http://click.mailer.atlassian.com/?ju=fdf91670766d0c7570157077&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Unsubscribe  - 
+http://click.mailer.atlassian.com/?ju=fdf71670766d0c7570157071&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Privacy Policy  -
+http://click.mailer.atlassian.com/?ju=fdf51670766d0c7570157073&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+ 
+Contact us  -
+http://click.mailer.atlassian.com/?ju=fdf31670766d0c757015707d&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Read our blog  -
+http://click.mailer.atlassian.com/?ju=fdfa1670766d0c7570157175&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Follow on Twitter -
+http://click.mailer.atlassian.com/?ju=fdf81670766d0c7570157177&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+Copyright 2015 Atlassian Pty Ltd. All rights reserved. We are located at 341 George Street, Sydney, NSW, 2000, Australia
+
+http://click.mailer.atlassian.com/?ju=fdf61670766d0c7570157171&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t= 
+
+
+--jlZu9f7Z0SLr=_?:
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+<!doctype html>
+<html>
+<head>
+        <title>Atlassian</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+  /* CLIENT-SPECIFIC STYLES */
+    #outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+    .ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+    body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+    /* RESET STYLES */
+    body{margin:0; padding:0;}
+    img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+    table{border-collapse:collapse !important;}
+    body{height:100% !important; margin:0; padding:0; width:100% !important;}
+    /* iOS BLUE LINKS */
+    .appleBody a {color:#68440a; text-decoration: none;}
+    .appleFooter a {color:#999999; text-decoration: none;}
+    /* MOBILE STYLES */
+    @media screen and (max-width: 480px) {
+                 .table_shrink {
+               width:95% !important;
+        }
+           .hero {
+            width: 100% !important;
+        }
+                  
+    }
+</style>
+</head>
+<body><style type="text/css">
+div.preheader 
+{ display: none !important; } 
+</style>
+<div class="preheader" style="font-size: 1px; display: none !important;">Join us for Summit, a webinar, or your local user group!</div>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" class="table_shrink" align="center">
+        <tr>
+            <td>
+                
+                <!-- start body module -->
+                
+                <table width="520px" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="table_shrink"  align="center">
+                    
+                    <!-- start logo -->
+                    
+                    <tr valign="top">
+                        <td align="center" style="padding-top:30px;">
+                            <a href="http://click.mailer.atlassian.com/?ju=fdfa1670766d0c7570147077&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" ><img src="http://image.mailer.atlassian.com/lib/fec2157377620c74/m/3/email_logo_360x80_NEW.png" height="40" width="180" border="0" alt="Atlassian" style="display:block; color:#4c9ac9; align:center" align="middle"></a>
+                        </td>
+                    </tr>
+                    
+                    <!-- end logo -->
+                    
+                    <!-- start hr -->
+                    
+                    <tr>
+                         <td style="color:#cccccc; padding-top: 30px;" valign="top">
+                             <hr color="cccccc" size="1"> 
+                         </td>
+                    </tr>   
+                    
+                    <!-- end hr -->
+                    
+                    <!-- start headline -->
+                    
+                    <tr>
+                        <td valign="top" style="padding-top: 20px; font-family:Helvetica neue, Helvetica, Arial, Verdana, sans-serif; color: #205081; font-size: 32px; line-height: 40px; text-align:center; font-weight:bold;" align="middle">
+                            Upcoming events
+                        </td>
+                    </tr>
+                    
+                    <!-- end headline -->
+                    
+                    <!-- start intro -->
+                
+                    <tr>
+                        <td valign="top" style="padding-top: 5px; font-family:Helvetica neue, Helvetica, Arial, Verdana, sans-serif; color: #707070; font-size: 16px; line-height: 24px; text-align:center; font-weight:none;" align="middle">
+                            Join Atlassian on tour, online, or at a user group near&nbsp;you
+                        </td>
+                    </tr> 
+                    
+                    <!-- end intro -->
+                    
+                    <!-- start hr -->
+                    
+                    <tr>
+                         <td style="color:#cccccc; padding-top: 20px;" valign="top">
+                             <hr color="cccccc" size="1"> 
+                        </td>
+                    </tr>   
+                    
+                    <!-- end hr -->
+                    
+                    <!-- start Atlassian on tour-->
+                    
+                    <tr>
+                        <td valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="table_shrink" align="center">
+                                <tr valign="top">
+                                    <td>
+                                        <table width="100%" align="left" class="left_table">
+                                            <tr valign="top">
+                                                <td align="center" valign="middle" style="padding-top:20px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:24px; line-height:40px; color:#205081; font-weight:bold;" class="left_table">
+                                                    Meet Atlassian at an upcoming event
+                                                </td>  
+                                            </tr>
+                                            <tr valign="top">
+                                                <td valign="top" style="font-family:Helvetica neue, Helvetica, Arial, Verdana, sans-serif; color: #707070; font-size: 16px; line-height: 24px; text-align:center; font-weight:none;" align="middle">
+                                                    Check to see if we're coming to a city near&nbsp;you! 
+                                                </td>
+                                            </tr>
+                                                                
+                                            <!-- start Tour 1 -->
+                                            
+                                            <tr valign="top">
+                                                <td align="left" valign="middle" style="padding-top:30px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:20px; line-height:32px; color:#205081; font-weight:bold;" class="left_table">
+                                                    <a href="http://click.mailer.atlassian.com/?ju=fdf81670766d0c7570147071&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #205081;" >Atlassian Summit 2015</a>
+                                                </td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td align="left">
+                                                    <table align="left" class="left_table">
+                                                        <tr valign="top">
+                                                            <td style="padding-top:5px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:16px; line-height:24px; color:#333333;">
+                                                                Nov 3 &ndash; Nov 5, 2015 &#8226;  San Francisco, CA 
+                                                            </td>
+                                                        </tr>
+                                                        <tr valign="top">
+                                                            <td style="padding-top:5px; padding-bottom:5px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;">
+                                                                  Call for speakers is open until May 15
+                                                                  </td>
+                                                        </tr>
+                                                        <tr valign="top">
+                                                            <td style="padding-top:5px; padding-bottom:5px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;">
+                                                            Whether you build great software, deliver IT services, or drive change in the modern workplace, we invite you to share how Atlassian products empower your team to work better together.           
+                                                            </td>
+                                                        </tr>
+                                                        <tr valign="top">
+                                                            <td style="padding-top:5px; padding-bottom:20px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;">
+                                                                Selected speakers gain free admission to Summit!                                                                                                                               
+                                                             </td>
+                                                        </tr>
+                                                        <tr>
+                                                              <td>
+                                                                  <table border="0" cellspacing="0" cellpadding="0" align="left">
+                                                                    <tr>
+                                                                        <td align="center">
+                                                                            
+<a href="http://click.mailer.atlassian.com/?ju=fdf51670766d0c7570147072&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" target="_blank" style="font-size: 14px; font-family: Helvetica neue, Helvetica, Arial, Verdana, sans-serif; font-weight: none; color: #ffffff; text-decoration: none; background-color: #67ab49; border-top: 8px solid #67ab49; border-bottom: 8px solid #67ab49; border-left: 10px solid #67ab49; border-right: 10px solid #67ab49; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; display: inline-block;" class="mobile-button";
+ >Submit your Summit talk</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                             </tr>
+                                            
+                                            <!-- end Tour 1 -->
+                                    
+                                        </table>       
+                                     </td>
+                                </tr>
+                              </table>
+                        </td>
+                     </tr>
+                                            
+                     <!-- start hr -->
+                    
+                    <tr>
+                         <td style="color:#cccccc; padding-top: 30px;" valign="top">
+                             <hr color="cccccc" size="1"> 
+                         </td>
+                    </tr>   
+                    
+                    <!-- end hr -->
+                    
+                    <!-- end Atlassian on tour-->
+                    
+                    <!-- start Atlassian online -->
+                    
+                    <tr>
+                        <td valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="table_shrink" align="center">
+                                <tr valign="top">
+                                    <td>
+                                        <table width="100%" align="left" class="left_table">
+                                            <tr valign="top">
+                                                <td align="center" valign="middle" style="padding-top:20px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:24px; line-height:40px; color:#205081; font-weight:bold;" class="left_table">
+                                                    Atlassian online
+                                                </td>  
+                                            </tr>
+                                            <tr valign="top">
+                                                <td valign="top" style="font-family:Helvetica neue, Helvetica, Arial, Verdana, sans-serif; color: #707070; font-size: 16px; line-height: 24px; text-align:center; font-weight:none;" align="middle">
+                                                    Interactive &amp; online &ndash; tune in from anywhere
+                                                </td>
+                                            </tr>    
+                                                            
+                                            <!-- start Online 1 -->
+                                                                
+                                            <tr valign="top">
+                                                <td align="left" valign="middle" style="padding-top:30px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:20px; line-height:32px; color:#205081; font-weight:bold;" class="left_table">
+                                                    <a href="http://click.mailer.atlassian.com/?ju=fdf31670766d0c757014707c&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #205081;" >Amplify your Bamboo workflow with Git</a>
+                                                </td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td style="padding-top:5px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:16px; line-height:24px; color:#333333;">
+                                                      May 19th &#8226; 10am AEST, CET, and PST  &#8226; Online
+                                                   </td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td style="padding-top:5px; padding-bottom:20px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;">
+                                                    We will walk through how to amplify your Bamboo workflow with Git by taking a look at the advantages of having Bamboo and Stash talk to each other bi-directionally. Learn how Bamboo and branching workflows work together to keep builds clean, how to ensure broken branches aren't merged to master by defining pull-request rules, and much more. 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                        <tr>
+                                                            <td align="left">
+                                                                
+<a href="http://click.mailer.atlassian.com/?ju=fdfa1670766d0c7570147174&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" target="_blank" style="font-size: 14px; font-family: Helvetica neue, Helvetica, Arial, Verdana, sans-serif; font-weight: none; color: #ffffff; text-decoration: none; background-color: #67ab49; border-top: 8px solid #67ab49; border-bottom: 8px solid #67ab49; border-left: 10px solid #67ab49; border-right: 10px solid #67ab49; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; display: inline-block;" class="mobile-button";
+ >Register for the webinar</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            
+                                            <!-- end Online 1 -->   
+                                                                                                                                                <!-- start Online 2 -->
+                                                                
+                                            <tr valign="top">
+                                                <td align="left" valign="middle" style="padding-top:30px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:20px; line-height:32px; color:#205081; font-weight:bold;" class="left_table">
+                                                    <a href="http://click.mailer.atlassian.com/?ju=fdf81670766d0c7570147176&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #205081;" >Agile as a competitive advantage</a>
+                                                </td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td style="padding-top:5px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:16px; line-height:24px; color:#333333;">
+                                                      May 27th &#8226; 11am AEST, CET, and PST  &#8226; Online
+                                                   </td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td style="padding-top:5px; padding-bottom:20px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;">
+                                                    A recent Harvard Business Review Report dubbed agile development the competitive advantage for a digital age. Join Jake Brereton, Sr. Brand Manager at Atlassian, as he discusses these HBR findings with Heather Flemming (Sr. Director, PMO, Gilt) and Nate Van Dusen (Engineering Program Management Director, Trulia); two seasoned agile experts who have successfully lead agile transformations and witnessed positive results firsthand.
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                        <tr>
+                                                            <td align="left">
+                                                                
+<a href="http://click.mailer.atlassian.com/?ju=fdf61670766d0c7570147170&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" target="_blank" style="font-size: 14px; font-family: Helvetica neue, Helvetica, Arial, Verdana, sans-serif; font-weight: none; color: #ffffff; text-decoration: none; background-color: #67ab49; border-top: 8px solid #67ab49; border-bottom: 8px solid #67ab49; border-left: 10px solid #67ab49; border-right: 10px solid #67ab49; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; display: inline-block;" class="mobile-button";
+ >Register for the webinar</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            
+                                            <!-- end Online 2 -->  
+                                            <!-- start Online 3 -->
+                                                                
+                                            <tr valign="top">
+                                                <td align="left" valign="middle" style="padding-top:30px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:20px; line-height:32px; color:#205081; font-weight:bold;" class="left_table">
+                                                    <a href="http://click.mailer.atlassian.com/?ju=fdf41670766d0c7570147172&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #205081;" >IT Manager panel: The secret to fast, agile IT service</a>
+                                                </td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td style="padding-top:5px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:16px; line-height:24px; color:#333333;">
+                                                      May 28th &#8226; 10am AEST, CET, and PST  &#8226; Online
+                                                   </td>
+                                            </tr>
+                                            <tr valign="top">
+                                                <td style="padding-top:5px; padding-bottom:20px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;">
+                                                    Join a panel of 3 IT managers to learn how they enable fast, agile IT service with the Atlassian stack. 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                        <tr>
+                                                            <td align="left">
+                                                                
+<a href="http://click.mailer.atlassian.com/?ju=fdf31670766d0c757014717d&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" target="_blank" style="font-size: 14px; font-family: Helvetica neue, Helvetica, Arial, Verdana, sans-serif; font-weight: none; color: #ffffff; text-decoration: none; background-color: #67ab49; border-top: 8px solid #67ab49; border-bottom: 8px solid #67ab49; border-left: 10px solid #67ab49; border-right: 10px solid #67ab49; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; display: inline-block;" class="mobile-button";
+ >Register for the webinar</a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            
+                                            <!-- end Online 3 -->                                            
+                                          </table>
+                                      </td>
+                                 </tr>
+                            </table>
+                        </td>
+                    </tr>
+                            
+                    <!-- end Atlassian online -->
+                    
+                    <tr>
+                        <td style="color:#cccccc; padding-top: 30px;" valign="top">
+                               <hr color="cccccc" size="1"> 
+                        </td>
+                    </tr>
+                    
+                   <!-- start Atlassian User Groups -->
+                    
+                <tr valign="top">
+                    <td align="center" valign="middle" style="padding-top:20px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:24px; line-height:40px; color:#205081; font-weight:bold;" class="left_table">
+                        Atlassian User Groups
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td valign="top" style="padding-top:10px; padding-bottom:10px; font-family:Helvetica neue, Helvetica, Arial, Verdana, sans-serif; color: #707070; font-size: 16px; line-height: 24px; text-align:left; font-weight:none;" align="middle">
+                        Community-led meetups that bring together users of Atlassian products
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td valign="top" style="padding-bottom:10px; font-family:Helvetica neue, Helvetica, Arial, Verdana, sans-serif; color: #707070; font-size: 16px; line-height: 24px; text-align:center; font-weight:none;" align="middle">
+                        <a href="http://click.mailer.atlassian.com/?ju=fdf21670766d0c757014717c&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0;" >Join a user group near you!</a>
+                     </td>
+                </tr>    
+                <tr valign="top">
+                    <td valign="top" style="padding-top:10px; padding-bottom:10px; font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333; text-align:left;">
+                        Upcoming meetups:
+                    </td>
+                </tr>
+                   <tr valign="top">
+                    <td align="left">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
+                            <tr>
+                                <td width="24px">
+                                </td>
+                                <td valign="top">
+                                    <table width="48%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                                 &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdfa1670766d0c7570147275&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Denver, CO</a> &ndash; May&nbsp;12                        
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                                &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf81670766d0c7570147277&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Boise, ID</a> &ndash; May&nbsp;13
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                                &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf71670766d0c7570147276&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >West Los Angeles, CA</a> &ndash; May&nbsp;13
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                               &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf61670766d0c7570147271&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Philadelphia, PA</a> &ndash; May&nbsp;19
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                               &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf51670766d0c7570147270&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Tokyo, Japan</a> &ndash; May&nbsp;21
+                                            </td>
+                                        </tr>
+                                     </table>
+                                    <table width="48%" border="0" cellspacing="0" cellpadding="0" align="left">
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                                &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf11670766d0c757014727c&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Baltimore, MD</a> &ndash; May &nbsp;26
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                                &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf61670766d0c7570147376&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Richmond, VA</a> &ndash; May&nbsp;27
+                                            </td>
+                                        </tr>
+                                           <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                                &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf51670766d0c7570147371&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Las Vegas, NV </a> &ndash; May&nbsp;28
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                                &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf41670766d0c7570147370&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Omaha, NE</a> &ndash; June&nbsp;9 
+                                                 </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Helvetica neue, Helvetica, Arial, sans-serif; font-size:14px; line-height:20px; color:#333333;" valign="top" >
+                                                 &#9679;&nbsp;&nbsp;&nbsp;<a href="http://click.mailer.atlassian.com/?ju=fdf31670766d0c7570147373&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #3572b0" >Kansas City, MO</a> &ndash; June&nbsp;16  
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr> 
+                        
+                   <!-- end Atlassian User Groups -->
+                                             
+                 <!-- start hr -->
+                                    
+                <tr>
+                     <td style="color:#cccccc; padding-top: 30px;" valign="top">
+                         <hr color="cccccc" size="1"> 
+                     </td>
+                </tr>   
+                    
+                <!-- end hr -->
+                                            
+                <!-- start footer module -->
+                
+                <tr>
+                    <td>
+                        <table width="520" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" class="table_shrink" align="center">
+                            <tr>
+                                <td valign="top" style="padding-top: 30px; font-family: Helvetica, Helvetica neue, Arial, Verdana, sans-serif; color: #707070; font-size: 12px; line-height: 18px; text-align:center; font-weight:none;" align="center">
+                                    <a href="http://click.mailer.atlassian.com/?ju=fdef1670766d0c757014747c&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #707070" >Read in browser</a> &bull;
+                                    <a href="http://click.mailer.atlassian.com/?ju=fdf21670766d0c7570147570&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #707070" >Unsubscribe</a> &bull; 
+                                    <a href="http://click.mailer.atlassian.com/?ju=fdf01670766d0c7570147572&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #707070" >Privacy Policy</a> &bull; 
+                                    <a href="http://click.mailer.atlassian.com/?ju=fdf61670766d0c7570147675&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #707070" >Contact us</a> &bull;
+                                    <a href="http://click.mailer.atlassian.com/?ju=fdf31670766d0c7570147676&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #707070" >Read our blog</a> &bull;  
+                                    <a href="http://click.mailer.atlassian.com/?ju=fdf21670766d0c7570147671&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" style="text-decoration:none; color: #707070" >Follow on Twitter</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" style="padding-top: 10px; font-family: Helvetica, Helvetica neue, Arial, Verdana, sans-serif; color: #707070; font-size: 12px; line-height: 18px; text-align:center; font-weight:none;" align="center">
+                                    Copyright 2015 Atlassian Pty Ltd. All rights reserved. We are located at 341 George Street, Sydney, NSW, 2000, Australia
+                                </td>
+                            </tr>
+                            <tr valign="top">
+                                <td align="center" style="padding-top:20px; padding-bottom:30px;">
+                                    <a href="http://click.mailer.atlassian.com/?ju=fdef1670766d0c7570147672&ls=fdf01d787463047e70127172&m=fec2157377620c74&l=fec1167872600d7d&s=fe0215717762007d77167977&jb=ff991270&t=" ><img src="http://image.mailer.atlassian.com/lib/fec2157377620c74/m/3/logo-email-footer.png" height="20" width="91" border="0" alt="Atlassian" style="display:block; color:#4c9ac9;"><img src="http://click.mailer.atlassian.com/open.aspx?ffcb10-fe5a13747c620c7d7614-fdf01d787463047e70127172-fec2157377620c74-fec1167872600d7d-fe0215717762007d77167977-ff991270" width="1" height="1"></custom></a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                    
+                <!-- end footer module -->
+                
+                </table>
+                
+                <!-- end body module -->
+                
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+--jlZu9f7Z0SLr=_?:--
+

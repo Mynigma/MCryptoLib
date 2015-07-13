@@ -1,0 +1,146 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp2324643wma;
+        Fri, 15 May 2015 11:26:53 -0700 (PDT)
+X-Received: by 10.194.7.97 with SMTP id i1mr21145493wja.107.1431714413774;
+        Fri, 15 May 2015 11:26:53 -0700 (PDT)
+Return-Path: <debate-return-61162-roman.priebe=gmail.com@lists.ccc.de>
+Received: from mlmx.ccc.de (mlmx.ccc.de. [212.12.48.6])
+        by mx.google.com with ESMTPS id fa18si4664795wid.123.2015.05.15.11.26.53
+        for <roman.priebe@gmail.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Fri, 15 May 2015 11:26:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of debate-return-61162-roman.priebe=gmail.com@lists.ccc.de designates 212.12.48.6 as permitted sender) client-ip=212.12.48.6;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of debate-return-61162-roman.priebe=gmail.com@lists.ccc.de designates 212.12.48.6 as permitted sender) smtp.mail=debate-return-61162-roman.priebe=gmail.com@lists.ccc.de;
+       dkim=pass header.i=@kbojens.de;
+       dmarc=pass (p=NONE dis=NONE) header.from=kbojens.de
+Received: (qmail 31773 invoked by alias); 15 May 2015 18:25:47 -0000
+Mailing-List: contact debate-help@lists.ccc.de; run by ezmlm
+Precedence: bulk
+List-Id: CCC Diskussionsliste <debate.lists.ccc.de>
+List-Post: <mailto:debate@lists.ccc.de>
+List-Help: <mailto:debate-help@lists.ccc.de> 
+List-Unsubscribe: <mailto:debate-unsubscribe@lists.ccc.de>
+List-Subscribe: <mailto:debate-subscribe@lists.ccc.de>
+Delivered-To: mailing list debate@lists.ccc.de
+Received: (qmail 31764 invoked by uid 0); 15 May 2015 18:25:47 -0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=kbojens.de; s=x;
+	h=Content-Type:Content-Transfer-Encoding:MIME-Version:References:In-Reply-To:Message-ID:Date:Subject:To:From; bh=yz/7pL6s+UGHU5kzf4ho9C2WB3zMKgJnrmBdlcnh8Ko=;
+	b=VjZNzGKsNDyDuH5vUoyHTMoAEQCH8GE2K1S64nGM1DVjd1wn+DSyU8wYsS5XjVb4CYbkipPsBvrZFOua1+SI8PQDMwUcDKIPdGQ95FMtA6RHcp3rF9x6oB1lRWRadaPvMaQLFy5+gqDbZGBVChnP4qHmdRfaBF7wrp3J33wVrL8=;
+From: Kai Bojens <kb@kbojens.de>
+To: debate@lists.ccc.de
+Subject: Re: Das Netz und der Staat
+Date: Fri, 15 May 2015 20:25:16 +0200
+Message-ID: <5070018.VCvBSEyxpu@voyager>
+User-Agent: KMail/4.14.7 (Linux/3.19.7-200.fc21.x86_64; KDE/4.14.7; x86_64; ; )
+In-Reply-To: <555635AE.2000208@gmx.net>
+References: <CAAeZfrRM_frOrt2jPqkEX3WDW5j3T9PHRZXM2W5hvrPoAfW+LQ@mail.gmail.com> <2757FEFF-48FD-498F-A5E7-D8C57ABB29EB@kbojens.de> <555635AE.2000208@gmx.net>
+MIME-Version: 1.0
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="utf-8"
+X-SA-Do-Not-Run: Yes
+
+On Friday 15 May 2015 20:06:38 Lars Gebauer wrote:
+
+> > Das ist eine spannende Debatte. Der Idealfall w=C3=A4re nat=C3=BCrl=
+ich eine
+> > demokratische Selbstorganisation, die international funktioniert.
+=20
+> Wieso sollte das der[sic!] "Idealfall" sein? Was ist daran "nat=C3=BC=
+rlich"?
+
+Nun, wir haben einen Punkt erreicht, an dem das Internet integraler=20
+Bestandteil unseres Lebens geworden ist. Nicht nur Kommunikation und Bi=
+ldung,=20
+sondern auch Dinge wie der Austausch medizinscher Daten, Notfallkoordin=
+ation=20
+und vieles anderes wird hier=C3=BCber abgewickelt. Das ist keine blo=C3=
+=9Fe=20
+Unterhaltungsform sondern Grundlage mittlerweile fast aller Technik und=
+ allen=20
+Handelns. Da ist f=C3=BCr mich die Schlussfolgerung eigentlich nahelieg=
+end, dass=20
+etwas so zentrales auch demokratisch legitimiert reguliert wird.
+=20
+> > In der Praxis gibt es aber zum einen sehr viele nicht-demokratische=
+
+> > Staaten (China, Russland, Saudi-Arabien usw.), die hieran kein
+> > Interesse haben.
+=20
+> Warum sollten sie auch. Man kann ja die (westliche) Demokratie f=C3=BC=
+r die
+> Beste aller Welten halten. Man sollte trotzdem (oder gerade deswegen!=
+)
+> akzeptieren, da=C3=9F es Menschen gibt, die das nicht so sehen.
+
+Ja, und deren Versuche zur Regulation des Internet muss ich deswegen=20=
+
+hinnehmen?
+=20
+> Netzneutralit=C3=A4t. Welch' "sch=C3=B6nes", euphemistisches Wort! Ne=
+tzneutralit=C3=A4t
+> f=C3=BChrt dazu, da=C3=9F einem Infrastrukturbetreiber die Verf=C3=BC=
+gungsgewalt =C3=BCber
+> die von ihm geschaffene Infrastruktur entzogen wird.
+=20
+> IOW: Netzneutralit=C3=A4t ist Enteignung.
+
+Ja, genau: Sozialismus, Kommunismus, wirwerdenallesterben usw.
+
+Tatsache ist, dass es sich hierbei =E2=80=93 wie eingangs erw=C3=A4hnt =
+=E2=80=93 um eine zentrale=20
+Infrastruktur unser Zeit handelt. Und dass eine demokratische Gesellsch=
+aft=20
+hierf=C3=BCr Regeln festlegt, ist mehr als nur legitim.
+
+=C3=9Cbrigens: =E2=80=9EEigentum verpflichtet. Sein Gebrauch soll zugle=
+ich dem Wohle der=20
+Allgemeinheit dienen=E2=80=9C. Mithin ist Netzneutralit=C3=A4t nur die =
+Festschreibung=20
+dieses Artikels im Grundgesetz.
+=20
+> Demokratisch organisierte Staaten haben auch Interessen. Politische
+> Interessen. Politische Interessen sind sehr h=C3=A4ufig einfach irrat=
+ional.
+> (Die Verfechter der jeweiligen Interessen sehen das selbstverst=C3=A4=
+ndlich
+> nicht so.) Irrationale Interessen sind vor allem eines: Hochgradig
+> gef=C3=A4hrlich und unberechenbar.
+
+Ah, Beweis durch Behauptung. Erbsen sind gr=C3=BCn. Gr=C3=BCn ist keine=
+ sch=C3=B6ne Farbe.=20
+Deswegen sind Erbsen nicht sch=C3=B6n. Hast Du noch mehr Argumente solc=
+her=20
+Qualit=C3=A4t?
+=20
+> In der Neuzeit werden Kriege immer weniger aus =C3=B6konomischen Gr=C3=
+=BCnden
+> heraus gef=C3=BChrt. Rohstoffe, die fr=C3=BCher mit Waffengewalt erob=
+ert wurden,
+> werden in der globalisierten Welt einfach auf dem Weltmarkt gekauft. =
+Das
+> ist mittlerweile, unterm Strich, sehr viel billiger. Gegen=C3=BCber d=
+en
+> Kosten eines Krieges fast schon geschenkt. Warum sollte man einen
+> Absatzmarkt mit Waffengewalt erobern, wenn doch bereits die ganze Wel=
+t
+> der Absatzmarkt ist?
+
+Und was genau hat das jetzt mit der Verwaltung des Internet zu tun? Ode=
+r=20
+driftest Du gleich v=C3=B6llig ab?
+=20
+> Wie viele Kriege und Konflikte der letzen Jahre wurden demgegen=C3=BC=
+ber aus
+> rein politischen Gr=C3=BCnden gef=C3=BChrt bzw. angezettelt? Und sei =
+es nur, "um
+> Demokratie zu exportieren", also, wie =C3=BCblich, mit den allerbeste=
+n Absichten?
+
+Weil es demokratische Staaten gibt, die Krieg gef=C3=BChrt haben, tauge=
+n=20
+demokratische Staaten und Strukturen nicht zur Verwaltung des Internet.=
+ Bist=20
+Du eigentliche die andere Inkarnation des Dettenbachschen Staatshasses =
+und der=20
+Liebe zum totalen Markt?

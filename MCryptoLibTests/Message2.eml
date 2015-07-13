@@ -1,0 +1,265 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp2314078wma;
+        Fri, 15 May 2015 11:05:55 -0700 (PDT)
+X-Received: by 10.55.24.215 with SMTP id 84mr23305097qky.8.1431713154590;
+        Fri, 15 May 2015 11:05:54 -0700 (PDT)
+Return-Path: <20150515180553e7673e57c17b49a4a41cd00d7684c2ca-C16Q13TV1JW605@bounces.amazon.com>
+Received: from a15-160.smtp-out.amazonses.com (a15-160.smtp-out.amazonses.com. [54.240.15.160])
+        by mx.google.com with ESMTPS id ft1si1562418qcb.47.2015.05.15.11.05.54
+        for <roman.priebe@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Fri, 15 May 2015 11:05:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of 20150515180553e7673e57c17b49a4a41cd00d7684c2ca-C16Q13TV1JW605@bounces.amazon.com designates 54.240.15.160 as permitted sender) client-ip=54.240.15.160;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of 20150515180553e7673e57c17b49a4a41cd00d7684c2ca-C16Q13TV1JW605@bounces.amazon.com designates 54.240.15.160 as permitted sender) smtp.mail=20150515180553e7673e57c17b49a4a41cd00d7684c2ca-C16Q13TV1JW605@bounces.amazon.com;
+       dkim=pass header.i=@amazon.com;
+       dmarc=pass (p=QUARANTINE dis=NONE) header.from=amazon.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ug7nbtf4gccmlpwj322ax3p6ow6yfsug; d=amazonses.com; t=1431713153;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type:Feedback-ID;
+	bh=hiYDmMbklTsirVQjlPhO6cOppUwwYXGP9hEi2x/389I=;
+	b=fIZRFfu9T+zWjRodrlGj3515zxD317jxDxSQUM9EYLz2y4nLqCaNGjSXqWBZyG81
+	BNZHa/SApb828p9/gpSCv8yS2veoQ4BkFh7uOiEPHp0peSSsbmBxN7kqPNkNH8buP8s
+	FgnY3aXE45AQHpipq4SL3nTEdAPJ/b7yup6RNhWU=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=v52wzeq2nhi2ivaga2mkkcxigoeqeycs; d=amazon.com; t=1431713153;
+	h=Date:From:To:Message-ID:Subject:MIME-Version:Content-Type;
+	bh=hiYDmMbklTsirVQjlPhO6cOppUwwYXGP9hEi2x/389I=;
+	b=lO+EtDbLm/QgZwgHWsz/rS0Eqa7ypxkDdp4cZzFCZhRFruDqIbShurM1ca6i7hSD
+	eV/7Dv1vQZWUe3/KBVz8cThJOVCXviuCAs10sExlmybFiN0KGKWwCdX2bPT6u3ZLU9e
+	qlNT3v54tnY+GWozp8bzbmsigO0ADOYaFNKIvVkA=
+Date: Fri, 15 May 2015 18:05:53 +0000
+From: "Amazon.com" <store_news@amazon.com>
+To: "roman.priebe@gmail.com" <roman.priebe@gmail.com>
+Message-ID: <0000014d58c1028e-29794699-e9dd-485d-899b-8a17182d515f-000000@email.amazonses.com>
+Subject: Roman Priebe: You're Invited to Join Amazon's Site, MyHabit.com
+MIME-Version: 1.0
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_8167618_393852083.1431713153651"
+X-AMAZON-RTE-VERSION: 2.0
+Bounces-to: 20150515180553e7673e57c17b49a4a41cd00d7684c2ca-C16Q13TV1JW605@bounces.amazon.com
+X-AMAZON-MAIL-RELAY-TYPE: merchandizing
+X-Original-MessageID: <urn.correios.msg.20150515180553e7673e57c17b49a4a41cd00d7684c2ca@1431713153656.massmail-sender-na-1e-i-823bdafa.us-east-1.amazon.com>
+X-SES-Outgoing: 2015.05.15-54.240.15.160
+Feedback-ID: 1.us-east-1.+gzE1S+MWTFXXYmwxo7wkk651GMxMPAUFYiyN/09X40=:AmazonSES
+
+------=_Part_8167618_393852083.1431713153651
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_8167619_1201483281.1431713153651"
+
+------=_Part_8167619_1201483281.1431713153651
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Dear Roman Priebe,
+
+We'd like to recommend Amazon's private sale site, MyHabit.com. Here's why =
+we think you'll love shopping with us:
+1. On Sale Every Day:  Up to 60% off clothing, shoes and more, plus great f=
+inds for kids, women and home
+2. Get It Fast: Free shipping on orders over $99
+3. Powered by Amazon: Sign in and checkout with your existing Amazon accoun=
+t. Prime members can access events 30 minutes early
+
+New events launch daily -- Join today
+
+SHOP NOW with your existing Amazon account >
+http://www.myhabit.com/
+
+.
+
+To unsubscribe from future e-mails about new store openings and special off=
+ers from Amazon.com, please click below: https://www.amazon.com/gp/gss/o/14=
+ccpOOPoqIuPaXI4iWX168blzYSG9zSGlBBGoiz0O.6USilXnSDcc6b2K8dBX1.S=20
+
+By receiving this message, you are not subscribed to the myhabit.com mailin=
+g list. Please note that this message was sent to the following e-mail addr=
+ess: roman.priebe@gmail.com=20
+
+=C2=A92015 Amazon.com. All rights reserved. Amazon.com is a registered trad=
+emark of Amazon.com, Inc.
+Amazon.com 410 Terry Avenue North, Seattle, WA 98109-5210. Reference: 13904=
+6580
+
+------=_Part_8167619_1201483281.1431713153651
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<html>
+<head>
+<style type=3D"text/css">
+  img { display: block; }
+  .upcoming-dates-iOS a { color: #6b1c12; text-decoration: none; }
+  .copyright-iOS a { color: #3b3434; text-decoration: none; }
+</style>
+</head>
+<body style=3D"background-color: #ffffff; margin: 0; padding: 0"><img src=
+=3D"https://www.amazon.com/gp/r.html?R=3D2SASEGJ5HXT63&C=3DD12VPSQULHB&H=3D=
+SENZW4TMXWFIZ5IMOWFECIW9ZIMA&T=3DO&U=3Dhttp%3A%2F%2Fimages.amazon.com%2Fima=
+ges%2FG%2F01%2Fnav%2Ftransp.gif" />
+  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"630px" s=
+tyle=3D"background-color: #ffffff" align=3D"center">
+    <tr>
+      <td align=3D"center">
+        <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"63=
+0">
+          <tr>
+            <td align=3D"left" style=3D"padding-bottom: 5px;">
+              <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0">
+                <tr>
+                  <td align=3D"left" width=3D"214" style=3D"padding: 5px 5p=
+x 5px 0px"><a href=3D"https://www.amazon.com/gp/r.html?R=3D2SASEGJ5HXT63&C=
+=3DD12VPSQULHB&H=3D78QKISDAFN1BGY4J56XECKWSERQA&T=3DC&U=3Dhttp%3A%2F%2Fwww.=
+amazon.com%2Fref%3Dpe_453370_139046580_qdaq_log"><img src=3D"http://g-ecx.i=
+mages-amazon.com/images/G/01/Quarterdeck/en_US/email/AZtest/amazon_logo_bla=
+ck.png" border=3D"0" width=3D"214" height=3D"73" alt=3D"amazon.com"></a></t=
+d>
+                  <td align=3D"right" width=3D"416" style=3D"color:#ffffff;=
+ font-size:3px; font-family: Tahoma, sans-serif;">  Dear Roman Priebe, We'd=
+ like to recommend Amazon's private sale site, MYHABIT.
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%">
+                     =20
+                      <tr>
+                        <td colspan=3D"5" align=3D"left" bgcolor=3D"#FFFFFF=
+" style=3D"font-family: Tahoma, sans-serif; font-size: 14px; padding: 10px =
+8px 3px 5px">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td style=3D"background-color: #ffffff;">
+              <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"630">
+                          =20
+                <tr>
+                  <td width=3D"255px" colspan=3D"1" align=3D"left" valign=
+=3D"middle"style=3D"font-family: Tahoma, sans-serif; padding: 5px 0px 5px 2=
+0px; background-color:#000000; vertical-align:central;"><a href=3D"https://=
+www.amazon.com/gp/r.html?R=3D2SASEGJ5HXT63&C=3DD12VPSQULHB&H=3DTYY4Y3ROAWOE=
+JGKCONTFCOXBZECA&T=3DC&U=3Dhttp%3A%2F%2Fwww.myhabit.com%2Fref%3Dpe_453370_1=
+39046580_qdaqmlog"><img src=3D"http://g-ecx.images-amazon.com/images/G/01/Q=
+uarterdeck/en_US/email/logo/myhabit_logo.png" border=3D"0" width=3D"221" he=
+ight=3D"44" alt=3D"myhabit"></a> =20
+                  </td>
+                  <td width=3D"375px" height=3D"54px" align=3D"left" valign=
+=3D"middle" style=3D"font-family: Tahoma, sans-serif; padding: 5px 5px 5px =
+0px; background-color:#000000; font-size:14px; color:#ffffff; ">UP TO 60% O=
+FF FASHION, HOME & MORE</td>
+                </tr>
+                <tr>
+                  <td align=3D"left" colspan=3D"1" width=3D"310px" valign=
+=3D"top" style=3D"font-family: Arial, Helvetica, sans-serif; padding: 30px =
+10px 0px 0px;">
+                =20
+                  <div style=3D"font-size:14px; margin-left:25px;"> Dear Ro=
+man Priebe, </div>
+                 =20
+                   <div style=3D"font-size:14px; line-height:130%; margin-l=
+eft:25px; margin-top:20px;">We'd like to recommend Amazon's private sale si=
+te, MyHabit.com. Here's why we think you'll love shopping with us:</div>=20
+                 =20
+                  <div style=3D"font-size:14px; margin-left:25px; margin-to=
+p:20px; margin-bottom:30px;">&#149; <b>On Sale Every Day:</b> Up to 60% off=
+ fashion brands, plus great finds for home<BR><BR>
+&#149; <b>Get It Fast:</b> Free shipping on orders over $99<BR><BR>
+&#149; <b>Powered by Amazon:</b> Sign in and checkout with your existing Am=
+azon account. Prime members can access events 30 minutes early<BR><BR>
+New events launch daily -- Join today!</div>
+                 =20
+                 <div style=3D"padding: 10px 5px 10px 5px; background-color=
+:#000000; color:#ffffff; width:160px; text-align:center; font-weight:bold; =
+font-size:16px;margin-left:85px; margin-right:85px; line-height:24px;"><a h=
+ref=3D"https://www.amazon.com/gp/r.html?R=3D2SASEGJ5HXT63&C=3DD12VPSQULHB&H=
+=3DJY5RAH1ILUXDNJWGDGE55WU0MPIA&T=3DC&U=3Dhttp%3A%2F%2Fwww.myhabit.com%2Fre=
+f%3Dpe_453370_139046580_qaqbtn" style=3D"text-decoration:none; color:#fffff=
+f;">SHOP NOW > </a></div>=20
+                 =20
+                 <div style=3D"font-size:14px; line-height:130%; margin-lef=
+t:25px; margin-top:20px;"><br></div>=20
+                 =20
+              =20
+
+                  </td>
+                  <td valign=3D"top" align=3D"center" colspan=3D"1" width=
+=3D"300px"style=3D"font-family: Tahoma, sans-serif; font-size: 13px; line-h=
+eight: 14px; padding-top: 5px; padding-bottom: 5px"><a href=3D"https://www.=
+amazon.com/gp/r.html?R=3D2SASEGJ5HXT63&C=3DD12VPSQULHB&H=3DZWVWQIUK2XBGZAAC=
+Q7QUQ3FO74SA&T=3DC&U=3Dhttp%3A%2F%2Fwww.myhabit.com%2Fref%3Dpe_453370_13904=
+6580_qdaq_img"><img src=3D"http://g-ecx.images-amazon.com/images/G/01/Quart=
+erdeck/en_US/marketing/2015/acquisition/Acquisition_Email_Men.jpg" style=3D=
+"display:block;" alt=3D"Women, Men, Kids and Home" width=3D"290" height=3D"=
+474" border=3D"0"></a>=20
+                  </td>
+                </tr>
+
+              </table>
+             =20
+               </td>
+                </tr>
+                <td valign=3D"top" align=3D"center" colspan=3D"2" width=3D"=
+300px"style=3D"font-family: Tahoma, sans-serif; font-size: 13px; line-heigh=
+t: 14px; padding-top: 5px; padding-bottom: 5px"><a href=3D"https://www.amaz=
+on.com/gp/r.html?R=3D2SASEGJ5HXT63&C=3DD12VPSQULHB&H=3DRDQ0JEKL1CJXJUB2H489=
+VW9OTXSA&T=3DC&U=3Dhttp%3A%2F%2Fwww.myhabit.com%3Fref_%3Dpe_453370_13904658=
+0"><img src=3Dhttp://g-ecx.images-amazon.com/images/G/01/Quarterdeck/en_US/=
+marketing/2014/Prime/Acquisition-Email-member.jpg style=3D"display:block;" =
+alt=3D"Women, Men, Kids and Home" width=3D"630" height=3D"128" border=3D"0"=
+></a>=20
+                  </td>
+               <tr>
+
+              </table>
+         =20
+             =20
+            </td>
+          </tr>
+          <tr>
+                <td valign=3D"top" style=3D"padding: 3px 0 0 18px;"><font c=
+olor=3D"#5a5b5d" face=3D"sans-serif, tahoma, helvetica" size=3D"1">=20
+               =20
+
+ <br>
+<br>
+
+<br>=20
+To unsubscribe from future e-mails about new store openings and special off=
+ers from Amazon.com, please <a href=3D"https://www.amazon.com/gp/r.html?R=
+=3D2SASEGJ5HXT63&C=3DD12VPSQULHB&H=3DM9DVVYUWAG2ZNTKFTLFECGPYJWGA&T=3DX&U=
+=3Dhttps%3A%2F%2Fwww.amazon.com%2Fgp%2Fgss%2Fo%2F14ccpOOPoqIuPaXI4iWX168blz=
+YSG9zSGlBBGoiz0O.6USilXnSDcc6b2K8dBX1.S" target=3D"_blank">Unsubscribe Here=
+</a>=20
+
+
+<br>
+
+<br> By receiving this message, you are not subscribed to the myhabit.com m=
+ailing list.
+Please note that this message was sent to the following e-mail address: rom=
+an.priebe@gmail.com
+<br><br>
+
+=C2=A92015 Amazon.com. All rights reserved. Amazon.com is a registered trad=
+emark of Amazon.com, Inc.<br>
+Amazon.com 410 Terry Avenue North, Seattle, WA 98109-5210.     Reference: 1=
+39046580=20
+<p></p></font></td>
+              </tr>
+        </table>=20
+      </td>
+    </tr>
+  </table>
+<img src=3D"https://www.amazon.com/gp/r.html?R=3D2SASEGJ5HXT63&C=3DD12VPSQU=
+LHB&H=3DATVRUALYBVFMXRRQYCQB48E3QB0A&T=3DE&U=3Dhttp%3A%2F%2Fimages.amazon.c=
+om%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif" /></body>
+</html>
+
+------=_Part_8167619_1201483281.1431713153651--
+
+------=_Part_8167618_393852083.1431713153651--

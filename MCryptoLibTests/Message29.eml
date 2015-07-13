@@ -1,0 +1,1569 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp2082639wma; Fri, 15 May 2015
+ 04:09:16 -0700 (PDT)
+X-Received: by 10.236.1.231 with SMTP id 67mr9343329yhd.90.1431688155722; Fri,
+ 15 May 2015 04:09:15 -0700 (PDT)
+Return-Path: <bounce-mc.us1_1488981.2584125-roman.priebe=gmail.com@mail151.wdc02.mcdlv.net>
+Received: from mail151.wdc02.mcdlv.net (mail151.wdc02.mcdlv.net.
+ [205.201.130.151]) by mx.google.com with ESMTP id
+ 33si800939yhu.9.2015.05.15.04.09.14 for <roman.priebe@gmail.com>; Fri, 15 May
+ 2015 04:09:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of
+ bounce-mc.us1_1488981.2584125-roman.priebe=gmail.com@mail151.wdc02.mcdlv.net
+ designates 205.201.130.151 as permitted sender) client-ip=205.201.130.151;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ bounce-mc.us1_1488981.2584125-roman.priebe=gmail.com@mail151.wdc02.mcdlv.net
+ designates 205.201.130.151 as permitted sender)
+ smtp.mail=bounce-mc.us1_1488981.2584125-roman.priebe=gmail.com@mail151.wdc02.mcdlv.net;
+ dkim=pass header.i=@mail151.wdc02.mcdlv.net
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1;
+ d=mail151.wdc02.mcdlv.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:Sender:Content-Type:MIME-Version;
+ i=newsletter=3Dgruenderszene.de@mail151.wdc02.mcdlv.net;
+ bh=eoTsG2Pomt0jQKn4IF7igUNQQ4E=;
+ b=Qsb4rcRmAe68sBRR/AksFfqxIx3fYZ9racSRFgYgo0I1raGZb/tfb4tb/ZA0tb9/MPzjeRK8xQU7
+ dAHxPUFbSPWG1ylXET84EnoqvkukmsxocPdN6H+KB1sWfdG+Tw155RTIvGxScUBmQDb6h8lIeiFA
+ bWK9uR+DOKtF4Udh5/o=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=gmail.mcsv.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:X-Feedback-ID:List-ID:List-Unsubscribe:Sender:Content-Type:MIME-Version;
+ bh=eoTsG2Pomt0jQKn4IF7igUNQQ4E=;
+ b=lGu66X2o7hvtKDWelNPW8IuhkF/PbJ+ACgx9HSbtETvkJGiVeN+Pedd0jjLSiPeojdoAyCIdM5ge
+ DFOuhMsa3XjG0auSFlHkHMG2qka799wI22Yyn98H25mLwD/WPiwNmTPikK+DhaFTG3fwu95bI+yw
+ nfRqWm8LEcC3yTtnWCI=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1;
+ d=mail151.wdc02.mcdlv.net;
+ b=SGbBuPzGlG4xz0Emya0+Tapc8//XP+YBmx2Y7e4WEbFA8u9zF+r8w4gdOuNo8iZCVpFt152XoIVl
+ hHZfCD2o8aaRtqVbFiDca1S1+lg0NqlfJvbO9O82Zx3JzWpLw9zXsgsoxAlDw6YdPFHIL6vRa/yk
+ KxwMxyvGwRku7btRXsY=;
+Received: from (127.0.0.1) by mail151.wdc02.mcdlv.net id han9tm1jvmg5 for
+ <roman.priebe@gmail.com>; Fri, 15 May 2015 11:05:03 +0000 (envelope-from
+ <bounce-mc.us1_1488981.2584125-roman.priebe=gmail.com@mail151.wdc02.mcdlv.net>)
+Subject: =?utf-8?Q?=E2=9C=B8=20Surfing=20USA=3A=20Warum=20diese=20Gr=C3=BCnder=20im=20Valley=20nach=20Investoren=20suchen=20|=20Gr=C3=BCnderszene?=
+From: =?utf-8?Q?Gr=C3=BCnderszene.de?= <newsletter@gruenderszene.de>
+Reply-To: =?utf-8?Q?Gr=C3=BCnderszene.de?= <newsletter@gruenderszene.de>
+To: <roman.priebe@gmail.com>
+Date: Fri, 15 May 2015 11:05:03 +0000
+Message-ID: <f5f37987ace2773985f384dbfd621f496c5.20150515110425@mail151.wdc02.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CIDfd379a473ad621f496c5**
+X-Campaign: mailchimpf5f37987ace2773985f384dbf.fd379a473a
+X-campaignid: mailchimpf5f37987ace2773985f384dbf.fd379a473a
+X-Report-Abuse: Please report abuse for this campaign here:
+ http://www.mailchimp.com/abuse/abuse.phtml?u=f5f37987ace2773985f384dbf&id=fd379a473a&e=d621f496c5
+X-MC-User: f5f37987ace2773985f384dbf
+X-Feedback-ID: 1488981:1488981.2584125:us1:mc
+List-ID: f5f37987ace2773985f384dbfmc list
+ <f5f37987ace2773985f384dbf.723849.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <mailto:unsubscribe-f5f37987ace2773985f384dbf-fd379a473a-d621f496c5@mailin1.us2.mcsv.net?subject=unsubscribe>,
+ <http://gruenderszene.us1.list-manage.com/unsubscribe?u=f5f37987ace2773985f384dbf&id=9f282e5888&e=d621f496c5&c=fd379a473a>
+Sender: "=?utf-8?Q?Gr=C3=BCnderszene.de?="
+ <newsletter=gruenderszene.de@mail151.wdc02.mcdlv.net>
+x-mcda: FALSE
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1731629716"
+MIME-Version: 1.0
+
+
+--_----------=_MCPart_1731629716
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Content-Type: TEXT/PLAIN;
+	charset=utf-8;
+	format=fixed
+
+T=C3=A4glich aktuelle Nachrichten =C3=BCber Gr=C3=BCnder=2C Startups und I=
+nvestoren.
+
+E-Mail im Browser anzeigen (http://us1.campaign-archive1.com/?u=3Df5f37987=
+ace2773985f384dbf&id=3Dfd379a473a&e=3Dd621f496c5)
+
+
+Surfing USA: Warum diese Gr=C3=BCnder im Valley nach Investoren suchen (ht=
+tp://www.gruenderszene.de/allgemein/silicon-valley-finanzierung-konux-seed=
+?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_=
+term=3Dsilicon-valley-finanzierung-konux-seed&utm_date=3D2015-05-15)
+http://www.gruenderszene.de/allgemein/silicon-valley-finanzierung-konux-se=
+ed?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&ut=
+m_term=3Dsilicon-valley-finanzierung-konux-seed&utm_date=3D2015-05-15 Fris=
+che Dollars f=C3=BCr das Hardware-Startup Konux. Im Interview erz=C3=A4hle=
+n die Macher=2C warum sie die Suche nach Kapital auf die USA konzentrieren=
+ wollen. weiterlesen (http://www.gruenderszene.de/allgemein/silicon-valley=
+-finanzierung-konux-seed?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&u=
+tm_campaign=3Ddaily&utm_term=3Dsilicon-valley-finanzierung-konux-seed&utm_=
+date=3D2015-05-15)
+
+
+------------------------------------------------------------
+
+
+** Anzeige:
+------------------------------------------------------------
+http://ideachallenge.eitictlabs.eu/
+------------------------------------------------------------
+
+Instagood: Das muss man =C3=BCber Hashtags bei Instagram wissen (http://ww=
+w.gruenderszene.de/allgemein/instagram-hashtags-buch?utm_source=3Dnewslett=
+er&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_term=3Dinstagram-hasht=
+ags-buch&utm_date=3D2015-05-15)
+http://www.gruenderszene.de/allgemein/instagram-hashtags-buch?utm_source=
+=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_term=3Dinst=
+agram-hashtags-buch&utm_date=3D2015-05-15 #Instagood=2C #Love und Co =E2=
+=80=93 was hat es mit diesen Hashtags auf sich? Das Buch =E2=80=9EErfolgre=
+ich mit Instagram=E2=80=9C f=C3=BChrt in die Welt der Foto-App ein. Ein Au=
+szug. weiterlesen (http://www.gruenderszene.de/allgemein/instagram-hashtag=
+s-buch?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddail=
+y&utm_term=3Dinstagram-hashtags-buch&utm_date=3D2015-05-15)
+
+------------------------------------------------------------
+
+Marketing-Newbies: Das Marketing-Einmaleins f=C3=BCr Neugr=C3=BCndungen (h=
+ttp://www.gruenderszene.de/allgemein/marketing-low-budget-neugruendung?utm=
+_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_term=
+=3Dmarketing-low-budget-neugruendung&utm_date=3D2015-05-15)
+http://www.gruenderszene.de/allgemein/marketing-low-budget-neugruendung?ut=
+m_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_ter=
+m=3Dmarketing-low-budget-neugruendung&utm_date=3D2015-05-15 Von Printmedie=
+n bis Social Media =E2=80=93 Marketing ist wichtig aber auch kostspielig?=
+ Nicht unbedingt! So bew=C3=A4ltigen Startups den Einstieg ins Marketing.=
+ weiterlesen (http://www.gruenderszene.de/allgemein/marketing-low-budget-n=
+eugruendung?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=
+=3Ddaily&utm_term=3Dmarketing-low-budget-neugruendung&utm_date=3D2015-05-1=
+5)
+
+------------------------------------------------------------
+
+
+
+** Anzeige:
+------------------------------------------------------------
+http://www.gruenderszene.de/days/hr-day?utm_source=3Dnl_gs&utm_medium=3DBa=
+nner_300x250&utm_content=3D150410_nl_gs&utm_campaign=3D201506_HR_Day
+------------------------------------------------------------
+
+W=C3=A4hrend Du schliefst: Apple: Launch der HomeKit-Gadgets im Juni (http=
+://www.gruenderszene.de/allgemein/apple-amazon-learnvest?utm_source=3Dnews=
+letter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_term=3Dapple-amazo=
+n-learnvest&utm_date=3D2015-05-15)
+http://www.gruenderszene.de/allgemein/apple-amazon-learnvest?utm_source=3D=
+newsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_term=3Dapple-a=
+mazon-learnvest&utm_date=3D2015-05-15 Amazon startet mobile Advertising-Pl=
+attform=2C NorthWestern kauft LearnVest=2C Vouch sammelt 60 Millionen Doll=
+ar=2C neue VC-Firma mit 150 Millionen-Fonds. weiterlesen (http://www.gruen=
+derszene.de/allgemein/apple-amazon-learnvest?utm_source=3Dnewsletter&utm_m=
+edium=3Dnewsletter&utm_campaign=3Ddaily&utm_term=3Dapple-amazon-learnvest&=
+utm_date=3D2015-05-15)
+
+------------------------------------------------------------
+
+http://www.gruenderszene.de/jobboerse/?utm_source=3Dnewsletter&utm_medium=
+=3Dnewsletter-sidebar&utm_campaign=3Ddaily&utm_term=3Djob_logo
+
+Alle Jobs Online! (http://www.gruenderszene.de/jobboerse?utm_source=3Dnews=
+letter&utm_medium=3Dnewsletter-sidebar&utm_campaign=3Ddaily&utm_term=3Djob=
+_subline)
+
+------------------------------------------------------------
+
+TruVenturo GmbH (http://www.gruenderszene.de/jobboerse/aktuell/venture-dev=
+elopment-praktikum-mw?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-side=
+bar&utm_campaign=3Ddaily&utm_term=3Djob)
+Venture Development Praktikum (m/w)
+------------------------------------------------------------
+
+Careerteam GmbH (http://www.gruenderszene.de/jobboerse/aktuell/praktikum-r=
+ecruitingexecutive-search?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-=
+sidebar&utm_campaign=3Ddaily&utm_term=3Djob)
+Praktikum im HR Bereich - Recruiting (m/w)
+------------------------------------------------------------
+
+Truventuro GmbH (http://www.gruenderszene.de/jobboerse/aktuell/wirtschafts=
+informatikerin-fuer-venture-development?utm_source=3Dnewsletter&utm_medium=
+=3Dnewsletter-sidebar&utm_campaign=3Ddaily&utm_term=3Djob)
+Wirtschaftsinformatiker f=C3=BCr Venture Development (m/w)
+------------------------------------------------------------
+
+Mornin' Glory (http://www.gruenderszene.de/jobboerse/aktuell/online-market=
+ing-praktikum-1?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-sidebar&ut=
+m_campaign=3Ddaily&utm_term=3Djob)
+Online Marketing Praktikum (m/w)
+------------------------------------------------------------
+
+http://www.gruenderszene.de/produkte/seminare?utm_source=3Dnewsletter&utm_=
+medium=3Dnewsletter-sidebar&utm_campaign=3Ddaily&utm_term=3Dseminar_logo
+
+Jetzt anmelden! (http://www.gruenderszene.de/seminare/?utm_source=3Dnewsle=
+tter&utm_medium=3Dnewsletter-sidebar&utm_campaign=3Ddaily&utm_term=3Dsemin=
+ar_subline)
+
+------------------------------------------------------------
+
+Finanzierungsrunden (http://www.gruenderszene.de/produkte/seminare/seminar=
+/items/finanzierungsrunden.323?utm_source=3Dnewsletter&utm_medium=3Dnewsle=
+tter-sidebar&utm_campaign=3Ddaily&utm_term=3Dseminar)
+Beteiligungsvertr=C3=A4ge verhandeln
+------------------------------------------------------------
+
+Gr=C3=BCnderszene HR DAY (http://www.gruenderszene.de/produkte/seminare/se=
+minar/items/gruenderszene-hr-day?utm_source=3Dnewsletter&utm_medium=3Dnews=
+letter-sidebar&utm_campaign=3Ddaily&utm_term=3Dseminar)
+Alles was Startups =C3=BCber Personalmanagement wissen m=C3=BCssen!
+------------------------------------------------------------
+
+Google AdWords Einmaleins (http://www.gruenderszene.de/produkte/seminare/s=
+eminar/items/google-adwords-einmaleins?utm_source=3Dnewsletter&utm_medium=
+=3Dnewsletter-sidebar&utm_campaign=3Ddaily&utm_term=3Dseminar)
+Die wichtigsten Stellschrauben und Erfolgsfaktoren
+------------------------------------------------------------
+
+#AppLegal (http://www.gruenderszene.de/produkte/seminare/seminar/items/app=
+legal?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-sidebar&utm_campaign=
+=3Ddaily&utm_term=3Dseminar)
+Rechtliche Stolpersteine bei Apps
+------------------------------------------------------------
+
+Legal Crashkurs Open Source (http://www.gruenderszene.de/produkte/seminare=
+/seminar/items/legal-crashkurs-open-source?utm_source=3Dnewsletter&utm_med=
+ium=3Dnewsletter-sidebar&utm_campaign=3Ddaily&utm_term=3Dseminar)
+Hick Ups beim Exit vermeiden!
+------------------------------------------------------------
+
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Copyright =C2=A9 2015 Vertical Media GmbH=2C All rights reserved.
+ Du bekommst diese E-Mail=2C weil du den Gr=C3=BCnderszene Newsletter abon=
+niert hast.
+
+Our mailing address is:
+Vertical Media GmbH
+Wallstra=C3=9Fe 27
+Berlin 10179
+Germany
+** unsubscribe from this list (http://gruenderszene.us1.list-manage.com/un=
+subscribe?u=3Df5f37987ace2773985f384dbf&id=3D9f282e5888&e=3Dd621f496c5&c=3Df=
+d379a473a)
+** update subscription preferences (http://gruenderszene.us1.list-manage.c=
+om/profile?u=3Df5f37987ace2773985f384dbf&id=3D9f282e5888&e=3Dd621f496c5)
+--_----------=_MCPart_1731629716
+Content-Transfer-Encoding: QUOTED-PRINTABLE
+Content-Type: TEXT/HTML;
+	charset=utf-8
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.or=
+g/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+    <head>
+    =09<!-- NAME: RIGHT SIDEBAR RSS -->
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8">
+        <meta name=3D"viewport" content=3D"width=3Ddevice-width=2C initial=
+-scale=3D1.0">
+        <title>=E2=9C=B8 Surfing USA: Warum diese Gr=C3=BCnder im Valley n=
+ach Investoren suchen | Gr=C3=BCnderszene</title>
+
+    <style type=3D"text/css">
+=09=09body=2C#bodyTable=2C#bodyCell{
+=09=09=09height:100% !important;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100% !important;
+=09=09}
+=09=09table{
+=09=09=09border-collapse:collapse;
+=09=09}
+=09=09img=2Ca img{
+=09=09=09border:0;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09h1=2Ch2=2Ch3=2Ch4=2Ch5=2Ch6{
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09p{
+=09=09=09margin:1em 0;
+=09=09=09padding:0;
+=09=09}
+=09=09a{
+=09=09=09word-wrap:break-word;
+=09=09}
+=09=09.ReadMsgBody{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass{
+=09=09=09width:100%;
+=09=09}
+=09=09.ExternalClass=2C.ExternalClass p=2C.ExternalClass span=2C.ExternalC=
+lass font=2C.ExternalClass td=2C.ExternalClass div{
+=09=09=09line-height:100%;
+=09=09}
+=09=09table=2Ctd{
+=09=09=09mso-table-lspace:0pt;
+=09=09=09mso-table-rspace:0pt;
+=09=09}
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09-ms-interpolation-mode:bicubic;
+=09=09}
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-ms-text-size-adjust:100%;
+=09=09=09-webkit-text-size-adjust:100%;
+=09=09}
+=09=09#bodyCell{
+=09=09=09padding:20px;
+=09=09}
+=09=09.mcnImage{
+=09=09=09vertical-align:bottom;
+=09=09}
+=09=09.mcnTextContent img{
+=09=09=09height:auto !important;
+=09=09}
+=09=09body=2C#bodyTable{
+=09=09=09background-color:#c0c0c0;
+=09=09}
+=09=09#bodyCell{
+=09=09=09border-top:0;
+=09=09}
+=09=09#templateContainer{
+=09=09=09border:0;
+=09=09}
+=09=09h1{
+=09=09=09color:#000000 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:24px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-1px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h2{
+=09=09=09color:#000000 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:18px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-.75px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h3{
+=09=09=09color:#606060 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:18px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:bold;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:-.5px;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09h4{
+=09=09=09color:#000000 !important;
+=09=09=09display:block;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:10px;
+=09=09=09font-style:normal;
+=09=09=09font-weight:normal;
+=09=09=09line-height:125%;
+=09=09=09letter-spacing:normal;
+=09=09=09margin:0;
+=09=09=09text-align:left;
+=09=09}
+=09=09#templatePreheader{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.preheaderContainer .mcnTextContent=2C.preheaderContainer .mcnTextCo=
+ntent p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:11px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.preheaderContainer .mcnTextContent a{
+=09=09=09color:#606060;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09#templateHeader{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:20px none ;
+=09=09}
+=09=09.headerContainer .mcnTextContent=2C.headerContainer .mcnTextContent=
+ p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:15px;
+=09=09=09line-height:150%;
+=09=09=09text-align:center;
+=09=09}
+=09=09.headerContainer .mcnTextContent a{
+=09=09=09color:#6DC6DD;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09#templateBody{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09#templateSidebar{
+=09=09=09border-left:0;
+=09=09=09background-color:#f8f8f8;
+=09=09}
+=09=09.bodyContainer .mcnTextContent=2C.bodyContainer .mcnTextContent p{
+=09=09=09color:#000000;
+=09=09=09font-family:Arial=2C 'Helvetica Neue'=2C Helvetica=2C sans-serif;
+=09=09=09font-size:15px;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.bodyContainer .mcnTextContent a{
+=09=09=09color:#000000;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09#templateSidebar{
+=09=09=09background-color:#f8f8f8;
+=09=09=09border-left:0;
+=09=09}
+=09=09#templateSidebarInner{
+=09=09=09border-left:0;
+=09=09}
+=09=09.sidebarContainer .mcnTextContent=2C.sidebarContainer .mcnTextConten=
+t p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:13px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.sidebarContainer .mcnTextContent a{
+=09=09=09color:#6DC6DD;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09#templateFooter{
+=09=09=09background-color:#FFFFFF;
+=09=09=09border-top:0;
+=09=09=09border-bottom:0;
+=09=09}
+=09=09.footerContainer .mcnTextContent=2C.footerContainer .mcnTextContent=
+ p{
+=09=09=09color:#606060;
+=09=09=09font-family:Helvetica;
+=09=09=09font-size:11px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.footerContainer .mcnTextContent a{
+=09=09=09color:#606060;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:none;
+=09=09}
+=09@media only screen and (max-width: 480px){
+=09=09body=2Ctable=2Ctd=2Cp=2Ca=2Cli=2Cblockquote{
+=09=09=09-webkit-text-size-adjust:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09body{
+=09=09=09width:100% !important;
+=09=09=09min-width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[id=3DbodyCell]{
+=09=09=09padding:10px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnTextContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnBoxedTextContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3Dmcpreview-image-uploader]{
+=09=09=09width:100% !important;
+=09=09=09display:none !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09img[class=3DmcnImage]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnImageGroupContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageGroupContent]{
+=09=09=09padding:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageGroupBlockInner]{
+=09=09=09padding-bottom:0 !important;
+=09=09=09padding-top:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09tbody[class=3DmcnImageGroupBlockOuter]{
+=09=09=09padding-bottom:9px !important;
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionTopContent]=2Ctable[class=3DmcnCaptionBott=
+omContent]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionLeftTextContentContainer]=2Ctable[class=3D=
+mcnCaptionRightTextContentContainer]=2Ctable[class=3DmcnCaptionLeftImageC=
+ontentContainer]=2Ctable[class=3DmcnCaptionRightImageContentContainer]=2C=
+table[class=3DmcnImageCardLeftTextContentContainer]=2Ctable[class=3DmcnI=
+mageCardRightTextContentContainer]{
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardLeftImageContent]=2Ctd[class=3DmcnImageCard=
+RightImageContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09=09padding-bottom:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardBottomImageContent]{
+=09=09=09padding-bottom:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnImageCardTopImageContent]{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnCaptionLeftContentOuter] td[class=3DmcnTextConten=
+t]=2Ctable[class=3DmcnCaptionRightContentOuter] td[class=3DmcnTextConten=
+t]{
+=09=09=09padding-top:9px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnCaptionBlockInner] table[class=3DmcnCaptionTopConten=
+t]:last-child td[class=3DmcnTextContent]{
+=09=09=09padding-top:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnBoxedTextContentColumn]{
+=09=09=09padding-left:18px !important;
+=09=09=09padding-right:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DsectionContainer]{
+=09=09=09display:block !important;
+=09=09=09max-width:600px !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DmcnTextContent]{
+=09=09=09padding-right:18px !important;
+=09=09=09padding-left:18px !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplateContainer]=2Ctable[id=3DtemplatePreheader]=2Cta=
+ble[id=3DtemplateHeader]=2Ctable[id=3DtemplateBody]=2Ctable[id=3Dtempla=
+teBodyInner]=2Ctable[id=3DtemplateSidebar]=2Ctable[id=3DtemplateFooter]{
+=09=09=09max-width:600px !important;
+=09=09=09width:100% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h1{
+=09=09=09font-size:24px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h2{
+=09=09=09font-size:20px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h3{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09h4{
+=09=09=09font-size:16px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[class=3DmcnBoxedTextContentContainer] td[class=3DmcnTextCont=
+ent]=2Ctd[class=3DmcnBoxedTextContentContainer] td[class=3DmcnTextConten=
+t] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplatePreheader]{
+=09=09=09display:block !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DpreheaderContainer] td[class=3DmcnTextContent]=2Ctd[cl=
+ass=3DpreheaderContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:115% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DheaderContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DheaderContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DbodyContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DbodyContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DsidebarContainer] td[class=3DmcnTextContent]=2Ctd[clas=
+s=3DsidebarContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:18px !important;
+=09=09=09line-height:125% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplateSidebar]{
+=09=09=09border-left:0 !important;
+=09=09=09border-right:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09table[id=3DtemplateSidebarInner]{
+=09=09=09border-left:0 !important;
+=09=09=09border-right:0 !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DfooterContainer] td[class=3DmcnTextContent]=2Ctd[class=
+=3DfooterContainer] td[class=3DmcnTextContent] p{
+=09=09=09font-size:14px !important;
+=09=09=09line-height:115% !important;
+=09=09}
+
+}=09@media only screen and (max-width: 480px){
+=09=09td[class=3DfooterContainer] a[class=3DutilityLink]{
+=09=09=09display:block !important;
+=09=09}
+
+}</style></head>
+    <body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=
+=3D"0" offset=3D"0" style=3D"margin: 0;padding: 0;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;background-color: #c0c0c0;height: 100% !=
+important;width: 100% !important;">
+        <center>
+            <table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" height=3D"100%" width=3D"100%" id=3D"bodyTable" style=3D"border=
+-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;margin: 0;padding: 0;backg=
+round-color: #c0c0c0;height: 100% !important;width: 100% !important;">
+                <tr>
+                    <td align=3D"center" valign=3D"top" id=3D"bodyCell" st=
+yle=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;margin: 0;padding: 20px;border-top: 0;h=
+eight: 100% !important;width: 100% !important;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"600" id=3D"templateContainer" style=3D"border-collapse: co=
+llapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;border: 0;">
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN PREHEADER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templatePreheader" style=3D"border-=
+collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;b=
+order-top: 0;border-bottom: 0;">
+                                        <tr>
+                                        =09<td valign=3D"top" class=3D"pre=
+headerContainer" style=3D"padding-top: 9px;mso-table-lspace: 0pt;mso-table=
+-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><=
+table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" clas=
+s=3D"mcnTextBlock" style=3D"border-collapse: collapse;mso-table-lspace: 0p=
+t;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"366" class=3D"mcnTextContentContainer" style=3D"bord=
+er-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 9px;padding-left: 18px;padding-bottom: 9px;padding-right:=
+ 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-=
+size: 11px;line-height: 125%;text-align: left;">
+
+                            T=C3=A4glich aktuelle Nachrichten =C3=BCber Gr=
+=C3=BCnder=2C Startups und Investoren.
+                        </td>
+                    </tr>
+                </tbody></table>
+
+                <table align=3D"right" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"197" class=3D"mcnTextContentContainer" style=3D"bor=
+der-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left:=
+ 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;font-=
+size: 11px;line-height: 125%;text-align: left;">
+
+                            <a href=3D"http://us1.campaign-archive1.com/?u=
+=3Df5f37987ace2773985f384dbf&id=3Dfd379a473a&e=3Dd621f496c5" target=3D"_blan=
+k" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;color: #606060;font-weight: normal;text-decoration: none=
+;"><span style=3D"color: #204A7D;">E-Mail im Browser anzeigen</span></a>
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END PREHEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN HEADER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateHeader" style=3D"border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;bord=
+er-top: 0;border-bottom: 20px none;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"he=
+aderContainer" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><table border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcnImageBlock=
+" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspac=
+e: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" s=
+tyle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom=
+: 0;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+
+
+                                        <img align=3D"left" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/f5f37987ace2773985f384dbf/images/fe668f3=
+5-543e-4e11-a238-f19f2df7df1f.png" width=3D"338" style=3D"max-width: 338px=
+;padding-bottom: 0;display: inline !important;vertical-align: bottom;borde=
+r: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"=
+ class=3D"mcnImage">
+
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END HEADER -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN BODY // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateBody" style=3D"border-colla=
+pse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-ad=
+just: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;border=
+-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td align=3D"left" valign=3D"t=
+op" width=3D"390" class=3D"sectionContainer" style=3D"mso-table-lspace: 0p=
+t;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+                                            =09<table border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%" id=3D"templateBodyInner" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                =09<tr>
+                                                    =09<td valign=3D"top"=
+ class=3D"bodyContainer" style=3D"mso-table-lspace: 0pt;mso-table-rspace:=
+ 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><table bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"mcn=
+CodeBlock" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-ta=
+ble-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;=
+">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+                <div style=3D"margin-top: 20px; margin-left: 20px; margin-=
+right:20px;">
+
+<br>
+<a href=3D"http://www.gruenderszene.de/allgemein/silicon-valley-finanzieru=
+ng-konux-seed?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=
+=3Ddaily&utm_term=3Dsilicon-valley-finanzierung-konux-seed&utm_date=3D2015=
+-05-15" target=3D"_blank" style=3D"text-decoration: none;word-wrap: break-=
+word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><h1 style=
+=3D"margin: 0;padding: 0;display: block;font-family: Helvetica;font-size:=
+ 24px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacin=
+g: -1px;text-align: left;color: #000000 !important;">Surfing USA: Warum di=
+ese Gr=C3=BCnder im Valley nach Investoren suchen</h1></a> <br>
+
+<a href=3D"http://www.gruenderszene.de/allgemein/silicon-valley-finanzieru=
+ng-konux-seed?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=
+=3Ddaily&utm_term=3Dsilicon-valley-finanzierung-konux-seed&utm_date=3D2015=
+-05-15" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text-size-adj=
+ust: 100%;-webkit-text-size-adjust: 100%;"><img class=3D"teaserImage" alt=
+=3D"" height=3D"240" width=3D"360" src=3D"http://www.gruenderszene.de/wp-c=
+ontent/uploads/2015/05/konux.jpg" style=3D"border: 0;outline: none;text-de=
+coration: none;-ms-interpolation-mode: bicubic;"></a>
+Frische Dollars f=C3=BCr das Hardware-Startup Konux. Im Interview erz=C3=
+=A4hlen die Macher=2C warum sie die Suche nach Kapital auf die USA konzent=
+rieren wollen. <a href=3D"http://www.gruenderszene.de/allgemein/silicon-va=
+lley-finanzierung-konux-seed?utm_source=3Dnewsletter&utm_medium=3Dnewslett=
+er&utm_campaign=3Ddaily&utm_term=3Dsilicon-valley-finanzierung-konux-seed&=
+utm_date=3D2015-05-15" target=3D"_blank" style=3D"word-wrap: break-word;-m=
+s-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">weiterlesen</a><=
+br><br>
+
+
+</div>
+
+<hr style=3D"border-top-width:1px;border-top-style:solid;border-top-color:=
+#999999;border-collapse:collapse;margin-left:20px;margin-right:20px;">
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"396" class=3D"mcnTextContentContainer" style=3D"bord=
+er-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left:=
+ 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;color: #000000;font-family: Arial=2C 'He=
+lvetica Neue'=2C Helvetica=2C sans-serif;font-size: 15px;line-height: 150%=
+;text-align: left;">
+
+                            <h4 class=3D"null" style=3D"margin: 0;padding:=
+ 0;display: block;font-family: Helvetica;font-size: 10px;font-style: norma=
+l;font-weight: normal;line-height: 125%;letter-spacing: normal;text-align:=
+ left;color: #000000 !important;">Anzeige:</h4>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnImageBlock" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" s=
+tyle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom=
+: 0;text-align: center;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                    <a href=3D"http://gruenderszene.us1.li=
+st-manage.com/track/click?u=3Df5f37987ace2773985f384dbf&id=3Da7c9a98226&e=
+=3Dd621f496c5" title=3D"" class=3D"" target=3D"_blank" style=3D"word-wrap=
+: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"EIT I=
+CT Labs Idea Challenge" src=3D"https://gallery.mailchimp.com/f5f37987ace27=
+73985f384dbf/images/79c8c88b-7c50-4e55-99d6-3131e3fc598f.jpg" width=3D"300=
+" style=3D"max-width: 300px;padding-bottom: 0;display: inline !important;v=
+ertical-align: bottom;border: 0;outline: none;text-decoration: none;-ms-in=
+terpolation-mode: bicubic;" class=3D"mcnImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+                <hr style=3D"border-top-width:1px;border-top-style:solid;b=
+order-top-color:#999999;border-collapse:collapse;margin-left:20px;margin-r=
+ight:20px;">
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+                <div style=3D"margin-left: 20px; margin-right:20px;">
+
+<br>
+<a href=3D"http://www.gruenderszene.de/allgemein/instagram-hashtags-buch?u=
+tm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_te=
+rm=3Dinstagram-hashtags-buch&utm_date=3D2015-05-15" target=3D"_blank" styl=
+e=3D"text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100=
+%;-webkit-text-size-adjust: 100%;"><h1 style=3D"margin: 0;padding: 0;displ=
+ay: block;font-family: Helvetica;font-size: 24px;font-style: normal;font-w=
+eight: bold;line-height: 125%;letter-spacing: -1px;text-align: left;color:=
+ #000000 !important;">Instagood: Das muss man =C3=BCber Hashtags bei Insta=
+gram wissen</h1></a><br>
+<a href=3D"http://www.gruenderszene.de/allgemein/instagram-hashtags-buch?u=
+tm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_te=
+rm=3Dinstagram-hashtags-buch&utm_date=3D2015-05-15" target=3D"_blank" styl=
+e=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;"><img alt=3D"" height=3D"240" width=3D"360" src=3D"http://www.=
+gruenderszene.de/wp-content/uploads/2015/05/buch-gross.jpg" style=3D"borde=
+r: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"=
+></a>
+#Instagood=2C #Love und Co =E2=80=93 was hat es mit diesen Hashtags auf si=
+ch? Das Buch =E2=80=9EErfolgreich mit Instagram=E2=80=9C f=C3=BChrt in die=
+ Welt der Foto-App ein. Ein Auszug. <a href=3D"http://www.gruenderszene.de=
+/allgemein/instagram-hashtags-buch?utm_source=3Dnewsletter&utm_medium=3Dne=
+wsletter&utm_campaign=3Ddaily&utm_term=3Dinstagram-hashtags-buch&utm_date=
+=3D2015-05-15" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text-s=
+ize-adjust: 100%;-webkit-text-size-adjust: 100%;">weiterlesen</a><br><br>
+
+<hr style=3D"border-top-width:1px;border-top-style:solid;border-top-color:=
+#999999;border-collapse:collapse;">
+
+
+<br>
+<a href=3D"http://www.gruenderszene.de/allgemein/marketing-low-budget-neug=
+ruendung?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Dda=
+ily&utm_term=3Dmarketing-low-budget-neugruendung&utm_date=3D2015-05-15" ta=
+rget=3D"_blank" style=3D"text-decoration: none;word-wrap: break-word;-ms-t=
+ext-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><h1 style=3D"margin=
+: 0;padding: 0;display: block;font-family: Helvetica;font-size: 24px;font-=
+style: normal;font-weight: bold;line-height: 125%;letter-spacing: -1px;tex=
+t-align: left;color: #000000 !important;">Marketing-Newbies: Das Marketing=
+-Einmaleins f=C3=BCr Neugr=C3=BCndungen</h1></a><br>
+<a href=3D"http://www.gruenderszene.de/allgemein/marketing-low-budget-neug=
+ruendung?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Dda=
+ily&utm_term=3Dmarketing-low-budget-neugruendung&utm_date=3D2015-05-15" ta=
+rget=3D"_blank" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;=
+-webkit-text-size-adjust: 100%;"><img alt=3D"" height=3D"240" width=3D"360=
+" src=3D"http://www.gruenderszene.de/wp-content/uploads/2014/07/Marketing-=
+Strategien.jpg" style=3D"border: 0;outline: none;text-decoration: none;-ms=
+-interpolation-mode: bicubic;"></a>
+Von Printmedien bis Social Media =E2=80=93 Marketing ist wichtig aber auch=
+ kostspielig? Nicht unbedingt! So bew=C3=A4ltigen Startups den Einstieg in=
+s Marketing. <a href=3D"http://www.gruenderszene.de/allgemein/marketing-lo=
+w-budget-neugruendung?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_=
+campaign=3Ddaily&utm_term=3Dmarketing-low-budget-neugruendung&utm_date=3D2=
+015-05-15" target=3D"_blank" style=3D"word-wrap: break-word;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;">weiterlesen</a><br><br>
+
+<hr style=3D"border-top-width:1px;border-top-style:solid;border-top-color:=
+#999999;border-collapse:collapse;">
+
+
+</div>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnTextBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"396" class=3D"mcnTextContentContainer" style=3D"bord=
+er-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left:=
+ 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;color: #000000;font-family: Arial=2C 'He=
+lvetica Neue'=2C Helvetica=2C sans-serif;font-size: 15px;line-height: 150%=
+;text-align: left;">
+
+                            <h4 class=3D"null" style=3D"margin: 0;padding:=
+ 0;display: block;font-family: Helvetica;font-size: 10px;font-style: norma=
+l;font-weight: normal;line-height: 125%;letter-spacing: normal;text-align:=
+ left;color: #000000 !important;">Anzeige:</h4>
+
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnImageBlock" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" s=
+tyle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom=
+: 0;text-align: center;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                    <a href=3D"http://gruenderszene.us1.li=
+st-manage.com/track/click?u=3Df5f37987ace2773985f384dbf&id=3Dd6bda3b1bd&e=
+=3Dd621f496c5" title=3D"" class=3D"" target=3D"_blank" style=3D"word-wrap=
+: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"HR DA=
+Y - Jetzt bewerben! " src=3D"https://gallery.mailchimp.com/f5f37987ace2773=
+985f384dbf/images/85154d38-c070-4ee8-8bf4-729a60ed9b51.png" width=3D"300"=
+ style=3D"max-width: 300px;padding-bottom: 0;display: inline !important;ve=
+rtical-align: bottom;border: 0;outline: none;text-decoration: none;-ms-int=
+erpolation-mode: bicubic;" class=3D"mcnImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+                <hr style=3D"border-top-width:1px;border-top-style:solid;b=
+order-top-color:#999999;border-collapse:collapse;margin-left:20px;margin-r=
+ight:20px;">
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+                <div style=3D"margin-left: 20px; margin-right:20px;">
+
+<br>
+<a href=3D"http://www.gruenderszene.de/allgemein/apple-amazon-learnvest?ut=
+m_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_ter=
+m=3Dapple-amazon-learnvest&utm_date=3D2015-05-15" target=3D"_blank" style=
+=3D"text-decoration: none;word-wrap: break-word;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;"><h1 style=3D"margin: 0;padding: 0;displa=
+y: block;font-family: Helvetica;font-size: 24px;font-style: normal;font-we=
+ight: bold;line-height: 125%;letter-spacing: -1px;text-align: left;color:=
+ #000000 !important;">W=C3=A4hrend Du schliefst: Apple: Launch der HomeKit=
+-Gadgets im Juni</h1></a><br>
+<a href=3D"http://www.gruenderszene.de/allgemein/apple-amazon-learnvest?ut=
+m_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&utm_ter=
+m=3Dapple-amazon-learnvest&utm_date=3D2015-05-15" target=3D"_blank" style=
+=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adj=
+ust: 100%;"><img alt=3D"" height=3D"240" width=3D"360" src=3D"http://www.g=
+ruenderszene.de/wp-content/uploads/2014/04/apple-cupertino.jpg" style=3D"b=
+order: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicub=
+ic;"></a>
+Amazon startet mobile Advertising-Plattform=2C NorthWestern kauft LearnVes=
+t=2C Vouch sammelt 60 Millionen Dollar=2C neue VC-Firma mit 150 Millionen-=
+Fonds. <a href=3D"http://www.gruenderszene.de/allgemein/apple-amazon-learn=
+vest?utm_source=3Dnewsletter&utm_medium=3Dnewsletter&utm_campaign=3Ddaily&=
+utm_term=3Dapple-amazon-learnvest&utm_date=3D2015-05-15" target=3D"_blank"=
+ style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-si=
+ze-adjust: 100%;">weiterlesen</a><br><br>
+
+<hr style=3D"border-top-width:1px;border-top-style:solid;border-top-color:=
+#999999;border-collapse:collapse;">
+
+
+</div>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td align=3D"left" valign=3D"t=
+op" width=3D"200" class=3D"sectionContainer" style=3D"mso-table-lspace: 0p=
+t;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjus=
+t: 100%;">
+                                                <table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" id=3D"templateSidebar" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-left: 0;b=
+ackground-color: #f8f8f8;">
+                                                =09<tr>
+                                                    =09<td align=3D"right"=
+ valign=3D"top" style=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-t=
+ext-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        =09<table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" id=3D"templateSi=
+debarInner" style=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-t=
+able-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%=
+;border-left: 0;">
+                                                            =09<tr>
+                                                                =09<td val=
+ign=3D"top" class=3D"sidebarContainer" style=3D"mso-table-lspace: 0pt;mso-=
+table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100=
+%;"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ class=3D"mcnImageBlock" style=3D"border-collapse: collapse;mso-table-lspa=
+ce: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size=
+-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" s=
+tyle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom=
+: 0;text-align: center;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                    <a href=3D"http://gruenderszene.us1.li=
+st-manage2.com/track/click?u=3Df5f37987ace2773985f384dbf&id=3D3638a1535b&e=
+=3Dd621f496c5" title=3D"" class=3D"" target=3D"_blank" style=3D"word-wrap=
+: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/f5f37987ace2773985f384dbf/images/56cc121=
+6-54f4-4f67-9819-fb79016ed83a.png" width=3D"160" style=3D"max-width: 160px=
+;padding-bottom: 0;display: inline !important;vertical-align: bottom;borde=
+r: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"=
+ class=3D"mcnImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+                <div style=3D"margin-left: 20px; margin-right: 10px;"><cen=
+ter><a href=3D"http://gruenderszene.us1.list-manage2.com/track/click?u=3Df=
+5f37987ace2773985f384dbf&id=3Da41a620949&e=3Dd621f496c5" style=3D"color:=
+ #336699;font-weight: normal;text-decoration: underline;word-wrap: break-w=
+ord;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target=3D"=
+_blank"><strong>Alle Jobs Online!</strong></a></center><br>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/jobboerse/aktuell/venture-develo=
+pment-praktikum-mw?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-sidebar=
+&utm_campaign=3Ddaily&utm_term=3Djob" style=3D"color: #336699;font-weight:=
+ normal;text-decoration: underline;word-wrap: break-word;-ms-text-size-adj=
+ust: 100%;-webkit-text-size-adjust: 100%;" target=3D"_blank">TruVenturo Gm=
+bH</a></b></div>
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Venture Development Praktikum (m/w)</div>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/jobboerse/aktuell/praktikum-recr=
+uitingexecutive-search?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-sid=
+ebar&utm_campaign=3Ddaily&utm_term=3Djob" style=3D"color: #336699;font-wei=
+ght: normal;text-decoration: underline;word-wrap: break-word;-ms-text-size=
+-adjust: 100%;-webkit-text-size-adjust: 100%;" target=3D"_blank">Careertea=
+m GmbH</a></b></div>
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Praktikum im HR Bereich - Recruiting (m/w)</div>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/jobboerse/aktuell/wirtschaftsinf=
+ormatikerin-fuer-venture-development?utm_source=3Dnewsletter&utm_medium=3D=
+newsletter-sidebar&utm_campaign=3Ddaily&utm_term=3Djob" style=3D"color: #3=
+36699;font-weight: normal;text-decoration: underline;word-wrap: break-word=
+;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target=3D"_bl=
+ank">Truventuro GmbH</a></b></div>
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Wirtschaftsinformatiker f=C3=BCr Venture Development (m/w)</div>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/jobboerse/aktuell/online-marketi=
+ng-praktikum-1?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-sidebar&utm=
+_campaign=3Ddaily&utm_term=3Djob" style=3D"color: #336699;font-weight: nor=
+mal;text-decoration: underline;word-wrap: break-word;-ms-text-size-adjust:=
+ 100%;-webkit-text-size-adjust: 100%;" target=3D"_blank">Mornin' Glory</a>=
+</b></div>
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Online Marketing Praktikum (m/w)</div>
+<hr style=3D"color:lightgrey;">
+  </div>
+            </td>
+        </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnImageBlock" style=3D"border-collapse: collapse;mso-table-=
+lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-=
+size-adjust: 100%;">
+    <tbody class=3D"mcnImageBlockOuter">
+            <tr>
+                <td valign=3D"top" style=3D"padding: 9px;mso-table-lspace:=
+ 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-ad=
+just: 100%;" class=3D"mcnImageBlockInner">
+                    <table align=3D"left" width=3D"100%" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" class=3D"mcnImageContentContainer" style=
+=3D"border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;=
+-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                        <tbody><tr>
+                            <td class=3D"mcnImageContent" valign=3D"top" s=
+tyle=3D"padding-right: 9px;padding-left: 9px;padding-top: 0;padding-bottom=
+: 0;text-align: center;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-tex=
+t-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                    <a href=3D"http://gruenderszene.us1.li=
+st-manage1.com/track/click?u=3Df5f37987ace2773985f384dbf&id=3D9d4b5f1f71&e=
+=3Dd621f496c5" title=3D"" class=3D"" target=3D"_blank" style=3D"word-wrap=
+: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <img align=3D"center" alt=3D"" src=
+=3D"https://gallery.mailchimp.com/f5f37987ace2773985f384dbf/images/60aa597=
+1-9f80-49a9-9ba4-03b10579cc99.png" width=3D"160" style=3D"max-width: 160px=
+;padding-bottom: 0;display: inline !important;vertical-align: bottom;borde=
+r: 0;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"=
+ class=3D"mcnImage">
+                                    </a>
+
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+    </tbody>
+</table><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"1=
+00%" class=3D"mcnCodeBlock" style=3D"border-collapse: collapse;mso-table-l=
+space: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-s=
+ize-adjust: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+                 <div style=3D"margin-left: 20px; margin-right: 10px;">
+ <center><a href=3D"http://gruenderszene.us1.list-manage.com/track/click?u=
+=3Df5f37987ace2773985f384dbf&id=3D07f01219d2&e=3Dd621f496c5" style=3D"col=
+or: #336699;font-weight: normal;text-decoration: underline;word-wrap: brea=
+k-word;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target=
+=3D"_blank"><strong>Jetzt anmelden!</strong></a></center><br>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/produkte/seminare/seminar/items/=
+finanzierungsrunden.323?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-si=
+debar&utm_campaign=3Ddaily&utm_term=3Dseminar" style=3D"color: #336699;fon=
+t-weight: normal;text-decoration: underline;word-wrap: break-word;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target=3D"_blank">Fina=
+nzierungsrunden</a></b></div>
+
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Beteiligungsvertr=C3=A4ge verhandeln</div>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/produkte/seminare/seminar/items/=
+gruenderszene-hr-day?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-sideb=
+ar&utm_campaign=3Ddaily&utm_term=3Dseminar" style=3D"color: #336699;font-w=
+eight: normal;text-decoration: underline;word-wrap: break-word;-ms-text-si=
+ze-adjust: 100%;-webkit-text-size-adjust: 100%;" target=3D"_blank">Gr=C3=
+=BCnderszene HR DAY</a></b></div>
+
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Alles was Startups =C3=BCber Personalmanagement wissen m=C3=BCssen!</div>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/produkte/seminare/seminar/items/=
+google-adwords-einmaleins?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-=
+sidebar&utm_campaign=3Ddaily&utm_term=3Dseminar" style=3D"color: #336699;f=
+ont-weight: normal;text-decoration: underline;word-wrap: break-word;-ms-te=
+xt-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target=3D"_blank">Go=
+ogle AdWords Einmaleins</a></b></div>
+
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Die wichtigsten Stellschrauben und Erfolgsfaktoren</div>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/produkte/seminare/seminar/items/=
+applegal?utm_source=3Dnewsletter&utm_medium=3Dnewsletter-sidebar&utm_campa=
+ign=3Ddaily&utm_term=3Dseminar" style=3D"color: #336699;font-weight: norma=
+l;text-decoration: underline;word-wrap: break-word;-ms-text-size-adjust: 1=
+00%;-webkit-text-size-adjust: 100%;" target=3D"_blank">#AppLegal</a></b></=
+div>
+
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Rechtliche Stolpersteine bei Apps</div>
+<hr style=3D"color:lightgrey;">
+
+<div style=3D"margin: 5px 0 0;color: #505050;font-family: Arial;font-size:=
+ 14px;line-height: 150%;text-align: left;">
+<b><a href=3D"http://www.gruenderszene.de/produkte/seminare/seminar/items/=
+legal-crashkurs-open-source?utm_source=3Dnewsletter&utm_medium=3Dnewslette=
+r-sidebar&utm_campaign=3Ddaily&utm_term=3Dseminar" style=3D"color: #336699=
+;font-weight: normal;text-decoration: underline;word-wrap: break-word;-ms-=
+text-size-adjust: 100%;-webkit-text-size-adjust: 100%;" target=3D"_blank">=
+Legal Crashkurs Open Source</a></b></div>
+
+<div style=3D"line-height: 115%;margin-bottom: 2px;color: #505050;font-fam=
+ily: Arial;font-size: 14px;text-align: left;">
+Hick Ups beim Exit vermeiden!</div>
+<hr style=3D"color:lightgrey;">
+  </div>
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END BODY -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align=3D"center" valign=3D"top" style=
+=3D"mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;">
+                                    <!-- BEGIN FOOTER // -->
+                                    <table border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"600" id=3D"templateFooter" style=3D"border-col=
+lapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-=
+adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;bord=
+er-top: 0;border-bottom: 0;">
+                                        <tr>
+                                            <td valign=3D"top" class=3D"fo=
+oterContainer" style=3D"padding-bottom: 9px;mso-table-lspace: 0pt;mso-tabl=
+e-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">=
+<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" cla=
+ss=3D"mcnTextBlock" style=3D"border-collapse: collapse;mso-table-lspace: 0=
+pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adju=
+st: 100%;">
+    <tbody class=3D"mcnTextBlockOuter">
+        <tr>
+            <td valign=3D"top" class=3D"mcnTextBlockInner" style=3D"mso-ta=
+ble-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-t=
+ext-size-adjust: 100%;">
+
+                <table align=3D"left" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"600" class=3D"mcnTextContentContainer" style=3D"bord=
+er-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text=
+-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tbody><tr>
+
+                        <td valign=3D"top" class=3D"mcnTextContent" style=
+=3D"padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left:=
+ 18px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 10=
+0%;-webkit-text-size-adjust: 100%;color: #606060;font-family: Helvetica;fo=
+nt-size: 11px;line-height: 125%;text-align: left;">
+
+                            <em>Copyright =C2=A9 2015 Vertical Media GmbH=
+=2C All rights reserved.</em>
+<br>
+    Du bekommst diese E-Mail=2C weil du den Gr=C3=BCnderszene Newsletter a=
+bonniert hast.
+    <br>
+    <br>
+    <strong>Our mailing address is:</strong>
+    <br>
+    <div class=3D"vcard"><span class=3D"org fn">Vertical Media GmbH</span>=
+<div class=3D"adr"><div class=3D"street-address">Wallstra=C3=9Fe 27</div><=
+span class=3D"locality">Berlin</span> <span class=3D"postal-code">10179</s=
+pan> <div class=3D"country-name">Germany</div></div><br><a href=3D"http://=
+gruenderszene.us1.list-manage.com/vcard?u=3Df5f37987ace2773985f384dbf&id=
+=3D9f282e5888" class=3D"hcard-download">Add us to your address book</a></d=
+iv>
+    <br>
+    <br>
+    <a href=3D"http://gruenderszene.us1.list-manage.com/unsubscribe?u=3Df5=
+f37987ace2773985f384dbf&id=3D9f282e5888&e=3Dd621f496c5&c=3Dfd379a473a" class=
+=3D"utilityLink" style=3D"word-wrap: break-word;-ms-text-size-adjust: 100%=
+;-webkit-text-size-adjust: 100%;color: #606060;font-weight: normal;text-de=
+coration: none;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;
+    <a href=3D"http://gruenderszene.us1.list-manage.com/profile?u=3Df5f379=
+87ace2773985f384dbf&id=3D9f282e5888&e=3Dd621f496c5" class=3D"utilityLink" st=
+yle=3D"word-wrap: break-word;-ms-text-size-adjust: 100%;-webkit-text-size-=
+adjust: 100%;color: #606060;font-weight: normal;text-decoration: none;">up=
+date subscription preferences</a>&nbsp;
+    <br>
+    <br>
+                        </td>
+                    </tr>
+                </tbody></table>
+
+            </td>
+        </tr>
+    </tbody>
+</table></td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END FOOTER -->
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"http://gruenderszene.us1.list-manage.com/track/open.php?u=
+=3Df5f37987ace2773985f384dbf&id=3Dfd379a473a&e=3Dd621f496c5" height=3D"1"=
+ width=3D"1"></body>
+</html>
+--_----------=_MCPart_1731629716--

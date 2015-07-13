@@ -1,0 +1,553 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp58355wma;
+        Fri, 8 May 2015 10:14:59 -0700 (PDT)
+X-Received: by 10.140.105.198 with SMTP id c64mr6195497qgf.61.1431105299418;
+        Fri, 08 May 2015 10:14:59 -0700 (PDT)
+Return-Path: <bounce-mc.us1_452601.1143985-roman.priebe=gmail.com@mail.startupdigest.com>
+Received: from mail.startupdigest.com (mail.startupdigest.com. [198.2.129.144])
+        by mx.google.com with ESMTP id n9si5918317qkh.16.2015.05.08.10.14.59
+        for <roman.priebe@gmail.com>;
+        Fri, 08 May 2015 10:14:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mc.us1_452601.1143985-roman.priebe=gmail.com@mail.startupdigest.com designates 198.2.129.144 as permitted sender) client-ip=198.2.129.144;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounce-mc.us1_452601.1143985-roman.priebe=gmail.com@mail.startupdigest.com designates 198.2.129.144 as permitted sender) smtp.mail=bounce-mc.us1_452601.1143985-roman.priebe=gmail.com@mail.startupdigest.com;
+       dkim=pass header.i=@gmail.mcsv.net
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=startupdigestmail.com;
+ h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:Content-Type:MIME-Version; i=zubin.chagpar@startupdigestmail.com;
+ bh=PfBa7JOpUdxyAlDZgH2VaRAxEHo=;
+ b=M+bCVxRZPFJuM87j8bigQ/ZpCHi2K01ngynwYKm3BcQIwWzi9yn4EuvT/pXDogBLu934jqU1/sum
+   CssiH+d0evNNVawm4tBZkAuqrbfXEIei1s8/2rzIGKe/ehqodWlVc0/6EtvmsDiiVIUmFbi7jbsh
+   Fh1mHUPiSqoEGtZ7FLA=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=k1; d=gmail.mcsv.net;
+ h=Subject:From:Reply-To:To:Date:Message-ID:X-Feedback-ID:List-ID:List-Unsubscribe:Content-Type:MIME-Version;
+ bh=PfBa7JOpUdxyAlDZgH2VaRAxEHo=;
+ b=mpVuO/lJFmhPy4rRAX3BNoljeexf4yXJKc9Je2qbybRZ71pnRI7re4jKruT/qUq1AMEvNYSKp/p5
+   5nIL2PxH+Bj4m6CFVT6fyAQyEZgioG2M+QNz7bRUcs37/tOA1+o52x8znioy9Shdd4SF/DdqGNqR
+   521CAyNowjlt2LuYvms=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=k1; d=startupdigestmail.com;
+ b=1RYbupmgjriJpJvBgzD8hYdabOlLdGcTCd0qnZOt3gPMclyjbcCf0P1zrPkOY6q9vV7+V0YV0Z1j
+   UoiOonkU8lhL1dojUs9pwVHOjOCWYZO6+OtkZmEZNJkWVq3jhb8XOQ58ofe/OYlQj1OQDTPRmdX2
+   W4jc6Qz0yI7VmKWk2PU=;
+Received: from (127.0.0.1) by mail.startupdigest.com id h9jnh61ohk0n for <roman.priebe@gmail.com>; Fri, 8 May 2015 17:09:04 +0000 (envelope-from <bounce-mc.us1_452601.1143985-roman.priebe=gmail.com@mail.startupdigest.com>)
+Subject: =?utf-8?Q?Startup=20Reading=20List=20=2D=20Startup=20Digest=20=2D=20Startup=20Reads=20=2D=20May=208th=20=2D=20May=2015th?=
+From: =?utf-8?Q?Zubin=20Chagpar?= <zubin.chagpar@startupdigestmail.com>
+Reply-To: =?utf-8?Q?Zubin=20Chagpar?= <zubin.chagpar@startupdigestmail.com>
+To: =?utf-8?Q?Startup=20Digest?= <roman.priebe@gmail.com>
+Date: Fri, 8 May 2015 17:09:04 +0000
+Message-ID: <92be899ef5a892c60b4a6cd97e5b69d91e9.20150508170828@mail.startupdigest.com>
+X-Mailer: MailChimp Mailer - **CIDa231149619e5b69d91e9**
+X-Campaign: mailchimp92be899ef5a892c60b4a6cd97.a231149619
+X-campaignid: mailchimp92be899ef5a892c60b4a6cd97.a231149619
+X-Report-Abuse: Please report abuse for this campaign here: http://www.mailchimp.com/abuse/abuse.phtml?u=92be899ef5a892c60b4a6cd97&id=a231149619&e=e5b69d91e9
+X-MC-User: 92be899ef5a892c60b4a6cd97
+X-Feedback-ID: 452601:452601.1143985:us1:mc
+List-ID: 92be899ef5a892c60b4a6cd97mc list <92be899ef5a892c60b4a6cd97.545698.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <mailto:unsubscribe-92be899ef5a892c60b4a6cd97-a231149619-e5b69d91e9@mailin1.us2.mcsv.net?subject=unsubscribe>, <http://startupdigest.us1.list-manage.com/unsubscribe?u=92be899ef5a892c60b4a6cd97&id=62dc6ea1a0&e=e5b69d91e9&c=a231149619>
+x-mcda: FALSE
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1494070228"
+MIME-Version: 1.0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1494070228
+Content-Type: text/plain; charset="us-ascii"
+
+==============================================
+
+Unsubscribe roman.priebe@gmail.com from this list:
+http://startupdigest.us1.list-manage.com/unsubscribe?u=92be899ef5a892c60b4a6cd97&id=62dc6ea1a0&e=e5b69d91e9&c=a231149619
+--_----------=_MCPart_1494070228
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www=
+=2Ew3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-=
+8" />
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width" />
+    <title></title>
+    <style type=3D"text/css">
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman'=2C Times=2C serif;
+  }
+
+  img{
+    border: 0 none;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+  }
+
+  a img {
+    border:0 none;
+  }
+
+  table=2C td{
+    border-collapse:collapse;
+  }
+
+  #body-table {
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+    font-family: 'Times New Roman'=2C Times=2C serif;
+  }
+
+  a {
+    color: #00AAE1;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .cover a {
+    font-style: italic;
+  }
+
+</style>
+
+  </head>
+  <body style=3D"background-color: #f4f4f4;">
+    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%=
+" width=3D"100%" style=3D"margin-top: 40px;" id=3D"body-table">
+      <tr>
+        <td align=3D"center" valign=3D"top">
+          <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"600" id=3D"container" style=3D"background-color: #ffffff; border: 1px sol=
+id #dbd6d7;">
+            <tr>
+                <td align=3D"center" valign=3D"top">
+                  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"600" height=3D"75">
+  <tr>
+    <td style=3D"height: 55px; background-color: #27A8E0;">
+      <a href=3D"http://startupdigest.us1.list-manage.com/track/click?u=3D=
+92be899ef5a892c60b4a6cd97&id=3D3c9ec63000&e=3De5b69d91e9" style=3D"margin=
+: 0 0 0 20px;">
+        <img src=3D"https://s3.amazonaws.com/startupdigest-production/mail=
+chimp/version/7/header-startup-digest.png" height=3D"48" width=3D"142" alt=
+=3D"Startup Digest" style=3D"margin-top: 5px;" />
+      </a>
+      <a href=3D"http://startupdigest.us1.list-manage.com/track/click?u=3D=
+92be899ef5a892c60b4a6cd97&id=3D0d9aa26a8e&e=3De5b69d91e9" target=3D"_blan=
+k">
+        <img src=3D"https://s3.amazonaws.com/startupdigest-production/mail=
+chimp/version/7/header-gfe.png" height=3D"48" width=3D"224" alt=3D"Startup=
+ Digest" style=3D"margin: 5px 0 0 0;" />
+      </a>
+      <a href=3D"http://startupdigest.us1.list-manage.com/track/click?u=3D=
+92be899ef5a892c60b4a6cd97&id=3D6089b90142&e=3De5b69d91e9" target=3D"_blan=
+k">
+        <img src=3D"https://s3.amazonaws.com/startupdigest-production/mail=
+chimp/version/7/header-salesforce.png" height=3D"48" width=3D"195" alt=3D"=
+Startup Digest" style=3D"margin: 5px 0 0 0;" />
+      </a>
+    </td>
+    <td style=3D"height: 55px; background-color: #27A8E0; text-align: righ=
+t;">
+      <!-- "Powered By" logo goes here -->
+    </td>
+  </tr>
+</table>
+
+                  <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"600">
+  <tr>
+    <td align=3D"left" valign=3D"baseline" style=3D"padding: 30px 0 0 20px=
+;">
+      <h1 style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; letter-spa=
+cing: 1px; font-weight: 900; font-size: 32px; line-height: 1.2em; color: #=
+000000; margin-bottom: 0;">
+        Startup Reading List
+      </h1>
+    </td>
+    <td align=3D"right" valign=3D"baseline" style=3D"padding: 45px 20px 0=
+ 0;">
+      <span style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; font-wei=
+ght: 900; font-size: 12px; line-height: 1.2em; color: #000000;">
+        May 08=2C 2015
+      </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan=3D"2" style=3D"padding: 0 20px 45px 20px;">
+      <hr style=3D"border: none; display: block; height: 2px; background-c=
+olor: #d7d7d7;" />
+        <p class=3D"cover" style=3D"font-family: Tahoma=2C Geneva=2C sans-=
+serif; color: #000000; font-size: 14px; font-weight: normal; line-height:=
+ 26px; margin: 0;">
+          Got a few of them for you this week. Hope you enjoy. Feedback is=
+ always welcome and taken into consideration.<br><br>Go forth and build!
+        </p>
+    </td>
+  </tr>
+</table>
+
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"600">
+    <tr>
+      <td colspan=3D"2" style=3D"padding: 0 20px 0 20px;">
+        <h5 style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; line-hei=
+ght: 1.2em; color: #000000; font-weight: bold; font-size: 14px; margin: 0=
+ 0 12px 0;">
+          Startup Reading List Startup Digest is curated by:
+        </h5>
+      </td>
+    </tr>
+      <tr>
+        <td width=3D"65" style=3D"vertical-align: top; padding: 10px 20px=
+ 15px 20px;" valign=3D"top">
+          <img src=3D"https://s3.amazonaws.com/startupdigest-production/us=
+ers/avatars/000/083/239/thumbnail/chagpar.jpg?1397411941" alt=3D"Zubin Cha=
+gpar" style=3D"border-radius: 50%" />
+        </td>
+        <td style=3D"padding: 10px 20px 15px 0;">
+          <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #000000; font-size: 14px; font-weight: normal; line-height: 1.6em; margin=
+: 0 0 5px 0; padding: 0;">
+            <b style=3D"color: #000000;">
+              Zubin Chagpar
+            </b>
+             - @phylosopher
+          </p>
+          <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif=2C sans-=
+serif; color: #000000; font-size: 14px; line-height: 1.6em; margin: 0 0 5p=
+x 0; padding: 0;">
+            Contact Zubin Chagpar at  <a href=3D"mailto:zubin.chagpar@star=
+tupdigestmail.com" style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; c=
+olor: #00AAE1;">zubin.chagpar@startupdigestmail.com</a>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td width=3D"65" style=3D"vertical-align: top; padding: 10px 20px=
+ 15px 20px;" valign=3D"top">
+          <img src=3D"https://s3.amazonaws.com/startupdigest-production/us=
+ers/avatars/000/000/031/thumbnail/chris_readinglist.jpg?1375990973" alt=3D=
+"Chris McCann" style=3D"border-radius: 50%" />
+        </td>
+        <td style=3D"padding: 10px 20px 15px 0;">
+          <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #000000; font-size: 14px; font-weight: normal; line-height: 1.6em; margin=
+: 0 0 5px 0; padding: 0;">
+            <b style=3D"color: #000000;">
+              Chris McCann
+            </b>
+             - Co-Founder=2C GroupTie
+          </p>
+          <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif=2C sans-=
+serif; color: #000000; font-size: 14px; line-height: 1.6em; margin: 0 0 5p=
+x 0; padding: 0;">
+            Contact Chris McCann at  <a href=3D"mailto:chris@startupdigest=
+=2Ecom" style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color: #00AAE1=
+;">chris@startupdigest.com</a>
+          </p>
+        </td>
+      </tr>
+  </table>
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"600">
+  <tr>
+    <td>
+      <div style=3D"padding: 24px; margin: 35px 0 50px 0; background-color=
+: #F7F8F8;">
+        <h3 style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; font-siz=
+e: 18px;
+                   font-weight: bold; color: #808080; margin-top: 0;">
+            Hiring? Access 250+ new candidates every Monday.
+        </h3>
+          <a href=3D"http://startupdigest.us1.list-manage.com/track/click?=
+u=3D92be899ef5a892c60b4a6cd97&id=3D8c9ca9c8b0&e=3De5b69d91e9"><img align=
+=3D"left" height=3D"77" src=3D"https://gallery.mailchimp.com/92be899ef5a89=
+2c60b4a6cd97/images/3279883d-6766-408b-bd23-20a508dc1e51.jpg" style=3D"wid=
+th: 200px; height: 77px; margin: 5px 7px 0px 0px;" width=3D"200" /></a><sp=
+an style=3D"font-family:verdana=2Cgeneva=2Csans-serif"><span style=3D"font=
+-size:12px">Great companies are built with great teams. With Hired=2C acce=
+ss over 250 pre-screened developers=2C designers=2C and tech sales profess=
+ionals every week all ready to explore new opportunities. Use Hired to fin=
+d the best talent in tech so you can focus on what you do best. <a href=3D=
+"http://startupdigest.us1.list-manage2.com/track/click?u=3D92be899ef5a892c=
+60b4a6cd97&id=3Dd766abc10f&e=3De5b69d91e9">Sign up and make the key hires=
+ you need</a>.</span></span><br />
+      </div>
+    </td>
+  </tr>
+</table>
+
+
+                      <table border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"600" style=3D"margin: 10px 0 0 0;">
+      <tr>
+        <td style=3D"padding: 25px 20px 25px 20px;">
+          <h4 style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; font-weight: bold; line-height: 1.2em; font-size: 22px; margin:=
+ 0 0 4px 0; padding: 0;">
+              <a href=3D"http://startupdigest.us1.list-manage.com/track/cl=
+ick?u=3D92be899ef5a892c60b4a6cd97&id=3Dc1aca0e3a2&e=3De5b69d91e9" style=
+=3D"font-weight: bold; font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; text-decoration: none;">Slack=E2=80=99s $2.8 Billion Dollar Secr=
+et Sauce</a>
+          </h4>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; line-height: 1.6em; margin: 0 0 5px 0; padding=
+: 0;">
+                <span style=3D"font-weight: 900; color: #000000;">
+                  Andrew Wilkinson
+                </span>
+
+
+            </p>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; font-weight: normal; line-height: 1.6em; margi=
+n: 15px 0 0 0; padding: 0;">
+              "To get attention in a crowded market=2C we had to find a wa=
+y to get people=E2=80=99s attention. Most enterprise software looks like a=
+ cheap 70's prom suit=E2=80=8A=E2=80=94=E2=80=8Amuted blues and greys ever=
+ywhere=E2=80=8A"
+            </p>
+        </td>
+      </tr>
+      <tr>
+        <td style=3D"padding: 25px 20px 25px 20px;">
+          <h4 style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; font-weight: bold; line-height: 1.2em; font-size: 22px; margin:=
+ 0 0 4px 0; padding: 0;">
+              <a href=3D"http://startupdigest.us1.list-manage1.com/track/c=
+lick?u=3D92be899ef5a892c60b4a6cd97&id=3D1cc70016b3&e=3De5b69d91e9" style=
+=3D"font-weight: bold; font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; text-decoration: none;">Making Something People Want</a>
+          </h4>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; line-height: 1.6em; margin: 0 0 5px 0; padding=
+: 0;">
+                <span style=3D"font-weight: 900; color: #000000;">
+                  Garry Tan
+                </span>
+
+
+            </p>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; font-weight: normal; line-height: 1.6em; margi=
+n: 15px 0 0 0; padding: 0;">
+              "They started with a simple problem statement. All of the gr=
+eat era-defining startups seem to start that way. What was broken? They kn=
+ew exactly what was broken."
+            </p>
+        </td>
+      </tr>
+      <tr>
+        <td style=3D"padding: 25px 20px 25px 20px;">
+          <h4 style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; font-weight: bold; line-height: 1.2em; font-size: 22px; margin:=
+ 0 0 4px 0; padding: 0;">
+              <a href=3D"http://startupdigest.us1.list-manage.com/track/cl=
+ick?u=3D92be899ef5a892c60b4a6cd97&id=3Dae70871e28&e=3De5b69d91e9" style=
+=3D"font-weight: bold; font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; text-decoration: none;">Valuation As A Scorecard</a>
+          </h4>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; line-height: 1.6em; margin: 0 0 5px 0; padding=
+: 0;">
+                <span style=3D"font-weight: 900; color: #000000;">
+                  Fred Wilson
+                </span>
+
+
+            </p>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; font-weight: normal; line-height: 1.6em; margi=
+n: 15px 0 0 0; padding: 0;">
+              "This obsession with valuation as the thing that tells you a=
+nd the world how you are doing has a dark side. And that is because valuat=
+ion is just a number."
+            </p>
+        </td>
+      </tr>
+      <tr>
+        <td style=3D"padding: 25px 20px 25px 20px;">
+          <h4 style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; font-weight: bold; line-height: 1.2em; font-size: 22px; margin:=
+ 0 0 4px 0; padding: 0;">
+              <a href=3D"http://startupdigest.us1.list-manage1.com/track/c=
+lick?u=3D92be899ef5a892c60b4a6cd97&id=3Defb539acd0&e=3De5b69d91e9" style=
+=3D"font-weight: bold; font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; text-decoration: none;">No Stack Startups</a>
+          </h4>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; line-height: 1.6em; margin: 0 0 5px 0; padding=
+: 0;">
+                <span style=3D"font-weight: 900; color: #000000;">
+                  Andy Weissman
+                </span>
+
+
+            </p>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; font-weight: normal; line-height: 1.6em; margi=
+n: 15px 0 0 0; padding: 0;">
+              "Where instead of being good at many things=2C companies can=
+ just focus on the last mile of value they provide=2C the one thing they c=
+an excel at better than anyone else"
+            </p>
+        </td>
+      </tr>
+      <tr>
+        <td style=3D"padding: 25px 20px 25px 20px;">
+          <h4 style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; font-weight: bold; line-height: 1.2em; font-size: 22px; margin:=
+ 0 0 4px 0; padding: 0;">
+              <a href=3D"http://startupdigest.us1.list-manage.com/track/cl=
+ick?u=3D92be899ef5a892c60b4a6cd97&id=3Df7508f20ce&e=3De5b69d91e9" style=
+=3D"font-weight: bold; font-family: Tahoma=2C Geneva=2C sans-serif; color:=
+ #00AAE1; text-decoration: none;">Gone Fishing</a>
+          </h4>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; line-height: 1.6em; margin: 0 0 5px 0; padding=
+: 0;">
+                <span style=3D"font-weight: 900; color: #000000;">
+                  Om Malik
+                </span>
+
+
+            </p>
+            <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color=
+: #000000; font-size: 14px; font-weight: normal; line-height: 1.6em; margi=
+n: 15px 0 0 0; padding: 0;">
+              "Today it is easy to learn about starting a business. You ca=
+n get practical advice and to-do lists at the click of a button. However=
+=2C what you can=E2=80=99t get from others is the understanding about why=
+ you are doing what you are doing and toward what end."
+            </p>
+        </td>
+      </tr>
+  </table>
+
+
+                    <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"600">
+  <tr>
+    <td width=3D"250" valign=3D"top" style=3D"background-color: #27A8E0;">
+      <ul style=3D"font-size: 14px; line-height: 1.6em; list-style-type: n=
+one; margin: 20px 0 10px 0; padding: 0 0 0 20px;">
+        <li style=3D"font-family: 'Tahoma'=2C Geneva=2C sans-serif; list-s=
+tyle-position: inside; margin: 0 0 10px 0; padding: 0;">
+          <a href=3D"http://startupdigest.us1.list-manage.com/track/click?=
+u=3D92be899ef5a892c60b4a6cd97&id=3D09aabc9794&e=3De5b69d91e9" style=3D"co=
+lor: white; font-style: normal; text-decoration: none; display: block; fon=
+t-size: 20px; margin: 0; padding: 0;" target=3D"_blank">Manage Subscriptio=
+n</a>
+        </li>
+        <li style=3D"font-family: 'Tahoma'=2C Geneva=2C sans-serif; list-s=
+tyle-position: inside; margin: 0 0 10px 0; padding: 0;">
+          <a href=3D"http://startupdigest.us1.list-manage2.com/track/click=
+?u=3D92be899ef5a892c60b4a6cd97&id=3D7ed843f288&e=3De5b69d91e9" style=3D"c=
+olor: white; font-style: normal; text-decoration: none; display: block; fo=
+nt-size: 20px; margin: 0; padding: 0;" target=3D"_blank">Submit Event</a>
+        </li>
+        <li style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; list-sty=
+le-position: inside; margin: 0; padding: 0;">
+          <a href=3D"http://us1.campaign-archive2.com/?u=3D92be899ef5a892c=
+60b4a6cd97&id=3Da231149619&e=3De5b69d91e9" target=3D"_blank" style=3D"color:=
+ white; font-style: normal; text-decoration: none; display: block; font-si=
+ze: 20px; margin: 0; padding: 0;">View in Browser</a>
+        </li>
+      </ul>
+    </td>
+    <td style=3D"background-color: #27A8E0; padding: 0 20px 0 0;">
+      <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color: #fff=
+fff; font-size: 13px; line-height: 1.8em; margin: 20px 0 15px 0;">
+        You are receiving this email because you believe that the best sta=
+rtup articles and videos are made by active members of the startup communi=
+ty.
+      </p>
+      <p style=3D"font-family: Tahoma=2C Geneva=2C sans-serif; color: #fff=
+fff; font-size: 13px; line-height: 1.8em; margin: 0 0 10px 0; padding: 10p=
+x 0 10px 0;">
+        &copy; 2009-2015 <a href=3D"http://startupdigest.us1.list-manage2.=
+com/track/click?u=3D92be899ef5a892c60b4a6cd97&id=3Da627f1739b&e=3D=
+e5b69d91e9" style=3D"color: white !important;">Startup Digest</a>.
+        Startup Digest is a registered trademark of <a href=3D"http://star=
+tupdigest.us1.list-manage.com/track/click?u=3D92be899ef5a892c60b4a6cd97&id=
+=3Da73cdad2c8&e=3De5b69d91e9" style=3D"color: white; text-decoration: und=
+erline;">Startup Weekend</a>.
+        All rights reserved.
+      </p>
+    </td>
+  </tr>
+</table>
+
+                </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+              <center>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" wi=
+dth=3D"100%" id=3D"canspamBarWrapper" style=3D"background-color:#FFFFFF; b=
+order-top:1px solid #E5E5E5;">
+                    <tr>
+                        <td align=3D"center" valign=3D"top" style=3D"paddi=
+ng-top:20px; padding-bottom:20px;">
+                            <table border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" id=3D"canspamBar">
+                                <tr>
+                                    <td align=3D"center" valign=3D"top" st=
+yle=3D"color:#606060; font-family:Helvetica=2C Arial=2C sans-serif; font-s=
+ize:11px; line-height:150%; padding-right:20px; padding-bottom:5px; paddin=
+g-left:20px; text-align:center;">
+                                        This email was sent to <a href=3D"=
+mailto:roman.priebe@gmail.com" target=3D"_blank" style=3D"color:#404040 !importa=
+nt;">roman.priebe@gmail.com</a>
+                                        <br />
+                                        <a href=3D"http://startupdigest.us=
+1.list-manage1.com/about?u=3D92be899ef5a892c60b4a6cd97&id=3D62dc6ea1a0&e=
+=3De5b69d91e9&c=3Da231149619" target=3D"_blank" style=3D"color:#404040 !impo=
+rtant;"><em>why did I get this?</em></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=3D=
+"http://startupdigest.us1.list-manage.com/unsubscribe?u=3D92be899ef5a892c6=
+0b4a6cd97&id=3D62dc6ea1a0&e=3De5b69d91e9&c=3Da231149619" style=3D"color:#404=
+040 !important;">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;&nbsp;<a=
+ href=3D"http://startupdigest.us1.list-manage2.com/profile?u=3D92be899ef5a=
+892c60b4a6cd97&id=3D62dc6ea1a0&e=3De5b69d91e9" style=3D"color:#404040 !impor=
+tant;">update subscription preferences</a>
+                                        <br />
+                                        UP Global &middot; PO BOX 95149 &m=
+iddot; Seattle=2C WA 98145 &middot; USA
+                                        <br />
+                                        <br />
+
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <style type=3D"text/css">
+                    @media only screen and (max-width: 480px){
+                        table[id=3D"canspamBar"] td{font-size:14px !impor=
+tant;}
+                        table[id=3D"canspamBar"] td a{display:block !impo=
+rtant; margin-top:10px !important;}
+                    }
+                </style>
+            </center><img src=3D"http://startupdigest.us1.list-manage.com/=
+track/open.php?u=3D92be899ef5a892c60b4a6cd97&id=3Da231149619&e=3D=
+e5b69d91e9" height=3D"1" width=3D"1"></body>
+</html>
+--_----------=_MCPart_1494070228--

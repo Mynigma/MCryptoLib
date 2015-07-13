@@ -1,0 +1,115 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp149076wma;
+        Tue, 12 May 2015 09:06:00 -0700 (PDT)
+X-Received: by 10.236.89.171 with SMTP id c31mr15641069yhf.149.1431446759763;
+        Tue, 12 May 2015 09:05:59 -0700 (PDT)
+Return-Path: <SRS0=v0LQ=FX=maillist.ox.ac.uk=bounce+romes==a==cantab.net==logic@srs.aluminati.net>
+Received: from jackal.aluminati.org (jackal.aluminati.org. [72.9.247.210])
+        by mx.google.com with ESMTP id h44si8610429yhh.142.2015.05.12.09.05.58
+        for <roman.priebe@gmail.com>;
+        Tue, 12 May 2015 09:05:59 -0700 (PDT)
+Received-SPF: pass (google.com: domain of SRS0=v0LQ=FX=maillist.ox.ac.uk=bounce+romes==a==cantab.net==logic@srs.aluminati.net designates 72.9.247.210 as permitted sender) client-ip=72.9.247.210;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of SRS0=v0LQ=FX=maillist.ox.ac.uk=bounce+romes==a==cantab.net==logic@srs.aluminati.net designates 72.9.247.210 as permitted sender) smtp.mail=SRS0=v0LQ=FX=maillist.ox.ac.uk=bounce+romes==a==cantab.net==logic@srs.aluminati.net
+Received: from localhost (localhost [127.0.0.1])
+	by jackal.aluminati.org (Postfix) with ESMTP id 00C5ECDA5F8
+	for <roman.priebe@gmail.com>; Tue, 12 May 2015 17:05:57 +0100 (BST)
+X-Quarantine-ID: <pM05ih3mNf9I>
+X-Virus-Scanned: Debian amavisd-new at serval.aluminati.org
+X-Spam-Flag: NO
+X-Spam-Score: -3.421
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.421 tagged_above=-9999 required=6.31
+	tests=[BAYES_00=-1.9, RCVD_IN_DNSWL_MED=-2.3, SPF_NEUTRAL=0.779]
+	autolearn=ham
+Received: from jackal.aluminati.org ([127.0.0.1])
+	by localhost (jackal.aluminati.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id pM05ih3mNf9I for <roman.priebe@gmail.com>;
+	Tue, 12 May 2015 17:05:56 +0100 (BST)
+Received: from relay11.mail.ox.ac.uk (relay11.mail.ox.ac.uk [129.67.1.162])
+	by jackal.aluminati.org (Postfix) with ESMTP id 9777186601C
+	for <romes@cantab.net>; Tue, 12 May 2015 17:05:53 +0100 (BST)
+Received: from dramatic-exit.it.ox.ac.uk ([163.1.160.180])
+	by relay11.mail.ox.ac.uk with esmtp (Exim 4.80)
+	(envelope-from <bounce+romes==a==cantab.net==logic@maillist.ox.ac.uk>)
+	id 1YsCgr-0005A1-b0
+	for romes@cantab.net; Tue, 12 May 2015 17:05:53 +0100
+Received: from sympa by dramatic-exit.it.ox.ac.uk with local (Exim 4.80)
+	(envelope-from <bounce+romes==a==cantab.net==logic@maillist.ox.ac.uk>)
+	id 1YsCgo-0007xX-TZ
+	for romes@cantab.net; Tue, 12 May 2015 17:05:51 +0100
+Received: from relay13.mail.ox.ac.uk ([129.67.1.166])
+	by recent-convert.it.ox.ac.uk with esmtp (Exim 4.80)
+	(envelope-from <jamie.vicary@cs.ox.ac.uk>)
+	id 1YsCfD-0001b0-Vb
+	for logic@maillist.ox.ac.uk; Tue, 12 May 2015 17:04:12 +0100
+Received: from smtp6.mail.ox.ac.uk ([163.1.2.206])
+	by relay13.mail.ox.ac.uk with esmtp (Exim 4.80)
+	(envelope-from <jamie.vicary@cs.ox.ac.uk>)
+	id 1YsCfD-0007U1-il
+	for logic@maillist.ox.ac.uk; Tue, 12 May 2015 17:04:11 +0100
+Received: from mail-lb0-f174.google.com ([209.85.217.174])
+	by smtp6.mail.ox.ac.uk with esmtpsa (TLS1.2:RSA_ARCFOUR_SHA1:128)
+	(Exim 4.80)
+	(envelope-from <jamie.vicary@cs.ox.ac.uk>)
+	id 1YsCfD-0005JA-Lv
+	for logic@maillist.ox.ac.uk; Tue, 12 May 2015 17:04:11 +0100
+Received: by lbcga7 with SMTP id ga7so9601622lbc.1
+        for <logic@maillist.ox.ac.uk>; Tue, 12 May 2015 09:04:11 -0700 (PDT)
+X-Received: by 10.112.138.195 with SMTP id qs3mr12181602lbb.47.1431446651377;
+ Tue, 12 May 2015 09:04:11 -0700 (PDT)
+MIME-Version: 1.0
+Reply-To: jamie.vicary@cs.ox.ac.uk
+Received: by 10.112.147.71 with HTTP; Tue, 12 May 2015 09:03:50 -0700 (PDT)
+From: Jamie Vicary <jamie.vicary@cs.ox.ac.uk>
+Date: Tue, 12 May 2015 17:03:50 +0100
+Message-ID: <CANr23v2YoOcXoammbEh8Kz6v5csOfXSC1W+Ff8oWNhpB0BzbrA@mail.gmail.com>
+Subject: OASIS this Friday at 2pm: Alexandra Silva, "A Formal System for the
+ Verification of Networks"
+To: cs-talk-announce <cs-talk-announce@cs.ox.ac.uk>, quantum <quantum@cs.ox.ac.uk>, 
+	logic@maillist.ox.ac.uk
+Cc: Alexandra Silva <alexandra@cs.ru.nl>
+Content-Type: text/plain; charset=UTF-8
+X-Oxford-Username: mans0933
+X-Validation-by: chris.heunen@cs.ox.ac.uk
+X-Loop: logic@maillist.ox.ac.uk
+X-Sequence: 4
+Errors-to: logic-return@maillist.ox.ac.uk
+Precedence: list
+Precedence: bulk
+List-Id: <logic.maillist.ox.ac.uk>
+List-Help: <mailto:sympa@maillist.ox.ac.uk?subject=help>
+List-Owner: <mailto:logic-request@maillist.ox.ac.uk>
+List-Post: <mailto:logic@maillist.ox.ac.uk>
+List-Subscribe: <mailto:sympa@maillist.ox.ac.uk?subject=subscribe%20logic>
+List-Unsubscribe: <mailto:sympa@maillist.ox.ac.uk?subject=unsubscribe%20logic>
+
+Dear all,
+
+This Friday's OASIS seminar will be given by Alexandra Silva,
+currently visiting from Radboud University Nijmegen. She will present
+a formal approach to the description and analysis of networks. All are
+welcome.
+
+When and where: 2pm this Friday, Lecture Theatre B, Computer Science
+
+NetKAT: A FORMAL SYSTEM FOR THE VERIFICATION OF NETWORKS
+
+NetKAT is a relatively new programming language and logic for
+reasoning about packet switching networks that fits well with the
+popular software defined networking (SDN) paradigm. NetKAT was
+introduced quite recently by Anderson et al. (POPL 2014) and further
+developed by Foster et al. (POPL 2015). The system provides
+general-purpose programming constructs such as parallel and sequential
+composition, conditional tests, and iteration, as well as
+special-purpose primitives for querying and modifying packet headers
+and encoding network topologies. The language allows the desired
+behavior of a network to be specified equationally. It has a formal
+categorical semantics and a deductive system that is sound and
+complete over that semantics, as well as an efficient decision
+procedure for the automatic verification of equationally-defined
+properties of networks.
+
+Best wishes,
+Jamie
+

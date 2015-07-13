@@ -1,0 +1,695 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp576365wma;
+        Fri, 8 May 2015 08:21:06 -0700 (PDT)
+X-Received: by 10.43.96.10 with SMTP id ce10mr4590704icc.59.1431098465049;
+        Fri, 08 May 2015 08:21:05 -0700 (PDT)
+Return-Path: <BrasserieBlanc-azkra1tyjjdktykj1r@cmail1.com>
+Received: from mx32.h.outbound.createsend.com (mx32.h.outbound.createsend.com. [204.75.142.32])
+        by mx.google.com with ESMTP id w36si3980689ioi.60.2015.05.08.08.21.03
+        for <roman.priebe@gmail.com>;
+        Fri, 08 May 2015 08:21:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of BrasserieBlanc-azkra1tyjjdktykj1r@cmail1.com designates 204.75.142.32 as permitted sender) client-ip=204.75.142.32;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of BrasserieBlanc-azkra1tyjjdktykj1r@cmail1.com designates 204.75.142.32 as permitted sender) smtp.mail=BrasserieBlanc-azkra1tyjjdktykj1r@cmail1.com;
+       dkim=pass header.i=@cmail1.com
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=cs2013; d=cmail1.com;
+ h=From:To:Reply-To:Date:Subject:MIME-Version:Content-Type:X-Feedback-ID:List-Unsubscribe:Sender:Message-ID; i=news=3Dbrasserieblanc.com@cmail1.com;
+ bh=sjfoyMKdt2iqxNtfGMptXg+hWyc=;
+ b=b00AnsJOKUpLykS/wysUSbmGVGnuWaPPdE4UJ68pukDFUciVXw4bdSXbqoD3LOJtvwiPEwqoifQg
+   dILhdCdUfkNq9eF+T1WRLRRVItonXkyuRRLOyJOxf1MYUEezn2nBhyuWPUAhTHl5EYjIc7pN35iV
+   rOcVYEpKxPoN+ASXtL0=
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=cs2013; d=cmail2.com;
+ h=From:To:Reply-To:Date:Subject:MIME-Version:Content-Type:X-Feedback-ID:List-Unsubscribe:Sender:Message-ID;
+ bh=sjfoyMKdt2iqxNtfGMptXg+hWyc=;
+ b=Zfxwxl+xV4zXS+EXdhwIz595GnNXHZ/dlyCBIa6ZAy1RAYWkkpXrnHJc0dc/YECeXvK6k8scUCd/
+   F0nmyiFPF73zNszE3iYeOQEcIBsbtQBVUjwsZY+7BppijKbk3Gq/vIR+AlLiYKBO9/IFuhcLRBOt
+   UR4inYIV8xNAPLlI88o=
+From: "Brasserie Blanc" <news@brasserieblanc.com> 
+To: "Roman Priebe" <roman.priebe@gmail.com>
+Reply-To: news@brasserieblanc.com
+Date: Sat, 09 May 2015 01:19:45 +1000
+Subject: New seasonal set menu for May
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_33f2af60-8fb7-468d-8a51-277f04b4aa68_"; charset=utf-8
+X-Mailer: Create Send
+X-Complaints-To: abuse@cmail1.com
+X-Feedback-ID: CA1-r-azkra:LI1-r-trkuuht:CL1-r-tktidd:createSEND
+List-Unsubscribe: <http://unsub.cmail1.com/t/r-u-azkra-tyjjdktykj/>,
+ <mailto:unsubscribe-azkra2tyjjdktykj2r-21921013@cmail1.com?subject=Unsubscribe>
+Sender: "Brasserie Blanc" <news=brasserieblanc.com@cmail1.com>
+Message-ID: <cm.011945.azkra.tyjjdktykj.r@cmail1.com>
+
+--_33f2af60-8fb7-468d-8a51-277f04b4aa68_
+Content-Type: text/plain;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Problems viewing this email?  Click here to view it online. http://client=
+s.broadkast.co.uk/t/r-e-azkra-tyjjdktykj-d/
+
+Marvellous Marjoram
+
+"Marjoram is such a magical herb, one of the great mix of herbs that any =
+chef will have as part of their armoury. It is packed with goodness and b=
+rings us an eclectic mix of spicy, peppery but also minty flavours and is=
+ an inspired addition to this month's pea & mint soup.
+
+Adding marjoram to a light soup like pea & mint adds another dimension as=
+ it does to salad dressings, seafood sauces, soups, and poultry. The clas=
+sic Lapin =C3=A0 la Moutarde is brought to life with the addition of marj=
+oram; a chicken rubbed with garlic, salt, coarse black pepper & marjoram,=
+ is a lovely thing and makes such a wonderful supper dish. Add it to anyt=
+hing Proven=C3=A7ale and any of your stews or slow cooked dishes.
+
+I will tell you a little secret. If you grow fresh marjoram - which, by t=
+he way, is very easy to do - then you can do a clever thing and dry it in=
+ your oven. Just 40 minutes at 100 degrees and you will have a perfectly =
+dried, crunchy and tasty herb to sprinkle on your favourite dishes."
+
+Bon app=C3=A9tit!
+
+Try our recipe for a spring fresh Pea, Mint & Marjoram soup Or visit our =
+brasseries & enjoy this delicious dish as part of our Menu Prix Fixe for =
+May.
+
+--------
+
+*MAY PRIX FIXE MENU*
+
+PEA, MINT & MARJORAM SOUP seasonal.
+
+BUTTERHEAD LETTUCE & GRANA PADANO SALAD
+tossed. ANCHOVY DRESSING, CROUTONS
+
+LEEK & WHITE WINE POTATO SALAD
+warmed. GRATED EGG, MUSTARD DRESSING, CHIVES
+
+LEG OF CORN-FED CHICKEN
+pan-fried. VEGETABLE PAYSANNE, LEMON-THYME POTATOES
+
+SMOKED HADDOCK & LEEK FLAN
+baked. WATERCRESS SALAD, DIJON DRESSING
+
+CORNISH MEGRIM SOLE
+poached. WHITE WINE & CREAM, SPRING VEGETABLES,  HERB JUS, NEW POTATOES (=
+=C2=A31 supplement)
+
+SPRING VEGETABLE RISOTTO
+creamed. PEAS, BEANS, CARROTS, TOMATO ESSENCE
+
+Orange & Cointreau Mousse
+chilled. BLOOD ORANGE COULIS, LANGUE DU CHAT BISCUIT
+
+WARM APPLE & ALMOND CRUMBLE
+baked. DOUBLE CREAM
+
+CHOCOLATE SPONGE PUDDING
+steamed. CHOCOLATE SAUCE
+
+--------
+
+TWO / THREE COURSE LUNCH for 11.95 / 14.45
+TWO / THREE COURSE DINNER for 14.45 / 16.95
+ADD A GLASS OF HOUSE WINE FOR 2.50*
+
+Availability & prices vary at different brasseries. Please check the set =
+menu at  your favourite location [http://brasserieblanc.com/?locations] =
+for times.
+
+brasserieblanc.com [http://www.brasserieblanc.com]
+Click here to unsubscribe http://clients.broadkast.co.uk/t/r-u-azkra-=
+tyjjdktykj-h/ |  View this e-mail in your browser http://clients.broa=
+dkast.co.uk/t/r-e-azkra-tyjjdktykj-k/
+
+--_33f2af60-8fb7-468d-8a51-277f04b4aa68_
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.o=
+rg/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml">
+<head>
+     <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dut=
+f-8" />
+     <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sca=
+le=3D1.0"/>
+     <title>Brasserie Blanc</title>
+     <style type=3D"text/css">
+          @media screen {
+               @import url("http://fast.fonts.net/t/1.css?apiType=3Dcss&p=
+rojectid=3De5018266-815b-4f41-b4f0-583559b673e4");
+               @font-face{
+               font-family:"Avenir LT W01 45 Book";
+               src:url("http://broadkast.s3.amazonaws.com/blanc/blanc/201=
+4/charlotte_sep_offer/fonts/4f32268f-fd86-4960-b72c-4bb1ba75ec6f.eot?#ief=
+ix");
+               src:url("http://broadkast.s3.amazonaws.com/blanc/blanc/201=
+4/charlotte_sep_offer/fonts/4f32268f-fd86-4960-b72c-4bb1ba75ec6f.eot?#ief=
+ix") format("eot"),url("http://broadkast.s3.amazonaws.com/blanc/blanc/201=
+4/charlotte_sep_offer/fonts/939cba03-5b40-4d01-9bc5-7589eca863db.woff") f=
+ormat("woff"),url("http://broadkast.s3.amazonaws.com/blanc/blanc/2014/cha=
+rlotte_sep_offer/fonts/849bc5b9-a2ff-4343-977b-26ba8bd24a60.ttf") format(=
+"truetype"),url("http://broadkast.s3.amazonaws.com/blanc/blanc/2014/charl=
+otte_sep_offer/fonts/f67fa3b5-c1d1-488f-8e60-a828b9ad56a4.svg#f67fa3b5-c1=
+d1-488f-8e60-a828b9ad56a4") format("svg");
+               }
+          }
+         =20
+          #outlook a {padding:0;}=20
+          body{width:100% !important; -webkit-text-size-adjust:100%; -ms-=
+text-size-adjust:100%; margin:0; padding:0; color:#695d56;}
+         =20
+          .ExternalClass {width:100%;}=20
+          .ExternalClass, .ExternalClass p, .ExternalClass span, .Externa=
+lClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+         =20
+          #backgroundTable {margin:0; padding:0; width:100% !important; l=
+ine-height: 100% !important;}
+         =20
+         =20
+          img {outline:none; text-decoration:none; -ms-interpolation-mode=
+: bicubic;}
+          a img {border:none;}
+          .image_fix {display:block;}
+          body {
+               background-color:#fff;
+          }
+         =20
+          p {margin: 0 0 15px; 0}
+         =20
+          table td {border-collapse: collapse;}
+         =20
+          a {color: #625153;}
+         =20
+         =20
+     </style>
+</head>
+<body style=3D"width:100% !important;-webkit-text-size-adjust:100%;-ms-te=
+xt-size-adjust:100%;margin-top:0;margin-bottom:0;margin-right:0;margin-le=
+ft:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;color:=
+#695d56;background-color:#fff;" >
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" id=3D"backgroundT=
+able" align=3D"center" bgcolor=3D"fff" style=3D"background-color:#fff;mar=
+gin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padd=
+ing-bottom:0;padding-right:0;padding-left:0;width:100% !important;line-he=
+ight:100% !important;" >
+     <tr>
+          <td valign=3D"top" style=3D"border-collapse:collapse;" >
+              =20
+               <table cellpadding=3D"15" cellspacing=3D"0" border=3D"0" w=
+idth=3D"100%">
+                    <tr>
+                         <td width=3D"100%" style=3D"border-collapse:coll=
+apse;" >
+                              <div style=3D"font-family:Georgia, serif;fo=
+nt-size:11px;color:#695d56;text-align:center;" >Problems viewing this ema=
+il? <a href=3D"http://clients.broadkast.co.uk/t/r-e-azkra-=
+tyjjdktykj-t/" style=3D"color:#625153;" ><span style=3D"color:#695d56;" >Click h=
+ere to view it online.</span></a></div>
+                         </td>
+                    </tr>
+               </table>
+              =20
+               <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" al=
+ign=3D"center" width=3D"700">
+                   =20
+                   =20
+                    <tr>
+                         <td style=3D"border-collapse:collapse;" >
+                              <img src=3D"http://i1.cmail1.com/ei/r/AF/73=
+E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D"50" class=3D"=
+image_fix" style=3D"outline-style:none;text-decoration:none;-ms-interpola=
+tion-mode:bicubic;display:block;" />
+                             =20
+                              <div style=3D"font-family:Georgia, serif;fo=
+nt-size:22px;color:#695d56;font-weight:bold;line-height:30px;text-align:c=
+enter;-webkit-font-smoothing:antialiased;letter-spacing:3px;text-transfor=
+m:uppercase;" >
+                                   Marvellous Marjoram
+                              </div>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td style=3D"border-collapse:collapse;" >
+                              <img src=3D"http://i2.cmail1.com/ei/r/AF/73=
+E/1E6/010223/csimport/header_1.jpg" alt=3D"Marvellous Marjoram" width=3D"=
+700" height=3D"630" class=3D"image_fix" style=3D"outline-style:none;text-=
+decoration:none;-ms-interpolation-mode:bicubic;display:block;" />
+                         </td>
+                    </tr>
+                    <tr>
+                         <td valign=3D"top" style=3D"border-collapse:coll=
+apse;" >
+                              <table cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" align=3D"center" width=3D"700">
+                                   <tr>
+                                        <td width=3D"70" style=3D"border-=
+collapse:collapse;" >
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"70" height=3D=
+"60" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                        </td>
+                                        <td width=3D"560" style=3D"border=
+-collapse:collapse;" >
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"40" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:22px;color:#695d56;font-style:italic;line-height:3=
+0px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:1=
+px;" >
+                                                  &ldquo;Marjoram is such=
+ a magical herb, one of the great mix of herbs that any chef will have as=
+ part of their armoury. It is packed with goodness and brings us an eclec=
+tic mix of spicy, peppery but also minty flavours and is an inspired addi=
+tion to this month&rsquo;s pea &amp; mint soup.
+                                             </div>
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                             <div style=3D"font-family:'A=
+venir LT W01 45 Book', Century Gothic, CenturyGothic, Arial, sans-serif;f=
+ont-size:18px;color:#695d56;line-height:26px;text-align:center;-webkit-fo=
+nt-smoothing:antialiased;" >
+                                                  Adding marjoram to a li=
+ght soup like pea &amp; mint adds another dimension as it does to salad d=
+ressings, seafood sauces, soups, and poultry. The classic Lapin =C3=A0 la=
+ Moutarde is brought to life with the addition of marjoram; a chicken rub=
+bed with garlic, salt, coarse black pepper &amp; marjoram, is a lovely th=
+ing and makes such a wonderful supper dish. Add it to anything Proven=C3=A7=
+ale and any of your stews or slow cooked dishes.
+                                             </div>
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"20" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                             <div style=3D"font-family:'A=
+venir LT W01 45 Book', Century Gothic, CenturyGothic, Arial, sans-serif;f=
+ont-size:18px;color:#695d56;line-height:26px;text-align:center;-webkit-fo=
+nt-smoothing:antialiased;" >
+                                                  I will tell you a littl=
+e secret. If you grow fresh marjoram - which, by the way, is very easy to=
+ do - then you can do a clever thing and dry it in your oven. Just 40 min=
+utes at 100 degrees and you will have a perfectly dried, crunchy and tast=
+y herb to sprinkle on your favourite dishes.&rdquo;
+                                             </div>
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:18px;color:#695d56;font-style:italic;line-height:2=
+0px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:1=
+px;" >
+                                                  Bon app=C3=A9tit!
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i3.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/signature_2.jpg" alt=3D"Signature" w=
+idth=3D"560" height=3D"120" class=3D"image_fix" style=3D"outline-style:no=
+ne;text-decoration:none;-ms-interpolation-mode:bicubic;display:block;" />=
+
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-style:italic;line-height:2=
+8px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:1=
+px;" >
+                                                  Try our recipe for a sp=
+ring fresh<br>
+                                                  <a href=3D"http://clien=
+ts.broadkast.co.uk/t/r-l-azkra-tyjjdktykj-r/" style=3D"font-style=
+:normal;text-transform:uppercase;text-decoration:underline;color:#625153;=
+" >Pea, Mint &amp; Marjoram soup</a><br>
+                                                  Or visit our brasseries=
+ &amp; enjoy this delicious<br>
+                                                  dish as part of our Men=
+u Prix Fixe for May.
+                                             </div>
+                                            =20
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:22px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;text-transform:uppercase;" >
+                                                  MAY PRIX FIXE MENU
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"20" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  PEA, MINT &amp; MARJORA=
+M SOUP seasonal.
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"10" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  BUTTERHEAD LETTUCE &amp=
+; GRANA PADANO SALAD
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  tossed. ANCHOVY DRESSIN=
+G, CROUTONS
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"10" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  LEEK &amp; WHITE WINE P=
+OTATO SALAD
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  warmed. GRATED EGG, MUS=
+TARD DRESSING, CHIVES
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  LEG OF CORN-FED CHICKEN=
+
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  pan-fried. VEGETABLE PA=
+YSANNE, LEMON-THYME POTATOES
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"10" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  SMOKED HADDOCK &amp; LE=
+EK FLAN
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  baked. WATERCRESS SALAD=
+, DIJON DRESSING
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"10" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  CORNISH MEGRIM SOLE
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+20px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  poached. WHITE WINE &am=
+p; CREAM, SPRING VEGETABLES,
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+20px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  HERB JUS, NEW POTATOES =
+(=C2=A31 supplement)
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"10" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  SPRING VEGETABLE RISOTT=
+O
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  creamed. PEAS, BEANS, C=
+ARROTS, TOMATO ESSENCE
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;text-transform:uppercase;" >
+                                                  Orange &amp; Cointreau =
+Mousse
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  chilled. BLOOD ORANGE C=
+OULIS, LANGUE DU CHAT BISCUIT
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"10" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;text-transform:uppercase;" >
+                                                  WARM APPLE &amp; ALMOND=
+ CRUMBLE
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  baked. DOUBLE CREAM
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"10" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:16px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;text-transform:uppercase;" >
+                                                  CHOCOLATE SPONGE PUDDIN=
+G
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  steamed. CHOCOLATE SAUC=
+E
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  TWO / THREE COURSE LUNC=
+H for 11.95 / 14.45
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  TWO / THREE COURSE DINN=
+ER for 14.45 / 16.95
+                                             </div>
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:12px;color:#695d56;font-weight:normal;line-height:=
+30px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:=
+3px;" >
+                                                  ADD A GLASS OF HOUSE WI=
+NE FOR 2.50*
+                                             </div>
+                                            =20
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"560" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                            =20
+                                             <div style=3D"font-family:'A=
+venir LT W01 45 Book', Century Gothic, CenturyGothic, Arial, sans-serif;f=
+ont-size:18px;color:#695d56;line-height:26px;text-align:center;-webkit-fo=
+nt-smoothing:antialiased;" >
+                                                  Availability &amp; pric=
+es vary at different brasseries.<br>
+                                                  Please check the set me=
+nu at <a href=3D"http://clients.broadkast.co.uk/t/r-l-azkra-=
+tyjjdktykj-y/" style=3D"color:#625153;" >your favourite location</a> for times=
+.
+                                             </div>
+                                        </td>
+                                        <td width=3D"70" style=3D"border-=
+collapse:collapse;" >
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"70" height=3D=
+"60" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                        </td>
+                                   </tr>
+                              </table>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td style=3D"border-collapse:collapse;" >
+                              <img src=3D"http://i1.cmail1.com/ei/r/AF/73=
+E/1E6/010223/csimport/spacer_0.gif" width=3D"250" height=3D"10" class=3D"=
+image_fix" style=3D"outline-style:none;text-decoration:none;-ms-interpola=
+tion-mode:bicubic;display:block;" />
+                         </td>
+                    </tr>
+                    <tr>
+                         <td valign=3D"top" style=3D"border-collapse:coll=
+apse;" >
+                              <table cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" align=3D"center" width=3D"700">
+                                   <tr>
+                                        <td width=3D"700" style=3D"border=
+-collapse:collapse;" >
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"700" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                             <img src=3D"http://i4.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/bb-logo_3.jpg" alt=3D"Brasserie Blan=
+c Logo" width=3D"700" height=3D"43" class=3D"image_fix" style=3D"outline-=
+style:none;text-decoration:none;-ms-interpolation-mode:bicubic;display:bl=
+ock;" />
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"700" height=3D=
+"10" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                        </td>
+                                   </tr>
+                              </table>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td style=3D"border-collapse:collapse;" >
+                              <table cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" align=3D"center" width=3D"700">
+                                   <tr>
+                                        <td width=3D"700" style=3D"border=
+-collapse:collapse;" >
+                                             <div style=3D"font-family:Ge=
+orgia, serif;font-size:18px;color:#695d56;font-style:italic;line-height:1=
+8px;text-align:center;-webkit-font-smoothing:antialiased;letter-spacing:2=
+px;" >
+                                                  <a href=3D"http://clien=
+ts.broadkast.co.uk/t/r-l-azkra-tyjjdktykj-j/" style=3D"text-decor=
+ation:none;color:#625153;" >brasserieblanc.com</a>
+                                             </div>
+                                             <img src=3D"http://i1.cmail1=
+.com/ei/r/AF/73E/1E6/010223/csimport/spacer_0.gif" width=3D"700" height=3D=
+"30" class=3D"image_fix" style=3D"outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;display:block;" />
+                                        </td>
+                                   </tr>
+                              </table>
+                         </td>
+                    </tr>
+                    <tr>
+                         <td style=3D"border-collapse:collapse;" >
+                              <img src=3D"http://i1.cmail1.com/ei/r/AF/73=
+E/1E6/010223/csimport/spacer_0.gif" alt=3D"" width=3D"700" height=3D"30" =
+class=3D"image_fix" style=3D"outline-style:none;text-decoration:none;-ms-=
+interpolation-mode:bicubic;display:block;" />
+                         </td>
+                    </tr>
+                    <tr>
+                         <td style=3D"border-collapse:collapse;" >
+                              <div style=3D"font-family:Georgia, serif;fo=
+nt-size:12px;color:#695d56;margin-bottom:20px;text-align:center;" >
+                                   <a href=3D"http://clients.broadkast.co=
+.uk/t/r-u-azkra-tyjjdktykj-i/" style=3D"color:#625153;" ><span st=
+yle=3D"color:#695d56;" >Click here to unsubscribe</a></a> | <a href=3D"ht=
+tp://clients.broadkast.co.uk/t/r-e-azkra-tyjjdktykj-u/" style=3D"=
+color:#625153;" ><span style=3D"color:#695d56;" >View this e-mail in your=
+ browser</span></a>
+                              </div>
+                         </td>
+                    </tr>
+               </table>
+          </td>
+     </tr>
+</table>
+<img src=3D"https://brasserieblanc.cmail1.com/t/r-o-azkra-=
+tyjjdktykj/o.gif"  width=3D"1" height=3D"1" border=3D"0" alt=3D"" style=3D"visib=
+ility:hidden !important;display:block !important;height:1px !important;wi=
+dth:1px !important;border-width:0 !important;margin-top:0 !important;marg=
+in-bottom:0 !important;margin-right:0 !important;margin-left:0 !important=
+;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !im=
+portant;padding-left:0 !important;outline-style:none;text-decoration:none=
+;-ms-interpolation-mode:bicubic;" /></body>
+</html>=
+
+
+
+
+--_33f2af60-8fb7-468d-8a51-277f04b4aa68_--

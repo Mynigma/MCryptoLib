@@ -1,0 +1,675 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp1418429wma;
+        Thu, 14 May 2015 07:27:22 -0700 (PDT)
+X-Received: by 10.140.92.214 with SMTP id b80mr5664501qge.56.1431613642596;
+        Thu, 14 May 2015 07:27:22 -0700 (PDT)
+Return-Path: <bounce-1030252302_9046600-roman.priebe=gmail.com@mailsquad.groupspaces.com>
+Received: from avocet.groupspaces.com (avocet.groupspaces.com. [107.20.159.158])
+        by mx.google.com with ESMTP id 66si174713qgt.0.2015.05.14.07.27.21
+        for <roman.priebe@gmail.com>;
+        Thu, 14 May 2015 07:27:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-1030252302_9046600-roman.priebe=gmail.com@mailsquad.groupspaces.com designates 107.20.159.158 as permitted sender) client-ip=107.20.159.158;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of bounce-1030252302_9046600-roman.priebe=gmail.com@mailsquad.groupspaces.com designates 107.20.159.158 as permitted sender) smtp.mail=bounce-1030252302_9046600-roman.priebe=gmail.com@mailsquad.groupspaces.com;
+       dkim=pass header.i=@groupspaces.com
+Received: from groupspaces.com (avocet.groupspaces.com [10.223.29.87])
+	by avocet.groupspaces.com (Postfix) with ESMTP id B6D5A2490A
+	for <roman.priebe@gmail.com>; Thu, 14 May 2015 15:27:21 +0100 (BST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=groupspaces.com;
+	s=default; t=1431613641;
+	bh=fkg2Ry1aqUp9nageQp/WIsHDB5tjS3OLaIBYRf87wjA=;
+	h=To:From:Reply-To:Subject:Date:MIME-Version:Content-Type:
+	 Content-Transfer-Encoding:Sender:List-Id:List-Post:
+	 List-Unsubscribe:List-Archive:Message-ID;
+	b=hi9ay9qNKkzVgj3D02imV3caWC6nJbYYMkTymTWU8sxxMGXou7RTP0rZ8YFOkeC6D
+	 NdBKMoQWZLU4CFClDYz6cJSpjYpRUlvD3rXX0u/+0OHqss9aTcThQRkXD6LvIT3OJG
+	 x6i0Lr3tNTKh8qEei/2r42ed+akeRDAfUvUIhCbU=
+To: oxfordentrepreneurs@groupspaces.com
+From: "Oxford Entrepreneurs" <james.may@oxfordentrepreneurs.co.uk>
+Reply-To: james.may@oxfordentrepreneurs.co.uk
+Subject: Techstars, Hackathons and Funding Opportunities
+Date: Thu, 14 May 2015 13:56:40 +0000
+X-LibVersion: 3.3.2
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift-20773422375554a9adc99021.10656645_=_"
+Content-Transfer-Encoding: 7bit
+Sender: oxfordentrepreneurs@groupspaces.com
+X-utm_source: group-mail
+X-utm_term: group-mail-5
+Mailing-List: list oxfordentrepreneurs@groupspaces.com
+Delivered-To: mailing list oxfordentrepreneurs@groupspaces.com
+List-Id: <oxfordentrepreneurs.groupspaces.com>
+List-Post: <mailto:oxfordentrepreneurs@groupspaces.com>
+Precedence: bulk
+List-Unsubscribe: <http://groupspaces.com/oxfordentrepreneurs/unsubscribe?e=roman.priebe%40gmail.com>,
+ <mailto:oxfordentrepreneurs++unsubscribe+1030252302_9046600-roman.priebe=gmail.com@groupspaces.com>
+List-Archive: <http://groupspaces.com/oxfordentrepreneurs/emails/g>
+X-GS-GroupName: Oxford Entrepreneurs
+X-Sender: GroupSpaces
+X-Mantra: vorsprung durch insomniac
+X-GS-MID: 8496445-9046600-0
+Message-ID: <MjAxNTA1MTQxMzU2NDAuMjgwMDMuMjEwMjIyMzM0MA==@mailsquad.groupspaces.com>
+
+This is a message in multipart MIME format.  Your mail client should not
+be displaying this. Consider upgrading your mail client to view this
+message correctly.
+--_=_swift-20773422375554a9adc99021.10656645_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Check out the top opportunities this week below.
+
+-----------------------------------------------------------------
+ Contents
+-----------------------------------------------------------------
+
+ 1. Extended Opportunity to get a $100k grant
+ 2. Fuel Poverty Hackathon - June 5th-7th
+ 3. Become a Techstars Associate this Summer! - May 22nd
+ 4. UK Varsity Startup Challenge
+
+-----------------------------------------------------------------
+ 1. Extended Opportunity to get a $100k grant
+-----------------------------------------------------------------
+
+=C2=A0
+  * View image: *
+<http://files.groupspaces.com/oxfordentrepreneurs/files/1372540/WTtlFIMpjBD=
+jbllwi2ZL/100kFounder.png?view&size=3Da600>
+
+
+
+ =20
+**Deadline now extended to the 15th of May** =20
+ =20
+Are you a current University of=C2=A0Oxford=C2=A0student/academic or have
+you graduated in the last 12 months? =20
+ =20
+Have you got a business idea? =20
+ =20
+If you answered yes to both those questions you can apply for
+the=C2=A0**amazing opportunity to receive $100,000 in grant
+funding**=C2=A0(no equity taken), from Founder.org.
+
+Founder.org is a nonprofit foundation in San Francisco,
+California, USA that invests in
+student=C2=A0entrepreneurs=C2=A0internationally. The organisation
+features a company building program for
+student=C2=A0entrepreneurs=C2=A0at major research institutes and
+universities. Operated by a group of Silicon
+Valley=C2=A0entrepreneurs, Founder.org currently supports teams
+across various industries including sensors, sanitation,
+influencer marketing, biotechnology, health and transportation. =20
+ =20
+We've been working together with=C2=A0founder=E2=80=8A=E2=80=8A.=E2=80=8A=
+=E2=80=8Aorg
+<http://e.groupspaces.com/click/5r31h-94ey4-2ghywuhwx9?u=3Dhttp%3A%2F%2Fe=
+=2Egroupspaces.com%2Fclick%2F5nc5o-94t4r-2iyg4dqh2g%3Fu%3Dhttp%253A%252F%25=
+2Ffounder.org%252F%26utm_medium%3Demail%26utm_source%3Dgroup-mail%26utm_ter=
+m%3Dgroup-mail-5>=C2=A0this
+year to get the University of=C2=A0Oxfordaccredited as a partner
+school, so YOU could get get access to this amazing opportunity.=20
+
+ =20
+**Find our more about Applying**
+<http://e.groupspaces.com/click/5r31h-94ey4-2ghywuhwx9?u=3Dhttp%3A%2F%2Fe=
+=2Egroupspaces.com%2Fclick%2F5nc5o-94t4r-2iyg4dqh2g%3Fu%3Dhttp%253A%252F%25=
+2Fe.groupspaces.com%252Fclick%252F5nc4b-94t4r-nmbbzcm63%253Fu%253Dhttps%252=
+53A%25252F%25252Fwww.founder.org%25252Fhome%25252Fapply%25252F%2526utm_medi=
+um%253Demail%2526utm_source%253Dgroup-mail%2526utm_term%253Dgroup-mail-2096=
+71%26utm_medium%3Demail%26utm_source%3Dgroup-mail%26utm_term%3Dgroup-mail-5=
+>
+=20
+ =20
+**Find out more about Founder=E2=80=8A=E2=80=8A=E2=80=8A.=E2=80=8A=E2=80=8A=
+=E2=80=8Aorg**
+<http://e.groupspaces.com/click/5r31h-94ey4-2ghywuhwx9?u=3Dhttp%3A%2F%2Fe=
+=2Egroupspaces.com%2Fclick%2F5nc5o-94t4r-2iyg4dqh2g%3Fu%3Dhttp%253A%252F%25=
+2Fe.groupspaces.com%252Fclick%252F5nc4b-94t4r-nmbbzcm63%253Fu%253Dhttps%252=
+53A%25252F%25252Fwww.founder.org%25252Fhome%25252F%2526utm_medium%253Demail=
+%2526utm_source%253Dgroup-mail%2526utm_term%253Dgroup-mail-209671%26utm_med=
+ium%3Demail%26utm_source%3Dgroup-mail%26utm_term%3Dgroup-mail-5>
+
+-----------------------------------------------------------------
+ 2. Fuel Poverty Hackathon - June 5th-7th
+-----------------------------------------------------------------
+
+* View image: *
+<http://files.groupspaces.com/oxfordentrepreneurs/files/1418169/hQAGQnbbRHD=
+vpaJ9Uoyt/Hackathon-logo-1.jpg?view&size=3Da600>
+
+ =20
+
+
+**Weekend June 5th-7th** =20
+**Oxford Launchpad, Said Business School, Oxford** =20
+ =20
+This hackathon, on fuel poverty, will=C2=A0gather students from
+across the University of Oxford and Oxford Brookes to develop
+innovative solutions under the theme of =E2=80=98fuel=C2=A0poverty=E2=80=99=
+=2E This
+will be The Oxford Launchpad=E2=80=99s third=C2=A0hackathon, following the
+successful Ebola hackathon in November 2014. =20
+ =20
+The hackathon is a free event, open to current students from all
+departments at Oxford University and Oxford Brookes, as well as
+being open to alumni. =C2=A0
+
+**Learn More and Register Here
+<https://www.eventbrite.com/e/register-your-interest-the-oxford-energy-inno=
+vation-weekend-fuel-poverty-hackathon-tickets-16724569638>**
+
+-----------------------------------------------------------------
+ 3. Become a Techstars Associate this Summer! - May 22nd
+-----------------------------------------------------------------
+
+=C2=A0
+  * View image: *
+<http://files.groupspaces.com/oxfordentrepreneurs/files/1418163/z9AmM0csMfS=
+3qCvJDUeK/techstars_austin_2013-7aa5846cd02f59109e3455e3759ed1f6.png?view&s=
+ize=3Da600>
+
+
+
+**Thursday 21st May =C2=A0- 5:30pm**
+
+**Oxford Launchpad, Said Business School, Oxford**
+
+Interested in working with startups this summer?
+
+Interested in working in London?
+
+Interested in receiving a stipend to do so?
+
+Interested in working with Techstars? =20
+ =20
+If you answered yes to these questions then this is something for
+you! Techstars is looking for associates
+<http://www.techstars.com/associates/> and hackstars
+<http://www.techstars.com/hackstars/> to work during their London
+program this summer. You can directly apply, however we'll be
+running an information session next Friday in the launchpad where
+you'll be able to find out more, and ask questions.=C2=A0
+
+If you're interested in attending the information session then
+please register your interest **HERE
+<http://goo.gl/forms/Af4HDPfrMy>**.
+
+**See Associate Description Here**
+<http://files.groupspaces.com/oxfordentrepreneurs/files/1418175/USajxZKkmip=
+e3Mks8rOf/Become+a+Hacksociate.pdf>
+
+-----------------------------------------------------------------
+ 4. UK Varsity Startup Challenge
+-----------------------------------------------------------------
+
+=C2=A0
+  * View image: *
+<http://files.groupspaces.com/oxfordentrepreneurs/files/1410670/P135uZJkJe7=
+Ki8VUKLeT/Screen+Shot+2015-05-06+at+11.02.55.png?view&size=3Da600>
+
+
+
+ =20
+Are you wanting to launch or accelerate your startup this summer?
+Do you think your startup is ready for up to =C2=A3300k investment?
+The UK Varsity Startup Challenge team have been visiting cities
+up and down the country on a quest to find the best startup from
+universities across the UK.
+
+The Challenge programme, in it's=C2=A0inaugural=C2=A0year, runs
+throughout the summer and starts off with=C2=A0a Pitch Competition
+for the top 50 startups in June, and finishes with a 4-week Pop
+Up Lab in August for 10 Finalists, at the end of which a 2015
+Winner is crowned at a demo day in front of leading London
+investors and media.
+
+**Pitch Competition**
+
+The top 50 startups as selected by the UK Varsity Startup
+Challenge will be invited to London to pitch their startup to a
+panel of leading entrepreneurs and investors. The challenge is
+open to undergraduates, postgraduates, recent alumni (within 1
+year) and university staff.
+
+Pitch training will be provided in the build up to the event, and
+startups will be judged on the product they have developed, what
+customers they have, and the team they have assembled to execute
+their business model.
+
+**Pop Up Lab**
+
+10 Finalists will then be invited on a 4 week Pop Up Lab in the
+heart of London=E2=80=99s Tech City during August, that is packed full
+of workshops, talks and peer-to-peer learning with leading
+advisors and mentors from the London startup and technology
+community.
+
+The Pop Up Lab ends with a=C2=A0 demo day in early September where 10
+Finalists pitch in front of leading London investors and media to
+see who is crowned the 2015 UK Varsity Startup Champion and the
+chance to receive upto =C2=A3300k seed financing.
+
+**How to enter:**
+
+To submit your startup please go=C2=A0**HERE**
+<http://www.ukvarsitystartupchallenge.com/>=C2=A0and follow the
+instructions. Submissions should take around 5 minutes, and one
+of the Challenge team will be in touch within 2 weeks with
+feedback on your startup.
+
+Submissions are open until early May, but places on the Pitch
+competition will be allocated on a first-come-first-serve basis,
+with remote mentoring being offered immediately to startups the
+Challenge team believe have a chance of winning.
+
+---
+
+Join the=C2=A0Oxford Entrepreneurs Facebook group =20
+ <http://www.facebook.com/group.php?gid=3D2202065240>Join
+the=C2=A0Oxford Entrepreneurs LinkedIn group
+<http://www.linkedin.com/company/oxford-entrepreneurs>=C2=A0 =20
+Follow us at=C2=A0http://twitter.com/OxEntrepreneurs =20
+ =20
+
+
+
+  * View image: *
+<http://files.groupspaces.com/oxfordentrepreneurs/files/1348166/aodzoPxOzYE=
+ORROQuSBq/SponsorsBanner+23-02-15.png?view&size=3Da600>
+
+
+
+----------------------------------------------------------------
+Oxford Entrepreneurs
+www.oxfordentrepreneurs.co.uk http://groupspaces.com/oxfordentrepreneurs
+----------------------------------------------------------------
+You are subscribed as roman.priebe@gmail.com
+
+Unsubscribe: http://groupspaces.com/oxfordentrepreneurs/unsubscribe
+Manage your subscriptions: http://groupspaces.com/my/subscriptions
+
+----------------------------------------------------------------
+Mailing list powered by GroupSpaces - manage your group online
+http://www.groupspaces.com/e/about
+
+--_=_swift-20773422375554a9adc99021.10656645_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+<html>
+<head>
+<style type=3D"text/css">
+img.imgleft {
+	margin: 5px 5px 5px 0;
+}
+img.imgright {
+	margin: 5px 0 5px 5px;
+}
+</style>
+</head>
+<body bgcolor=3D"#ffffff" text=3D"#000000" link=3D"#0000ff" vlink=3D"#0000f=
+f" topmargin=3D"0" leftmargin=3D"10" rightmargin=3D"10" bottommargin=3D"10"=
+ marginwidth=3D"10" marginheight=3D"10">
+<font face=3D"Verdana" size=3D"2" style=3D"font-size: 10pt;">
+
+<table width=3D"661" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 66=
+1px; font-size: 10pt; margin: 0 auto;" border=3D"0"><tr>
+	<td style=3D"padding: 10px 0px;">
+	  <font face=3D"Verdana" color=3D"#666666" size=3D"1" style=3D"font-size: =
+10pt;"><center>
+<p style=3D"margin: 5px 0 0; font-size: 8pt; font-family: verdana,arial,san=
+s-serif; text-align: center;">E-mail displayed incorrectly? <a style=3D"col=
+or: #00f;" href=3D"http://e.groupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=
+=3Dhttp%3A%2F%2Fgroupspaces.com%2Foxfordentrepreneurs%2Fe%2F539833%3Fs%3D8e=
+7bb708%26utm_medium%3Demail%26utm_source%3Dgroup-mail%26utm_term%3Dgroup-ma=
+il-5">Read it in your browser</a></p><span style=3D"font-size:2px; display:=
+none;">&nbsp;</span></center></font>
+	</td></tr>
+</table>
+
+<table bgcolor=3D"#e5ecf9" width=3D"661" cellpadding=3D"0" cellspacing=3D"0=
+" border=3D"0" align=3D"center" style=3D"width: 661px; font-size: 10pt; mar=
+gin: 0 auto; background-color: #e5ecf9;"><tr><td bgcolor=3D"#e5ecf9" style=
+=3D"padding: 5px 0px; background-color: #e5ecf9;">
+	<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"5" border=3D"0" sty=
+le=3D"width: 100%;">
+<tr><td style=3D"padding: 5px 10px;"><table width=3D"100%" cellspacing=3D"0=
+" cellpadding=3D"0" style=3D"width: 100%; border-width: 1px; border-style: =
+solid; border-color: #bad0e7;" border=3D"0"><tr><td style=3D"border: 0; pad=
+ding: 0;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" styl=
+e=3D"width: 100%; margin: 0;"><tr><td bgcolor=3D"#ffffff" style=3D"padding:=
+ 0px 0px; font-size: 10pt; background-color: #ffffff;"><font face=3D"Verdan=
+a" size=3D"2" style=3D"font-size: 10pt;"><div style=3D"text-align: center; =
+margin: 0;"><center><a href=3D"http://e.groupspaces.com/click/5skhw-50pr6-1=
+kg0g0n8ay?u=3Dhttp%3A%2F%2Fgroupspaces.com%2Foxfordentrepreneurs%2F%3Futm_m=
+edium%3Demail%26utm_source%3Dgroup-mail%26utm_term%3Dgroup-mail-5" style=3D=
+"border: none;"><img src=3D"http://groupspaces.com/oxfordentrepreneurs/publ=
+ic/email-header" alt=3D"Oxford Entrepreneurs" border=3D"0" style=3D"border:=
+ none;" /></a></center></div></font></td></tr></table><table width=3D"100%"=
+ cellspacing=3D"0" cellpadding=3D"10" border=3D"0" style=3D"width: 100%; ma=
+rgin: 0;"><tr><td bgcolor=3D"#ffffff" style=3D"padding: 5px 15px; font-size=
+: 10pt; background-color: #ffffff;"><font face=3D"Verdana" size=3D"2" style=
+=3D"font-size: 10pt;"><div class=3D"ugc"><p style=3D"margin:13px 0;">Check =
+out the top opportunities this week below.</p></div></font></td></tr></tabl=
+e><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"10" border=3D"0" s=
+tyle=3D"width: 100%; margin: 0;"><tr><td bgcolor=3D"#ffffff" style=3D"paddi=
+ng: 5px 15px; font-size: 10pt; background-color: #ffffff;"><font face=3D"Ve=
+rdana" size=3D"2" style=3D"font-size: 10pt;"><h3 style=3D"font-weight: bold=
+; margin:15px 0 1em; font-size: 110%; padding:0; color:#333333;">Contents</=
+h3><ol><li style=3D"margin-bottom: 5px;"><a href=3D"#item1">Extended Opport=
+unity to get a $100k grant</a></li>
+<li style=3D"margin-bottom: 5px;"><a href=3D"#item2">Fuel Poverty Hackathon=
+ - June 5th-7th</a></li>
+<li style=3D"margin-bottom: 5px;"><a href=3D"#item3">Become a Techstars Ass=
+ociate this Summer! - May 22nd</a></li>
+<li style=3D"margin-bottom: 5px;"><a href=3D"#item4">UK Varsity Startup Cha=
+llenge</a></li></ol></font></td></tr></table></td></tr></table></td></tr><t=
+r><td style=3D"padding: 5px 10px;"><table width=3D"100%" cellspacing=3D"0" =
+cellpadding=3D"0" style=3D"width: 100%; border-width: 1px; border-style: so=
+lid; border-color: #bad0e7;" border=3D"0"><tr><td style=3D"border: 0; paddi=
+ng: 0;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"10" border=3D"0" sty=
+le=3D"width: 100%; margin: 0;"><tr><td bgcolor=3D"#ffffff" style=3D"padding=
+: 5px 15px; font-size: 10pt; background-color: #ffffff;"><font face=3D"Verd=
+ana" size=3D"2" style=3D"font-size: 10pt;"><a id=3D"item1" name=3D"item1"><=
+/a><h3 style=3D"font-weight: bold; margin:15px 0 1em; font-size: 110%; padd=
+ing:0; color:#333333;">1. Extended Opportunity to get a $100k grant</h3><di=
+v class=3D"ugc"><p style=3D"margin:13px 0;">=C2=A0<strong><img src=3D"http:=
+//files.groupspaces.com/oxfordentrepreneurs/files/1372540/WTtlFIMpjBDjbllwi=
+2ZL/100kFounder.png?view&amp;size=3Da600" border=3D"0" class=3D"imgnone" st=
+yle=3D"float: none; margin: 0 5px; vertical-align: middle; border-width:0px=
+;border-color:#000;border-style:solid;" alt=3D""  /></strong></p>
+<p style=3D"margin:13px 0; font-family:Verdana;color:rgb(34,34,34);font-siz=
+e:13px;" ><strong><br />
+Deadline now extended to the 15th of May</strong><br /><br />
+Are you a current University of=C2=A0Oxford=C2=A0student/academic or have y=
+ou graduated in the last 12 months?<br /><br />
+Have you got a business idea?<br /><br />
+If you answered yes to both those questions you can apply for the=C2=A0<str=
+ong>amazing opportunity to receive $100,000 in grant funding</strong>=C2=A0=
+(no equity taken), from Founder.org.</p>
+<p style=3D"margin:13px 0; font-family:Verdana;font-size:13.3333330154419px=
+;color:rgb(34,34,34);" >Founder.org is a nonprofit foundation in San Franci=
+sco, California, USA that invests in student=C2=A0entrepreneurs=C2=A0intern=
+atio<wbr />nally. The organisation features a company building program for =
+student=C2=A0entrepreneurs=C2=A0at major research institutes and universiti=
+es. Operated by a group of Silicon Valley=C2=A0entrepreneurs, Founder.org c=
+urrently supports teams across various industries including sensors, sanita=
+tion, influencer marketing, biotechnology, health and transportation.<br />=
+<br />
+We've been working together with=C2=A0<a href=3D"http://e.groupspaces.com/c=
+lick/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Fe.groupspaces.com%2Fclick%2F5r=
+31h-94ey4-2ghywuhwx9%3Fu%3Dhttp%253A%252F%252Fe.groupspaces.com%252Fclick%2=
+52F5nc5o-94t4r-2iyg4dqh2g%253Fu%253Dhttp%25253A%25252F%25252Ffounder.org%25=
+252F%2526utm_medium%253Demail%2526utm_source%253Dgroup-mail%2526utm_term%25=
+3Dgroup-mail-5%26utm_medium%3Demail%26utm_source%3Dgroup-mail%26utm_term%3D=
+group-mail-5" target=3D"_blank">founder<span style=3D"font-size:2px;white-s=
+pace:nowrap;">=E2=80=8A</span><span style=3D"font-size:2px;white-space:nowr=
+ap;">=E2=80=8A</span><span style=3D"font-size:2px;white-space:nowrap;">&#82=
+02;</span>.<span style=3D"font-size:2px;white-space:nowrap;">&#8202;</span>=
+<span style=3D"font-size:2px;white-space:nowrap;">=E2=80=8A</span><span sty=
+le=3D"font-size:2px;white-space:nowrap;">=E2=80=8A</span>org</a>=C2=A0this =
+year to get the University of=C2=A0Oxfordaccredited as a partner school, so=
+ YOU could get get access to this amazing opportunity.<br /><br /><a href=
+=3D"http://e.groupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2F=
+e.groupspaces.com%2Fclick%2F5r31h-94ey4-2ghywuhwx9%3Fu%3Dhttp%253A%252F%252=
+Fe.groupspaces.com%252Fclick%252F5nc5o-94t4r-2iyg4dqh2g%253Fu%253Dhttp%2525=
+3A%25252F%25252Fe.groupspaces.com%25252Fclick%25252F5nc4b-94t4r-nmbbzcm63%2=
+5253Fu%25253Dhttps%2525253A%2525252F%2525252Fwww.founder.org%2525252Fhome%2=
+525252Fapply%2525252F%252526utm_medium%25253Demail%252526utm_source%25253Dg=
+roup-mail%252526utm_term%25253Dgroup-mail-209671%2526utm_medium%253Demail%2=
+526utm_source%253Dgroup-mail%2526utm_term%253Dgroup-mail-5%26utm_medium%3De=
+mail%26utm_source%3Dgroup-mail%26utm_term%3Dgroup-mail-5" target=3D"_blank"=
+><strong>Find our more about Applying</strong></a><br /><br /><a href=3D"ht=
+tp://e.groupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Fe.grou=
+pspaces.com%2Fclick%2F5r31h-94ey4-2ghywuhwx9%3Fu%3Dhttp%253A%252F%252Fe.gro=
+upspaces.com%252Fclick%252F5nc5o-94t4r-2iyg4dqh2g%253Fu%253Dhttp%25253A%252=
+52F%25252Fe.groupspaces.com%25252Fclick%25252F5nc4b-94t4r-nmbbzcm63%25253Fu=
+%25253Dhttps%2525253A%2525252F%2525252Fwww.founder.org%2525252Fhome%2525252=
+F%252526utm_medium%25253Demail%252526utm_source%25253Dgroup-mail%252526utm_=
+term%25253Dgroup-mail-209671%2526utm_medium%253Demail%2526utm_source%253Dgr=
+oup-mail%2526utm_term%253Dgroup-mail-5%26utm_medium%3Demail%26utm_source%3D=
+group-mail%26utm_term%3Dgroup-mail-5" target=3D"_blank"><strong>Find out mo=
+re about Founder<span style=3D"font-size:2px;white-space:nowrap;">=E2=80=8A=
+</span><span style=3D"font-size:2px;white-space:nowrap;">=E2=80=8A</span><s=
+pan style=3D"font-size:2px;white-space:nowrap;">=E2=80=8A</span><span style=
+=3D"font-size:2px;white-space:nowrap;">&#8202;</span>.<span style=3D"font-s=
+ize:2px;white-space:nowrap;">&#8202;</span><span style=3D"font-size:2px;whi=
+te-space:nowrap;">=E2=80=8A</span><span style=3D"font-size:2px;white-space:=
+nowrap;">=E2=80=8A</span><span style=3D"font-size:2px;white-space:nowrap;">=
+=E2=80=8A</span>org</strong></a></p></div></font></td></tr></table></td></t=
+r></table></td></tr><tr><td style=3D"padding: 5px 10px;"><table width=3D"10=
+0%" cellspacing=3D"0" cellpadding=3D"0" style=3D"width: 100%; border-width:=
+ 1px; border-style: solid; border-color: #bad0e7;" border=3D"0"><tr><td sty=
+le=3D"border: 0; padding: 0;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"10" border=3D"0" sty=
+le=3D"width: 100%; margin: 0;"><tr><td bgcolor=3D"#ffffff" style=3D"padding=
+: 5px 15px; font-size: 10pt; background-color: #ffffff;"><font face=3D"Verd=
+ana" size=3D"2" style=3D"font-size: 10pt;"><a id=3D"item2" name=3D"item2"><=
+/a><h3 style=3D"font-weight: bold; margin:15px 0 1em; font-size: 110%; padd=
+ing:0; color:#333333;">2. Fuel Poverty Hackathon - June 5th-7th</h3><div cl=
+ass=3D"ugc"><p style=3D"margin:13px 0;"><span style=3D"color:rgb(34,34,34);=
+font-family:arial, sans-serif;font-size:12.8000001907349px;"><img src=3D"ht=
+tp://files.groupspaces.com/oxfordentrepreneurs/files/1418169/hQAGQnbbRHDvpa=
+J9Uoyt/Hackathon-logo-1.jpg?view&amp;size=3Da600" border=3D"0" class=3D"img=
+none" style=3D"float: none; margin: 0 5px; vertical-align: middle; border-w=
+idth:0px;border-color:#000;border-style:solid;" alt=3D""  /><br /></span></=
+p>
+<p style=3D"margin:13px 0;"><strong><span style=3D"color:rgb(34,34,34);font=
+-family:arial, sans-serif;font-size:12.8000001907349px;">Weekend June 5th-7=
+th</span></strong><br /><strong><span style=3D"color:rgb(34,34,34);font-fam=
+ily:arial, sans-serif;font-size:12.8000001907349px;">Oxford Launchpad, Said=
+ Business School, Oxford</span></strong><span style=3D"color:rgb(34,34,34);=
+font-family:arial, sans-serif;font-size:12.8000001907349px;"><br /><br /></=
+span><span style=3D"color:rgb(102,102,102);font-family:'Helvetica Neue', He=
+lvetica, Arial, sans-serif;font-size:13.1999998092651px;">This hackathon, o=
+n fuel poverty, will=C2=A0gather students from across the University of Oxf=
+ord and Oxford Brookes to develop innovative solutions under the theme of =
+=E2=80=98fuel=C2=A0poverty=E2=80=99. This will be The Oxford Launchpad=E2=
+=80=99s third=C2=A0hackathon, following the successful Ebola hackathon in N=
+ovember 2014.</span><span style=3D"color:rgb(34,34,34);font-family:arial, s=
+ans-serif;font-size:12.8000001907349px;"><br /><br />
+The hackathon is a free event, open to current students from all department=
+s at Oxford University and Oxford Brookes, as well as being open to alumni=
+=2E</span> <span style=3D"color:rgb(34,34,34);font-family:arial, sans-serif=
+;font-size:12.8000001907349px;">=C2=A0</span></p>
+<p style=3D"margin:13px 0;"><strong><span style=3D"color:rgb(34,34,34);font=
+-family:arial, sans-serif;font-size:12.8000001907349px;"><a href=3D"http://=
+e.groupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttps%3A%2F%2Fwww.eventb=
+rite.com%2Fe%2Fregister-your-interest-the-oxford-energy-innovation-weekend-=
+fuel-poverty-hackathon-tickets-16724569638">Learn More and Register Here</a=
+></span></strong><span style=3D"color:rgb(34,34,34);font-family:arial, sans=
+-serif;font-size:12.8000001907349px;"><br /></span></p></div></font></td></=
+tr></table></td></tr></table></td></tr><tr><td style=3D"padding: 5px 10px;"=
+><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"width: =
+100%; border-width: 1px; border-style: solid; border-color: #bad0e7;" borde=
+r=3D"0"><tr><td style=3D"border: 0; padding: 0;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"10" border=3D"0" sty=
+le=3D"width: 100%; margin: 0;"><tr><td bgcolor=3D"#ffffff" style=3D"padding=
+: 5px 15px; font-size: 10pt; background-color: #ffffff;"><font face=3D"Verd=
+ana" size=3D"2" style=3D"font-size: 10pt;"><a id=3D"item3" name=3D"item3"><=
+/a><h3 style=3D"font-weight: bold; margin:15px 0 1em; font-size: 110%; padd=
+ing:0; color:#333333;">3. Become a Techstars Associate this Summer! - May 2=
+2nd</h3><div class=3D"ugc"><p style=3D"margin:13px 0;">=C2=A0<img src=3D"ht=
+tp://files.groupspaces.com/oxfordentrepreneurs/files/1418163/z9AmM0csMfS3qC=
+vJDUeK/techstars_austin_2013-7aa5846cd02f59109e3455e3759ed1f6.png?view&amp;=
+size=3Da600" border=3D"0" class=3D"imgnone" style=3D"float: none; margin: 0=
+ 5px; vertical-align: middle; border-width:0px;border-color:#000;border-sty=
+le:solid;" alt=3D""  /></p>
+<p style=3D"margin:13px 0;"><strong>Thursday 21st May =C2=A0- 5:30pm</stron=
+g></p>
+<p style=3D"margin:13px 0;"><strong>Oxford Launchpad, Said Business School,=
+ Oxford</strong></p>
+<p style=3D"margin:13px 0;">Interested in working with startups this summer=
+?</p>
+<p style=3D"margin:13px 0;">Interested in working in London?</p>
+<p style=3D"margin:13px 0;">Interested in receiving a stipend to do so?</p>
+<p style=3D"margin:13px 0;">Interested in working with Techstars?<br /><br =
+/>
+If you answered yes to these questions then this is something for you! Tech=
+stars is looking for <a href=3D"http://e.groupspaces.com/click/5skhw-50pr6-=
+1kg0g0n8ay?u=3Dhttp%3A%2F%2Fwww.techstars.com%2Fassociates%2F">associates</=
+a> and <a href=3D"http://e.groupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=
+=3Dhttp%3A%2F%2Fwww.techstars.com%2Fhackstars%2F">hackstars</a> to work dur=
+ing their London program this summer. You can directly apply, however we'll=
+ be running an information session next Friday in the launchpad where you'l=
+l be able to find out more, and ask questions.=C2=A0</p>
+<p style=3D"margin:13px 0;">If you're interested in attending the informati=
+on session then please register your interest <strong><a href=3D"http://e=
+=2Egroupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Fgoo.gl%2Ff=
+orms%2FAf4HDPfrMy">HERE</a></strong>.</p>
+<p style=3D"margin:13px 0;"><a href=3D"http://e.groupspaces.com/click/5skhw=
+-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Ffiles.groupspaces.com%2Foxfordentreprene=
+urs%2Ffiles%2F1418175%2FUSajxZKkmipe3Mks8rOf%2FBecome%2Ba%2BHacksociate.pdf=
+%3Futm_medium%3Demail%26utm_source%3Dgroup-mail%26utm_term%3Dgroup-mail-5">=
+<strong>See Associate Description Here</strong></a></p></div></font></td></=
+tr></table></td></tr></table></td></tr><tr><td style=3D"padding: 5px 10px;"=
+><table width=3D"100%" cellspacing=3D"0" cellpadding=3D"0" style=3D"width: =
+100%; border-width: 1px; border-style: solid; border-color: #bad0e7;" borde=
+r=3D"0"><tr><td style=3D"border: 0; padding: 0;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"10" border=3D"0" sty=
+le=3D"width: 100%; margin: 0;"><tr><td bgcolor=3D"#ffffff" style=3D"padding=
+: 5px 15px; font-size: 10pt; background-color: #ffffff;"><font face=3D"Verd=
+ana" size=3D"2" style=3D"font-size: 10pt;"><a id=3D"item4" name=3D"item4"><=
+/a><h3 style=3D"font-weight: bold; margin:15px 0 1em; font-size: 110%; padd=
+ing:0; color:#333333;">4. UK Varsity Startup Challenge</h3><div class=3D"ug=
+c"><p style=3D"margin:13px 0;">=C2=A0<img src=3D"http://files.groupspaces=
+=2Ecom/oxfordentrepreneurs/files/1410670/P135uZJkJe7Ki8VUKLeT/Screen+Shot+2=
+015-05-06+at+11.02.55.png?view&amp;size=3Da600" border=3D"0" class=3D"imgno=
+ne" style=3D"float: none; margin: 0 5px; vertical-align: middle; border-wid=
+th:0px;border-color:#000;border-style:solid;" alt=3D""  /></p>
+<p style=3D"margin:13px 0; font-family:Verdana;font-size:13.3333330154419px=
+;" ><span style=3D"color:rgb(34,34,34);font-family:arial, sans-serif;font-s=
+ize:13px;"><br />
+Are you wanting to launch or accelerate your startup this summer? Do you th=
+ink your startup is ready for up to =C2=A3300k investment? The UK Varsity S=
+tartup Challenge team have been visiting cities up and down the country on =
+a quest to find the best startup from universities across the UK.</span></p=
+>
+<p style=3D"margin:13px 0; color:rgb(34,34,34);font-family:arial, sans-seri=
+f;font-size:13px;" >The Challenge programme, in it's=C2=A0inaugural=C2=A0ye=
+ar, runs throughout the summer and starts off with=C2=A0a Pitch Competition=
+ for the top 50 startups in June, and finishes with a 4-week Pop Up Lab in =
+August for 10 Finalists, at the end of which a 2015 Winner is crowned at a =
+demo day in front of leading London investors and media.</p>
+<p style=3D"margin:13px 0; color:rgb(34,34,34);font-family:arial, sans-seri=
+f;font-size:13px;" ><strong>Pitch Competition</strong></p>
+<p style=3D"margin:13px 0; color:rgb(34,34,34);font-family:arial, sans-seri=
+f;font-size:13px;" >The top 50 startups as selected by the UK Varsity Start=
+up Challenge will be invited to London to pitch their startup to a panel of=
+ leading entrepreneurs and investors. The challenge is open to undergraduat=
+es, postgraduates, recent alumni (within 1 year) and university staff.</p>
+<p style=3D"margin:13px 0; color:rgb(34,34,34);font-family:arial, sans-seri=
+f;font-size:13px;" >Pitch training will be provided in the build up to the =
+event, and startups will be judged on the product they have developed, what=
+ customers they have, and the team they have assembled to execute their bus=
+iness model.</p>
+<p style=3D"margin:13px 0; color:rgb(34,34,34);font-family:arial, sans-seri=
+f;font-size:13px;" ><strong>Pop Up Lab</strong></p>
+<p style=3D"margin:13px 0; color:rgb(34,34,34);font-family:arial, sans-seri=
+f;font-size:13px;" >10 Finalists will then be invited on a 4 week Pop Up La=
+b in the heart of London=E2=80=99s Tech City during August, that is packed =
+full of workshops, talks and peer-to-peer learning with leading advisors an=
+d mentors from the London startup and technology community.</p>
+<p style=3D"margin:13px 0; color:rgb(34,34,34);font-family:arial, sans-seri=
+f;font-size:13px;" >The Pop Up Lab ends with a=C2=A0 demo day in early Sept=
+ember where 10 Finalists pitch in front of leading London investors and med=
+ia to see who is crowned the 2015 UK Varsity Startup Champion and the chanc=
+e to receive upto =C2=A3300k seed financing.</p>
+<p style=3D"margin:13px 0; color:rgb(34,34,34);font-family:arial, sans-seri=
+f;font-size:13px;" ><strong>How to enter:</strong></p>
+<p style=3D"margin:13px 0;" style=3D"color:rgb(34,34,34);font-family:arial,=
+ sans-serif;font-size:13px;">To submit your startup please go=C2=A0<a href=
+=3D"http://e.groupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2F=
+www.ukvarsitystartupchallenge.com%2F" target=3D"_blank"><strong>HERE</stron=
+g></a>=C2=A0and follow the instructions. Submissions should take around 5 m=
+inutes, and one of the Challenge team will be in touch within 2 weeks with =
+feedback on your startup.</p>
+<p style=3D"margin:13px 0;" style=3D"font-family:Verdana;font-size:13.33333=
+30154419px;">Submissions are open until early May, but places on the Pitch =
+competition will be allocated on a first-come-first-serve basis, with remot=
+e mentoring being offered immediately to startups the Challenge team believ=
+e have a chance of winning.</p></div></font></td></tr></table></td></tr></t=
+able></td></tr><tr><td style=3D"padding: 5px 10px;"><table width=3D"100%" c=
+ellspacing=3D"0" cellpadding=3D"0" style=3D"width: 100%; border-width: 1px;=
+ border-style: solid; border-color: #bad0e7;" border=3D"0"><tr><td style=3D=
+"border: 0; padding: 0;">
+<table width=3D"100%" cellspacing=3D"0" cellpadding=3D"10" border=3D"0" sty=
+le=3D"width: 100%; margin: 0;"><tr><td bgcolor=3D"#ffffff" style=3D"padding=
+: 5px 15px; font-size: 10pt; background-color: #ffffff;"><font face=3D"Verd=
+ana" size=3D"2" style=3D"font-size: 10pt;"><div class=3D"ugc"><p style=3D"m=
+argin:13px 0; text-align: center;" class=3D"justifycenter" ><span style=3D"=
+font-size:1em;"><span style=3D"font-family:Tahoma;">Join the=C2=A0</span></=
+span><span style=3D"font-size:1em;"><a href=3D"http://e.groupspaces.com/cli=
+ck/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Fwww.facebook.com%2Fgroup.php%3Fg=
+id%3D2202065240"><span style=3D"font-family:Tahoma;">Oxford Entrepreneurs F=
+acebook group<br /></span></a><span style=3D"font-family:Tahoma;">Join the=
+=C2=A0</span></span><span style=3D"font-size:1em;"><a href=3D"http://e.grou=
+pspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Fwww.linkedin.com%=
+2Fcompany%2Foxford-entrepreneurs"><span style=3D"font-family:Tahoma;">Oxfor=
+d Entrepreneurs LinkedIn group</span></a><span style=3D"font-family:Tahoma;=
+">=C2=A0<br />
+Follow us at=C2=A0</span></span><a href=3D"http://e.groupspaces.com/click/5=
+skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Ftwitter.com%2FOxEntrepreneurs"><span=
+ style=3D"font-size:1em;"><span style=3D"font-family:Tahoma;">twitter<span =
+style=3D"font-size:2px;white-space:nowrap;">&#8202;</span>.<span style=3D"f=
+ont-size:2px;white-space:nowrap;">&#8202;</span>com/OxEntrepreneurs</span><=
+/span></a><em><em><br /><br /></em></em></p>
+<p style=3D"margin:13px 0; text-align: center;" class=3D"justifycenter" ><e=
+m><em><img src=3D"http://files.groupspaces.com/oxfordentrepreneurs/files/13=
+48166/aodzoPxOzYEORROQuSBq/SponsorsBanner+23-02-15.png?view&amp;size=3Da600=
+" border=3D"0" alt=3D"" style=3D"border-width:0px;border-color:#000;border-=
+style:solid;" /><br /></em></em></p></div></font></td></tr></table></td></t=
+r></table></td></tr>
+	</table>
+</td></tr></table>
+
+<table width=3D"661" cellpadding=3D"0" cellspacing=3D"0" style=3D"width: 66=
+1px; font-size: 10pt; margin: 0 auto;" border=3D"0"><tr>
+	<td style=3D"padding: 10px 0px;">
+	  <font face=3D"Verdana" color=3D"#666666" size=3D"1" style=3D"font-size: =
+10pt;"><center>
+<div style=3D"text-align: center;">
+	<p style=3D"margin: 0 0 5px; font-size: 8pt; font-family: verdana,arial,sa=
+ns-serif; text-align: center; margin-top: 20px;" >You are subscribed as rom=
+an.priebe@gmail.com</p>
+	<p style=3D"margin: 0 0 5px; font-size: 8pt; font-family: verdana,arial,sa=
+ns-serif; text-align: center;"><a style=3D"color: #00f;" href=3D"http://e=
+=2Egroupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Fgroupspace=
+s.com%2Fmy%2Fsubscriptions%2F%3Fe%3Droman.priebe%40gmail.com%26utm_medium%3=
+Demail%26utm_source%3Dgroup-mail%26utm_term%3Dgroup-mail-5&amp;notrack" rel=
+=3D"notrack">Manage&nbsp;your&nbsp;subscriptions</a> | <a style=3D"color: #=
+00f;" href=3D"http://e.groupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhtt=
+p%3A%2F%2Fgroupspaces.com%2Foxfordentrepreneurs%2Funsubscribe%2F%3Fe%3Droma=
+n.priebe%40gmail.com%26utm_medium%3Demail%26utm_source%3Dgroup-mail%26utm_t=
+erm%3Dgroup-mail-5&amp;notrack" rel=3D"notrack">Unsubscribe</a></p>
+</div><div style=3D"text-align: center;">
+	<p style=3D"margin: 0 0 5px; font-size: 8pt; font-family: verdana,arial,sa=
+ns-serif; text-align: center; margin-top: 20px;" >Mailing list powered by <=
+a style=3D"color: #00f; text-decoration:none;" href=3D"http://e.groupspaces=
+=2Ecom/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Fgroupspaces.com%2F&amp=
+;notrack"  rel=3D"notrack">GroupSpaces</a> - <a style=3D"color: #00f; text-=
+decoration:none;" href=3D"http://e.groupspaces.com/click/5skhw-50pr6-1kg0g0=
+n8ay?u=3Dhttp%3A%2F%2Fgroupspaces.com%2F&amp;notrack"  rel=3D"notrack">Mana=
+ge your group online</a></p>
+	<p style=3D"margin: 0 0 5px; font-size: 8pt; font-family: verdana,arial,sa=
+ns-serif; text-align: center;"><a style=3D"color: #00f;" href=3D"http://e=
+=2Egroupspaces.com/click/5skhw-50pr6-1kg0g0n8ay?u=3Dhttp%3A%2F%2Fgroupspace=
+s.com%2F&amp;notrack" rel=3D"notrack"><img border=3D"0" src=3D"http://media=
+=2Egroupspaces.com/images/email/poweredby/5skhw-50pr6-1kg0g0n8ay" /></a></p=
+>
+</div>
+	  </center></font>
+	</td></tr>
+</table>
+
+</font>
+</body>
+</html>
+
+--_=_swift-20773422375554a9adc99021.10656645_=_--
+

@@ -1,0 +1,1631 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp8745wma;
+        Fri, 8 May 2015 08:45:16 -0700 (PDT)
+X-Received: by 10.170.80.213 with SMTP id w204mr4175671ykw.53.1431099915951;
+        Fri, 08 May 2015 08:45:15 -0700 (PDT)
+Return-Path: <SRS0=7i/e=FT=reply.ebay.de=e3-1533774037999-7ef66cII14d53cII3@srs.aluminati.net>
+Received: from jackal.aluminati.org (jackal.aluminati.org. [72.9.247.210])
+        by mx.google.com with ESMTP id h84si2839761ykd.120.2015.05.08.08.45.15
+        for <roman.priebe@gmail.com>;
+        Fri, 08 May 2015 08:45:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of SRS0=7i/e=FT=reply.ebay.de=e3-1533774037999-7ef66cII14d53cII3@srs.aluminati.net designates 72.9.247.210 as permitted sender) client-ip=72.9.247.210;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of SRS0=7i/e=FT=reply.ebay.de=e3-1533774037999-7ef66cII14d53cII3@srs.aluminati.net designates 72.9.247.210 as permitted sender) smtp.mail=SRS0=7i/e=FT=reply.ebay.de=e3-1533774037999-7ef66cII14d53cII3@srs.aluminati.net;
+       dkim=pass header.i=@reply.ebay.de;
+       dmarc=pass (p=NONE dis=NONE) header.from=ebay.de
+Received: from localhost (localhost [127.0.0.1])
+	by jackal.aluminati.org (Postfix) with ESMTP id 4F3C0CDA59E
+	for <roman.priebe@gmail.com>; Fri,  8 May 2015 16:45:15 +0100 (BST)
+X-Quarantine-ID: <5V5FtTZZesA0>
+X-Virus-Scanned: Debian amavisd-new at serval.aluminati.org
+X-Spam-Flag: NO
+X-Spam-Score: -13.719
+X-Spam-Level: 
+X-Spam-Status: No, score=-13.719 tagged_above=-9999 required=6.31
+	tests=[BAYES_00=-1.9, DKIM_SIGNED=0.1, DKIM_VALID=-0.1,
+	DKIM_VALID_AU=-0.1, HTML_IMAGE_RATIO_06=0.001, HTML_MESSAGE=0.001,
+	RCVD_IN_DNSWL_NONE=-0.0001, RCVD_IN_RP_CERTIFIED=-3,
+	RCVD_IN_RP_SAFE=-2, SPF_NEUTRAL=0.779, USER_IN_DEF_DKIM_WL=-7.5]
+	autolearn=ham
+Authentication-Results: jackal.aluminati.org (amavisd-new); dkim=pass
+	header.i=eBay@reply.ebay.de
+Authentication-Results: jackal.aluminati.org (amavisd-new); domainkeys=pass
+	header.from=eBay@reply.ebay.de
+Received: from jackal.aluminati.org ([127.0.0.1])
+	by localhost (jackal.aluminati.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 5V5FtTZZesA0 for <roman.priebe@gmail.com>;
+	Fri,  8 May 2015 16:45:07 +0100 (BST)
+Received: from e3pmta202.emarsys.net (e3pmta202.emarsys.net [91.194.249.202])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by jackal.aluminati.org (Postfix) with ESMTPS id B7717866016
+	for <romes@cantab.net>; Fri,  8 May 2015 16:45:05 +0100 (BST)
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=emarsys2012; d=reply.ebay.de;
+ h=List-Unsubscribe:List-Id:MIME-Version:To:From:Subject:Content-Type:Message-ID:Date; i=eBay@reply.ebay.de;
+ bh=3O20bIB3xeUBSMnt9eJhsOljxSg=;
+ b=B7WMGfZK3g+fVBqCdilrFlr1b52PK9TGUhCUus0CvK9EmnqdNzT6MA90nCgZ658jTj+Cg5MAGUmu
+   iKPHJlxapMHMkFf0qxIneM2UKWnQ/y0PcraJyChEiPdzYoAFO+GZRxpYh9MQt6L3oKTIsNC+VjsS
+   ruEbWj7yHbLdlzWyyK4=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=emarsys2012; d=reply.ebay.de;
+ b=CtqD1dR+CHObfcUK0i3sP74xmXxkwMrolexQiDYvVmUXyoZeefceTjQuQKXDXSB2UDHR9get1krA
+   sPDyy4iJInpSb03tB9yhbM2EaCcIOsP0BKquuXt2kAjYR2rHhRBORPLVEjlu2s4h/+XLKu0sCnD4
+   4nsaAuEnfTgD6YiJxTc=;
+Received: from e3.emarsys.net (10.101.0.82) by e3pmta202.emarsys.net id h9jd0416nr4d for <romes@cantab.net>; Fri, 8 May 2015 17:44:01 +0200 (envelope-from <e3-1533774037999-7ef66cII14d53cII3@reply.ebay.de>)
+X-EMarSys-Identify: 1301_1533757869001_1533774037999_7ef66cII14d53cII1651c0e83efII3
+X-EMarSys-Environment: e3
+List-Unsubscribe: <http://mail.ebay.de/r/link/2747eII72431f7f2II7ef66cII14d53cII1651c0e83efII3/mail.ebay.de%2Fop%2Fu.do%3Fid%3D1371678258766%26mailId%3D7ef66cII14d53cII1651c0e83efII3%26perform%3Dunsubscribe%26field%3D1>
+X-Report-Abuse: Please report abuse here: abuse-report@emarsys.com
+X-EMarSys-eBay-Identify: 1533757869001
+List-Id: 1301 <eBay>
+X-CSA-Complaints: whitelist-complaints@eco.de
+MIME-Version: 1.0
+To: romes@cantab.net
+From: eBay <eBay@reply.ebay.de>
+Subject: =?UTF-8?Q?rrr8389472,=20nur=20f=C3=BCr=20kurze=20Zeit:=20max.=205=20=E2=82=AC=20Verkaufsprovision?=
+Content-Type: multipart/alternative; boundary="_----------=_112358201558820"
+Message-ID: <0.0.B8.FC8.1D089A5CE0FD0AA.0@e3pmta202.emarsys.net>
+Date: Fri, 8 May 2015 17:44:01 +0200
+
+
+--_----------=_112358201558820
+Content-Type: text/plain;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=
+Wenn diese E-Mail nicht richtig angezeigt wird, klicken Sie bitte hier.=0A=
+=3D> http://=
+mail.ebay.de=
+/r/mail/=
+7ef66cII14d53cII1651c0e83efII3=
+=0A=0AeBay=0A=3D> http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=
+=3D1651b17cc46II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd=0A=0A---=
+-----------------------------------------------------------=0A=0AeBay hat =
+diese Mitteilung an=20=
+Roman Priebe=
+ (=
+rrr8389472=
+) gesendet.=0AIhr Vor- und Nachname in dieser Mitteilung sind ein Hinweis =
+darauf, dass die Nachricht tats=C3=A4chlich von eBay stammt.=0A=0AMehr zum=
+ Thema=0A=3D> http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D165=
+1b17cc47II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd=0A=0A=0A=
+Kontaktinformationen=0ABeantworten Sie diese E-Mail bitte NICHT per 'Reply=
+' =0A(Antwort-Button in Ihrem E-Mail-Programm). =0AWenn Sie eine Frage hab=
+en, hilft Ihnen unser Kundenservice =0A=3D> http://rover.ebay.com/rover/4/=
+0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b7II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd=0Agerne.=
+ =0AAlle aktuellen Informationen finden Sie in den eBay-News. =0A=3D> http=
+://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b6II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd=0A=0A=0A=
+Abbestellen=0AWenn Sie den Newsletter in Zukunft nicht mehr haben m=C3=B6c=
+hten, =0Apassen Sie einfach Ihre Benachrichtigungseinstellungen in Mein eB=
+ay an.=0A=3D> http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D724=
+61e0b5II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd=0A=0AWir=
+ werten Ihre Reaktion auf diesen Newsletter =0Apseudonymisiert auf der Bas=
+is Ihres Mitgliedsnamens aus. =0ASo k=C3=B6nnen wir Ihnen in Zukunft st=C3=
+=A4rker auf Ihre Interessen =0Azugeschnittene Newsletter zusenden. =0AWenn=
+ Sie dies nicht w=C3=BCnschen, bestellen Sie den Newsletter =0Abitte wie o=
+ben beschrieben ab.=0A=0AHaben Sie Fragen zum Umgang mit Ihren Daten? =0AI=
+nformieren Sie sich =C3=BCber unsere Datenschutzgrunds=C3=A4tze =0A=3D> ht=
+tp://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b8II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd =0Aund u=
+nsere Allgemeinen Gesch=C3=A4ftsbedingungen.=0A=3D> http://rover.ebay.com/=
+rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b9II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd=0A=0ADie=
+se Nachricht wurde Ihnen von der eBay Europe S.=C3=A0 r.l. =C3=BCbermittel=
+t. =0ADiese kann sich zur Erf=C3=BCllung ihrer Dienstleistungen anderer eB=
+ay-Unternehmen bedienen. =0AFalls Sie Ihren Wohn- oder Gesch=C3=A4ftssitz =
+=0Aau=C3=9Ferhalb der EU haben, finden Sie die Kontaktdaten =0AIhres Vertr=
+agspartners in den Allgemeinen Gesch=C3=A4ftsbedingungen.=0A=3D> http://ro=
+ver.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b9II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd=0A=0ACop=
+yright =C2=A9 2015 eBay Inc. Alle Rechte vorbehalten.=0AAusgewiesene Waren=
+zeichen und Markennamen geh=C3=B6ren ihren jeweiligen Eigent=C3=BCmern. =
+=0AeBay und das eBay-Logo sind Marken von eBay Inc.=0AeBay Europe S.=C3=A0=
+ r.l.=0A
+
+--_----------=_112358201558820
+Content-Type: text/html;charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">=0A<html xmlns=3D"http://w=
+ww.w3.org/1999/xhtml">=0A<head>=0A=09<meta http-equiv=3D"Content-Type" con=
+tent=3D"text/html; charset=3DUTF-8" />=0A=09=0A=09<meta name=3D"ProgId" co=
+ntent=3D"Word.Document" />=0A=09<title>=
+rrr8389472=
+, kostenlos einstellen und max. 5 =E2=82=AC Verkaufsprovision =E2=80=93 nu=
+r f=C3=BCr kurze Zeit</title>=0A=09<!--| START: style/style |-->=0A=09<sty=
+le type=3D"text/css">=0A=09div,=0A=09p,=0A=09a,=0A=09li,=0A=09td {=0A=09  =
+-webkit-text-size-adjust: none;=0A=09}=0A=09.ExternalClass * {=0A=09  line=
+-height: 100%;=0A=09  margin: 0px;=0A=09  padding: 0px;=0A=09}=0A=09/* Fon=
+t color */=0A=09=0A=09*[class=3D"ebaylink"] {=0A=09  color: #002398;=0A=09=
+}=0A=09a[href^=3Dtel] {=0A=09  color: inherit!important;=0A=09  text-decor=
+ation: none!important;=0A=09}=0A=09/* Font color */=0A=09/* for Outlook 20=
+07 and 2010 */=0A=09=0A=09table {=0A=09  border-collapse: collapse;=0A=09 =
+ mso-table-lspace: 0pt;=0A=09  mso-table-rspace: 0pt;=0A=09}=0A=09/* Andro=
+id S5 text fix*/=0A=09=0A=09/*@media screen and (-webkit-min-device-pixel-=
+ratio: 3) {=0A=09  body {=0A=09    zoom: 2;=0A=09    -webkit-transform-ori=
+gin: 0 0;=0A=09    -webkit-transform: scale(0.5, 0.5);=0A=09    position: =
+absolute;=0A=09    width: 200%;=0A=09  }=0A=09}*/=0A=09/* (max-device-widt=
+h */=0A=09=0A=09@media only screen and (max-device-width: 480px) {=0A=09  =
+*[class=3D"break"] {=0A=09    display: block;=0A=09    width: 100%;=0A=09 =
+ }=0A=09  *[class].show {=0A=09    display: inline-block!important;=0A=09 =
+ }=0A=09  *[class].showonmobile {=0A=09    display: inline-block !importan=
+t;=0A=09    font-size: 12px !important;=0A=09    max-height: none !importa=
+nt;=0A=09    line-height: 1.5 !important;=0A=09  }=0A=09  *[class].hideonm=
+obile {=0A=09    display: none !important;=0A=09    font-size: 0 !importan=
+t;=0A=09    max-height: 0 !important;=0A=09    line-height: 0 !important;=
+=0A=09  }=0A=09  *[class].backgroundnone {=0A=09    background-image: none=
+ !important;=0A=09    background-color: #ffffff !important;=0A=09    backg=
+round: #ffffff !important;=0A=09  }=0A=09  *[class].mobilebackground {=0A=
+=09    background-size: 200% 100%!important;=0A=09  }=0A=09  /* GENERAL */=
+=0A=09  =0A=09  *[class].yahoo_fix {=0A=09    display: block;=0A=09  }=0A=
+=09  *[class].block {=0A=09    display: block;=0A=09  }=0A=09  *[class].fl=
+oat {=0A=09    float: left;=0A=09  }=0A=09  *[class].floatright {=0A=09   =
+ float: right;=0A=09  }=0A=09  *[class].margintop10 {=0A=09    margin-top:=
+ 10px;=0A=09  }=0A=09  /* GENERAL - END */=0A=09  /* Set CTA arrow and fon=
+tsize */=0A=09  =0A=09  img[class=3D"ctaarrow"] {=0A=09    width: 24px !im=
+portant;=0A=09    height: auto;=0A=09  }=0A=09  font[class=3D"ctatext"] {=
+=0A=09    font-size: 17px !important;=0A=09    font-weight: bold;=0A=09  }=
+=0A=09  /* Set sizo of footer text */=0A=09  =0A=09  font[class=3D"footert=
+ext"] {=0A=09    font-size: 12px !important;=0A=09  }=0A=09  /* Set social=
+ buttons to 30px */=0A=09  =0A=09  img[class=3D"socialbuttons"] {=0A=09   =
+ width: 27px !important;=0A=09    height: auto;=0A=09  }=0A=09  /* Font Si=
+zes */=0A=09  =0A=09  *[class=3D"fontsize18"] {=0A=09    font-size: 18px !=
+important;=0A=09  }=0A=09  *[class=3D"fontsize12"] {=0A=09    font-size: 1=
+2px !important;=0A=09    line-height: 12px !important;=0A=09  }=0A=09  *[c=
+lass=3D"fontsize15"] {=0A=09    font-size: 15px !important;=0A=09    line-=
+height: 17px !important;=0A=09  }=0A=09  *[class=3D"fontsize25"] {=0A=09  =
+  font-size: 25px !important;=0A=09    line-height: 27px !important;=0A=09=
+  }=0A=09  /* Font Sizes */=0A=09  /* SET BACKGROUNDCOLORS */=0A=09  =0A=
+=09  *[class].bggrey {=0A=09    background-color: #e9e9e8!important;=0A=09=
+  }=0A=09  *[class].bgwhite {=0A=09    background-color: #ffffff!important=
+;=0A=09  }=0A=09  *[class].bgred {=0A=09    background-color: #e53238!impo=
+rtant;=0A=09  }=0A=09  *[class].bglightgrey {=0A=09    background-color: #=
+f5f5f5!important;=0A=09  }=0A=09  /* SET BACKGROUNDCOLORS - END */=0A=09  =
+/* Header setting */=0A=09  =0A=09  *[class].spacewidth9 {=0A=09    width:=
+ 9px !important;=0A=09  }=0A=09  *[class].spacewidth29 {=0A=09    width: 2=
+9px !important;=0A=09  }=0A=09  *[class].spacewidth30 {=0A=09    width: 30=
+px !important;=0A=09  }=0A=09  *[class].spacewidth32 {=0A=09    width: 32p=
+x !important;=0A=09  }=0A=09  *[class].spacewidth33 {=0A=09    width: 33px=
+ !important;=0A=09  }=0A=09  *[class].spacewidth260 {=0A=09    width: 260p=
+x !important;=0A=09  }=0A=09  *[class].paddingleft26 {=0A=09    padding-le=
+ft: 26px !important;=0A=09  }=0A=09  img[class=3D"ebaylogo"] {=0A=09    wi=
+dth: 100px !important;=0A=09    height: auto;=0A=09  }=0A=09  /* Header se=
+tting - END */=0A=09  /* Footer setting */=0A=09  =0A=09  *[class].spacewi=
+dth22 {=0A=09    width: 22px !important;=0A=09  }=0A=09  /* Footer setting=
+ - END */=0A=09  /* Important classes */=0A=09  =0A=09  *[class].autoheigh=
+t {=0A=09    height: auto !important;=0A=09  }=0A=09  *[class].autowidth {=
+=0A=09    width: auto !important;=0A=09  }=0A=09  *[class].hide {=0A=09   =
+ display: none;=0A=09  }=0A=09  *[class].maxheight {=0A=09    height: 100%=
+ !important;=0A=09  }=0A=09  /* Important classes - END */=0A=09  /* Set p=
+addings style */=0A=09  =0A=09  *[class].paddingleft5 {=0A=09    padding-l=
+eft: 5px !important;=0A=09  }=0A=09  *[class].paddingleft10 {=0A=09    pad=
+ding-left: 10px !important;=0A=09  }=0A=09  *[class].paddingright10 {=0A=
+=09    padding-right: 10px !important;=0A=09  }=0A=09  *[class].paddingtop=
+10 {=0A=09    padding-top: 10px !important;=0A=09  }=0A=09  *[class].paddi=
+ngbottom10 {=0A=09    padding-bottom: 10px !important;=0A=09  }=0A=09  /* =
+paddings style - END */=0A=09  /* Set tablewidth */=0A=09  =0A=09  *[class=
+].tablewidth300 {=0A=09    width: 300px !important;=0A=09  }=0A=09  *[clas=
+s].tablewidth290 {=0A=09    width: 290px !important;=0A=09  }=0A=09  *[cla=
+ss].tablewidth280 {=0A=09    width: 280px !important;=0A=09  }=0A=09  *[cl=
+ass].tablewidth270 {=0A=09    width: 270px !important;=0A=09  }=0A=09  *[c=
+lass].tablewidth260 {=0A=09    width: 260px !important;=0A=09  }=0A=09  *[=
+class].tablewidth255 {=0A=09    width: 255px !important;=0A=09  }=0A=09  *=
+[class].tablewidth250 {=0A=09    width: 250px !important;=0A=09  }=0A=09  =
+*[class].tablewidth240 {=0A=09    width: 240px !important;=0A=09  }=0A=09 =
+ *[class].tablewidth150 {=0A=09    width: 150px !important;=0A=09  }=0A=09=
+  *[class].tablewidth130 {=0A=09    width: 130px !important;=0A=09  }=0A=
+=09  *[class].tablewidth120 {=0A=09    width: 120px !important;=0A=09  }=
+=0A=09  *[class].tablewidth85 {=0A=09    width: 85px !important;=0A=09  }=
+=0A=09  *[class].tablewidth10 {=0A=09    width: 10px !important;=0A=09  }=
+=0A=09  /* Set tablewidth - END */=0A=09  /* Set spacer HEIGHT */=0A=09  =
+=0A=09  *[class].spaceheight5 {=0A=09    height: 5px !important;=0A=09  }=
+=0A=09  *[class].spaceheight9 {=0A=09    height: 9px !important;=0A=09  }=
+=0A=09  *[class].spaceheight10 {=0A=09    height: 10px !important;=0A=09  =
+}=0A=09  *[class].spaceheight15 {=0A=09    height: 15px !important;=0A=09 =
+ }=0A=09  *[class].spaceheight20 {=0A=09    height: 20px !important;=0A=09=
+  }=0A=09  *[class].spaceheight30 {=0A=09    height: 30px !important;=0A=
+=09  }=0A=09  /* Set spacer HEIGHT - END */=0A=09  /* Set spacer WIDTH */=
+=0A=09  =0A=09  *[class].spacewidth5 {=0A=09    width: 5px !important;=0A=
+=09  }=0A=09  *[class].spacewidth9 {=0A=09    width: 9px !important;=0A=09=
+  }=0A=09  *[class].spacewidth10 {=0A=09    width: 10px !important;=0A=09 =
+ }=0A=09  *[class].spacewidth15 {=0A=09    width: 15px !important;=0A=09  =
+}=0A=09  *[class].spacewidth20 {=0A=09    width: 20px !important;=0A=09  }=
+=0A=09  *[class].spacewidth25 {=0A=09    width: 25px !important;=0A=09  }=
+=0A=09  *[class].spacewidth30 {=0A=09    width: 30px !important;=0A=09  }=
+=0A=09  *[class].spacewidth85 {=0A=09    width: 85px !important;=0A=09  }=
+=0A=09  *[class].spacewidth280 {=0A=09    width: 280px !important;=0A=09  =
+}=0A=09  /* Set spacer WIDTH - END */=0A=09  /* Set img WIDTH */=0A=09  =
+=0A=09  img[class=3D"imgwidth300fixheight"] {=0A=09    width: 300px !impor=
+tant;=0A=09  }=0A=09  img[class=3D"imgwidth280fixheight"] {=0A=09    width=
+: 280px !important;=0A=09  }=0A=09  img[class=3D"imgwidth300"] {=0A=09    =
+width: 300px !important;=0A=09    height: auto;=0A=09  }=0A=09  img[class=
+=3D"imgwidth290"] {=0A=09    width: 290px !important;=0A=09    height: aut=
+o;=0A=09  }=0A=09  img[class=3D"imgwidth280"] {=0A=09    width: 280px !imp=
+ortant;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgwidth270"] =
+{=0A=09    width: 270px !important;=0A=09    height: auto;=0A=09  }=0A=09 =
+ img[class=3D"imgwidth268"] {=0A=09    width: 268px !important;=0A=09    h=
+eight: auto;=0A=09  }=0A=09  img[class=3D"imgwidth260"] {=0A=09    width: =
+260px !important;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgw=
+idth240"] {=0A=09    width: 240px !important;=0A=09    height: auto;=0A=09=
+  }=0A=09  img[class=3D"imgwidth230"] {=0A=09    width: 230px !important;=
+=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgwidth200"] {=0A=09=
+    width: 200px !important;=0A=09    height: auto;=0A=09  }=0A=09  img[cl=
+ass=3D"imgwidth190"] {=0A=09    width: 190px !important;=0A=09    height: =
+auto;=0A=09  }=0A=09  img[class=3D"imgwidth188"] {=0A=09    width: 188px !=
+important;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgwidth170=
+"] {=0A=09    width: 170px !important;=0A=09    height: auto;=0A=09  }=0A=
+=09  img[class=3D"imgwidth160"] {=0A=09    width: 160px !important;=0A=09 =
+   height: auto;=0A=09  }=0A=09  img[class=3D"imgwidth158"] {=0A=09    wid=
+th: 158px !important;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"=
+imgwidth150"] {=0A=09    width: 150px !important;=0A=09    height: auto;=
+=0A=09  }=0A=09  img[class=3D"imgwidth146"] {=0A=09    width: 146px !impor=
+tant;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgwidth145"] {=
+=0A=09    width: 145px !important;=0A=09    height: auto;=0A=09    max-hei=
+ght: none!important;=0A=09  }=0A=09  img[class=3D"imgwidth144"] {=0A=09   =
+ width: 144px !important;=0A=09    height: auto;=0A=09  }=0A=09  img[class=
+=3D"imgwidth140"] {=0A=09    width: 140px !important;=0A=09    height: aut=
+o;=0A=09  }=0A=09  img[class=3D"imgwidth136"] {=0A=09    width: 136px !imp=
+ortant;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgwidth135"] =
+{=0A=09    width: 135px !important;=0A=09    height: auto;=0A=09  }=0A=09 =
+ img[class=3D"imgwidth134"] {=0A=09    width: 134px !important;=0A=09    h=
+eight: auto;=0A=09  }=0A=09  img[class=3D"imgwidth132"] {=0A=09    width: =
+132px !important;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgw=
+idth130"] {=0A=09    width: 130px !important;=0A=09    height: auto;=0A=09=
+  }=0A=09  img[class=3D"imgwidth128"] {=0A=09    width: 128px !important;=
+=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgwidth125"] {=0A=09=
+    width: 125px !important;=0A=09    height: auto;=0A=09  }=0A=09  img[cl=
+ass=3D"imgwidth120"] {=0A=09    width: 120px !important;=0A=09    height: =
+auto;=0A=09  }=0A=09  img[class=3D"imgwidth100"] {=0A=09    width: 100px !=
+important;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgwidth82"=
+] {=0A=09    width: 82px !important;=0A=09    height: auto;=0A=09  }=0A=09=
+  img[class=3D"imgwidth60"] {=0A=09    width: 60px !important;=0A=09    he=
+ight: auto;=0A=09  }=0A=09  img[class=3D"imgwidth22"] {=0A=09    width: 22=
+px !important;=0A=09    height: auto;=0A=09  }=0A=09  img[class=3D"imgwidt=
+h15"] {=0A=09    width: 15px !important;=0A=09    height: auto;=0A=09  }=
+=0A=09  img[class=3D"imgwidth10"] {=0A=09    width: 10px !important;=0A=09=
+    height: auto;=0A=09  }=0A=09  /* Set img WIDTH - END */=0A=09  /* Set =
+img HEIGHT */=0A=09  =0A=09  img[class=3D"imgheight180fix10"] {=0A=09    h=
+eight: 180px !important;=0A=09    width: 10px !important;=0A=09  }=0A=09  =
+img[class=3D"imgheight10"] {=0A=09    height: 10px !important;=0A=09    wi=
+dth: auto;=0A=09  }=0A=09  img[class=3D"imgheight15"] {=0A=09    height: 1=
+5px !important;=0A=09    width: auto;=0A=09  }=0A=09  img[class=3D"imgheig=
+ht25"] {=0A=09    height: 25px !important;=0A=09    width: auto;=0A=09  }=
+=0A=09  img[class=3D"showpic1"] {=0A=09    width: 280px !important;=0A=09 =
+   height: auto;=0A=09  }=0A=09  img[class=3D"slot04_cta"] {=0A=09    widt=
+h: 187px !important;=0A=09    height: 59px !important;=0A=09  }=0A=09  img=
+[class=3D"talk_cta"] {=0A=09    width: 140px !important;=0A=09    height: =
+40px !important;=0A=09  }=0A=09  *[class].textcenter {=0A=09    text-align=
+: center !important;=0A=09  }=0A=09  *[class].width135 {=0A=09    width: 1=
+35px !important;=0A=09  }=0A=09  *[class].padding10 {=0A=09    padding-lef=
+t: 10px !important;=0A=09    padding-top: 10px !important;=0A=09    paddin=
+g-right: 10px !important;=0A=09    padding-bottom: 10px !important;=0A=09 =
+ }=0A=09  img[class=3D"section4title"] {=0A=09    display: block !importan=
+t;=0A=09    width: 218px !important;=0A=09    height: 46px !important;=0A=
+=09  }=0A=09  img[class=3D"section4img1"] {=0A=09    display: block !impor=
+tant;=0A=09    width: 270px !important;=0A=09    height: auto !important;=
+=0A=09  }=0A=09  img[class=3D"section4img2"] {=0A=09    display: block !im=
+portant;=0A=09    width: 270px !important;=0A=09    height: auto !importan=
+t;=0A=09  }=0A=09  img[class=3D"section4img3"] {=0A=09    display: block !=
+important;=0A=09    width: 270px !important;=0A=09    height: auto !import=
+ant;=0A=09  }=0A=09  *[class].tableheight22 {=0A=09    height: 22px !impor=
+tant;=0A=09  }=0A=09  *[class].tablewidth145 {=0A=09    width: 145px !impo=
+rtant;=0A=09  }=0A=09  img[class=3D"step_01"] {=0A=09    display: block !i=
+mportant;=0A=09    width: 270px !important;=0A=09    height: auto !importa=
+nt;=0A=09  }=0A=09  img[class=3D"step_02"] {=0A=09    display: block !impo=
+rtant;=0A=09    width: 270px !important;=0A=09    height: auto !important;=
+=0A=09  }=0A=09  img[class=3D"step_03"] {=0A=09    display: block !importa=
+nt;=0A=09    width: 270px !important;=0A=09    height: auto !important;=0A=
+=09  }=0A=09  *[class].paddingleft11 {=0A=09    padding-left: 11px;=0A=09 =
+ }=0A=09  *[class].paddingleft8 {=0A=09    padding-left: 8px;=0A=09  }=0A=
+=09  *[class].paddingleft1 {=0A=09    padding-left: 1px;=0A=09  }=0A=09}=
+=0A=09@media only screen and (max-device-width: 480px) {=0A=0A  *[class].s=
+paceheight1 {=0A    height: 1px !important;=0A  }=0A=0A    *[class].spacew=
+idth270 {=0A    width: 270px !important;=0A  }=0A=0A      *[class].spacewi=
+dth10 {=0A    width: 10px !important;=0A  }=0A=0A      *[class].spacewidth=
+30 {=0A    width: 30px !important;=0A  }=0A=0A    img[class=3D"imgwidth90"=
+] {=0A    width: 90px !important;=0A    height: auto;=0A  }=0A=0A    img[c=
+lass=3D"imgwidth45"] {=0A    width: 45px !important;=0A    height: auto;=
+=0A  }=0A=0A    *[class].tablewidth50 {=0A    width: 50px !important;=0A  =
+}=0A=0A    *[class].paddingleft50 {=0A    padding-left: 50px !important;=
+=0A  }=0A=0A    *[class=3D"fontsize14"] {=0A    font-size: 14px !important=
+;=0A    line-height: 16px !important;=0A  }=0A=0A    *[class=3D"fontsize40=
+"] {=0A    font-size: 40px !important;=0A    line-height: 43px !important;=
+=0A  }=0A=0A}</style>=0A</head>=0A<body bgcolor=3D"#ffffff"><img src=3D"ht=
+tp://rover.ebay.com/roveropen/4/0/8?bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&loc=3Dhttp%3A%2F%2Fmail.ebay.de%2Fimg%2F=
+7ef66cII14d53cII1651c0e83efII3=
+.gif&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" wid=
+th=3D"1" height=3D"1">=0A=09=09=09<!--| START: openalign |-->=0A=09=09=09<=
+table width=3D"100%" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" alig=
+n=3D"center">=0A  <tr>=0A    <td width=3D"100%" align=3D"center">=0A=09=09=
+=09<!--| START: preheader |-->=0A=09=09=09=0A<table width=3D"600" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: colla=
+pse; mso-table-lspace:0; mso-table-rspace:0;text-align:left;" class=3D"tab=
+lewidth300" bgcolor=3D"#ffffff">=0A  <tr>=0A    <td align=3D"left" height=
+=3D"13" style=3D"font-family: Helvetica, arial, sans-serif;text-decoration=
+:none;color:#666666;font-weight: 300;font-size:12px;mso-line-height-rule:e=
+xactly;line-height:13px;padding-right: 25px;padding-left:15px;padding-top:=
+10px;" class=3D"paddingleft10">=0A      <font size=3D"1" face=3D"Arial, He=
+lvetica, sans-serif" color=3D"#666666" style=3D"font-size: 12px;">=0A     =
+   Alles muss raus &ndash; kostenlos einstellen und nie mehr als 5 Euro be=
+zahlen. 9 Tage lang verkaufen und ordentlich Gewinn machen! <br />=0A     =
+   Wenn diese E-Mail nicht richtig angezeigt wird, klicken Sie bitte <a hr=
+ef=3D"=
+http://=
+mail.ebay.de=
+/r/mail/=
+7ef66cII14d53cII1651c0e83efII3=
+" target=3D"_blank" style=3D"color:#002398;text-decoration:underline!impor=
+tant;font-size:12px;">hier</a>.=0A      </font>=0A    </td>=0A  </tr>=0A  =
+<tr>=0A    <td style=3D"font-size:1px;line-height:1px">=0A      <img style=
+=3D"display:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A20=
+1505-1533075162725/images/spacer-GWOIZ.gif" height=3D"10" width=3D"1" bord=
+er=3D"0" alt=3D"" />=0A    </td>=0A  </tr>=0A</table>=0A=09=09=09<!--| STA=
+RT: header |-->=0A=09=09=09<table bgcolor=3D"#f0efec" class=3D"tablewidth3=
+00" width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A  <t=
+r>=0A    <td bgcolor=3D"#f0efec" style=3D"font-size:1px;line-height:1px">=
+=0A      <img style=3D"display:block;" src=3D"http://pics.ebaystatic.com/a=
+w/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" height=3D"1=
+4" width=3D"1" border=3D"0" alt=3D"" class=3D"spaceheight10" />=0A    </td=
+>=0A  </tr>=0A  <tr>=0A    <td bgcolor=3D"#f0efec" style=3D"font-size:1px;=
+line-height:1px;">=0A    <table width=3D"600" border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" class=3D"tablewidth300" style=3D"text-align:left;">=
+=0A        <tr>=0A          <td valign=3D"top" class=3D"tablewidth120">=0A=
+            <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A   =
+           <tr>=0A                <td style=3D"font-size:1px;line-height:1=
+px;">=0A                  <img style=3D"display:block;" src=3D"http://pics=
+.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOI=
+Z.gif" height=3D"1" width=3D"17" border=3D"0" alt=3D"" class=3D"spacewidth=
+9" />=0A                </td>=0A                <td style=3D"font-size:1px=
+;line-height:1px;">=0A                  <a href=3D"http://rover.ebay.com/r=
+over/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc36II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">=0A                    <img src=3D"http://pics.ebaystatic.com/=
+aw/pics/myemails/A201505-1533075162725/images/logo_ebay_grey-ITm2l.jpg" al=
+t=3D"eBay" width=3D"146" height=3D"54" border=3D"0" class=3D"ebaylogo" tit=
+le=3D"eBay" />=0A                  </a>=0A                </td>=0A        =
+        <td style=3D"font-size:1px;line-height:1px;">=0A                  =
+<img style=3D"display:block;" src=3D"http://pics.ebaystatic.com/aw/pics/my=
+emails/A201505-1533075162725/images/spacer-GWOIZ.gif" height=3D"1" width=
+=3D"15" border=3D"0" alt=3D"" class=3D"spacewidth9" />=0A                <=
+/td>=0A              </tr>=0A            </table>=0A          </td>=0A    =
+      <td align=3D"right" valign=3D"middle" class=3D"tablewidth120">=0A   =
+         <table border=3D"0" align=3D"right" cellpadding=3D"0" cellspacing=
+=3D"0">=0A              <tr>=0A                <td style=3D"font-size:1px;=
+line-height:1px" class=3D"hide">=0A                  <img style=3D"display=
+:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-153307=
+5162725/images/spacer-GWOIZ.gif" height=3D"18" width=3D"1" border=3D"0" al=
+t=3D"" class=3D"spaceheight10" />=0A                </td>=0A              =
+  <td style=3D"font-size:1px;line-height:1px" class=3D"hide">=0A          =
+        <img style=3D"display:block;" src=3D"http://pics.ebaystatic.com/aw=
+/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" height=3D"18=
+" width=3D"1" border=3D"0" alt=3D"" class=3D"spaceheight10" />=0A         =
+       </td>=0A              </tr>=0A              <tr>=0A                =
+<td align=3D"right" style=3D"text-align:right;">=0A                  <font=
+ size=3D"2" style=3D"color:#333333; font-size:15px; font-family:Helvetica,=
+ arial, sans-serif; line-height:18px;">Hallo=20=
+rrr8389472=
+</font>=0A                </td>=0A                <td width=3D"10" style=
+=3D"font-size:1px;line-height:1px;">=0A                  <img style=3D"dis=
+play:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-15=
+33075162725/images/spacer-GWOIZ.gif" width=3D"10" height=3D"18" vspace=3D"=
+0" hspace=3D"0" border=3D"0" alt=3D"" />=0A                </td>=0A       =
+       </tr>=0A            </table>=0A          </td>=0A        </tr>=0A  =
+    </table>=0A    </td>=0A  </tr>=0A  <tr>=0A    <td style=3D"font-size:1=
+px; line-height:1px;">=0A      <img style=3D"display:block;" src=3D"http:/=
+/pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-=
+GWOIZ.gif" height=3D"18" width=3D"1" border=3D"0" alt=3D"" class=3D"spaceh=
+eight10" />=0A    </td>=0A  </tr>=0A</table>=0A=0A=09=09=09<!--| START: se=
+ction1_green1_v2 |-->=0A=09=09=09=0A<table width=3D"600" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" class=3D"tablewidth300" bgcolor=3D"#ffffff=
+">=0A  <tr>=0A    <td style=3D"font-size:1px;line-height:1px;" >=0A      <=
+img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-15330751627=
+25/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"25" border=3D"=
+0" style=3D"display:block;" />=0A    </td>=0A    <td style=3D"font-size:1p=
+x;line-height:1px;" >=0A      <img src=3D"http://pics.ebaystatic.com/aw/pi=
+cs/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=
+=3D"15" height=3D"25" border=3D"0" style=3D"display:block;" />=0A    </td>=
+=0A    <td style=3D"font-size:1px;line-height:1px;" >=0A      <img src=3D"=
+http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/s=
+pacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"25" border=3D"0" style=3D=
+"display:block;" />=0A    </td>=0A  </tr>=0A  <tr>=0A    <td style=3D"font=
+-size:1px;line-height:1px;">=0A      <img src=3D"http://pics.ebaystatic.co=
+m/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D""=
+ width=3D"15" height=3D"15" border=3D"0" style=3D"display:block;" />=0A   =
+ </td>=0A    <td align=3D"center" width=3D"570" height=3D"56" style=3D"fon=
+t-family: Helvetica, arial, sans-serif;text-decoration:none;color:#84bd00;=
+font-weight: 300;font-size:26px;mso-line-height-rule:exactly;line-height:2=
+8px;text-align:center;text-transform:uppercase;">=0A      <a href=3D"http:=
+//rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc37II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank" style=3D"font-family: Helvetica, arial, sans-serif;text-decora=
+tion:none;color:#84bd00;font-weight: 300;font-size:26px;line-height:28px;t=
+ext-align:center;text-transform:uppercase;">=0A        ALLES MUSS RAUS &nd=
+ash; <br class=3D"hide" />JETZT VERKAUFEN UND KASSIEREN=0A      </a>=0A   =
+ </td>=0A    <td style=3D"font-size:1px;line-height:1px;">=0A      <img sr=
+c=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/ima=
+ges/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" border=3D"0" sty=
+le=3D"display:block;" />=0A    </td>=0A  </tr>=0A  <tr>=0A    <td style=3D=
+"font-size:1px;line-height:1px;">=0A      <img src=3D"http://pics.ebaystat=
+ic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=
+=3D"" width=3D"15" height=3D"25" border=3D"0" style=3D"display:block;" />=
+=0A    </td>=0A    <td style=3D"font-size:1px;line-height:1px;">=0A      <=
+img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-15330751627=
+25/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"25" border=3D"=
+0" style=3D"display:block;" />=0A    </td>=0A    <td style=3D"font-size:1p=
+x;line-height:1px;">=0A      <img src=3D"http://pics.ebaystatic.com/aw/pic=
+s/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=
+=3D"15" height=3D"25" border=3D"0" style=3D"display:block;" />=0A    </td>=
+=0A  </tr>=0A</table>=0A=0A<table width=3D"600" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" style=3D"background:url('http://pics.ebaystatic.c=
+om/aw/pics/myemails/A201505-1533075162725/images/section1_bgimg-BhLv4.jpg'=
+) 0 0 / 100% 100% no-repeat;" class=3D"tablewidth300 backgroundnone">=0A  =
+<tr>=0A    <td style=3D"font-size:1px;line-height:1px;">=0A      <table wi=
+dth=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"tabl=
+ewidth300">=0A        <tr>=0A          <td style=3D"font-size:1px;line-hei=
+ght:1px;">=0A            <a href=3D"http://rover.ebay.com/rover/4/0/8?eecl=
+=3D3&eesi=3DDE&i=3D1651b17cc38II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">=0A              <img src=3D"http://pics.ebaystatic.com/aw/pic=
+s/myemails/A201505-1533075162725/images/section1_moodimg-QF9Zy.jpg" width=
+=3D"600" height=3D"249" alt=3D"0 EUR Angebotsgeb&uuml;hr + 5 EUR maximale =
+Verkaufsprovision &ndash; Angebot freischalten" title=3D"0 EUR Angebotsgeb=
+&uuml;hr + 5 EUR maximale Verkaufsprovision &ndash; Angebot freischalten" =
+border=3D"0" style=3D"display:block;" class=3D"imgwidth300" />=0A         =
+   </a>=0A          </td>=0A        </tr>=0A      </table>=0A      <table =
+width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"ta=
+blewidth300" bgcolor=3D"#84bd00">=0A        <tr>=0A          <td style=3D"=
+font-size:1px;line-height:1px;">=0A            <img src=3D"http://pics.eba=
+ystatic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif=
+" width=3D"15" height=3D"10" alt=3D"" border=3D"0" style=3D"display:block;=
+" />=0A          </td>=0A          <td style=3D"font-size:1px;line-height:=
+1px;">=0A            <img src=3D"http://pics.ebaystatic.com/aw/pics/myemai=
+ls/A201505-1533075162725/images/spacer-GWOIZ.gif" width=3D"15" height=3D"1=
+0" alt=3D"" border=3D"0" style=3D"display:block;" />=0A          </td>=0A =
+         <td style=3D"font-size:1px;line-height:1px;">=0A            <img =
+src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/i=
+mages/spacer-GWOIZ.gif" width=3D"10" height=3D"10" alt=3D"" border=3D"0" s=
+tyle=3D"display:block;" />=0A          </td>=0A        </tr>=0A        <tr=
+>=0A          <td style=3D"font-size:1px;line-height:1px;">=0A            =
+<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162=
+725/images/spacer-GWOIZ.gif" width=3D"30" height=3D"15" alt=3D"" border=3D=
+"0" style=3D"display:block;" class=3D"spacewidth15" />=0A          </td>=
+=0A          <td style=3D"font-size:1px;line-height:1px;">=0A            <=
+table width=3D"560" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=
+=3D"tablewidth270">=0A              <tr>=0A                <td style=3D"fo=
+nt-size:1px;line-height:1px;" align=3D"left" class=3D"float paddingbottom1=
+0">=0A                  <table width=3D"235" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" class=3D"tablewidth270">=0A                    <tr>=0A=
+                      <td style=3D"font-size:1px;line-height:1px;" align=
+=3D"left">=0A                        <table border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" style=3D"border-collapse: collapse; mso-table-lspace:0;=
+ mso-table-rspace:0;">=0A                          <tr>=0A                =
+            <td style=3D"font-size:1px;line-height:1px;">=0A              =
+                <img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A2=
+01505-1533075162725/images/spacer-GWOIZ.gif" width=3D"1" height=3D"15" alt=
+=3D"" border=3D"0" style=3D"display:block;" class=3D"spacewidth15" />=0A  =
+                          </td>=0A                            <td style=3D=
+"font-family: Helvetica, arial, sans-serif;text-decoration:none;color:#fff=
+fff;font-weight: 600;font-size:45px;mso-line-height-rule:exactly;line-heig=
+ht:47px;" class=3D"fontsize40">=0A                              0 &euro;=
+=0A                            </td>=0A                            <td sty=
+le=3D"font-size:1px;line-height:1px;">=0A                              <im=
+g src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725=
+/images/spacer-GWOIZ.gif" width=3D"10" height=3D"15" alt=3D"" border=3D"0"=
+ style=3D"display:block;" />=0A                            </td>=0A       =
+                     <td width=3D"124" style=3D"font-family: Helvetica, ar=
+ial, sans-serif;text-decoration:none;color:#ffffff;font-weight: 600;font-s=
+ize:16px;mso-line-height-rule:exactly;line-height:20px;" class=3D"fontsize=
+14">=0A                            ANGEBOTS<span class=3D"hide">-</span><b=
+r class=3D"hide" />GEB&Uuml;HR*=0A                            </td>=0A    =
+                      </tr>=0A                        </table>=0A         =
+             </td>=0A                    </tr>=0A                  </table=
+>=0A                </td>=0A                <td style=3D"font-size:1px;lin=
+e-height:1px;" class=3D"float" bgcolor=3D"#ffffff">=0A                  <i=
+mg src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-153307516272=
+5/images/spacer-GWOIZ.gif" width=3D"1" height=3D"55" alt=3D"" border=3D"0"=
+ style=3D"display:block;" class=3D"spaceheight1 spacewidth270" />=0A      =
+          </td>=0A                <td style=3D"font-size:1px;line-height:1=
+px;" align=3D"left" class=3D"float paddingtop10">=0A                  <tab=
+le width=3D"324" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D=
+"tablewidth270">=0A                    <tr>=0A                      <td st=
+yle=3D"font-size:1px;line-height:1px;" align=3D"left">=0A                 =
+       <table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"bo=
+rder-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;">=0A     =
+                     <tr>=0A                             <td style=3D"font=
+-size:1px;line-height:1px;" >=0A                              <img src=3D"=
+http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/s=
+pacer-GWOIZ.gif" width=3D"30" height=3D"15" alt=3D"" border=3D"0" style=3D=
+"display:block;" class=3D"spacewidth15" />=0A                            <=
+/td>=0A                            <td style=3D"font-family: Helvetica, ar=
+ial, sans-serif;text-decoration:none;color:#ffffff;font-weight: 600;font-s=
+ize:45px;mso-line-height-rule:exactly;line-height:47px;" class=3D"fontsize=
+40">=0A                              5 &euro;=0A                          =
+  </td>=0A                            <td style=3D"font-size:1px;line-heig=
+ht:1px;">=0A                              <img src=3D"http://pics.ebaystat=
+ic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" wid=
+th=3D"10" height=3D"15" alt=3D"" border=3D"0" style=3D"display:block;" />=
+=0A                      </td>=0A                      <td style=3D"font-f=
+amily: Helvetica, arial, sans-serif;text-decoration:none;color:#ffffff;fon=
+t-weight: 600;font-size:16px;mso-line-height-rule:exactly;line-height:20px=
+;" class=3D"fontsize14">=0A                        MAXIMALE <br />VERKAUFS=
+PROVISION*=0A                      </td>=0A                          </tr>=
+=0A                        </table>=0A                      </td>=0A      =
+              </tr>=0A                  </table>=0A                </td>=
+=0A              </tr>=0A            </table>=0A          </td>=0A        =
+  <td style=3D"font-size:1px;line-height:1px;">=0A            <img src=3D"=
+http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/s=
+pacer-GWOIZ.gif" width=3D"1" height=3D"15" alt=3D"" border=3D"0" style=3D"=
+display:block;" class=3D"spacewidth15" />=0A          </td>=0A        </tr=
+>=0A        <tr>=0A          <td style=3D"font-size:1px;line-height:1px;">=
+=0A            <img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A20=
+1505-1533075162725/images/spacer-GWOIZ.gif" width=3D"15" height=3D"10" alt=
+=3D"" border=3D"0" style=3D"display:block;" />=0A          </td>=0A       =
+   <td style=3D"font-size:1px;line-height:1px;">=0A            <img src=3D=
+"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/=
+spacer-GWOIZ.gif" width=3D"15" height=3D"10" alt=3D"" border=3D"0" style=
+=3D"display:block;" />=0A          </td>=0A          <td style=3D"font-siz=
+e:1px;line-height:1px;">=0A            <img src=3D"http://pics.ebaystatic.=
+com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" width=
+=3D"10" height=3D"10" alt=3D"" border=3D"0" style=3D"display:block;" />=0A=
+          </td>=0A        </tr>=0A      </table>=0A    </td>=0A  </tr>=0A<=
+/table>=0A=09=09=09<!--| START: general/spacer/spacer_v1 |-->=0A=09=09=09<=
+table width=3D"600" class=3D"tablewidth300" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" bgcolor=3D"#ffffff">=0A=09<tr>=0A=09=09<td style=3D"fon=
+t-size:1px; line-height:1px;">=0A=09=09=09<img style=3D"display:block;" sr=
+c=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/ima=
+ges/spacer-vrURX.gif" height=3D"10" width=3D"1" border=3D"0" alt=3D"" />=
+=0A=09=09</td>=0A=09</tr>=0A</table>=0A=09=09=09<!--| START: section2_gree=
+n2 |-->=0A=09=09=09<table align=3D"center" width=3D"500" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" class=3D"tablewidth300" bgcolor=3D"#ffffff=
+">=0A=09<tr>=0A=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=
+=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533=
+075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" bor=
+der=3D"0" style=3D"display:block;" />=0A=09=09</td>=0A=09</tr>=0A=09<tr>=
+=0A=09=09<td align=3D"center" style=3D"font-size:1px;line-height:1px;">=0A=
+=09=09=09<table width=3D"500" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse: collapse; mso-table-lspace:0; mso-table-r=
+space:0;" class=3D"tablewidth300">=0A=09=09=09=09<tr>=0A=09=09=09=09=09<td=
+ style=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=09<img src=3D=
+"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/=
+spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" border=3D"0" style=
+=3D"display:block;" class=3D"spacewidth30" />=0A=09=09=09=09=09</td>=09=09=
+=0A=09=09=09=09=09<td align=3D"center" style=3D"font-size:1px;line-height:=
+1px;">=0A=09=09=09=09=09=09<table border=3D"0" cellspacing=3D"0" cellpaddi=
+ng=3D"0" style=3D"border-collapse: collapse; mso-table-lspace:0; mso-table=
+-rspace:0;" class=3D"tablewidth240">=0A=09=09=09=09=09=09=09<tr>=0A=09=09=
+=09=09=09=09=09=09<td align=3D"center" height=3D"36" style=3D"font-family:=
+ Helvetica, arial, sans-serif;text-decoration:none;color:#796e65;font-weig=
+ht: 300;font-size:16px;mso-line-height-rule:exactly;line-height:18px;">=0A=
+=09=09=09=09=09=09=09=09=09Kostenlos einstellen und nie mehr als 5 Euro be=
+zahlen* &ndash;<br class=3D"hide" /> da kommt ordentlich Schwung in Ihre V=
+erk&auml;ufe=0A=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09</tr>=
+=0A=09=09=09=09=09=09</table>=0A=09=09=09=09=09</td>=09=09=0A=09=09=09=09=
+=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=09<img =
+src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/i=
+mages/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" border=3D"0" s=
+tyle=3D"display:block;" class=3D"spacewidth30" />=0A=09=09=09=09=09</td>=
+=0A=09=09=09=09</tr>=0A=09=09=09</table>=0A=09=09</td>=0A=09</tr>=0A=09<tr=
+>=0A=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=09=09<img sr=
+c=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/ima=
+ges/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"25" border=3D"0" sty=
+le=3D"display:block;" />=0A=09=09</td>=0A=09</tr>=0A=09<tr>=0A=09=09<td al=
+ign=3D"center">=0A=09=09=09<a href=3D"http://rover.ebay.com/rover/4/0/8?ee=
+cl=3D3&eesi=3DDE&i=3D1651b17cc39II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">=0A=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/=
+myemails/A201505-1533075162725/images/section2_cta-svlWF.jpg" width=3D"237=
+" height=3D"33" title=3D"0 EUR Angebotsgeb&uuml;hr + 5 EUR maximale Verkau=
+fsprovision &ndash; Angebot freischalten" alt=3D"0 EUR Angebotsgeb&uuml;hr=
+ + 5 EUR maximale Verkaufsprovision &ndash; Angebot freischalten" border=
+=3D"0" style=3D"display:block;" />=0A=09=09=09</a>=0A=09=09</td>=0A=09</tr=
+>=0A=09<tr>=0A=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=09=
+=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075=
+162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" border=
+=3D"0" style=3D"display:block;" />=0A=09=09</td>=0A=09</tr>=0A=09<tr>=0A=
+=09=09<td align=3D"center" style=3D"font-size:1px;line-height:1px;">=0A=09=
+=09=09<table align=3D"center" width=3D"500" border=3D"0" cellspacing=3D"0"=
+ cellpadding=3D"0" style=3D"background:url('http://pics.ebaystatic.com/aw/=
+pics/myemails/A201505-1533075162725/images/section2_table_bgimg_v2-YZdBl.j=
+pg') 0 0 / 100% 100% no-repeat;" class=3D"tablewidth300 backgroundnone">=
+=0A=09=09=09=09<tr>=0A=09=09=09=09=09<td align=3D"center" style=3D"font-si=
+ze:1px;line-height:1px;">=0A=09=09=09=09=09=09<table width=3D"500" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"tablewidth300">=0A=09=
+=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09<td style=3D"font-size:1p=
+x;line-height:1px;" align=3D"center">=0A=09=09=09=09=09=09=09=09=09<img sr=
+c=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/ima=
+ges/section2_arrow_spacer_v2-dtg25.jpg" width=3D"21" height=3D"11" title=
+=3D"" alt=3D"" border=3D"0" style=3D"display:block;" />=0A=09=09=09=09=09=
+=09=09=09</td>=0A=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09</table>=
+=0A=09=09=09=09=09</td>=0A=09=09=09=09</tr>=0A=09=09=09=09<tr>=0A=09=09=09=
+=09=09<td align=3D"center" style=3D"font-size:1px;line-height:1px;">=0A=09=
+=09=09=09=09=09<table width=3D"500" border=3D"0" cellspacing=3D"0" cellpad=
+ding=3D"0" style=3D"border-collapse: collapse; mso-table-lspace:0; mso-tab=
+le-rspace:0;" class=3D"tablewidth300" bgcolor=3D"#f0efec">=0A=09=09=09=09=
+=09=09=09<tr>=0A=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-he=
+ight:1px;" >=0A=09=09=09=09=09=09=09=09=09<img src=3D"http://pics.ebaystat=
+ic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=
+=3D"" width=3D"15" height=3D"15" border=3D"0" style=3D"display:block;" />=
+=0A=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09<td style=3D"fo=
+nt-size:1px;line-height:1px;" >=0A=09=09=09=09=09=09=09=09=09<img src=3D"h=
+ttp://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/sp=
+acer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" border=3D"0" style=3D"=
+display:block;" />=0A=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=
+=09<td style=3D"font-size:1px;line-height:1px;" >=0A=09=09=09=09=09=09=09=
+=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533=
+075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" bor=
+der=3D"0" style=3D"display:block;" />=0A=09=09=09=09=09=09=09=09</td>=0A=
+=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=
+=09=09=09<td style=3D"font-size:1px;line-height:1px;" >=0A=09=09=09=09=09=
+=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A20150=
+5-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"7=
+8" border=3D"0" style=3D"display:block;" />=0A=09=09=09=09=09=09=09=09</td=
+>=0A=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;" >=
+=0A=09=09=09=09=09=09=09=09=09<table width=3D"470" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse; mso-table-ls=
+pace:0; mso-table-rspace:0;" class=3D"tablewidth270">=0A=09=09=09=09=09=09=
+=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09<td width=3D"235" vali=
+gn=3D"top" height=3D"48" style=3D"font-family: Helvetica, arial, sans-seri=
+f;text-decoration:none;color:#796e65;font-weight: 300;font-size:22px;mso-l=
+ine-height-rule:exactly;line-height:24px;text-transform:uppercase;text-ali=
+gn:left;" class=3D"float tablewidth270">=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09In nur 2 Schritten <br />anmelden=0A=09=09=09=09=09=09=09=09=09=09=
+=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;lin=
+e-height:1px;" class=3D"float">=0A=09=09=09=09=09=09=09=09=09=09=09=09<img=
+ src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/=
+images/spacer-GWOIZ.gif" alt=3D"" width=3D"10" height=3D"15" border=3D"0" =
+style=3D"display:block;" />=0A=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;"=
+ class=3D"float">=0A=09=09=09=09=09=09=09=09=09=09=09=09<table width=3D"22=
+5" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collap=
+se: collapse; mso-table-lspace:0; mso-table-rspace:0;" class=3D"tablewidth=
+270">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td valign=
+=3D"top" width=3D"20" style=3D"font-size:1px;line-height:1px;padding-right=
+:5px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=
+=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/imag=
+es/section2_check1_spacer-oIGfP.jpg" width=3D"14" height=3D"14" border=3D"=
+0" alt=3D"" title=3D"" style=3D"display:block;" />=0A=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09<td valign=3D"top" height=3D"16" style=3D"font-family: Helv=
+etica, arial, sans-serif;text-decoration:none;color:#666666;font-weight: 3=
+00;font-size:14px;mso-line-height-rule:exactly;line-height:16px;text-align=
+:left;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09Auf &bdqu=
+o;Angebot freischalten&ldquo; klicken =0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</table>=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;"=
+>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"http://pics.e=
+baystatic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.g=
+if" alt=3D"" width=3D"5" height=3D"5" border=3D"0" style=3D"display:block;=
+" />=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<tr=
+>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;l=
+ine-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09<table bo=
+rder=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09<td valign=3D"top" width=3D"20" style=3D"font-size:1px;line-heigh=
+t:1px;padding-right:5px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1=
+533075162725/images/section2_check2_spacer-k0s8S.jpg" width=3D"14" height=
+=3D"14" border=3D"0" alt=3D"" title=3D"" style=3D"display:block;" />=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" height=3D"32" style=3D=
+"font-family: Helvetica, arial, sans-serif;text-decoration:none;color:#666=
+666;font-weight: 300;font-size:14px;mso-line-height-rule:exactly;line-heig=
+ht:16px;text-align:left;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09Bei eBay einloggen, um Ihr Konto zu best&auml;tigen &ndash; ferti=
+g! =0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09</t=
+d>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=
+=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=
+=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09</table>=0A=09=
+=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09<td style=3D"font-siz=
+e:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=09=09<img src=3D"http://p=
+ics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GW=
+OIZ.gif" alt=3D"" width=3D"15" height=3D"15" border=3D"0" style=3D"display=
+:block;" />=0A=09=09=09=09=09=09=09=09</td>=09=09=09=09=0A=09=09=09=09=09=
+=09=09</tr>=0A=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09<td styl=
+e=3D"font-size:1px;line-height:1px;" >=0A=09=09=09=09=09=09=09=09=09<img s=
+rc=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/im=
+ages/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"14" border=3D"0" st=
+yle=3D"display:block;" />=0A=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=
+=09=09=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=
+=09=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A20=
+1505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=
+=3D"14" border=3D"0" style=3D"display:block;" />=0A=09=09=09=09=09=09=09=
+=09</td>=0A=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:=
+1px;" >=0A=09=09=09=09=09=09=09=09=09<img src=3D"http://pics.ebaystatic.co=
+m/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D""=
+ width=3D"15" height=3D"14" border=3D"0" style=3D"display:block;" />=0A=09=
+=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=
+=09</table>=0A=09=09=09=09=09</td>=0A=09=09=09=09</tr>=0A=09=09=09</table>=
+=0A=09=09</td>=0A=09</tr>=0A=09<tr>=0A=09=09<td style=3D"font-size:1px;lin=
+e-height:1px;">=0A=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/=
+myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"=
+15" height=3D"25" border=3D"0" style=3D"display:block;" />=0A=09=09</td>=
+=0A=09</tr>=0A=09<tr>=0A=09=09<td align=3D"center" style=3D"font-size:1px;=
+line-height:1px;">=0A=09=09=09<table width=3D"500" border=3D"0" cellspacin=
+g=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse; mso-table-ls=
+pace:0; mso-table-rspace:0;" class=3D"tablewidth300">=0A=09=09=09=09<tr>=
+=0A=09=09=09=09=09<td width=3D"500" style=3D"font-size:1px;line-height:1px=
+;" bgcolor=3D"#f0efec">=0A=09=09=09=09=09=09<img src=3D"http://pics.ebayst=
+atic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" a=
+lt=3D"" width=3D"15" height=3D"1" border=3D"0" style=3D"display:block;" />=
+=0A=09=09=09=09=09</td>=0A=09=09=09=09</tr>=09=0A=09=09=09</table>=0A=09=
+=09</td>=0A=09</tr>=0A</table>=0A=0A=0A=09=09=09<!--| START: general/space=
+r/spacer_v1 |-->=0A=09=09=09<table width=3D"600" class=3D"tablewidth300" b=
+order=3D"0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">=0A=09=
+<tr>=0A=09=09<td style=3D"font-size:1px; line-height:1px;">=0A=09=09=09<im=
+g style=3D"display:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myema=
+ils/A201505-1533075162725/images/spacer-vrURX.gif" height=3D"10" width=3D"=
+1" border=3D"0" alt=3D"" />=0A=09=09</td>=0A=09</tr>=0A</table>=0A=09=09=
+=09<!--| START: section3_orange |-->=0A=09=09=09=0A<table align=3D"center"=
+ width=3D"500" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"b=
+order-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;" class=
+=3D"tablewidth260">=0A=09<tr>=0A=09=09<td style=3D"font-size:1px;line-heig=
+ht:1px;">=0A=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemai=
+ls/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" he=
+ight=3D"15" border=3D"0" style=3D"display:block;" />=0A=09=09</td>=0A=09</=
+tr>=0A=09<tr>=0A=09=09<td align=3D"center" height=3D"56" style=3D"font-fam=
+ily: Helvetica, arial, sans-serif;text-decoration:none;color:#f5af02;font-=
+weight: 300;font-size:26px;mso-line-height-rule:exactly;line-height:28px;t=
+ext-align:center;text-transform:uppercase;">=0A      <a href=3D"http://rov=
+er.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc3aII=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank" style=3D"font-family: Helvetica, arial, sans-serif;text-decora=
+tion:none;color:#f5af02;font-weight: 300;font-size:26px;line-height:28px;t=
+ext-align:center;text-transform:uppercase;">=0A        DAS VERKAUFT SICH <=
+br class=3D"hide" />BESONDERS GUT=0A=0A      </a>=0A    </td>=0A  </tr>=0A=
+  <tr>=0A    <td style=3D"font-size:1px;line-height:1px;">=0A     <img src=
+=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/imag=
+es/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" border=3D"0" styl=
+e=3D"display:block;" />=0A   </td>=0A </tr>=0A <tr>=0A  <td align=3D"cente=
+r" height=3D"54" style=3D"font-family: Helvetica, arial, sans-serif;text-d=
+ecoration:none;color:#796e65;font-weight: 300;font-size:16px;mso-line-heig=
+ht-rule:exactly;line-height:18px;">=0A    Werfen Sie einen Blick auf beson=
+ders beliebte Artikel und ihre <br class=3D"hide" />durchschnittlichen Ver=
+kaufspreise. <strong style=3D"font-weight: 600;">Momentan hoch im Kurs:</s=
+trong> <br class=3D"hide" />alles rund um Heim und Garten=0A  </td>=0A</tr=
+>=0A<tr>=0A  <td style=3D"font-size:1px;line-height:1px;">=0A   <img src=
+=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/imag=
+es/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"25" border=3D"0" styl=
+e=3D"display:block;" />=0A </td>=0A</tr>=0A</table>=0A=0A<table align=3D"c=
+enter" width=3D"500" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" clas=
+s=3D"tablewidth300">=0A  <tr>=0A    <td class=3D"float">=0A      <table al=
+ign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"tab=
+lewidth270">=0A        <tr>=0A          <td style=3D"font-size:1px;line-he=
+ight:1px" align=3D"left">=0A            <a target=3D"_blank" href=3D"http:=
+//rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc3bII=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" style=
+=3D"text-decoration:none;">=0A              <img src=3D"http://pics.ebayst=
+atic.com/aw/pics/myemails/A201505-1533075162725/images/section3_img_top_le=
+ft-VEs2T.jpg" width=3D"245" height=3D"307" alt=3D"Sofas und Sessel - Jetzt=
+ verkaufen" title=3D"Sofas und Sessel - Jetzt verkaufen" border=3D"0" styl=
+e=3D"display:block;" class=3D"imgwidth300" />=0A            </a>=0A       =
+   </td>=0A        </tr>=0A        <tr>=0A          <td bgcolor=3D"#ffffff=
+" class=3D"" style=3D"font-size:1px;line-height:1px">=0A            <img s=
+tyle=3D"display:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails=
+/A201505-1533075162725/images/spacer-GWOIZ.gif" height=3D"10" width=3D"1" =
+border=3D"0" alt=3D"" class=3D"spacewidth30" />=0A          </td>=0A      =
+  </tr>=0A      </table>=0A    </td>=0A    <td width=3D"10" bgcolor=3D"#ff=
+ffff" style=3D"font-size:1px;line-height:1px" class=3D"hide">=0A      <img=
+ src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/=
+images/spacer-GWOIZ.gif" style=3D"display:block;" width=3D"10" height=3D"1=
+" alt=3D"" border=3D"0" />=0A    </td>=0A    <td class=3D"float" style=3D"=
+font-size:1px;line-height:1px;">=0A      <table align=3D"left" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" class=3D"tablewidth270 float">=0A   =
+     <tr>=0A          <td style=3D"font-size:1px;line-height:1px;text-deco=
+ration:none;" align=3D"left">=0A            <a target=3D"_blank" href=3D"h=
+ttp://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc3cII=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd">=0A    =
+          <img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-=
+1533075162725/images/section3_img_top_right-EPcXS.jpg" width=3D"245" heigh=
+t=3D"307" alt=3D"Grills - Jetzt verkaufen" title=3D"Grills - Jetzt verkauf=
+en" border=3D"0" class=3D"imgwidth300" style=3D"display:block;" />=0A     =
+       </a>=0A          </td>=0A        </tr>=0A        <tr>=0A          <=
+td bgcolor=3D"#ffffff" class=3D"" style=3D"font-size:1px;line-height:1px">=
+=0A            <img style=3D"display:block;" src=3D"http://pics.ebaystatic=
+.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" heig=
+ht=3D"10" width=3D"10" border=3D"0" alt=3D"" class=3D"spacewidth30" />=0A =
+         </td>=0A        </tr>=0A      </table>=0A    </td>=0A  </tr>=0A</=
+table>=0A<table width=3D"500" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"tablewidth300">=0A  <tr>=0A    <td class=3D"float">=0A    =
+  <table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" c=
+lass=3D"tablewidth270">=0A        <tr>=0A          <td style=3D"font-size:=
+1px;line-height:1px" align=3D"left">=0A            <a target=3D"_blank" hr=
+ef=3D"http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc3d=
+II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" style=
+=3D"text-decoration:none;">=0A              <img src=3D"http://pics.ebayst=
+atic.com/aw/pics/myemails/A201505-1533075162725/images/section3_img_bottom=
+_left-wK0ED.jpg" width=3D"245" height=3D"307" alt=3D"Partyzelte - Jetzt ve=
+rkaufen" title=3D"Partyzelte - Jetzt verkaufen" border=3D"0" class=3D"imgw=
+idth300" style=3D"display:block;" />=0A            </a>=0A          </td>=
+=0A        </tr>=0A        <tr>=0A          <td bgcolor=3D"#ffffff" class=
+=3D"" style=3D"font-size:1px;line-height:1px">=0A            <img style=3D=
+"display:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A20150=
+5-1533075162725/images/spacer-GWOIZ.gif" height=3D"10" width=3D"1" border=
+=3D"0" alt=3D"" class=3D"spacewidth30" />=0A          </td>=0A        </tr=
+>=0A      </table>=0A    </td>=0A    <td bgcolor=3D"#ffffff" width=3D"10" =
+style=3D"font-size:1px;line-height:1px" class=3D"hide">=0A      <img src=
+=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/imag=
+es/spacer-GWOIZ.gif" style=3D"display:block;" width=3D"10" height=3D"1" al=
+t=3D"" border=3D"0" />=0A    </td>=0A    <td class=3D"float">=0A      <tab=
+le align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"tablewidth270 float">=0A        <tr>=0A          <td style=3D"font-siz=
+e:1px;line-height:1px" align=3D"left">=0A            <a target=3D"_blank" =
+href=3D"http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc=
+3eII=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd">=0A    =
+          <img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-=
+1533075162725/images/section3_img_bottom_right-Mguzj.jpg" width=3D"245" he=
+ight=3D"307" alt=3D"Bohrmaschinen - Jetzt verkaufen" title=3D"Bohrmaschine=
+n - Jetzt verkaufen" border=3D"0" class=3D"imgwidth300" style=3D"display:b=
+lock;" />=0A            </a>=0A          </td>=0A        </tr>=0A        <=
+tr>=0A          <td bgcolor=3D"#ffffff" style=3D"font-size:1px;line-height=
+:1px">=0A            <img style=3D"display:block;" src=3D"http://pics.ebay=
+static.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif"=
+ height=3D"10" width=3D"10" border=3D"0" alt=3D"" class=3D"spacewidth30" /=
+>=0A          </td>=0A        </tr>=0A      </table>=0A    </td>=0A  </tr>=
+=0A</table>=0A<table align=3D"center" width=3D"500" border=3D"0" cellspaci=
+ng=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse; mso-table-l=
+space:0; mso-table-rspace:0;" class=3D"tablewidth300">=0A=09<tr>=0A=09=09<=
+td style=3D"font-size:1px;line-height:1px;">=0A=09=09=09<img src=3D"http:/=
+/pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-=
+GWOIZ.gif" alt=3D"" width=3D"15" height=3D"25" border=3D"0" style=3D"displ=
+ay:block;" />=0A=09=09</td>=0A=09</tr>=0A=09<tr>=0A=09=09<td align=3D"cent=
+er">=0A=09=09=09<a href=3D"http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=
+=3DDE&i=3D1651b17cc3fII=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">=0A=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/=
+myemails/A201505-1533075162725/images/section3_cta-PNgyD.jpg" width=3D"177=
+" height=3D"32" title=3D"Jetzt verkaufen" alt=3D"Jetzt verkaufen" border=
+=3D"0" style=3D"display:block;" />=0A=09=09=09</a>=0A=09=09</td>=0A=09</tr=
+>=0A=09<tr>=0A=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=09=
+=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075=
+162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"25" border=
+=3D"0" style=3D"display:block;" />=0A=09=09</td>=0A=09</tr>=0A  <tr>=0A   =
+ <td style=3D"font-size:1px;line-height:1px;">=0A      <table width=3D"500=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" bgcolor=3D"#FFFFFF" cla=
+ss=3D"tablewidth300" style=3D"text-align:left;">=0A        <tr>=0A        =
+  <td width=3D"12" height=3D"14" valign=3D"top" style=3D"font-family: Helv=
+etica, arial, sans-serif;text-decoration:none;color:#666666;font-weight: 3=
+00;font-size:12px;mso-line-height-rule:exactly;line-height:14px;">=0A     =
+       **=0A          </td>=0A          <td height=3D"28" style=3D"font-fa=
+mily: Helvetica, arial, sans-serif;text-decoration:none;color:#666666;font=
+-weight: 300;font-size:12px;mso-line-height-rule:exactly;line-height:14px;=
+">=0A            Der angegebene Preis entspricht dem durchschnittlichen Ve=
+rkaufspreis <br class=3D"hide" />der jeweiligen Produktkategorie auf eBay =
+f&uuml;r den Monat Mai=0A          </td>=0A        </tr>=0A      </table>=
+=0A    </td>=0A  </tr>=0A  <tr>=0A    <td style=3D"font-size:1px;line-heig=
+ht:1px;">=0A      <img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/=
+A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" heigh=
+t=3D"25" border=3D"0" style=3D"display:block;" />=0A    </td>=0A  </tr>=0A=
+  <tr>=0A    <td align=3D"center" style=3D"font-size:1px;line-height:1px;"=
+>=0A     <table width=3D"500" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" style=3D"border-collapse: collapse; mso-table-lspace:0; mso-table-r=
+space:0;" class=3D"tablewidth300">=0A      <tr>=0A       <td width=3D"500"=
+ style=3D"font-size:1px;line-height:1px;" bgcolor=3D"#f0efec">=0A        <=
+img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-15330751627=
+25/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"1" border=3D"0=
+" style=3D"display:block;" />=0A      </td>=0A    </tr>=09=0A  </table>=0A=
+</td>=0A</tr>=0A</table>=0A=0A=09=09=09<!--| START: general/spacer/spacer_=
+v1 |-->=0A=09=09=09<table width=3D"600" class=3D"tablewidth300" border=3D"=
+0" cellspacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">=0A=09<tr>=0A=
+=09=09<td style=3D"font-size:1px; line-height:1px;">=0A=09=09=09<img style=
+=3D"display:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A20=
+1505-1533075162725/images/spacer-vrURX.gif" height=3D"10" width=3D"1" bord=
+er=3D"0" alt=3D"" />=0A=09=09</td>=0A=09</tr>=0A</table>=0A=09=09=09<!--| =
+START: section4_disclaimer |-->=0A=09=09=09=0A<table width=3D"600" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: colla=
+pse; mso-table-lspace:0; mso-table-rspace:0;" class=3D"tablewidth300">=0A=
+=09<tr>=0A=09=09<td style=3D"font-size:1px;line-height:1px;" >=0A=09=09=09=
+<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162=
+725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"50" height=3D"15" border=3D=
+"0" style=3D"display:block;" class=3D"spacewidth15"/>=0A=09=09</td>=0A=09=
+=09<td style=3D"font-size:1px;line-height:1px;" >=0A=09=09=09<img src=3D"h=
+ttp://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/sp=
+acer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"15" border=3D"0" style=3D"=
+display:block;" />=0A=09=09</td>=0A=09=09<td style=3D"font-size:1px;line-h=
+eight:1px;" >=0A=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/my=
+emails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"50=
+" height=3D"15" border=3D"0" style=3D"display:block;" class=3D"spacewidth1=
+5"/>=0A=09=09</td>=0A=09</tr>=0A=09<tr>=0A=09=09<td style=3D"font-size:1px=
+;line-height:1px;" >=0A=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/=
+pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" widt=
+h=3D"50" height=3D"15" border=3D"0" style=3D"display:block;" class=3D"spac=
+ewidth15"/>=0A=09=09</td>=0A=09=09<td style=3D"font-size:1px;line-height:1=
+px;">=0A=09=09=09<table width=3D"500" border=3D"0" cellspacing=3D"0" cellp=
+adding=3D"0" style=3D"border-collapse: collapse; mso-table-lspace:0; mso-t=
+able-rspace:0;" class=3D"tablewidth270">=0A=09=09=09=09<tr>=0A=09=09=09=09=
+=09<td style=3D"font-family: Helvetica, arial, sans-serif;text-decoration:=
+none;color:#333333;font-weight: 300;font-size:22px;mso-line-height-rule:ex=
+actly;line-height:24px;text-align: left;">=0A=09=09=09=09=09=09&Uuml;BERBL=
+ICK DER PREISAKTION:=0A=09=09=09=09=09</td>=0A=09=09=09=09</tr>=0A=09=09=
+=09=09<tr>=0A=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;" >=
+=0A=09=09=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemai=
+ls/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" he=
+ight=3D"25" border=3D"0" style=3D"display:block;" class=3D"spaceheight15"/=
+>=0A=09=09=09=09=09</td>=0A=09=09=09=09</tr>=0A=09=09=09=09<tr>=0A=09=09=
+=09=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=
+=09<table width=3D"500" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" s=
+tyle=3D"border-collapse: collapse; mso-table-lspace:0; mso-table-rspace:0;=
+" class=3D"tablewidth270">=0A=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=
+=09=09=09<td valign=3D"top" style=3D"font-size:1px;line-height:1px;" class=
+=3D"float">=0A=09=09=09=09=09=09=09=09<table width=3D"240" border=3D"0" ce=
+llspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: collapse; mso-=
+table-lspace:0; mso-table-rspace:0;" class=3D"tablewidth270">=0A=09=09=09=
+=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td align=3D"left" =
+style=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=
+=09<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td =
+width=3D"15" style=3D"font-size:1px;line-height:1px;padding-right:5px;">=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"http://pics.ebays=
+tatic.com/aw/pics/myemails/A201505-1533075162725/images/section4_check_spa=
+cer-NQ6cL.jpg" width=3D"12" height=3D"12" border=3D"0" alt=3D"" title=3D""=
+ style=3D"display:block;" />=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td=
+>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" height=3D"18=
+" style=3D"font-family: Helvetica, arial, sans-serif;text-decoration:none;=
+color:#333333;font-weight: 300;font-size:16px;mso-line-height-rule:exactly=
+;line-height:18px;text-align: left;">=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09Wer? =0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</tabl=
+e>=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09</tr=
+>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td st=
+yle=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=
+=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075=
+162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"5" height=3D"5" border=
+=3D"0" style=3D"display:block;" />=0A=09=09=09=09=09=09=09=09=09=09</td>=
+=0A=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;"=
+>=0A=09=09=09=09=09=09=09=09=09=09=09<table width=3D"240" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" class=3D"tablewidth270">=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td =
+valign=3D"top" width=3D"10" height=3D"14" style=3D"font-family: Helvetica,=
+ arial, sans-serif;text-decoration:none;color:#666666;font-weight: 200;fon=
+t-size:12px;line-height:14px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09&#8226;=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<td height=3D"42" valign=3D"top" style=3D"font-=
+family: Helvetica, arial, sans-serif;text-decoration:none;color:#666666;fo=
+nt-weight: 200;font-size:12px;line-height:14px;text-align: left;">=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09Gilt nur f&uuml;r private Verk&auml=
+;ufer die sich &uuml;ber den <a target=3D"_blank" href=3D"http://rover.eba=
+y.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc40II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" style=
+=3D"text-decoration: underline; color:#666666;">Teilnahmelink</a> f&uuml;r=
+ die Preisaktion angemeldet haben=0A=09=09=09=09=09=09=09=09=09=09=09=09=
+=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=
+=09=09=09=09=09</table>=09=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=
+=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=
+=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=
+=09=09=09=09=09=09=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pi=
+cs/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=
+=3D"5" height=3D"25" border=3D"0" style=3D"display:block;" class=3D"spaceh=
+eight15"/>=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=
+=09=09</tr>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=
+=09=09<td align=3D"left" style=3D"font-size:1px;line-height:1px;">=0A=09=
+=09=09=09=09=09=09=09=09=09=09<table border=3D"0" cellspacing=3D"0" cellpa=
+dding=3D"0">=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=
+=09=09=09=09=09=09=09=09<td width=3D"15" style=3D"font-size:1px;line-heigh=
+t:1px;padding-right:5px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<im=
+g src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725=
+/images/section4_check_spacer-NQ6cL.jpg" width=3D"12" height=3D"12" border=
+=3D"0" alt=3D"" title=3D"" style=3D"display:block;" />=0A=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td=
+ valign=3D"top" height=3D"18" style=3D"font-family: Helvetica, arial, sans=
+-serif;text-decoration:none;color:#333333;font-weight: 300;font-size:16px;=
+mso-line-height-rule:exactly;line-height:18px;text-align: left;">=0A=09=09=
+=09=09=09=09=09=09=09=09=09=09=09=09Was? =0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=
+=09=09=09=09=09=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=09=
+=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=
+=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=
+=09=09=09=09=09=09=09=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw=
+/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" wid=
+th=3D"5" height=3D"5" border=3D"0" style=3D"display:block;" />=0A=09=09=09=
+=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=
+=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td style=3D"font-s=
+ize:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=09<table width=
+=3D"240" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"tablewi=
+dth270">=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=
+=09=09=09=09=09=09=09<td valign=3D"top" width=3D"10" height=3D"14" style=
+=3D"font-family: Helvetica, arial, sans-serif;text-decoration:none;color:#=
+666666;font-weight: 200;font-size:12px;line-height:14px;">=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09&#8226;=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"14" val=
+ign=3D"top" style=3D"font-family: Helvetica, arial, sans-serif;text-decora=
+tion:none;color:#666666;font-weight: 200;font-size:12px;line-height:14px;t=
+ext-align: left;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=090 Euro Ange=
+botsgeb&uuml;hren=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=
+=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</t=
+able>=09=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=
+=09</tr>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=
+=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=
+=09=09=09=09<table width=3D"240" border=3D"0" cellspacing=3D"0" cellpaddin=
+g=3D"0" class=3D"tablewidth270">=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr=
+>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" width=3D"10"=
+ height=3D"14" style=3D"font-family: Helvetica, arial, sans-serif;text-dec=
+oration:none;color:#666666;font-weight: 200;font-size:12px;line-height:14p=
+x;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09&#8226;=0A=09=09=09=09=09=
+=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td=
+ height=3D"14" valign=3D"top" style=3D"font-family: Helvetica, arial, sans=
+-serif;text-decoration:none;color:#666666;font-weight: 200;font-size:12px;=
+line-height:14px;text-align: left;">=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09=09Maximal 5 Euro Verkaufsprovision=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=
+=09=09=09=09=09=09=09</table>=09=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=
+=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09</table>=0A=09=
+=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09<td style=3D"font-size:1px;=
+line-height:1px;" class=3D"float">=0A=09=09=09=09=09=09=09=09<img src=3D"h=
+ttp://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/sp=
+acer-GWOIZ.gif" alt=3D"" width=3D"20" height=3D"25" border=3D"0" style=3D"=
+display:block;" class=3D"spaceheight15"/>=0A=09=09=09=09=09=09=09</td>=0A=
+=09=09=09=09=09=09=09<td valign=3D"top" style=3D"font-size:1px;line-height=
+:1px;" class=3D"float">=0A=09=09=09=09=09=09=09=09<table width=3D"240" bor=
+der=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=3D"border-collapse: co=
+llapse; mso-table-lspace:0; mso-table-rspace:0;" class=3D"tablewidth270">=
+=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td ali=
+gn=3D"left" style=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=09=
+=09=09=09=09=09<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09<td width=3D"15" style=3D"font-size:1px;line-height:1px;padding-r=
+ight:5px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09<img src=3D"http:/=
+/pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/section=
+4_check_spacer-NQ6cL.jpg" width=3D"12" height=3D"12" border=3D"0" alt=3D""=
+ title=3D"" style=3D"display:block;" />=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top"=
+ height=3D"18" style=3D"font-family: Helvetica, arial, sans-serif;text-dec=
+oration:none;color:#333333;font-weight: 300;font-size:16px;mso-line-height=
+-rule:exactly;line-height:18px;text-align: left;">=0A=09=09=09=09=09=09=09=
+=09=09=09=09=09=09=09Wann? =0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=
+=09=09</table>=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=
+=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=
+=09=09=09<td style=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=
+=09=09=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/=
+A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"5" height=
+=3D"5" border=3D"0" style=3D"display:block;" />=0A=09=09=09=09=09=09=09=09=
+=09=09</td>=0A=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=
+=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-he=
+ight:1px;">=0A=09=09=09=09=09=09=09=09=09=09=09<table width=3D"240" border=
+=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"tablewidth270">=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=
+=09=09<td valign=3D"top" width=3D"10" height=3D"14" style=3D"font-family: =
+Helvetica, arial, sans-serif;text-decoration:none;color:#666666;font-weigh=
+t: 200;font-size:12px;line-height:14px;">=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09=09&#8226;=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"14" valign=3D"top" style=
+=3D"font-family: Helvetica, arial, sans-serif;text-decoration:none;color:#=
+666666;font-weight: 200;font-size:12px;line-height:14px;text-align: left;"=
+>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=099.&ndash;17. M&shy;ai 2015=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</table>=09=0A=09=09=
+=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=
+=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td style=3D"fon=
+t-size:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=09<img src=
+=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/imag=
+es/spacer-GWOIZ.gif" alt=3D"" width=3D"5" height=3D"25" border=3D"0" style=
+=3D"display:block;" class=3D"spaceheight15"/>=0A=09=09=09=09=09=09=09=09=
+=09=09</td>=0A=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=
+=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td align=3D"left" style=3D"font-s=
+ize:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=09<table borde=
+r=3D"0" cellspacing=3D"0" cellpadding=3D"0">=0A=09=09=09=09=09=09=09=09=09=
+=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td width=3D"15" st=
+yle=3D"font-size:1px;line-height:1px;padding-right:5px;">=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pi=
+cs/myemails/A201505-1533075162725/images/section4_check_spacer-NQ6cL.jpg" =
+width=3D"12" height=3D"12" border=3D"0" alt=3D"" title=3D"" style=3D"displ=
+ay:block;" />=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" height=3D"18" style=3D"fo=
+nt-family: Helvetica, arial, sans-serif;text-decoration:none;color:#333333=
+;font-weight: 300;font-size:16px;mso-line-height-rule:exactly;line-height:=
+18px;text-align: left;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09Weite=
+re Bedingungen=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</tabl=
+e>=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09</tr=
+>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td st=
+yle=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=
+=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075=
+162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"5" height=3D"5" border=
+=3D"0" style=3D"display:block;" />=0A=09=09=09=09=09=09=09=09=09=09</td>=
+=0A=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=
+=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;"=
+>=0A=09=09=09=09=09=09=09=09=09=09=09<table width=3D"240" border=3D"0" cel=
+lspacing=3D"0" cellpadding=3D"0" class=3D"tablewidth270">=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td =
+valign=3D"top" width=3D"10" height=3D"14" style=3D"font-family: Helvetica,=
+ arial, sans-serif;text-decoration:none;color:#666666;font-weight: 200;fon=
+t-size:12px;line-height:14px;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09&#8226;=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09=09<td height=3D"14" valign=3D"top" style=3D"font-=
+family: Helvetica, arial, sans-serif;text-decoration:none;color:#666666;fo=
+nt-weight: 200;font-size:12px;line-height:14px;text-align: left;">=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09=09Gilt f&uuml;r Festpreisangebote ode=
+r Auktionen=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=
+=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</table>=
+=09=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09</t=
+r>=0A=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td s=
+tyle=3D"font-size:1px;line-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=
+=09<table width=3D"240" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" c=
+lass=3D"tablewidth270">=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=
+=09=09=09=09=09=09=09=09=09=09=09=09<td valign=3D"top" width=3D"10" height=
+=3D"14" style=3D"font-family: Helvetica, arial, sans-serif;text-decoration=
+:none;color:#666666;font-weight: 200;font-size:12px;line-height:14px;">=0A=
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09&#8226;=0A=09=09=09=09=09=09=09=
+=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td heigh=
+t=3D"14" valign=3D"top" style=3D"font-family: Helvetica, arial, sans-serif=
+;text-decoration:none;color:#666666;font-weight: 200;font-size:12px;line-h=
+eight:14px;text-align: left;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=
+=09Gilt nicht f&uuml;r Geb&uuml;hren f&uuml;r Zusatzoptionen=0A=09=09=09=
+=09=09=09=09=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09=
+</tr>=0A=09=09=09=09=09=09=09=09=09=09=09</table>=09=0A=09=09=09=09=09=09=
+=09=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=
+=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=09<td style=3D"font-size:1px;l=
+ine-height:1px;">=0A=09=09=09=09=09=09=09=09=09=09=09<table width=3D"240" =
+border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"tablewidth270">=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09<tr>=0A=09=09=09=09=09=09=09=09=09=
+=09=09=09=09<td valign=3D"top" width=3D"10" height=3D"14" style=3D"font-fa=
+mily: Helvetica, arial, sans-serif;text-decoration:none;color:#666666;font=
+-weight: 200;font-size:12px;line-height:14px;">=0A=09=09=09=09=09=09=09=09=
+=09=09=09=09=09=09&#8226;=0A=09=09=09=09=09=09=09=09=09=09=09=09=09</td>=
+=0A=09=09=09=09=09=09=09=09=09=09=09=09=09<td height=3D"42" valign=3D"top"=
+ style=3D"font-family: Helvetica, arial, sans-serif;text-decoration:none;c=
+olor:#666666;font-weight: 200;font-size:12px;line-height:14px;text-align: =
+left;">=0A=09=09=09=09=09=09=09=09=09=09=09=09=09=09Gilt f&uuml;r bis zu 1=
+00 Angebote oder so viele Angebote, wie ein Verk&auml;ufer gem&auml;&szlig=
+; seinen Verkaufslimits einstellen kann=0A=09=09=09=09=09=09=09=09=09=09=
+=09=09=09</td>=0A=09=09=09=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=
+=09=09=09=09=09=09=09</table>=09=0A=09=09=09=09=09=09=09=09=09=09</td>=0A=
+=09=09=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09=09=09</table>=0A=09=
+=09=09=09=09=09=09</td>=0A=09=09=09=09=09=09=09</tr>=0A=09=09=09=09=09=09<=
+/table>=0A=09=09=09=09=09</td>=0A=09=09=09=09</tr>=0A=09=09=09=09<tr>=0A=
+=09=09=09=09=09<td style=3D"font-size:1px;line-height:1px;" >=0A=09=09=09=
+=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1=
+533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D"15" height=3D"20" =
+border=3D"0" style=3D"display:block;" class=3D"spaceheight15"/>=0A=09=09=
+=09=09=09</td>=0A=09=09=09=09</tr>=0A=09=09=09=09<tr>=0A=09=09=09=09=09<td=
+ height=3D"14" style=3D"font-family: Helvetica, arial, sans-serif;text-dec=
+oration:none;color:#666666;font-weight: 300;font-size:12px;mso-line-height=
+-rule:exactly;line-height:14px;text-align:left;">=0A=09=09=09=09=09=09*<a =
+href=3D"http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc=
+41II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank" style=3D"color:#666666;text-decoration:underline;">Vollst&auml=
+;ndige Bedingungen der Preisaktion</a>=0A=09=09=09=09=09</td>=0A=09=09=09=
+=09</tr>=0A=09=09=09</table>=0A=09=09</td>=0A=09=09<td style=3D"font-size:=
+1px;line-height:1px;" >=0A=09=09=09<img src=3D"http://pics.ebaystatic.com/=
+aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" w=
+idth=3D"50" height=3D"15" border=3D"0" style=3D"display:block;" class=3D"s=
+pacewidth15"/>=0A=09=09</td>=0A=09</tr>=0A=09<tr>=0A=09=09<td style=3D"fon=
+t-size:1px;line-height:1px;" >=0A=09=09=09<img src=3D"http://pics.ebaystat=
+ic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=
+=3D"" width=3D"50" height=3D"15" border=3D"0" style=3D"display:block;" cla=
+ss=3D"spacewidth15"/>=0A=09=09</td>=0A=09=09<td style=3D"font-size:1px;lin=
+e-height:1px;" >=0A=09=09=09<img src=3D"http://pics.ebaystatic.com/aw/pics=
+/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"" width=3D=
+"15" height=3D"15" border=3D"0" style=3D"display:block;" />=0A=09=09</td>=
+=0A=09=09<td style=3D"font-size:1px;line-height:1px;" >=0A=09=09=09<img sr=
+c=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/ima=
+ges/spacer-GWOIZ.gif" alt=3D"" width=3D"50" height=3D"15" border=3D"0" sty=
+le=3D"display:block;" class=3D"spacewidth15"/>=0A=09=09</td>=0A=09</tr>=0A=
+</table>=0A=0A=09=09=09<!--| START: general/spacer/spacer_v1 |-->=0A=09=09=
+=09<table width=3D"600" class=3D"tablewidth300" border=3D"0" cellspacing=
+=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">=0A=09<tr>=0A=09=09<td style=
+=3D"font-size:1px; line-height:1px;">=0A=09=09=09<img style=3D"display:blo=
+ck;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162=
+725/images/spacer-vrURX.gif" height=3D"10" width=3D"1" border=3D"0" alt=3D=
+"" />=0A=09=09</td>=0A=09</tr>=0A</table>=0A=09=09=09<!--| START: social |=
+-->=0A=09=09=09=0A<table width=3D"600" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" class=3D"tablewidth300">=0A  <tr>=0A    <td bgcolor=3D"#f0ef=
+ec" style=3D"font-size:1px; line-height:1px;">=0A      <img style=3D"displ=
+ay:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533=
+075162725/images/spacer-GWOIZ.gif" height=3D"15" width=3D"10" border=3D"0"=
+ alt=3D"" />=0A    </td>=0A  </tr>=0A  <tr>=0A    <td bgcolor=3D"#f0efec">=
+=0A      <table width=3D"600" border=3D"0" cellspacing=3D"0" cellpadding=
+=3D"0" class=3D"tablewidth300">=0A        <tr>=0A          <td width=3D"15=
+" style=3D"font-size:1px;line-height:1px;">=0A            <img style=3D"di=
+splay:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1=
+533075162725/images/spacer-GWOIZ.gif" height=3D"15" width=3D"10" border=3D=
+"0" alt=3D"" />=0A          </td>=0A          <td>=0A            <table wi=
+dth=3D"570" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"tabl=
+ewidth280">=0A              <tr>=0A                <td>=0A                =
+  <table width=3D"570" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"tablewidth280" style=3D"text-align: left;">=0A                    <=
+tr>=0A                      <td>=0A                        <table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0">=0A                          <t=
+r>=0A                            <td>=0A                              <a h=
+ref=3D"http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc4=
+2II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">=0A                                <img style=3D"display:block=
+;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-153307516272=
+5/images/facebook-OtYDD.gif" width=3D"22" height=3D"22" vspace=3D"0" hspac=
+e=3D"0" border=3D"0" alt=3D"Facebook" title=3D"Facebook" class=3D"socialbu=
+ttons" />=0A                              </a>=0A                         =
+   </td>=0A                            <td style=3D"font-size:1px; line-he=
+ight:1px;">=0A                              <img src=3D"http://pics.ebayst=
+atic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" a=
+lt=3D"" width=3D"5" height=3D"10" border=3D"0" style=3D"display:block;" />=
+=0A                            </td>=0A                            <td ali=
+gn=3D"left">=0A                              <a href=3D"http://rover.ebay.=
+com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D1651b17cc43II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">=0A                                <img style=3D"display:block=
+;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-153307516272=
+5/images/twitter-sVQoN.gif" width=3D"22" height=3D"22" vspace=3D"0" hspace=
+=3D"0" border=3D"0" alt=3D"Twitter" title=3D"Twitter" class=3D"socialbutto=
+ns" />=0A                              </a>=0A                            =
+</td>=0A                          </tr>=0A                        </table>=
+=0A                      </td>=0A                      <td align=3D"right"=
+>=0A                        <a href=3D"http://rover.ebay.com/rover/4/0/8?e=
+ecl=3D3&eesi=3DDE&i=3D1651b17cc44II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">=0A                          <img style=3D"display:block;" src=
+=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/imag=
+es/cta_gotoe-Nrn7D.gif" height=3D"26" width=3D"180" border=3D"0" alt=3D"Je=
+tzt zu eBay" title=3D"Jetzt zu eBay" />=0A                        </a>=0A =
+                     </td>=0A                    </tr>=0A                 =
+ </table>=0A                </td>=0A              </tr>=0A              <t=
+r>=0A                <td width=3D"15" style=3D"font-size:1px;line-height:1=
+px;">=0A                  <img style=3D"display:block;" src=3D"http://pics=
+.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOI=
+Z.gif" height=3D"15" width=3D"10" border=3D"0" alt=3D"" />=0A             =
+   </td>=0A              </tr>=0A            </table>=0A          </td>=0A=
+          <td width=3D"15" style=3D"font-size:1px;line-height:1px;">=0A   =
+         <img style=3D"display:block;" src=3D"http://pics.ebaystatic.com/a=
+w/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" height=3D"1=
+5" width=3D"10" border=3D"0" alt=3D"" />=0A          </td>=0A        </tr>=
+=0A      </table>=0A    </td>=0A  </tr>=0A  <tr>=0A    <td>=0A      <table=
+ width=3D"600" class=3D"tablewidth300" border=3D"0" cellspacing=3D"0" cell=
+padding=3D"0" bgcolor=3D"#ffffff">=0A        <tr>=0A          <td style=3D=
+"font-size:1px; line-height:1px;">=0A            <img style=3D"display:blo=
+ck;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162=
+725/images/spacer-GWOIZ.gif" height=3D"10" width=3D"1" border=3D"0" alt=3D=
+"" />=0A          </td>=0A        </tr>=0A      </table>=0A    </td>=0A  <=
+/tr>=0A  <tr>=0A    <td>=0A      <table width=3D"600" border=3D"0" cellspa=
+cing=3D"0" cellpadding=3D"0" bgcolor=3D"#f0efec" class=3D"tablewidth300">=
+=0A        <tr>=0A          <td style=3D"font-size:1px; line-height:1px;">=
+=0A            <img style=3D"display:block;" src=3D"http://pics.ebaystatic=
+.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" heig=
+ht=3D"10" width=3D"10" border=3D"0" alt=3D"" />=0A          </td>=0A      =
+  </tr>=0A        <tr>=0A          <td>=0A            <table width=3D"600"=
+ border=3D"0" cellspacing=3D"0" cellpadding=3D"0" class=3D"tablewidth300">=
+=0A              <tr>=0A                <td width=3D"10" style=3D"font-siz=
+e:1px; line-height:1px;">=0A                  <img style=3D"display:block;=
+" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162725=
+/images/spacer-GWOIZ.gif" height=3D"15" width=3D"10" border=3D"0" alt=3D""=
+ />=0A                </td>=0A                <td align=3D"left" height=3D=
+"26" style=3D"mso-line-height-rule:exactly; line-height:13px; text-align:l=
+eft;">=0A                  <font size=3D"1" face=3D"Arial, Helvetica, sans=
+-serif" color=3D"#333333" style=3D"font-size: 9px; display:block; line-hei=
+ght:13px; text-align:left;">=0A                    <strong>eBay hat diese =
+Mitteilung an=20=
+Roman Priebe=
+ (=
+rrr8389472=
+) gesendet.</strong>=0A                    <br />Ihr Vor- und Nachname in =
+dieser Mitteilung sind ein Hinweis darauf, dass die Nachricht tats&auml;ch=
+lich von eBay stammt. <a href=3D"http://rover.ebay.com/rover/4/0/8?eecl=3D=
+3&eesi=3DDE&i=3D1651b17cc45II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" style=
+=3D"color:#002398; font-size:9px; line-height:13px; text-decoration: under=
+line;" target=3D"_blank" title=3D"Mehr zum Thema">Mehr zum Thema</a>.</fon=
+t>=0A                </td>=0A                <td width=3D"10" style=3D"fon=
+t-size:1px; line-height:1px;">=0A                  <img style=3D"display:b=
+lock;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-15330751=
+62725/images/spacer-GWOIZ.gif" height=3D"15" width=3D"10" border=3D"0" alt=
+=3D"" />=0A                </td>=0A              </tr>=0A            </tab=
+le>=0A          </td>=0A        </tr>=0A        <tr>=0A          <td style=
+=3D"font-size:1px; line-height:1px;">=0A            <img style=3D"display:=
+block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075=
+162725/images/spacer-GWOIZ.gif" height=3D"15" width=3D"10" border=3D"0" al=
+t=3D"" />=0A          </td>=0A        </tr>=0A      </table>=0A    </td>=
+=0A  </tr>=0A  <tr>=0A    <td style=3D"font-size:1px; line-height:1px;" bg=
+color=3D"#ffffff">=0A      <img style=3D"display:block;" src=3D"http://pic=
+s.ebaystatic.com/aw/pics/myemails/A201505-1533075162725/images/spacer-GWOI=
+Z.gif" height=3D"10" width=3D"10" border=3D"0" alt=3D"" />=0A    </td>=0A =
+ </tr>=0A</table>=0A=0A=09=09=09<!--| START: general/spacer/spacer_v1 |-->=
+=0A=09=09=09<table width=3D"600" class=3D"tablewidth300" border=3D"0" cell=
+spacing=3D"0" cellpadding=3D"0" bgcolor=3D"#ffffff">=0A=09<tr>=0A=09=09<td=
+ style=3D"font-size:1px; line-height:1px;">=0A=09=09=09<img style=3D"displ=
+ay:block;" src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533=
+075162725/images/spacer-vrURX.gif" height=3D"10" width=3D"1" border=3D"0" =
+alt=3D"" />=0A=09=09</td>=0A=09</tr>=0A</table>=0A=09=09=09<!--| START: fo=
+oter_emarsys |-->=0A=09=09=09<table width=3D"600" bgcolor=3D"#ffffff" clas=
+s=3D"tablewidth300" border=3D"0" cellspacing=3D"0" cellpadding=3D"0" style=
+=3D"text-align:left;">=0A  <tr>=0A    <td width=3D"10" style=3D"font-size:=
+1px; line-height:1px;">=0A    <img src=3D"http://pics.ebaystatic.com/aw/pi=
+cs/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"/" width=
+=3D"10" height=3D"10" border=3D"0" style=3D"display:block;" />=0A    </td>=
+=0A  </tr>=0A  <tr>=0A    <td>=0A      <table border=3D"0" cellspacing=3D"=
+0" cellpadding=3D"0" style=3D"text-align:left;">=0A        <tr>=0A        =
+  <td width=3D"10" style=3D"font-size:1px; line-height:1px;">=0A          =
+  <img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-15330751=
+62725/images/spacer-GWOIZ.gif" alt=3D"/" width=3D"10" height=3D"20" border=
+=3D"0" style=3D"display:block;" />=0A          </td>=0A          <td width=
+=3D"580" class=3D"tablewidth280">=0A            <TABLE width=3D"600" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"tablecomplete tablewi=
+dth300">=0A  <TBODY><TR>=0A    <TD width=3D"600" align=3D"left"><FONT colo=
+r=3D"#000000" face=3D"Arial, Helvetica, sans-serif" size=3D"2"><STRONG>Kon=
+taktinformationen</STRONG></FONT><FONT size=3D"1" color=3D"#666666" face=
+=3D"Arial, Helvetica, sans-serif"> =0A        <BR>=0A        Beantworten S=
+ie diese E-Mail bitte NICHT per 'Reply' (Antwort-Button in Ihrem  E-Mail-P=
+rogramm). Wenn Sie eine Frage haben, hilft Ihnen unser <A href=3D"http://r=
+over.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b2II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">Kundenservice</A> gerne. Alle aktuellen Informationen finden S=
+ie in den <A href=3D"http://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&=
+i=3D72461e0b1II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">eBay-News</A>. <BR>=0A  <BR>=0A  <BR></FONT>=0A  <FONT color=
+=3D"#000000" face=3D"Arial, Helvetica, sans-serif" size=3D"2"><STRONG>Abbe=
+stellen</STRONG></FONT><FONT size=3D"1" color=3D"#666666" face=3D"Arial, H=
+elvetica, sans-serif"><BR>=0A        Wenn Sie den Newsletter in Zukunft ni=
+cht mehr haben m=C3=B6chten, passen Sie einfach  Ihre <A href=3D"http://ro=
+ver.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b0II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">Benachrichtigungseinstellungen</A>  in  Mein eBay an. <BR>=0A =
+ <BR>=0A        Wir werten Ihre Reaktion auf diesen Newsletter pseudonymis=
+iert auf der Basis  Ihres Mitgliedsnamens aus. So k=C3=B6nnen wir Ihnen in=
+ Zukunft st=C3=A4rker auf Ihre  Interessen zugeschnittene Newsletter zusen=
+den. Wenn Sie dies nicht w=C3=BCnschen,  bestellen Sie den Newsletter bitt=
+e wie oben beschrieben ab. <BR>=0A  <BR>=0A        Haben Sie Fragen zum Um=
+gang mit Ihren Daten? Informieren Sie sich =C3=BCber unsere <A href=3D"htt=
+p://rover.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b3II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">Datenschutzgrunds=C3=A4tze</A> und unsere <A href=3D"http://ro=
+ver.ebay.com/rover/4/0/8?eecl=3D3&eesi=3DDE&i=3D72461e0b4II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">Allgemeinen Gesch=C3=A4ftsbedingungen</A>. <BR>=0A  <BR>=0A   =
+     Diese Nachricht wurde Ihnen von der eBay Europe S.=C3=A0 r.l. =C3=BCb=
+ermittelt. Diese  kann sich zur Erf=C3=BCllung ihrer Dienstleistungen ande=
+rer eBay-Unternehmen  bedienen. Falls Sie Ihren Wohn- oder Gesch=C3=A4ftss=
+itz au=C3=9Ferhalb der EU haben,  finden Sie die Kontaktdaten Ihres Vertra=
+gspartners in den <A href=3D"http://rover.ebay.com/rover/4/0/8?eecl=3D3&ee=
+si=3DDE&i=3D72461e0b4II=
+7ef66cII14d53cII1651c0e83efII3=
+&eepc=3D&bu=3D=
+44259985411=
+&segname=3D=
+B11CCBA-00=
+&crd=3D=
+20150507064600=
+&emParams=3Di&sojTags=3Demid%3Dbu%2Csegname%3Dsegname%2Ccrd%3Dcrd" target=
+=3D"_blank">Allgemeinen Gesch=C3=A4ftsbedingungen</A>. <BR>=0A  <BR>=0A   =
+     Copyright =C2=A9 2015 eBay Inc. Alle Rechte vorbehalten. <BR>=0A     =
+   Ausgewiesene Warenzeichen und Markennamen geh=C3=B6ren ihren jeweiligen=
+  Eigent=C3=BCmern. eBay und das eBay-Logo sind Marken von eBay Inc.=0A  <=
+BR>=0A        eBay  Europe S.=C3=A0 r.l.</FONT>=0A      </TD>=0A  </TR>=0A=
+</TBODY></TABLE></td>=0A          <td width=3D"10" style=3D"font-size:1px;=
+ line-height:1px;">=0A            <img src=3D"http://pics.ebaystatic.com/a=
+w/pics/myemails/A201505-1533075162725/images/spacer-GWOIZ.gif" alt=3D"/" w=
+idth=3D"10" height=3D"10" border=3D"0" style=3D"display:block;" />=0A     =
+     </td>=0A        </tr>=0A      </table>=0A    </td>=0A  </tr> =0A  <tr=
+>=0A    <td width=3D"10" style=3D"font-size:1px; line-height:1px;">=0A    =
+<img src=3D"http://pics.ebaystatic.com/aw/pics/myemails/A201505-1533075162=
+725/images/spacer-GWOIZ.gif" alt=3D"/" width=3D"10" height=3D"10" border=
+=3D"0" style=3D"display:block;" />=0A    </td>=0A  </tr>=0A</table>=0A=09=
+=09=09<!--| START: closealign |-->=0A=09=09=09    </td>=0A  </tr>=0A</tabl=
+e>=0A=09=0A=0A=0A</body></html>
+--_----------=_112358201558820--

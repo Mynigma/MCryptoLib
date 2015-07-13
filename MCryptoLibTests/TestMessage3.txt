@@ -1,0 +1,422 @@
+Delivered-To: info@mynigma.org
+Received-SPF: Pass (zoho.com: domain of viola.fechner@coachingbonus.de designates 212.227.17.24 as permitted sender using best guess )  client-ip: 212.227.17.24
+Return-Path: <viola.fechner@coachingbonus.de>
+Received: from mout.kundenserver.de (mout.kundenserver.de [212.227.17.24]) by mx.zohomail.com
+	with SMTPS id 1430898315003176.91110839943235; Wed, 6 May 2015 00:45:15 -0700 (PDT)
+Received: from mail.ibb-businessteam.de ([176.94.82.58]) by
+ mrelayeu.kundenserver.de (mreue104) with ESMTPA (Nemesis) id
+ 0MPXo9-1Yu2sS2yPZ-004gca; Wed, 06 May 2015 09:44:46 +0200
+Received: from localhost (localhost [127.0.0.1])
+	by mail.ibb-businessteam.de (Postfix) with ESMTP id 2814933E82F5;
+	Wed,  6 May 2015 09:42:00 +0200 (CEST)
+Received: from mail.ibb-businessteam.de ([127.0.0.1])
+	by localhost (mail.ibb-businessteam.de [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id Duyitq0Bko_k; Wed,  6 May 2015 09:41:55 +0200 (CEST)
+Received: from mail.ibb-businessteam.de (localhost [127.0.0.1])
+	by mail.ibb-businessteam.de (Postfix) with ESMTP id 25A3033E8272;
+	Wed,  6 May 2015 09:40:29 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at ibb-businessteam.de
+Subject: Seminarangebot der IBB Business Team GmbH - Onlinemarketing -
+ Suchmaschinenoptimierung
+From: =?utf-8?Q?Viola_Fechner?= <viola.fechner@coachingbonus.de>
+To: =?utf-8?Q?viola=2Efechner=40coachingbonus=2Ede?=
+  <viola.fechner@coachingbonus.de>
+Date: Wed, 6 May 2015 09:40:29 +0200
+Mime-Version: 1.0
+Content-Type: multipart/alternative; 
+ boundary="=_JlsiQl3gJaltsLJx4y4Ps8dH5Ny53o6JSXkBWxLsm6N5rXUw"
+X-Priority: 3 (Normal)
+X-Mailer: Zarafa 7.1.11-46050
+Thread-Index: =?us-ascii?Q?AdB4L8LGbnXYomb0SH+DxcbPLMt/igABw4dQAAEHBBAAAb/?=
+ =?us-ascii?Q?6kAAApRfAAVkLBPAAAyYBkAJdbb0AAAWFmDAAI1gjgA=3D=3D?=
+Message-Id: <zarafa.5549c56d.2387.2b88962a1ccee871@mail.ibb-businessteam.de>
+X-Provags-ID: V03:K0:bLpx44hV8MXsChn1kbSGgkoM6c/91p0iUmRFq1PZ9zLe6tPs6T0
+ 5keIaAKQ+6zjqP72aqtOR4KUyMQW1IBWsuFCAyHWsm0wNliChSFq7Z7Is/KzQIYlodLQUv5
+ ce5sfwqSw5Eim/lJXQhqpFaPXZ4daON6ku4FQfSK4EoPIwWjKPSz2eyAZZBLQcGDFqpGbTm
+ XDf70tauL1h5N5XKa0PKA==
+X-UI-Out-Filterresults: notjunk:1;
+X-Zoho-Virus-Status: 1
+X-ZohoMail: SS_1 SFPD SFPP UW26 UB26 PIS_SCB  SF_SIP_4 ZMHF-TINF_4 COSF  ODL   SGR3_1_16045_253
+X-ZohoMail-Owner: <zarafa.5549c56d.2387.2b88962a1ccee871@mail.ibb-businessteam.de>+zmo_0_<viola.fechner@coachingbonus.de>
+X-ZohoMail-Sender: 176.94.82.58
+
+This is a multi-part message in MIME format. Your mail reader does not
+understand MIME message format.
+--=_JlsiQl3gJaltsLJx4y4Ps8dH5Ny53o6JSXkBWxLsm6N5rXUw
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+=C2=A0=0D=0A=0D=0A=C2=A0=0D=0ASehr geehrte Damen und Herren,=20=0D=0A=0D=0A=
+gern mchten wir Sie wieder auf unsere kommenden Seminare aufmerksam mache=
+n:=0D=0A=0D=0AOnline-Marketing in zwei Modulen <http://www.coachingbonus.=
+de/seminarprogramm/seminarprogramm/>=20=0D=0A=0D=0A=0D=0ATermine=0D=0ADon=
+nerstag, 28. Mai 2015, 9-17 Uhr (Modul 1 - Effektive Suchmaschinenoptimie=
+rung fr Webseiten)=0D=0ADonnerstag, =C2=A04. Juni 2015, 9-17 Uhr (Modul 2=
+ - Strategisches Suchmaschinenmarketing und professionelles Social Media =
+Marketing)=0D=0A=0D=0A=C2=A0=0D=0AAls Referentin konnten wir Frau Gaby Li=
+ngath <http://www.link-seo.de/> gewinnen.=0D=0A=0D=0AEine Anmeldung ist n=
+och bis zum 18. Mai 2014 mglich.=0D=0A=0D=0AUnsere Seminare finden Sie hi=
+er: http://www.coachingbonus.de/seminarprogramm/seminarprogramm/ <http://=
+www.coachingbonus.de/seminarprogramm/seminarprogramm/>=20=0D=0A=0D=0AWir =
+freuen uns auf Ihre Anmeldungen!=0D=0A=0D=0AKONTAKT:=0D=0A=0D=0AViola Fec=
+hner=0D=0A____________________=0D=0A=0D=0AIBB Business Team GmbH=0D=0A=0D=
+=0ACoaching BONUS=0D=0A=0D=0ABundesallee 210=0D=0A=0D=0A10719 Berlin=0D=0A=
+=0D=0A=C2=A0=0D=0ATel.: 030 / 4678 - 2812=0D=0A=0D=0AFax: 030 / 4678 - 28=
+23=0D=0Aviola.fechner@coachingbonus.de <mailto:viola.fechner@coachingbonu=
+s.de>=20=0D=0A=0D=0Awww.coachingbonus.de <http://www.coachingbonus.de>=20=
+=0D=0A=0D=0A=C2=A0=0D=0AIBB Business Team GmbH=0D=0A=0D=0AGeschftsfhrer: =
+Andreas Biendorf=0D=0A=0D=0AAmtsgericht Charlottenburg HRB 61752=0D=0A=0D=
+=0ASteuer-Nr.: 27/037/01769=0D=0A=0D=0A----------------------------------=
+--------------------------------------------------------------=0D=0A=0D=0A=
+=C2=A0=0D=0AZum 01.01.2013 werden die Projekte Technologie Coaching Cente=
+r und Kreativ Coaching Center in ein neues Frderprogramm Coaching BONUS b=
+erfhrt. Dieses wird unter dem Dach der IBB Business Team GmbH bestehen. Z=
+ur IBB Business Team GmbH gehren zudem der Businessplan-Wettbewerb Berlin=
+ Brandenburg (BPW), der Transfer BONUS sowie die Deutschen Grnder- und Un=
+ternehmertage (deGUT).=20=0D=0A=0D=0A=C2=A0=0D=0ABitte beachten Sie unser=
+e neuen E-Mailadressen sowie die neue Webseite www.coachingbonus.de <http=
+://www.coachingbonus.de>=20=0D=0A=0D=0A=C2=A0=0D=0A=C2=A0=0D=0A=C2=A0=0D=0A=
+=C2=A0=0D=0A
+--=_JlsiQl3gJaltsLJx4y4Ps8dH5Ny53o6JSXkBWxLsm6N5rXUw
+Content-Type: multipart/related; 
+ boundary="=_JlsiHEhieQflz8qImvW2qaZdSNTUWr20nsK+2spZfhgz9Wt5"
+
+--=_JlsiHEhieQflz8qImvW2qaZdSNTUWr20nsK+2spZfhgz9Wt5
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-mi=
+crosoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:wo=
+rd" xmlns:x=3D"urn:schemas-microsoft-com:office:excel" xmlns:m=3D"http://=
+schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http://www.w3.org/TR/=
+REC-html40"><head><meta http-equiv=3DContent-Type content=3D"text/html; c=
+harset=3Dutf-8"><meta name=3DGenerator content=3D"Microsoft Word 12 (filt=
+ered medium)"><!--[if !mso]><style>v\:* {behavior:url(#default#VML);}=0D=0A=
+o\:* {behavior:url(#default#VML);}=0D=0Aw\:* {behavior:url(#default#VML);=
+}=0D=0A.shape {behavior:url(#default#VML);}=0D=0A</style><![endif]--><sty=
+le><!--=0D=0A/* Font Definitions */=0D=0A@font-face=0D=0A=09{font-family:=
+"Cambria Math";=0D=0A=09panose-1:2 4 5 3 5 4 6 3 2 4;}=0D=0A@font-face=0D=
+=0A=09{font-family:Cambria;=0D=0A=09panose-1:2 4 5 3 5 4 6 3 2 4;}=0D=0A@=
+font-face=0D=0A=09{font-family:Calibri;=0D=0A=09panose-1:2 15 5 2 2 2 4 3=
+ 2 4;}=0D=0A@font-face=0D=0A=09{font-family:Tahoma;=0D=0A=09panose-1:2 11=
+ 6 4 3 5 4 4 2 4;}=0D=0A/* Style Definitions */=0D=0Ap.MsoNormal, li.MsoN=
+ormal, div.MsoNormal=0D=0A=09{margin:0cm;=0D=0A=09margin-bottom:.0001pt;=0D=
+=0A=09font-size:11.0pt;=0D=0A=09font-family:"Calibri","sans-serif";}=0D=0A=
+h2=0D=0A=09{mso-style-priority:9;=0D=0A=09mso-style-link:"=C3=9Cberschrif=
+t 2 Zchn";=0D=0A=09margin-top:10.0pt;=0D=0A=09margin-right:0cm;=0D=0A=09m=
+argin-bottom:0cm;=0D=0A=09margin-left:0cm;=0D=0A=09margin-bottom:.0001pt;=
+=0D=0A=09page-break-after:avoid;=0D=0A=09font-size:13.0pt;=0D=0A=09font-f=
+amily:"Cambria","serif";=0D=0A=09color:#4F81BD;}=0D=0Ah4=0D=0A=09{mso-sty=
+le-priority:9;=0D=0A=09mso-style-link:"=C3=9Cberschrift 4 Zchn";=0D=0A=09=
+margin-top:10.0pt;=0D=0A=09margin-right:0cm;=0D=0A=09margin-bottom:0cm;=0D=
+=0A=09margin-left:0cm;=0D=0A=09margin-bottom:.0001pt;=0D=0A=09page-break-=
+after:avoid;=0D=0A=09font-size:11.0pt;=0D=0A=09font-family:"Cambria","ser=
+if";=0D=0A=09color:#4F81BD;=0D=0A=09font-style:italic;}=0D=0Aa:link, span=
+=2EMsoHyperlink=0D=0A=09{mso-style-priority:99;=0D=0A=09color:blue;=0D=0A=
+=09text-decoration:underline;}=0D=0Aa:visited, span.MsoHyperlinkFollowed=0D=
+=0A=09{mso-style-priority:99;=0D=0A=09color:purple;=0D=0A=09text-decorati=
+on:underline;}=0D=0Ap.MsoPlainText, li.MsoPlainText, div.MsoPlainText=0D=0A=
+=09{mso-style-priority:99;=0D=0A=09mso-style-link:"Nur Text Zchn";=0D=0A=09=
+margin:0cm;=0D=0A=09margin-bottom:.0001pt;=0D=0A=09font-size:14.0pt;=0D=0A=
+=09font-family:"Arial","sans-serif";}=0D=0Ap.MsoAcetate, li.MsoAcetate, d=
+iv.MsoAcetate=0D=0A=09{mso-style-priority:99;=0D=0A=09mso-style-link:"Spr=
+echblasentext Zchn";=0D=0A=09margin:0cm;=0D=0A=09margin-bottom:.0001pt;=0D=
+=0A=09font-size:8.0pt;=0D=0A=09font-family:"Tahoma","sans-serif";}=0D=0As=
+pan.berschrift2Zchn=0D=0A=09{mso-style-name:"=C3=9Cberschrift 2 Zchn";=0D=
+=0A=09mso-style-priority:9;=0D=0A=09mso-style-link:"=C3=9Cberschrift 2";=0D=
+=0A=09font-family:"Cambria","serif";=0D=0A=09color:#4F81BD;=0D=0A=09font-=
+weight:bold;}=0D=0Aspan.berschrift4Zchn=0D=0A=09{mso-style-name:"=C3=9Cbe=
+rschrift 4 Zchn";=0D=0A=09mso-style-priority:9;=0D=0A=09mso-style-link:"=C3=
+=9Cberschrift 4";=0D=0A=09font-family:"Cambria","serif";=0D=0A=09color:#4=
+F81BD;=0D=0A=09font-weight:bold;=0D=0A=09font-style:italic;}=0D=0Aspan.Nu=
+rTextZchn=0D=0A=09{mso-style-name:"Nur Text Zchn";=0D=0A=09mso-style-prio=
+rity:99;=0D=0A=09mso-style-link:"Nur Text";=0D=0A=09font-family:"Arial","=
+sans-serif";}=0D=0Aspan.SprechblasentextZchn=0D=0A=09{mso-style-name:"Spr=
+echblasentext Zchn";=0D=0A=09mso-style-priority:99;=0D=0A=09mso-style-lin=
+k:Sprechblasentext;=0D=0A=09font-family:"Tahoma","sans-serif";}=0D=0Ap.bo=
+dytext, li.bodytext, div.bodytext=0D=0A=09{mso-style-name:bodytext;=0D=0A=
+=09mso-style-priority:99;=0D=0A=09mso-margin-top-alt:auto;=0D=0A=09margin=
+-right:0cm;=0D=0A=09mso-margin-bottom-alt:auto;=0D=0A=09margin-left:0cm;=0D=
+=0A=09font-size:12.0pt;=0D=0A=09font-family:"Times New Roman","serif";}=0D=
+=0Aspan.E-MailFormatvorlage24=0D=0A=09{mso-style-type:personal;=0D=0A=09f=
+ont-family:"Calibri","sans-serif";=0D=0A=09color:windowtext;}=0D=0Aspan.E=
+-MailFormatvorlage25=0D=0A=09{mso-style-type:personal;=0D=0A=09font-famil=
+y:"Calibri","sans-serif";=0D=0A=09color:#1F497D;}=0D=0Aspan.E-MailFormatv=
+orlage26=0D=0A=09{mso-style-type:personal;=0D=0A=09font-family:"Calibri",=
+"sans-serif";=0D=0A=09color:#1F497D;}=0D=0Aspan.E-MailFormatvorlage27=0D=0A=
+=09{mso-style-type:personal;=0D=0A=09font-family:"Calibri","sans-serif";=0D=
+=0A=09color:#1F497D;}=0D=0Aspan.E-MailFormatvorlage28=0D=0A=09{mso-style-=
+type:personal;=0D=0A=09font-family:"Calibri","sans-serif";=0D=0A=09color:=
+#1F497D;}=0D=0Aspan.E-MailFormatvorlage29=0D=0A=09{mso-style-type:persona=
+l;=0D=0A=09font-family:"Calibri","sans-serif";=0D=0A=09color:#1F497D;}=0D=
+=0Aspan.E-MailFormatvorlage30=0D=0A=09{mso-style-type:personal;=0D=0A=09f=
+ont-family:"Calibri","sans-serif";=0D=0A=09color:#1F497D;}=0D=0Aspan.E-Ma=
+ilFormatvorlage31=0D=0A=09{mso-style-type:personal;=0D=0A=09font-family:"=
+Calibri","sans-serif";=0D=0A=09color:#1F497D;}=0D=0Aspan.E-MailFormatvorl=
+age32=0D=0A=09{mso-style-type:personal;=0D=0A=09font-family:"Calibri","sa=
+ns-serif";=0D=0A=09color:#1F497D;}=0D=0Aspan.E-MailFormatvorlage33=0D=0A=09=
+{mso-style-type:personal-reply;=0D=0A=09font-family:"Calibri","sans-serif=
+";=0D=0A=09color:#1F497D;}=0D=0A.MsoChpDefault=0D=0A=09{mso-style-type:ex=
+port-only;=0D=0A=09font-size:10.0pt;}=0D=0A@page WordSection1=0D=0A=09{si=
+ze:612.0pt 792.0pt;=0D=0A=09margin:70.85pt 70.85pt 2.0cm 70.85pt;}=0D=0Ad=
+iv.WordSection1=0D=0A=09{page:WordSection1;}=0D=0A--></style><!--[if gte =
+mso 9]><xml>=0D=0A<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />=0D=0A=
+</xml><![endif]--><!--[if gte mso 9]><xml>=0D=0A<o:shapelayout v:ext=3D"e=
+dit">=0D=0A<o:idmap v:ext=3D"edit" data=3D"1" />=0D=0A</o:shapelayout></x=
+ml><![endif]--></head><body lang=3DDE link=3Dblue vlink=3Dpurple><div cla=
+ss=3DWordSection1><p class=3DMsoNormal>&nbsp;<img width=3D473 height=3D10=
+3 id=3D"Bild_x0020_1" src=3D"cid:image004.jpg@01D07855.571A7790" alt=3D"c=
+id:image001.jpg@01CE681C.5F2A3E20"><o:p></o:p></p><p class=3DMsoPlainText=
+ style=3D'margin-bottom:12.0pt'><span style=3D'font-size:11.0pt;color:#1F=
+497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoPlainText style=3D'margin=
+-bottom:12.0pt'><span style=3D'font-size:11.0pt'>Sehr geehrte Damen und H=
+erren, </span><o:p></o:p></p><p class=3DMsoPlainText style=3D'margin-bott=
+om:12.0pt'><span style=3D'font-size:11.0pt'>gern m=C3=B6chten wir Sie wie=
+der auf unsere kommenden Seminare aufmerksam machen:</span><o:p></o:p></p=
+><p class=3DMsoPlainText style=3D'margin-bottom:12.0pt'><b><span style=3D=
+'font-size:11.0pt;color:#1F497D'><a href=3D"http://www.coachingbonus.de/s=
+eminarprogramm/seminarprogramm/">Online-Marketing in zwei Modulen</a><o:p=
+></o:p></span></b></p><h4><span style=3D'font-family:"Arial","sans-serif"=
+;color:windowtext;font-style:normal'>Termine<br></span><span style=3D'fon=
+t-family:"Arial","sans-serif";color:windowtext;font-weight:normal;font-st=
+yle:normal'>Donnerstag, 28. Mai 2015, 9-17 Uhr (Modul 1 - Effektive Suchm=
+aschinenoptimierung f=C3=BCr Webseiten</span><span style=3D'font-family:"=
+Arial","sans-serif";color:windowtext;font-weight:normal'>)<br></span><spa=
+n style=3D'font-family:"Arial","sans-serif";color:windowtext;font-weight:=
+normal;font-style:normal'>Donnerstag, </span><span style=3D'font-family:"=
+Arial","sans-serif";color:#1F497D;font-weight:normal;font-style:normal'>&=
+nbsp;</span><span style=3D'font-family:"Arial","sans-serif";color:windowt=
+ext;font-weight:normal;font-style:normal'>4. Juni 2015, 9-17 Uhr (Modul 2=
+ - Strategisches Suchmaschinenmarketing und professionelles Social Media =
+Marketing)<o:p></o:p></span></h4><p class=3DMsoNormal><span style=3D'colo=
+r:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=3DMsoPlainText style=3D'm=
+argin-bottom:12.0pt'><span style=3D'font-size:11.0pt'>Als Referentin konn=
+ten wir Frau <a href=3D"http://www.link-seo.de/" target=3D"_blank">Gaby L=
+ingath</a><span style=3D'color:#1F497D'> </span>gewinnen.</span><o:p></o:=
+p></p><p class=3DMsoPlainText style=3D'margin-bottom:12.0pt'><span class=3D=
+MsoHyperlink><b><span style=3D'font-size:11.0pt;color:windowtext;text-dec=
+oration:none'>Eine Anmeldung ist noch bis zum 18. Mai 2014 m=C3=B6glich.<=
+/span></b></span><o:p></o:p></p><p class=3DMsoPlainText style=3D'margin-b=
+ottom:12.0pt'><b><span style=3D'font-size:11.0pt'>Unsere Seminare finden =
+Sie hier:</span></b><span style=3D'font-size:11.0pt;color:#C00000'> </spa=
+n><span style=3D'font-size:11.0pt;color:#1F497D'><a href=3D"http://www.co=
+achingbonus.de/seminarprogramm/seminarprogramm/">http://www.coachingbonus=
+=2Ede/seminarprogramm/seminarprogramm/</a></span><o:p></o:p></p><p class=3D=
+bodytext><span style=3D'font-size:11.0pt;font-family:"Arial","sans-serif"=
+'>Wir freuen uns auf Ihre Anmeldungen!</span><o:p></o:p></p><p class=3DMs=
+oNormal><u><span style=3D'font-size:10.0pt;font-family:"Arial","sans-seri=
+f";color:black'>KONTAKT:</span></u><o:p></o:p></p><p class=3DMsoNormal><i=
+><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";color:b=
+lack'>Viola Fechner<br></span></i><span style=3D'font-size:10.0pt;font-fa=
+mily:"Arial","sans-serif";color:black'>____________________</span><o:p></=
+o:p></p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:=
+"Arial","sans-serif";color:black'>IBB Business Team GmbH</span><o:p></o:p=
+></p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Ar=
+ial","sans-serif";color:black'>Coaching BONUS</span><o:p></o:p></p><p cla=
+ss=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Arial","sans-=
+serif";color:black'>Bundesallee 210</span><o:p></o:p></p><p class=3DMsoNo=
+rmal><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";col=
+or:black'>10719 Berlin</span><o:p></o:p></p><p class=3DMsoNormal><span st=
+yle=3D'font-size:10.0pt;font-family:"Arial","sans-serif";color:black'>&nb=
+sp;</span><o:p></o:p></p><p class=3DMsoNormal><span style=3D'font-size:10=
+=2E0pt;font-family:"Arial","sans-serif";color:black'>Tel.: 030 / 4678 - 2=
+812</span><o:p></o:p></p><p class=3DMsoNormal><span lang=3DEN-US style=3D=
+'font-size:10.0pt;font-family:"Arial","sans-serif";color:black'>Fax: 030 =
+/ 4678 - 2823<br></span><span style=3D'font-size:10.0pt;font-family:"Aria=
+l","sans-serif"'><a href=3D"mailto:viola.fechner@coachingbonus.de"><span =
+lang=3DEN-US>viola.fechner@coachingbonus.de</span></a></span><o:p></o:p><=
+/p><p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Aria=
+l","sans-serif"'><a href=3D"http://www.coachingbonus.de"><span lang=3DEN-=
+US style=3D'color:black'>www.coachingbonus.de</span></a><span style=3D'co=
+lor:black'> </span></span><o:p></o:p></p><p class=3DMsoNormal><span lang=3D=
+EN-US style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";color:bl=
+ack'>&nbsp;</span><o:p></o:p></p><p class=3DMsoNormal><span style=3D'font=
+-size:10.0pt;font-family:"Arial","sans-serif";color:black'>IBB Business T=
+eam GmbH</span><o:p></o:p></p><p class=3DMsoNormal><span style=3D'font-si=
+ze:10.0pt;font-family:"Arial","sans-serif";color:black'>Gesch=C3=A4ftsf=C3=
+=BChrer: Andreas Bi=C3=9Fendorf</span><o:p></o:p></p><p class=3DMsoNormal=
+><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";color:b=
+lack'>Amtsgericht Charlottenburg HRB 61752</span><o:p></o:p></p><p class=3D=
+MsoNormal><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif=
+";color:black'>Steuer-Nr.: 27/037/01769</span><o:p></o:p></p><p class=3DM=
+soNormal><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif"=
+;color:black'>-----------------------------------------------------------=
+-------------------------------------</span><o:p></o:p></p><p class=3DMso=
+Normal><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";c=
+olor:black'>&nbsp;</span><o:p></o:p></p><p class=3DMsoNormal><b><span sty=
+le=3D'font-size:10.0pt;font-family:"Arial","sans-serif";color:black'>Zum =
+01.01.2013 werden die Projekte Technologie Coaching Center und Kreativ Co=
+aching Center in ein neues F=C3=B6rderprogramm Coaching BONUS =C3=BCberf=C3=
+=BChrt. Dieses wird unter dem Dach der IBB Business Team GmbH bestehen.</=
+span></b><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif"=
+;color:black'> Zur IBB Business Team GmbH geh=C3=B6ren zudem der Business=
+plan-Wettbewerb Berlin Brandenburg (BPW), der Transfer BONUS sowie die De=
+utschen Gr=C3=BCnder- und Unternehmertage (deGUT). </span><o:p></o:p></p>=
+<p class=3DMsoNormal><span style=3D'font-size:10.0pt;font-family:"Arial",=
+"sans-serif";color:black'>&nbsp;</span><o:p></o:p></p><p class=3DMsoNorma=
+l><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif";color:=
+black'>Bitte beachten Sie unsere neuen E-Mailadressen sowie die neue Webs=
+eite </span><span style=3D'font-size:10.0pt;font-family:"Arial","sans-ser=
+if"'><a href=3D"http://www.coachingbonus.de"><span style=3D'color:black'>=
+www.coachingbonus.de</span></a></span><o:p></o:p></p><p class=3DMsoNormal=
+><span style=3D'font-size:10.0pt;font-family:"Arial","sans-serif"'>&nbsp;=
+</span><o:p></o:p></p><p class=3DMsoNormal><span style=3D'font-size:10.0p=
+t;font-family:"Arial","sans-serif"'>&nbsp;</span><o:p></o:p></p><p class=3D=
+MsoNormal><span style=3D'font-family:"Arial","sans-serif"'>&nbsp;</span><=
+o:p></o:p></p><p class=3DMsoNormal>&nbsp;<o:p></o:p></p></div></body></ht=
+ml>
+--=_JlsiHEhieQflz8qImvW2qaZdSNTUWr20nsK+2spZfhgz9Wt5
+Content-Type: image/jpeg
+Content-Id: <image004.jpg@01D07855.571A7790>
+Content-Disposition: inline
+Content-Transfer-Encoding: base64
+
+/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8l
+JCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIo
+Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAAR
+CABnAdkDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAA
+AgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkK
+FhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWG
+h4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl
+5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREA
+AgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYk
+NOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOE
+hYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk
+5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwCa1+RJ5f7sZA+rcf1NVwCTgDJq0E8vTyXJ
+XzJRx3IA/wDr1d0LQ7jXJ2SIiG3T/WSYz+Hua+jc1FOUtj8/jSnUlGnBXbMraq/fPPoKcjEu
+FUbR3Ar0CLwNpCIA/nyN3YyYz+VTf8Ibo+MLDKoxjiU1yvHUvM9JZNie6+884KHJLsFz26mk
+yg6Lu92r0X/hCNF/55zf9/TR/wAIRov/ADzm/wC/po+vUvMP7FxPdff/AMA86MjHjOB6Dim1
+6P8A8IRov/POb/v6aP8AhCNF/wCec3/f00fXqXmH9jYnuvv/AOAecUV6P/whGi/885v+/po/
+4QjRf+ec3/f00fXqXmH9i4nuvv8A+AecUV6P/wAIRov/ADzm/wC/po/4QjRf+ec3/f00fXqX
+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
+--=_JlsiHEhieQflz8qImvW2qaZdSNTUWr20nsK+2spZfhgz9Wt5--
+
+--=_JlsiQl3gJaltsLJx4y4Ps8dH5Ny53o6JSXkBWxLsm6N5rXUw--
+

@@ -1,0 +1,898 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp2176989wma;
+        Fri, 15 May 2015 07:00:54 -0700 (PDT)
+X-Received: by 10.112.204.6 with SMTP id ku6mr2181809lbc.73.1431698454415;
+        Fri, 15 May 2015 07:00:54 -0700 (PDT)
+Return-Path: <e3-1534889449435-939efII3f7a64II3@e3.emarsys.net>
+Received: from pmta40176.emarsys.net (pmta40176.emarsys.net. [91.211.240.176])
+        by mx.google.com with ESMTPS id t10si3488088wia.63.2015.05.15.07.00.53
+        for <roman.priebe@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 15 May 2015 07:00:54 -0700 (PDT)
+Received-SPF: pass (google.com: domain of e3-1534889449435-939efII3f7a64II3@e3.emarsys.net designates 91.211.240.176 as permitted sender) client-ip=91.211.240.176;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of e3-1534889449435-939efII3f7a64II3@e3.emarsys.net designates 91.211.240.176 as permitted sender) smtp.mail=e3-1534889449435-939efII3f7a64II3@e3.emarsys.net;
+       dkim=pass header.i=@immobilienscout24.de;
+       dmarc=pass (p=NONE dis=NONE) header.from=immobilienscout24.de
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; s=key2; d=immobilienscout24.de;
+ h=List-Unsubscribe:List-Id:MIME-Version:To:From:Subject:Content-Type:Message-ID:Date; i=newsletter@immobilienscout24.de;
+ bh=autNpAiB6ZsGl3eJv/CMwCIA08Q=;
+ b=YbCdt8dvqDmTzABr0w+yJUjd3i3k2llddfq36uPIBn7fqmUfuBX29hPhaDCWS8OQlKDoaXeqWAlq
+   cgqATNhNhq6KlrDaieqy/BlqHwBcs5tBDJ163JcnPJeiFg+RxJUb8aWwQmoPVr9fSoOiiAbDweTt
+   J6m5neKCReBRKlM9L1I=
+DomainKey-Signature: a=rsa-sha1; c=nofws; q=dns; s=key2; d=immobilienscout24.de;
+ b=k3EDBSxlh/wc6/9mp51gvza+gK1tltcHLCin2M5CGSslZ4y4hyZmlwLwDC9xRClf5xUSBC6pFHQ7
+   Y1h4uvd9gojg4uQLAe7OlUb8vNPXVdsBJnqJBMoYwF/WTLZuIn9/ELo1p6HcjtEQH0fQIzozX+NH
+   jE3l8Jd95W2O9RDygQk=;
+Received: from e3.emarsys.net (10.101.0.55) by pmta40176.emarsys.net id hanu1c16nd8a for <roman.priebe@gmail.com>; Fri, 15 May 2015 15:54:03 +0200 (envelope-from <e3-1534889449435-939efII3f7a64II3@e3.emarsys.net>)
+X-EMarSys-Identify: 1395_1534889449430_1534889449435_939efII3f7a64II1655e8a57dbII3
+X-EMarSys-Environment: e3
+List-Unsubscribe: <http://e3aktuell.immobilienscout24.de/r/link/3df82II725a95a2cII939efII3f7a64II1655e8a57dbII3/e3aktuell.immobilienscout24.de%2Fop%2Fu.do%3Fid%3D1240324137292%26mailId%3D939efII3f7a64II1655e8a57dbII3%26perform%3Dunsubscribe%26field%3D1>
+X-Report-Abuse: Please report abuse here: abuse-report@emarsys.com
+List-Id: 1395 <ImmobilienScout24>
+X-CSA-Complaints: whitelist-complaints@eco.de
+MIME-Version: 1.0
+To: roman.priebe@gmail.com
+From: ImmobilienScout24 <newsletter@immobilienscout24.de>
+Subject: Kosten-Kurzcheck: Bauen oder Kaufen?
+Content-Type: multipart/alternative; boundary="_----------=_112358201558820"
+Message-ID: <0.0.20B.FFC.1D08F169A29A59C.0@pmta40176.emarsys.net>
+Date: Fri, 15 May 2015 15:54:03 +0200
+
+
+--_----------=_112358201558820
+Content-Type: text/plain;charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+=
+Sollte diese E-Mail nicht einwandfrei zu lesen sein, klicken Sie bitte hie=
+r:=0Ahttp://e3aktuell.immobilienscout24.de/r/link/ac84II62198dce4II=
+939efII3f7a64II1655e8a57dbII3=
+/=
+e3aktuell.immobilienscout24.de=
+%2Fr%2Fmail%2F=
+939efII3f7a64II1655e8a57dbII3=
+=0A=0A=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0AImmobilienScout24=
+ | Der Marktf=FChrer: Die Nr. 1 rund um Immobilien =0A> Bauen oder Kaufen =
+- was lohnt sich f=FCr wen?=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=0A =0A=
+Lieber ImmobilienScout24-Nutzer,=
+=0A=0Anie wieder Miete zahlen, so viel steht schon mal fest. Doch steht Ih=
+r Eigenheim in spe bereits oder will es erst noch gebaut werden? Beides ha=
+t Vor- und Nachteile: Der Hausbau bietet viel Gestaltungsfreiheit, ein Kau=
+f die Chance auf ein Schn=E4ppchen und die M=F6glichkeit, ohne lange Warte=
+zeit gleich einzuziehen. Damit Sie eine der wichtigsten Entscheidungen Ihr=
+es Lebens nicht allein treffen m=FCssen, stellen wir Ihnen eine passende H=
+ilfe zur Seite: Mit unserem Quiz erfahren Sie in 8 Schritten, was sich f=
+=FCr Sie lohnt.=0A=0AAu=DFerdem informieren wir Sie umfassend =FCber die K=
+osten, mit denen Sie als Bauherr oder K=E4ufer rechnen m=FCssen und verrat=
+en, wie Sie eine realistische Immobilienbewertung erhalten. =0A=0A=0AViel =
+Spa=DF beim Informieren w=FCnscht Ihnen=0A =0AAndreas B=F6hm=0ARedakteur O=
+nlinemarketing =0A =0AAktuelle Zinsen =0A1,05% (5 Jahre) - 1,29% (10 Jahre=
+) - 1,57% (15 Jahre) =0Aeigene Zinsen berechnen =0Ahttp://e3aktuell.immobi=
+lienscout24.de/r/link/3ed1c2468b167400II1656e93d0cdII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+=0A=0ATendenz gleichbleibend=0A1,05% 04.2015 - 1,05% 05.2015 (5 Jahre) =0A=
+zum Baufinanzierungsrechner =0Ahttp://e3aktuell.immobilienscout24.de/r/lin=
+k/6d7ec3edc2d0ac00II1656e93d0ceII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+=0A =0A=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D =0A                  News =0A=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=0A=0ARundum informiert mit dem N24-Immobilientrend =0A=
+=0ANeu bei ImmobilienScout24: In Kooperation mit N24 erkl=E4rt unser Chefa=
+nalyst Michael Kiefer in kompakten Videos die aktuelle Marktlage und gibt =
+Tipps zum Immobilienerwerb. So sind Sie rundum informiert.=0A=0AVideos seh=
+en =0Ahttp://e3aktuell.immobilienscout24.de/r/link/e8248f481f94c00II1656e9=
+3d0cfII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+=0A=0A_____________________________________________  =0A=0AZinskommentar v=
+on Prof. Dr. Sebastian =0A=DCberraschung auf dem Finanzmarkt: Die Zinsen s=
+teigen wieder! Erwartet wurde das erst nach dem Auslaufen des EZB-Programm=
+s zum Ankauf von Staatsanleihen, doch der Markt war st=E4rker. Was das f=
+=FCr die Baufinanzierung bedeutet, erfahren Sie hier.=0A=0A Zum Kommentar =
+=0Ahttp://e3aktuell.immobilienscout24.de/r/link/6dc5985bf1c46400II1656e93d=
+0d0II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26CCWID%3D=
+001.58760721=
+ =0A=0A =0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0A               Bauen oder Kau=
+fen? =0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0AQuiz: Bauen oder Kaufen? =0A=0AS=
+ie sind sich noch nicht ganz sicher, ob Sie Ihr zuk=FCnftiges Zuhause lieb=
+er bauen oder kaufen m=F6chten? Dann machen Sie jetzt den Test! In nur ach=
+t Schritten gelangen Sie zur Antwort und k=F6nnen sich gr=FCndlich =FCber =
+Vor- und Nachteile informieren.=0A=0AZum Quiz  =0Ahttp://e3aktuell.immobil=
+ienscout24.de/r/link/1354b85f92cb6800II1656e93d0d1II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+=0A______________________________________=0A =0ANeubau-Immobilien in Ihrer=
+ Region =0A Sie m=F6chten Gestaltungsfreiheit haben, aber ungern die Bauhe=
+rren-Verantwortung tragen? Dann sind Bautr=E4ger-Immobilien vielleicht gen=
+au das Richtige f=FCr Sie. Informieren Sie sich jetzt =FCber Neubau-Projek=
+te in Ihrer Region. =0A=0AJetzt suchen =0Ahttp://e3aktuell.immobilienscout=
+24.de/r/link/2b16edbdb0ed4c00II1656e93d0d2II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+=0A=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D =0A                            =
+    Kosten =0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=0A=0AFairer Preis oder sc=
+hlechter Deal? =0A=0AIst der Preis f=FCr Ihre Wunschimmobilie angemessen? =
+Erhalten Sie jetzt schnell und einfach eine realistische Bewertung. =0A=0A=
+Wert ermitteln =0Ahttp://e3aktuell.immobilienscout24.de/r/link/74af375914f=
+1000II1656e93d0d3II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+=0A___________________________________=0A=0AKosten-Kurzcheck f=FCr K=E4ufe=
+r und Bauherren  =0A=0AOb Hausbau oder Immobilienerwerb, bei beidem m=FCss=
+en verschieden Kosten ber=FCcksichtigt werden. Wie Sie Ihren Finanzierungs=
+bedarf realistisch einsch=E4tzen und den =DCberblick behalten, erfahren Si=
+e hier. =0A=0AZum Kurzcheck =0Ahttp://e3aktuell.immobilienscout24.de/r/lin=
+k/4e47b0d86efd7000II1656e93d0d4II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+=0A=0A=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D =0ADer Marktf=FChre=
+r: Die Nr. 1 rund um Immobilien=0A=0AZur Homepage:=0A%%1530826962939%%=0A=
+=0AAbbestellen:=0Ahttp://e3aktuell.immobilienscout24.de/r/link/2d57dII7260=
+fe1baII=
+939efII3f7a64II1655e8a57dbII3=
+/id%3D1240324137292%26mailId%3D=
+939efII3f7a64II1655e8a57dbII3=
+=0A=0ADatenschutz:=0A%%1530826962940%%=0A=0AImpressum:=0A%%1530826962941%%=
+=0A=0A=A9 1999 - 2015 Immobilien Scout GmbH=0A%%1530826962942%%=0A=0AImmob=
+ilien Scout GmbH - Ein Unternehmen der Scout24-Gruppe,=0AAndreasstra=DFe 1=
+0, 10243 Berlin, =0AGesch=E4ftsf=FChrer: Gregory Ellis(CEO) und Christian =
+Gisy (CFO), =0AHandelsregister: Amtsgericht Charlottenburg, HRB 69108, Sit=
+z der Gesellschaft: Berlin=0A=0AImmobilienScout24 informiert Sie =FCber ne=
+ue Produkt-Informationen.=0ASollten Sie hieran kein Interesse haben, dann =
+k=F6nnen Sie sich hier=0Aabmelden. Die Abmeldung betrifft nicht ggf. beste=
+hende=0ANewsletter-Abonnements und Suchauftragsbenachrichtigungen:=0Ahttp:=
+//e3aktuell.immobilienscout24.de/r/link/2d57dII7260fe1baII=
+939efII3f7a64II1655e8a57dbII3=
+/id%3D1240324137292%26mailId%3D=
+939efII3f7a64II1655e8a57dbII3=
+=0A =0A=0APartner :=0AViessmann http://e3aktuell.immobilienscout24.de/r/li=
+nk/6f04dc6d5237fc00II1656e93d0d5II=
+939efII3f7a64II1655e8a57dbII3=
+=0AAllianz  http://e3aktuell.immobilienscout24.de/r/link/2c7b91d5b6765000I=
+I1656e93d0d6II=
+939efII3f7a64II1655e8a57dbII3=
+=0A
+
+--_----------=_112358201558820
+Content-Type: text/html;charset="ISO-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+=
+<table  cellspacing=3D"0" cellpadding=3D"0" align=3D"center" border=3D"0">=
+=0A=0A        <tr>=0A                <td  align=3D"center" valign=3D"top">=
+=0A                        <table  cellspacing=3D"0" cellpadding=3D"0" bor=
+der=3D"0" style=3D"border-bottom-width:1px; border-bottom-style:dotted; bo=
+rder-bottom-color:#cccccc; border-top-width:1px; border-top-style:dotted; =
+border-top-color:#cccccc;">=0A                                <tr>=0A     =
+                                                                        <t=
+d valign=3D"middle" align=3D"center"><font size=3D"1" face=3D"Arial, Helve=
+tica, sans-serif" color=3D"#666666"><a href=3D"http://e3aktuell.immobilien=
+scout24.de/r/link/47cf0II62198dce3II=
+939efII3f7a64II1655e8a57dbII3=
+/=
+e3aktuell.immobilienscout24.de=
+%2Fr%2Fmail%2F=
+939efII3f7a64II1655e8a57dbII3=
+"=0Atarget=3D"_blank">Zur Webansicht</a></font></td>=0A                   =
+             </tr>=0A                        </table>=0A                </=
+td>=0A        </tr>=0A        <tr>=0A                <td height=3D"10"><sp=
+an style=3D"font-size: 10px; line-height: 10px;"> </span></td>=0A        <=
+/tr>=0A=0A</table>=
+<html>=0A<head>=0A<title></title>=0A<meta content=3D"text/html; charset=3D=
+iso-8859-1" http-equiv=3D"Content-Type" />=0A<meta content=3D"initial-scal=
+e=3D1" name=3D"viewport" />=0A<style type=3D"text/css">a {=0A=09color: #00=
+79ca;=0A=09text-decoration:none;=0A=09font-weight:normal;=0A}=0A=0Aa:hover=
+ {=0A=09color: #ff7500;=0A}=0A=0A.ReadMsgBody {=0A=09width: 100%;=0A}=0A=
+=0A.ExternalClass {=0A=09width: 100%;=0A}=0A=0A.ExternalClass * {=0A=09lin=
+e-height: 100%;=0A}=0A=0A.ExternalClass font, .ExternalClass td, .External=
+Class div {=0A=09line-height: 100%;=0A}=0A=0A#outlook a {=0A=09padding: 0;=
+=0A}=0A=0Abody {=0A=09width: 100% !important;=0A=09-webkit-text-size-adjus=
+t: 100%;=0A=09-webkit-font-smoothing: antialiased;=0A=09-ms-text-size-adju=
+st: 100%;=0A=09margin: 0;=0A=09padding: 0;=0A}=0A=0Atable {=0A    mso-tabl=
+e-lspace:0pt;=0A    mso-table-rspace:0pt;=0A}=0A=0Abody {=0A=09width: 100%=
+; margin:0; padding:0; -webkit-font-smoothing: antialiased;=0A}=0A=0Atable=
+ {=0A=09border-collapse: collapse;=0A}=0A}</style>=0A<style type=3D"text/c=
+ss">@media only screen and (max-width: 480px){=0A=09=09=0A=09=09body[yahoo=
+] .table {=0A=09=09=09width: 320px !important;=0A=09=09}=0A=09=09=0A=09=09=
+body[yahoo] .content-table  {=0A=09=09=09width: 280px !important;=0A=09=09=
+}=0A=09=09=0A=09=09body[yahoo] .c-o-u-20  {=0A=09=09=09width: 320px !impor=
+tant;=0A            padding: 20px 0 20px 0 !important;=0A=09=09}=0A=0A=09=
+=09body[yahoo] .hide {=0A=09=09=09display: none !important;=0A=09=09}=0A=
+=09=09=09=09=0A=09=09body[yahoo] #hide {=0A=09=09=09display: none !importa=
+nt;=0A=09=09}=0A=09=09=0A=09=09body[yahoo] .editorial {=0A=09=09=09width: =
+270px !important;=0A=09=09}=0A=09=09=0A=09=09body[yahoo] #partner {=0A=09=
+=09=09margin-bottom: 20px !important;=0A=09=09}=0A=09=09=0A=09=09body[yaho=
+o] #avatar {=0A=09=09=09width: 50px !important;=0A=09=09=09height: 47px !i=
+mportant;=0A=09=09=09margin-top: 10px !important=0A=09=09}=0A=09=09=0A=09=
+=09body[yahoo] #teaserbild-gross {=0A=09=09=09width: 320px !important;=0A=
+=09=09=09height: 294px !important;=0A=09=09=09margin-bottom: 20px !importa=
+nt;=0A=09=09}=0A=09=09=0A=09=09body[yahoo] #teaserbild-klein {=0A=09=09=09=
+width: 320px !important;=0A=09=09=09height: 214px !important;=0A=09=09=09m=
+argin-bottom: 20px !important;=0A=09=09}=0A=09=09=09=09=0A=09=09body[yahoo=
+] #footer-text {=0A=09=09=09font-size: 9px !important;=09=0A=09=09}=0A=09=
+=0A=09=09body[yahoo] .mobileheader {=0A=09=09=09background:url('http://ima=
+ge.immobilienscout24.de/custloads/116434665/2015/Nachfrager/Newsletter/Bau=
+fi/Baufi_Mai/header_320.jpg');=0A=09=09=09display:block;=0A=09=09=09width:=
+320px;=0A=09=09=09height:150px;=0A=09=09=09no-repeat 0 0;=0A=09=09}</style=
+>=0A</head>=0A<body alink=3D"#ff7500" bgcolor=3D"#d4dde5" leftmargin=3D"0"=
+ link=3D"#0079ca" rightmargin=3D"0" style=3D"color: rgb(76, 76, 76); backg=
+round-color: rgb(212, 221, 229);" text=3D"#4c4c4c" topmargin=3D"0" vlink=
+=3D"#0079ca" yahoo=3D""><img src=3D"http://e3aktuell.immobilienscout24.de/=
+img/=
+939efII3f7a64II1655e8a57dbII3=
+.gif" width=3D"1" height=3D"1">=0A<table align=3D"center" bgcolor=3D"#0934=
+78" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%">=0A<tb=
+ody>=0A<tr>=0A<td align=3D"right" id=3D"hide" valign=3D"top">&nbsp;</td>=
+=0A<td bgcolor=3D"#d4dde5" valign=3D"top" width=3D"728">=0A<center>=0A<tab=
+le border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=
+=3D"640">=0A<tbody>=0A<tr id=3D"hide">=0A<td id=3D"hide" style=3D"padding:=
+ 0px 0px 40px 0px;" valign=3D"top"><a href=3D"http://e3aktuell.immobiliens=
+cout24.de/r/link/549a51749b40ac00II1656bb5645bII=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"Postbank Baufinanzierung" height=3D"90" id=3D"hide" src=3D"h=
+ttp://image.immobilienscout24.de/custloads/116434665/2015/Nachfrager/Newsl=
+etter/Baufi/Baufi_Mrz2/baufinanzierung_xx_baufinanzierung_wp_728x90-160x60=
+0-superbanner.jpg" width=3D"728" /></a></td>=0A</tr>=0A<tr>=0A<td align=3D=
+"center" bgcolor=3D"#d4dde5">=0A<table align=3D"center" bgcolor=3D"#ffffff=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=
+=3D"600">=0A<tbody>=0A<tr>=0A<td align=3D"right" bgcolor=3D"#FFFFFF" style=
+=3D"padding: 20px;" valign=3D"top">=0A<table align=3D"left" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"content-table" width=3D"560">=
+=0A<tbody>=0A<tr>=0A<td align=3D"left" valign=3D"top" width=3D"94"><a href=
+=3D"http://e3aktuell.immobilienscout24.de/r/link/75b460457836e800II1656bb5=
+645cII=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"ImmobilienScout24 Logo" border=3D"0" height=3D"35" hspace=3D=
+"0" src=3D"http://image.immobilienscout24.de/custloads/116434665/md_573879=
+.gif" style=3D"display: block;" vspace=3D"0" width=3D"74" /></a></td>=0A<=
+td align=3D"left" style=3D"font-size: 14px; color:#ff7500; font-weight: no=
+rmal; text-align: left; font-family: Tahoma,Geneva,sans-serif; line-height=
+: 18px; vertical-align: middle;" valign=3D"bottom" width=3D"210">Der Markt=
+f&uuml;hrer:<br />=0ADie Nr. 1 rund um Immobilien</td>=0A<td align=3D"righ=
+t" valign=3D"bottom">=0A<table align=3D"right" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" class=3D"hide">=0A<tbody>=0A<tr>=0A<td align=3D"righ=
+t" style=3D"padding: 0px 20px 0px 0px;" width=3D"20%"><a href=3D"http://e3=
+aktuell.immobilienscout24.de/r/link/69f917d61ebbc00II1656bb5645dII=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"ImmobilienScout24 auf Facebook folgen" border=3D"0" height=
+=3D"35" hspace=3D"0" id=3D"hide3" src=3D"http://image.immobilienscout24.de=
+/custloads/116434665/md_573875.gif" style=3D"display: block;" vspace=3D"0"=
+ width=3D"35" /></a></td>=0A<td style=3D"padding: 0px 20px 0px 0px;" width=
+=3D"20%"><a href=3D"http://e3aktuell.immobilienscout24.de/r/link/4587a0d3f=
+452b400II1656bb5645eII=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"ImmobilienScout24 auf Google+ zu den Kreisen hinzuf=FCgen" b=
+order=3D"0" height=3D"35" hspace=3D"0" id=3D"hide3" src=3D"http://image.im=
+mobilienscout24.de/custloads/116434665/md_573876.gif" style=3D"display: bl=
+ock;" vspace=3D"0" width=3D"35" /></a></td>=0A<td style=3D"padding: 0px 20=
+px 0px 0px;" width=3D"20%"><a href=3D"http://e3aktuell.immobilienscout24.d=
+e/r/link/5e403bdad1452c00II1656bb5645fII=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"ImmobilienScout24 auf Twitter folgen" border=3D"0" height=3D=
+"35" hspace=3D"0" id=3D"hide3" src=3D"http://image.immobilienscout24.de/cu=
+stloads/116434665/md_573878.gif" style=3D"display: block;" vspace=3D"0" wi=
+dth=3D"35" /></a></td>=0A<td style=3D"padding: 0px 20px 0px 0px;" width=3D=
+"20%"><a href=3D"http://e3aktuell.immobilienscout24.de/r/link/78dadf98a6d6=
+d000II1656bb56460II=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"Zum ImmobilienScout24 You Tube Kanal" border=3D"0" height=3D=
+"35" hspace=3D"0" id=3D"hide3" src=3D"http://image.immobilienscout24.de/cu=
+stloads/116434665/md_573874.gif" style=3D"display: block;" vspace=3D"0" wi=
+dth=3D"35" /></a></td>=0A<td width=3D"20%"><a href=3D"http://e3aktuell.imm=
+obilienscout24.de/r/link/466679f9782ccc00II1656bb56461II=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"RSS Feed abonnieren" border=3D"0" height=3D"35" hspace=3D"0"=
+ id=3D"hide3" src=3D"http://image.immobilienscout24.de/custloads/116434665=
+/md_573877.gif" style=3D"display: block;" vspace=3D"0" width=3D"35" /></a>=
+</td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</table>=
+=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A=0A<table align=3D"center" bgcolo=
+r=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"mo=
+bileheader" width=3D"640">=0A<tbody>=0A<tr>=0A<td align=3D"center" bgcolor=
+=3D"#FFFFFF" class=3D"hide" valign=3D"top"><a href=3D"http://e3aktuell.imm=
+obilienscout24.de/r/link/6d8d68a9393c5000II1656bb56462II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+" style=3D"font-size: 12px; color: rgb(0, 68, 204); font-weight: normal; t=
+ext-decoration: underline; line-height: 18px;" target=3D"_blank"><font col=
+or=3D"#0044CC" face=3D"Verdana, Geneva, Arial, Helvetica, sans-serif" size=
+=3D"2" style=3D"font-size: 12px; color: rgb(0, 68, 204); font-weight: norm=
+al; text-decoration: underline; line-height: 18px;"><img alt=3D"Bausparen =
+und Wunschimmobilie finden" border=3D"0" height=3D"211" hspace=3D"0" id=3D=
+"hide5" src=3D"http://image.immobilienscout24.de/custloads/116434665/2015/=
+Nachfrager/Newsletter/Baufi/Baufi_Mai/header_640.jpg" style=3D"display: bl=
+ock;" vspace=3D"0" width=3D"640" /></font></a></td>=0A</tr>=0A</tbody>=0A<=
+/table>=0A=0A<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td align=
+=3D"left" bgcolor=3D"#ffffff" valign=3D"top" width=3D"100"><img alt=3D"Fot=
+o von Andreas Boehm" border=3D"0" height=3D"94" hspace=3D"0" id=3D"avatar"=
+ src=3D"http://image.immobilienscout24.de/custloads/116434665/md_573885.jp=
+g" style=3D"display: block;" vspace=3D"0" width=3D"100" /></td>=0A<td alig=
+n=3D"left" bgcolor=3D"#ffffff" valign=3D"top" width=3D"500">=0A<table bord=
+er=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"editorial" width=3D"=
+500">=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#FFFFFF" style=3D"padding: 20px 20=
+px 10px 0px; font-size: 13px; color: rgb(76, 76, 76); font-weight: normal;=
+ text-align: left; font-family: Verdana,Geneva,sans-serif; line-height: 18=
+px; vertical-align: middle;">=0A<p>=
+Lieber ImmobilienScout24-Nutzer,=
+<br />=0A<br />=0Anie wieder Miete zahlen, so viel steht schon mal fest. D=
+och steht Ihr Eigenheim in spe bereits oder will es erst noch gebaut werde=
+n? Beides hat Vor- und Nachteile: Der <strong>Hausbau</strong> bietet viel=
+ Gestaltungsfreiheit, ein <strong>Kauf</strong> die Chance auf ein Schn&au=
+ml;ppchen und die M&ouml;glichkeit, ohne lange Wartezeit gleich einzuziehe=
+n. Damit Sie eine der wichtigsten <strong>Entscheidungen</strong> Ihres Le=
+bens nicht allein treffen m&uuml;ssen, stellen wir Ihnen eine passende Hil=
+fe zur Seite: Mit unserem <a href=3D"http://e3aktuell.immobilienscout24.de=
+/r/link/5136109a1f9ce800II1656bb56463II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+"><u>Quiz</u></a> erfahren Sie in<br />=0A<strong>8 Schritten</strong>, wa=
+s sich f&uuml;r Sie lohnt.<br />=0A<br />=0AAu&szlig;erdem informieren wir=
+ Sie umfassend &uuml;ber die <strong>Kosten</strong>, mit denen Sie als Ba=
+uherr oder K&auml;ufer rechnen m&uuml;ssen und verraten, wie Sie eine real=
+istische <a href=3D"http://e3aktuell.immobilienscout24.de/r/link/3713e562b=
+0e30800II1656e93d0b2II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+"><u>Immobilienbewertung</u></a> erhalten.<br />=0A<br />=0A<br />=0A<stro=
+ng>Viel Spa&szlig; beim Informieren w&uuml;nscht Ihnen</strong></p>=0A</td=
+>=0A</tr>=0A<tr>=0A<td><img alt=3D"Unterschrift Andreas Boehm" border=3D"0=
+" height=3D"33" hspace=3D"0" id=3D"avatar2" name=3D"avatar2" src=3D"http:/=
+/image.immobilienscout24.de/custloads/129979341/md_601902.jpg" style=3D"di=
+splay: block;" vspace=3D"0" width=3D"114" /></td>=0A</tr>=0A<tr>=0A<td sty=
+le=3D"padding:10px 20px 20px 0px; font-size: 13px; color: rgb(76, 76, 76);=
+ font-weight: normal; text-align: left; font-family: Verdana,Geneva,sans-s=
+erif; line-height: 18px; vertical-align: middle;"><em>Andreas B&ouml;hm<br=
+ />=0ARedakteur Onlinemarketing</em></td>=0A</tr>=0A<tr><!-- ZINSTABELLE -=
+->=0A<td>=0A<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"editorial" width=3D"486">=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#FFFFFF" s=
+tyle=3D"padding: 20px 20px 0 0; font-size: 12px; color: rgb(76, 76, 76); f=
+ont-weight: normal; text-align: left; font-family: Verdana,Geneva,sans-ser=
+if; line-height: 18px; vertical-align: middle; border-top:#dcdcdc solid 1p=
+x;"><strong>Aktuelle Zinsen</strong></td>=0A</tr>=0A<tr>=0A<td bgcolor=3D"=
+#FFFFFF" style=3D"font-size: 12px; color: rgb(76, 76, 76); font-weight: no=
+rmal; text-align: left; font-family: Verdana,Geneva,sans-serif; font-style=
+:italic; line-height: 18px; vertical-align: middle;"><font style=3D"font-s=
+ize:14px; color:#335d86;"><strong>1,05%</strong></font> (5 Jahre) - <font =
+style=3D"font-size:14px; color:#335d86;"><strong>1,29%</strong></font> (10=
+ Jahre) - <font style=3D"font-size:14spx; color:#335d86;"><strong>1,57%</s=
+trong></font> (15 Jahre)</td>=0A</tr>=0A<tr>=0A<td bgcolor=3D"#FFFFFF" sty=
+le=3D"font-size: 12px; color: rgb(76, 76, 76); font-weight: normal; text-a=
+lign: left; font-family: Verdana,Geneva,sans-serif; line-height: 18px; ver=
+tical-align: middle;"><a href=3D"http://e3aktuell.immobilienscout24.de/r/l=
+ink/6eda5e0959bf6c00II1656e93d0b3II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+">eigene Zinsen berechnen</a></td>=0A</tr>=0A<tr>=0A<td bgcolor=3D"#FFFFFF=
+" style=3D"padding: 20px 20px 0 0; font-size: 12px; color: rgb(76, 76, 76)=
+; font-weight: normal; text-align: left; font-family: Verdana,Geneva,sans-=
+serif; line-height: 18px; vertical-align: middle;"><strong>Tendenz<img alt=
+=3D"Tendenz steigend" height=3D"18" src=3D"https://www.emarsys.net/custloa=
+ds/116434665/thumbs/md_680195.gif" width=3D"16" /></strong></td>=0A</tr>=
+=0A<tr>=0A<td bgcolor=3D"#FFFFFF" style=3D"font-size: 12px; color: rgb(51,=
+ 93, 134); font-weight: normal; text-align: left; font-family: Verdana,Gen=
+eva,sans-serif; font-style:italic; line-height: 18px; vertical-align: midd=
+le;"><font style=3D"font-size:14px;"><strong>1,05%</strong></font> 04.2015=
+ - <font style=3D"font-size:14px;"><strong>1,05%</strong></font> 05.2015 <=
+font style=3D"color:rgb(76,76,76);">(5 Jahre)</font></td>=0A</tr>=0A<tr>=
+=0A<td bgcolor=3D"#FFFFFF" style=3D"font-size: 12px; color: rgb(76, 76, 76=
+); font-weight: normal; text-align: left; font-family: Verdana,Geneva,sans=
+-serif; line-height: 18px; vertical-align: middle;"><a href=3D"http://e3ak=
+tuell.immobilienscout24.de/r/link/7a20edc18067bc00II1656e93d0b4II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+">zum Baufinanzierungsrechner</a></td>=0A</tr>=0A</tbody>=0A</table>=0A<!-=
+- ZINSTABELLE ENDE --></td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=
+=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<=
+tr>=0A<td bgcolor=3D"#ffffff"><img alt=3D"" border=3D"0" height=3D"20" hsp=
+ace=3D"0" src=3D"http://image.immobilienscout24.de/custloads/116434665/md_=
+533827.gif" style=3D"display: block;" vspace=3D"0" width=3D"20" /></td>=0A=
+</tr>=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"#fb9337" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"640">=0A<tbody=
+>=0A<tr>=0A<td bgcolor=3D"#fb9337" style=3D"font-size: 21px; color: rgb(25=
+5, 255, 255); font-weight: normal; text-align: left; font-family: Tahoma,G=
+eneva,sans-serif; line-height: 20px; vertical-align: middle; padding: 20px=
+ 20px 20px 20px;">News</td>=0A</tr>=0A</tbody>=0A</table>=0A=0A<table bgco=
+lor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"=
+table" width=3D"600">=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#ffffff">&nbsp;</t=
+d>=0A</tr>=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"#f2f5f7" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"600">=0A<=
+tbody>=0A<tr>=0A<td align=3D"left" bgcolor=3D"#f2f5f7" style=3D" font-size=
+: 13px; color: #4c4c4c; font-weight: normal; text-align: left; font-family=
+: Verdana, Geneva, sans-serif; line-height: 18px; vertical-align: middle; =
+font-style:regular;" valign=3D"middle"><a href=3D"http://e3aktuell.immobil=
+ienscout24.de/r/link/489ebe625894f400II1656e93d0b5II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+"><img align=3D"left" alt=3D"Ein Mann denk an ein Haus" border=3D"0" heigh=
+t=3D"275" hspace=3D"0" id=3D"teaserbild-gross" src=3D"http://image.immobil=
+ienscout24.de/custloads/116434665/2015/Nachfrager/Newsletter/Baufi/Baufi_M=
+ai/video.jpg" style=3D"display:block" vspace=3D"0" width=3D"300" /></a><im=
+g align=3D"left" alt=3D"" border=3D"0" height=3D"250" hspace=3D"0" src=3D"=
+http://image.immobilienscout24.de/custloads/129979341/md_584531.gif" style=
+=3D"display: block;" vspace=3D"0" width=3D"20" /><br />=0A<font color=3D"#=
+4c4c4c" face=3D"Verdana,Geneva,Arial,Helvetica,sans-serif" size=3D"15" sty=
+le=3D"font-size: 15px; line-height: 21px;"><strong>Rundum informiert mit d=
+em N24-Immobilientrend</strong></font><br />=0A<br />=0ANeu bei Immobilien=
+Scout24:<br />=0AIn Kooperation mit N24 erkl&auml;rt unser Chefanalyst Mic=
+hael Kiefer in kompakten Videos die aktuelle Marktlage und gibt Tipps zum =
+Immobilienerwerb. So sind Sie rundum informiert.<br />=0A&nbsp;=0A<table a=
+lign=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"18=
+0">=0A<tbody>=0A<tr>=0A<td align=3D"center" background=3D"http://image.imm=
+obilienscout24.de/custloads/116434665/md_573939.gif" bgcolor=3D"#ff7500" s=
+tyle=3D"padding:10px 20px 10px 20px;background-color:#ff7500; border-top:1=
+px solid #fcac60; border-left:1px solid #fcac60; border-right:1px solid #c=
+95e0c;border-bottom:1px solid #c95e0c; background-repeat:repeat-x"><a href=
+=3D"http://e3aktuell.immobilienscout24.de/r/link/2dd681c087ac2400II1656e93=
+d0b6II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+" style=3D"=0A=09color:#ffffff;=0A=09font-size:14px;=0A=09font-weight:bold=
+;=0A=09text-align:center;=0A=09text-decoration:none;=0A=09font-family:Taho=
+ma, sans-serif;=0A=09-webkit-text-size-adjust:none;">Videos sehen</a></td>=
+=0A</tr>=0A</tbody>=0A</table>=0A<!-- Button --></td>=0A<td id=3D"hide11">=
+<img alt=3D"" border=3D"0" height=3D"20" hspace=3D"0" id=3D"hide" src=3D"h=
+ttp://image.immobilienscout24.de/custloads/116434665/md_533827.gif" style=
+=3D"display: block;" vspace=3D"0" width=3D"20" /></td>=0A</tr>=0A</tbody>=
+=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td b=
+gcolor=3D"#ffffff">&nbsp;</td>=0A</tr>=0A</tbody>=0A</table>=0A=0A<table b=
+gcolor=3D"#f2f5f7" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=
+=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td align=3D"left" bgcolor=3D=
+"#f2f5f7" style=3D" font-size: 13px; color: #4c4c4c; font-weight: normal; =
+text-align: left; font-family: Verdana, Geneva, sans-serif; line-height: 1=
+8px; vertical-align: middle; font-style:regular;" valign=3D"middle"><a hre=
+f=3D"#"><img align=3D"left" alt=3D"Dr. Stephan Sebastian" border=3D"0" hei=
+ght=3D"275" hspace=3D"0" id=3D"teaserbild-gross" src=3D"http://image.immob=
+ilienscout24.de/custloads/116434665/2015/Nachfrager/Newsletter/Baufi/Baufi=
+_Mai/zinskommentar.jpg" style=3D"display:block" vspace=3D"0" width=3D"300"=
+ /></a><img align=3D"left" alt=3D"" border=3D"0" height=3D"250" hspace=3D"=
+0" src=3D"http://image.immobilienscout24.de/custloads/129979341/md_584531.=
+gif" style=3D"display: block;" vspace=3D"0" width=3D"20" /><br />=0A<font =
+color=3D"#4c4c4c" face=3D"Verdana,Geneva,Arial,Helvetica,sans-serif" size=
+=3D"15" style=3D"font-size: 15px; line-height: 21px;"><strong>Zinskommenta=
+r von Prof. Dr. Sebastian</strong></font><br />=0A<br />=0A=DCberraschung =
+auf dem Finanzmarkt: Die Zinsen steigen wieder! Erwartet wurde das erst na=
+ch dem Auslaufen des EZB-Programms zum Ankauf von Staatsanleihen, doch der=
+ Markt war st=E4rker. Was das f=FCr die Baufinanzierung bedeutet, erfahren=
+ Sie hier. <!-- Button --><br />=0A&nbsp;=0A<table align=3D"left" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"170">=0A<tbody>=0A<tr>=
+=0A<td align=3D"center" background=3D"http://image.immobilienscout24.de/cu=
+stloads/116434665/md_573939.gif" bgcolor=3D"#ff7500" style=3D"padding:10px=
+ 20px 10px 20px;background-color:#ff7500; border-top:1px solid #fcac60; bo=
+rder-left:1px solid #fcac60; border-right:1px solid #c95e0c;border-bottom:=
+1px solid #c95e0c; background-repeat:repeat-x"><a href=3D"http://e3aktuell=
+.immobilienscout24.de/r/link/8365973ac6dd800II1656e93d0b7II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26CCWID%3D=
+001.58760721=
+" style=3D"=0A=09color:#ffffff;=0A=09font-size:14px;=0A=09font-weight:bold=
+;=0A=09text-align:center;=0A=09text-decoration:none;=0A=09font-family:Taho=
+ma, sans-serif;=0A=09-webkit-text-size-adjust:none;">Zum Kommentar</a></td=
+>=0A</tr>=0A</tbody>=0A</table>=0A<!-- Button --></td>=0A<td id=3D"hide"><=
+img alt=3D"" border=3D"0" height=3D"20" hspace=3D"0" id=3D"hide" src=3D"ht=
+tp://image.immobilienscout24.de/custloads/116434665/md_533827.gif" style=
+=3D"display: block;" vspace=3D"0" width=3D"20" /></td>=0A</tr>=0A</tbody>=
+=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td b=
+gcolor=3D"#ffffff"><img alt=3D"" border=3D"0" height=3D"20" hspace=3D"0" s=
+rc=3D"http://image.immobilienscout24.de/custloads/116434665/md_533827.gif"=
+ style=3D"display: block;" vspace=3D"0" width=3D"20" /></td>=0A</tr>=0A</t=
+body>=0A</table>=0A=0A<table bgcolor=3D"#5b7c9e" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" class=3D"table" width=3D"640">=0A<tbody>=0A<tr>=
+=0A<td bgcolor=3D"#5b7c9e" style=3D"font-size: 21px; color: rgb(255, 255, =
+255); font-weight: normal; text-align: left; font-family: Tahoma,Geneva,sa=
+ns-serif; line-height: 20px; vertical-align: middle; padding: 20px 20px 20=
+px 20px;">Bauen oder Kaufen?</td>=0A</tr>=0A</tbody>=0A</table>=0A=0A<tabl=
+e bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cla=
+ss=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#ffffff"><im=
+g alt=3D"" border=3D"0" height=3D"20" hspace=3D"0" src=3D"http://image.imm=
+obilienscout24.de/custloads/116434665/md_533827.gif" style=3D"display: blo=
+ck;" vspace=3D"0" width=3D"20" /></td>=0A</tr>=0A</tbody>=0A</table>=0A=0A=
+<table bgcolor=3D"#f2f5f7" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#f2f5f7=
+" class=3D"c-o-u-20" valign=3D"middle">=0A<table border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"300">=0A<tbody>=0A<tr>=0A<td style=3D"fo=
+nt-size: 15px; color: #4c4c4c; font-weight: normal; text-align: left; font=
+-family: Verdana, Geneva, sans-serif; line-height: 21px; vertical-align: m=
+iddle; font-style:regular; padding:0 20px 0 20px;"><strong>Quiz: Bauen ode=
+r Kaufen?</strong></td>=0A</tr>=0A<tr>=0A<td style=3D"font-size: 13px; col=
+or: #4c4c4c; font-weight: normal; text-align: left; font-family: Verdana, =
+Geneva, sans-serif; line-height: 18px; vertical-align: middle; font-style:=
+regular; padding:0 20px 0 20px;"><br />=0ASie sind sich noch nicht ganz si=
+cher, ob Sie Ihr zuk&uuml;nftiges Zuhause lieber bauen oder kaufen m&ouml;=
+chten? Dann machen Sie jetzt den Test! In nur acht Schritten gelangen Sie =
+zur Antwort und k&ouml;nnen sich gr&uuml;ndlich &uuml;ber Vor- und Nachtei=
+le informieren.<br />=0A&nbsp;=0A<table align=3D"left" border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"169">=0A<tbody>=0A<tr>=0A<td align=
+=3D"center" background=3D"http://image.immobilienscout24.de/custloads/1164=
+34665/md_574958.gif" bgcolor=3D"#3d648c" style=3D"padding:10px 20px 10px 2=
+0px;background-color:#3d648c; border-top:1px solid #97adc1; border-left:1p=
+x solid #97adc1; border-right:1px solid #003468;border-bottom:1px solid #0=
+03468; background-repeat:repeat-x" width=3D"143"><a href=3D"http://e3aktue=
+ll.immobilienscout24.de/r/link/3b56a1766d0f800II1656e93d0b8II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+" style=3D"=0A=09color:#ffffff;=0A=09font-size:14px;=0A=09font-weight:bold=
+;=0A=09text-align:center;=0A=09text-decoration:none;=0A=09font-family:Taho=
+ma, sans-serif;=0A=09-webkit-text-size-adjust:none;">Zum Quiz</a></td>=0A<=
+/tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=
+=0A<td class=3D"hide" width=3D"300"><a href=3D"http://e3aktuell.immobilien=
+scout24.de/r/link/ab8579852753800II1656e93d0b9II=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+"><img align=3D"left" alt=3D"Spardose" border=3D"0" height=3D"275" hspace=
+=3D"0" id=3D"hide7" src=3D"http://image.immobilienscout24.de/custloads/116=
+434665/2015/Nachfrager/Newsletter/Baufi/Baufi_Mai/bauen_kaufen.jpg" style=
+=3D"display:block" vspace=3D"0" width=3D"300" /></a></td>=0A</tr>=0A</tbod=
+y>=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td=
+ bgcolor=3D"#ffffff"><img alt=3D"" border=3D"0" height=3D"20" hspace=3D"0"=
+ src=3D"http://image.immobilienscout24.de/custloads/116434665/md_533827.gi=
+f" style=3D"display: block;" vspace=3D"0" width=3D"20" /></td>=0A</tr>=0A<=
+/tbody>=0A</table>=0A=0A<table bgcolor=3D"#f2f5f7" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=
+=0A<td bgcolor=3D"#f2f5f7" class=3D"c-o-u-20" valign=3D"middle">=0A<table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"300">=0A<tbody>=
+=0A<tr>=0A<td style=3D"font-size: 15px; color: #4c4c4c; font-weight: norma=
+l; text-align: left; font-family: Verdana, Geneva, sans-serif; line-height=
+: 21px; vertical-align: middle; font-style:regular; padding:0 20px 0 20px;=
+"><strong>Neubau-Immobilien in Ihrer Region</strong></td>=0A</tr>=0A<tr>=
+=0A<td style=3D"font-size: 13px; color: #4c4c4c; font-weight: normal; text=
+-align: left; font-family: Verdana, Geneva, sans-serif; line-height: 18px;=
+ vertical-align: middle; font-style:regular; padding:0 20px 0 20px;"><br /=
+>=0ASie m&ouml;chten Gestaltungsfreiheit haben, aber ungern die Bauherren-=
+Verantwortung tragen? Dann sind Bautr&auml;ger-Immobilien vielleicht genau=
+ das Richtige f&uuml;r Sie. Informieren Sie sich jetzt &uuml;ber Neubau-Pr=
+ojekte in Ihrer Region.=0A<table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" width=3D"185">=0A<tbody>=0A<tr>=0A<td align=3D"ce=
+nter" background=3D"http://image.immobilienscout24.de/custloads/116434665/=
+md_574958.gif" bgcolor=3D"#3d648c" style=3D"padding:10px 20px 10px 20px;ba=
+ckground-color:#3d648c; border-top:1px solid #97adc1; border-left:1px soli=
+d #97adc1; border-right:1px solid #003468;border-bottom:1px solid #003468;=
+ background-repeat:repeat-x" width=3D"159"><a href=3D"http://e3aktuell.imm=
+obilienscout24.de/r/link/491f8200d0620800II1656e93d0baII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+" style=3D"=0A=09color:#ffffff;=0A=09font-size:14px;=0A=09font-weight:bold=
+;=0A=09text-align:center;=0A=09text-decoration:none;=0A=09font-family:Taho=
+ma, sans-serif;=0A=09-webkit-text-size-adjust:none;" title=3D"Wieviel mein=
+ Haus kosten?">jetzt suchen</a></td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=
+=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A<td class=3D"hide" width=3D"300">=
+<a href=3D"http://e3aktuell.immobilienscout24.de/r/link/a757f24438e1800II1=
+656e93d0bbII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+"><img align=3D"left" alt=3D"Paerchen kalkuliert ihre Finanzen" border=3D"=
+0" height=3D"275" hspace=3D"0" id=3D"hide8" src=3D"http://image.immobilien=
+scout24.de/custloads/116434665/2015/Nachfrager/Newsletter/Baufi/Baufi_Mai/=
+neubau.jpg" style=3D"display:block" vspace=3D"0" width=3D"300" /></a></td>=
+=0A</tr>=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tb=
+ody>=0A<tr>=0A<td bgcolor=3D"#ffffff"><img alt=3D"" border=3D"0" height=3D=
+"20" hspace=3D"0" src=3D"http://image.immobilienscout24.de/custloads/11643=
+4665/md_533827.gif" style=3D"display: block;" vspace=3D"0" width=3D"20" />=
+</td>=0A</tr>=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"#5b7c9e" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"640">=
+=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#5b7c9e" style=3D"font-size: 21px; colo=
+r: rgb(255, 255, 255); font-weight: normal; text-align: left; font-family:=
+ Tahoma,Geneva,sans-serif; line-height: 20px; vertical-align: middle; padd=
+ing: 20px 20px 20px 20px;">Kosten</td>=0A</tr>=0A</tbody>=0A</table>=0A=0A=
+<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#ffffff=
+"><img alt=3D"" border=3D"0" height=3D"20" hspace=3D"0" src=3D"http://imag=
+e.immobilienscout24.de/custloads/116434665/md_533827.gif" style=3D"display=
+: block;" vspace=3D"0" width=3D"20" /></td>=0A</tr>=0A</tbody>=0A</table>=
+=0A=0A<table bgcolor=3D"#f2f5f7" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#=
+f2f5f7" class=3D"c-o-u-20" valign=3D"middle">=0A<table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"300">=0A<tbody>=0A<tr>=0A<td style=
+=3D"font-size: 15px; color: #4c4c4c; font-weight: normal; text-align: left=
+; font-family: Verdana, Geneva, sans-serif; line-height: 21px; vertical-al=
+ign: middle; font-style:regular; padding:0 20px 0 20px;"><strong>Fairer Pr=
+eis oder schlechter Deal?</strong></td>=0A</tr>=0A<tr>=0A<td style=3D"font=
+-size: 13px; color: #4c4c4c; font-weight: normal; text-align: left; font-f=
+amily: Verdana, Geneva, sans-serif; line-height: 18px; vertical-align: mid=
+dle; font-style:regular; padding:0 20px 0 20px;">=0A<p><br />=0AIst der Pr=
+eis f&uuml;r Ihre Wunschimmobilie angemessen? Erhalten Sie jetzt schnell u=
+nd einfach eine realistische Bewertung.</p>=0A=0A<table align=3D"left" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"200">=0A<tbody>=0A<=
+tr>=0A<td align=3D"center" background=3D"http://image.immobilienscout24.de=
+/custloads/116434665/md_574958.gif" bgcolor=3D"#3d648c" style=3D"padding:1=
+0px 20px 10px 20px;background-color:#3d648c; border-top:1px solid #97adc1;=
+ border-left:1px solid #97adc1; border-right:1px solid #003468;border-bott=
+om:1px solid #003468; background-repeat:repeat-x"><a href=3D"http://e3aktu=
+ell.immobilienscout24.de/r/link/3ae1e882cef44800II1656e93d0bcII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+" style=3D"=0A=09color:#ffffff;=0A=09font-size:14px;=0A=09font-weight:bold=
+;=0A=09text-align:center;=0A=09text-decoration:none;=0A=09font-family:Taho=
+ma, sans-serif;=0A=09-webkit-text-size-adjust:none;">Wert ermitteln</a></t=
+d>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A<=
+/td>=0A<td class=3D"hide" width=3D"300"><a href=3D"http://e3aktuell.immobi=
+lienscout24.de/r/link/2a6c3a017bc26000II1656e93d0bdII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+"><img align=3D"left" alt=3D"Checkliste" border=3D"0" height=3D"200" hspac=
+e=3D"0" id=3D"hide9" src=3D"http://image.immobilienscout24.de/custloads/11=
+6434665/2015/Nachfrager/Newsletter/Baufi/Baufi_Mai/fairer_preis.jpg" style=
+=3D"display:block" vspace=3D"0" width=3D"300" /></a></td>=0A</tr>=0A</tbod=
+y>=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=0A<td=
+ bgcolor=3D"#ffffff"><img alt=3D"" border=3D"0" height=3D"20" hspace=3D"0"=
+ src=3D"http://image.immobilienscout24.de/custloads/116434665/md_533827.gi=
+f" style=3D"display: block;" vspace=3D"0" width=3D"20" /></td>=0A</tr>=0A<=
+/tbody>=0A</table>=0A=0A<table bgcolor=3D"#f2f5f7" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tbody>=0A<tr>=
+=0A<td bgcolor=3D"#f2f5f7" class=3D"c-o-u-20" valign=3D"middle">=0A<table =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"300">=0A<tbody>=
+=0A<tr>=0A<td style=3D"font-size: 15px; color: #4c4c4c; font-weight: norma=
+l; text-align: left; font-family: Verdana, Geneva, sans-serif; line-height=
+: 21px; vertical-align: middle; font-style:regular; padding:0 20px 0 20px;=
+"><strong>Kosten-Kurzcheck f&uuml;r K&auml;ufer und Bauherren </strong></t=
+d>=0A</tr>=0A<tr>=0A<td style=3D"font-size: 13px; color: #4c4c4c; font-wei=
+ght: normal; text-align: left; font-family: Verdana, Geneva, sans-serif; l=
+ine-height: 18px; vertical-align: middle; font-style:regular; padding:0 20=
+px 0 20px;"><br />=0AOb Hausbau oder Immobilienerwerb, bei beidem m&uuml;s=
+sen verschieden Kosten ber&uuml;cksichtigt werden. Wie Sie Ihren Finanzier=
+ungsbedarf realistisch einsch&auml;tzen und den &Uuml;berblick behalten, e=
+rfahren Sie hier.=0A<table align=3D"left" border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"200">=0A<tbody>=0A<tr>=0A<td align=3D"center" ba=
+ckground=3D"http://image.immobilienscout24.de/custloads/116434665/md_57495=
+8.gif" bgcolor=3D"#3d648c" style=3D"padding:10px 20px 10px 20px;background=
+-color:#3d648c; border-top:1px solid #97adc1; border-left:1px solid #97adc=
+1; border-right:1px solid #003468;border-bottom:1px solid #003468; backgro=
+und-repeat:repeat-x"><a href=3D"http://e3aktuell.immobilienscout24.de/r/li=
+nk/7cdc19653a75e400II1656e93d0beII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+" style=3D"=0A=09color:#ffffff;=0A=09font-size:14px;=0A=09font-weight:bold=
+;=0A=09text-align:center;=0A=09text-decoration:none;=0A=09font-family:Taho=
+ma, sans-serif;=0A=09-webkit-text-size-adjust:none;"><strong>Zum Kurzcheck=
+</strong></a></td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody=
+>=0A</table>=0A</td>=0A<td class=3D"hide" width=3D"300"><a href=3D"http://=
+e3aktuell.immobilienscout24.de/r/link/1c002293a83f800II1656e93d0bfII=
+939efII3f7a64II1655e8a57dbII3=
+/PID%3D=
+58760721=
+%26ccwid%3D=
+001.58760721=
+"><img align=3D"left" alt=3D"Landingpage von Eigentuemer Plus" border=3D"0=
+" height=3D"275" hspace=3D"0" id=3D"hide10" src=3D"http://image.immobilien=
+scout24.de/custloads/116434665/2015/Nachfrager/Newsletter/Baufi/Baufi_Mai/=
+check.jpg" style=3D"display:block" vspace=3D"0" width=3D"300" /></a></td>=
+=0A</tr>=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=3D"0=
+" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"600">=0A<tb=
+ody>=0A<tr>=0A<td bgcolor=3D"#ffffff"><img alt=3D"" border=3D"0" height=3D=
+"20" hspace=3D"0" src=3D"http://image.immobilienscout24.de/custloads/11643=
+4665/md_533827.gif" style=3D"display: block;" vspace=3D"0" width=3D"20" />=
+</td>=0A</tr>=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"600">=
+=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#f2f5f7" style=3D"font-size: 10px; colo=
+r: rgb(124, 124, 124); font-weight: normal; text-align: left; font-family:=
+ Verdana,Geneva,sans-serif; line-height: 20px; vertical-align: middle; pad=
+ding: 10px 20px;">Partner</td>=0A</tr>=0A<tr>=0A<td align=3D"left" bgcolor=
+=3D"#f2f5f7" style=3D"vertical-align: middle; padding: 0px 20px 20px;"><a =
+href=3D"http://e3aktuell.immobilienscout24.de/r/link/3578ee75e1704400II165=
+6e93d0c0II=
+939efII3f7a64II1655e8a57dbII3=
+"><img align=3D"left" alt=3D"Viessmann" border=3D"0" height=3D"79" hspace=
+=3D"0" id=3D"partner" name=3D"partner" src=3D"http://image.immobilienscout=
+24.de/custloads/116434665/2015/Nachfrager/Newsletter/Baufi/Baufi_Mai/viess=
+mann_270x79.png" style=3D"display: block;" vspace=3D"0" width=3D"270" /><i=
+mg align=3D"left" alt=3D"" border=3D"0" height=3D"10" hspace=3D"0" src=3D"=
+http://image.immobilienscout24.de/custloads/129979341/md_584535.gif" style=
+=3D"display: block;" vspace=3D"0" width=3D"10" /></a><a href=3D"http://e3a=
+ktuell.immobilienscout24.de/r/link/4d39376503ffd400II1656e93d0c1II=
+939efII3f7a64II1655e8a57dbII3=
+"><img align=3D"left" alt=3D"Allianz" border=3D"0" height=3D"79" hspace=3D=
+"0" id=3D"partner" name=3D"partner" src=3D"http://image.immobilienscout24.=
+de/custloads/116434665/2015/Nachfrager/Newsletter/Baufi/Baufi_MrzV2/allian=
+z_270x79.jpg" style=3D"display: block;" vspace=3D"0" width=3D"270" /></a><=
+/td>=0A</tr>=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"#ffffff" border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"600">=
+=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#ffffff"><img alt=3D"" border=3D"0" hei=
+ght=3D"20" hspace=3D"0" src=3D"http://image.immobilienscout24.de/custloads=
+/116434665/md_533827.gif" style=3D"display: block;" vspace=3D"0" width=3D"=
+20" /></td>=0A</tr>=0A</tbody>=0A</table>=0A=0A<table bgcolor=3D"white" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"table" width=3D"60=
+0">=0A<tbody>=0A<tr>=0A<td bgcolor=3D"#F4F4F4" style=3D"padding: 20px 20px=
+ 20px 20px;">=0A<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" cl=
+ass=3D"content-table" width=3D"560">=0A<tbody>=0A<tr>=0A<td align=3D"left"=
+ bgcolor=3D"#f4f4f4"><font color=3D"#444444" face=3D"Verdana,Geneva,Arial,=
+Helvetica,sans-serif" size=3D"12" style=3D"font-size: 13px; line-height: 1=
+4px;"><strong>Folgen Sie uns auf:</strong></font></td>=0A</tr>=0A<tr>=0A<t=
+d align=3D"left" bgcolor=3D"#f4f4f4"><img alt=3D"" border=3D"0" height=3D"=
+20" hspace=3D"0" src=3D"http://image.immobilienscout24.de/custloads/116434=
+665/md_533827.gif" style=3D"display: block;" vspace=3D"0" width=3D"20" /><=
+/td>=0A</tr>=0A<tr>=0A<td align=3D"left" bgcolor=3D"#f4f4f4">=0A<table ali=
+gn=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=3D"0">=0A<tbody>=0A=
+<tr>=0A<td align=3D"right" style=3D"padding: 0px 20px 0px 0px;" width=3D"2=
+0%"><a href=3D"http://e3aktuell.immobilienscout24.de/r/link/2e4e88ae327c2c=
+00II1656e93d0c2II=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"Facebook" border=3D"0" height=3D"40" hspace=3D"0" src=3D"htt=
+p://image.immobilienscout24.de/custloads/116434665/md_575017.gif" style=3D=
+"display: block;" vspace=3D"0" width=3D"40" /></a></td>=0A<td style=3D"pad=
+ding: 0px 20px 0px 0px;" width=3D"20%"><a href=3D"http://e3aktuell.immobil=
+ienscout24.de/r/link/48725cd3b3c30c00II1656e93d0c3II=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"Google+" border=3D"0" height=3D"40" hspace=3D"0" src=3D"http=
+://image.immobilienscout24.de/custloads/116434665/md_575016.gif" style=3D"=
+display: block;" vspace=3D"0" width=3D"40" /></a></td>=0A<td style=3D"padd=
+ing: 0px 20px 0px 0px;" width=3D"20%"><a href=3D"http://e3aktuell.immobili=
+enscout24.de/r/link/50da22037a27bc00II1656e93d0c4II=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"Twitter" border=3D"0" height=3D"40" hspace=3D"0" src=3D"http=
+://image.immobilienscout24.de/custloads/116434665/md_575020.gif" style=3D"=
+display: block;" vspace=3D"0" width=3D"40" /></a></td>=0A<td style=3D"padd=
+ing: 0px 20px 0px 0px;" width=3D"20%"><a href=3D"http://e3aktuell.immobili=
+enscout24.de/r/link/5ff7bd10b8f1dc00II1656e93d0c5II=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"Youtube" border=3D"0" height=3D"40" hspace=3D"0" src=3D"http=
+://image.immobilienscout24.de/custloads/116434665/md_575019.gif" style=3D"=
+display: block;" vspace=3D"0" width=3D"40" /></a></td>=0A<td width=3D"20%"=
+><a href=3D"http://e3aktuell.immobilienscout24.de/r/link/5fecc601118e9800I=
+I1656e93d0c6II=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"RSS Feed" border=3D"0" height=3D"40" hspace=3D"0" src=3D"htt=
+p://image.immobilienscout24.de/custloads/116434665/md_575018.gif" style=3D=
+"display: block;" vspace=3D"0" width=3D"40" /></a></td>=0A</tr>=0A</tbody>=
+=0A</table>=0A</td>=0A</tr>=0A<tr>=0A<td bgcolor=3D"#f4f4f4"><img alt=3D""=
+ border=3D"0" height=3D"20" hspace=3D"0" src=3D"http://image.immobiliensco=
+ut24.de/custloads/116434665/md_533827.gif" style=3D"display: block;" vspac=
+e=3D"0" width=3D"20" /></td>=0A</tr>=0A<tr>=0A<td align=3D"left" bgcolor=
+=3D"#f4f4f4"><span style=3D"font-size: 10px; color: #666666; font-weight: =
+normal; text-align: left; font-family: Verdana,Geneva,sans-serif; line-hei=
+ght: 16px; vertical-align: top;"><strong>Der Marktf&uuml;hrer: Die Nr.1 ru=
+nd um Immobilien</strong><br />=0A<a href=3D"http://e3aktuell.immobiliensc=
+out24.de/r/link/713e790e5c50b800II1656e93d0c7II=
+939efII3f7a64II1655e8a57dbII3=
+" style=3D"color:#666666; font-weight: normal; text-decoration: none;" tar=
+get=3D"_blank">Immobiliensuche</a><font color=3D"#979797" face=3D"Verdana,=
+ Arial, sans-serif" id=3D"footer-text" size=3D"1" style=3D"font-size: 10px=
+; color: rgb(151, 151, 151); font-weight: normal; text-decoration: none;">=
+ | </font><a href=3D"http://e3aktuell.immobilienscout24.de/r/link/5940aII7=
+260fe1b2II=
+939efII3f7a64II1655e8a57dbII3=
+/id%3D1240324137292%26mailId%3D=
+939efII3f7a64II1655e8a57dbII3=
+" style=3D"font-size: 10px; color:#666666; font-weight: normal; text-decor=
+ation: none;" target=3D"_blank">Abbestellen</a><font color=3D"#979797" fac=
+e=3D"Verdana, Arial, sans-serif" id=3D"footer-text" size=3D"1" style=3D"fo=
+nt-size: 10px; color: rgb(151, 151, 151); font-weight: normal; text-decora=
+tion: none;"> | </font><a href=3D"http://e3aktuell.immobilienscout24.de/r/=
+link/6bfdf3a321e3d800II1656e93d0c8II=
+939efII3f7a64II1655e8a57dbII3=
+" style=3D"font-size: 10px; color:#666666; font-weight: normal; text-decor=
+ation: none;" target=3D"_blank">Datenschutz</a><font color=3D"#979797" fac=
+e=3D"Verdana, Arial, sans-serif" id=3D"footer-text3" size=3D"1" style=3D"f=
+ont-size: 10px; color: rgb(151, 151, 151); font-weight: normal; text-decor=
+ation: none;"> | </font><a href=3D"http://e3aktuell.immobilienscout24.de/r=
+/link/24f7fbd7b85f7000II1656e93d0c9II=
+939efII3f7a64II1655e8a57dbII3=
+" style=3D"font-size: 10px; color:#666666; font-weight: normal; text-decor=
+ation: none;" target=3D"_blank">Impressum</a><font color=3D"#979797" face=
+=3D"Verdana, Arial, sans-serif" id=3D"footer-text" size=3D"1" style=3D"fon=
+t-size: 10px; color: rgb(151, 151, 151); font-weight: normal; text-decorat=
+ion: none;"> |</font><a href=3D"http://e3aktuell.immobilienscout24.de/r/li=
+nk/323925c0e92e3000II1656e93d0caII=
+939efII3f7a64II1655e8a57dbII3=
+" style=3D"font-size: 10px; color:#666666; font-weight: normal; text-decor=
+ation: none;" target=3D"_blank">&copy;1999 - 2015 Immobilien Scout GmbH</a=
+><br />=0A<br />=0AImmobilien Scout GmbH - Ein Unternehmen der Scout24-Gru=
+ppe, Andreasstra&szlig;e 10, 10243 Berlin, Gesch&auml;ftsf&uuml;hrer: Greg=
+ory Ellis(CEO) und Christian Gisy (CFO), Handelsregister: Amtsgericht Char=
+lottenburg, HRB 69108, Sitz der Gesellschaft: Berlin<br />=0A<br />=0AImmo=
+bilienScout24 informiert Sie &uuml;ber neue Produkt-Informationen. Sollten=
+ Sie hieran kein Interesse haben, dann k&ouml;nnen Sie sich <a href=3D"htt=
+p://e3aktuell.immobilienscout24.de/r/link/5940aII7260fe1b2II=
+939efII3f7a64II1655e8a57dbII3=
+/id%3D1240324137292%26mailId%3D=
+939efII3f7a64II1655e8a57dbII3=
+" style=3D"text-decoration: underline; color:#666666;">hier</a> abmelden. =
+Die Abmeldung betrifft nicht ggfs. bestehende Newsletter-Abonnements und S=
+uchauftragsbenachrichtigungen.<br />=0A<br />=0AF&uuml;r weitere Fragen un=
+d Anregungen erreichen Sie uns &uuml;ber das <a href=3D"http://e3aktuell.i=
+mmobilienscout24.de/r/link/1be6d883d3c62000II1656e93d0cbII=
+939efII3f7a64II1655e8a57dbII3=
+" style=3D"text-decoration: underline; color:#666666;">Kontaktformular</a>=
+</span></td>=0A</tr>=0A</tbody>=0A</table>=0A</td>=0A</tr>=0A</tbody>=0A</=
+table>=0A</td>=0A</tr>=0A</tbody>=0A</table>=0A<br />=0A<br />=0A<br />=0A=
+&nbsp;</center>=0A</td>=0A<td align=3D"left" id=3D"hide" valign=3D"top"><a=
+ href=3D"http://e3aktuell.immobilienscout24.de/r/link/5bbb454eb475f800II16=
+56e93d0ccII=
+939efII3f7a64II1655e8a57dbII3=
+"><img alt=3D"Postbank Baufinanzierung" height=3D"600" id=3D"hide" src=3D"=
+http://image.immobilienscout24.de/custloads/116434665/2015/Nachfrager/News=
+letter/Baufi/Baufi_Mrz2/baufinanzierung_xx_baufinanzierung_wp_728x90-160x6=
+00-sky.jpg" width=3D"160" /></a><img src=3D"http://servedby.flashtalking.c=
+om/imp/2/46054;1173721;201;pixel;immobilienscout24de;v0102PHYFIXstandalone=
+newsletterkompensationmrzbaufinanzierungwallpaperxxintegration/?cachebuste=
+r=3D_ADTIME_" style=3D"width:1px; height:1px;" /></td>=0A</tr>=0A</tbody>=
+=0A</table>=0A=0A=0A</body></html>
+--_----------=_112358201558820--

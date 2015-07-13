@@ -1,0 +1,497 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp1843471wma;
+        Mon, 4 May 2015 12:07:11 -0700 (PDT)
+X-Received: by 10.43.119.70 with SMTP id ft6mr29635865icc.15.1430766431207;
+        Mon, 04 May 2015 12:07:11 -0700 (PDT)
+Return-Path: <b.7124.36597258.ab9f5d7396fcb0b3@contact.eff.org>
+Received: from civismtp.uas.coop (civismtp.uas.coop. [67.212.170.242])
+        by mx.google.com with ESMTPS id 15si10941817ioo.98.2015.05.04.12.07.10
+        for <roman.priebe@gmail.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Mon, 04 May 2015 12:07:11 -0700 (PDT)
+Received-SPF: pass (google.com: domain of b.7124.36597258.ab9f5d7396fcb0b3@contact.eff.org designates 67.212.170.242 as permitted sender) client-ip=67.212.170.242;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of b.7124.36597258.ab9f5d7396fcb0b3@contact.eff.org designates 67.212.170.242 as permitted sender) smtp.mail=b.7124.36597258.ab9f5d7396fcb0b3@contact.eff.org
+Received: from web2.eff.org (HELO web2.eff.org) 
+ (smtp-auth username xxxxxx, mechanism cram-md5)
+  by civismtp.uas.coop (qpsmtpd/0.84) with ESMTPA; Mon, 04 May 2015 14:07:10 -0500
+Received: from localhost (localhost [127.0.0.1])
+	by web2.eff.org (Postfix) with ESMTP id 866A380C49C3
+	for <roman.priebe@gmail.com>; Mon,  4 May 2015 12:01:17 -0700 (PDT)
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="=_00dd50a00443ce430bb02988b77dc8a4"
+Reply-To: "EFFector List" <editor@eff.org>
+From: "EFFector List" <editor@eff.org>
+Subject: A note from Cindy | EFFector 28.06
+List-Unsubscribe: <mailto:u.7124.36597258.ab9f5d7396fcb0b3@contact.eff.org>
+job_id: 7124
+To: <roman.priebe@gmail.com>
+Precedence: bulk
+X-CiviMail-Bounce: b.7124.36597258.ab9f5d7396fcb0b3@contact.eff.org
+Date: Mon, 04 May 2015 12:01:17 -0700
+Message-Id: <20150504190117.866A380C49C3@web2.eff.org>
+
+--=_00dd50a00443ce430bb02988b77dc8a4
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset=utf-8
+
+ _______  _______  _______                                 
+(_______)(_______)(_______)               _                
+ _____    _____    _____  _____   ____  _| |_  ___    ____ 
+|  ___)  |  ___)  |  ___)| ___ | / ___)(_   _)/ _ \  / ___)
+| |_____ | |      | |    | ____|( (___   | |_| |_| || |    
+|_______)|_|      |_|    |_____) \____)   \__)\___/ |_|    
+
+EFFector Vol. 28, No. 6  April 30, 2015  editor@eff.org
+
+A Publication of the Electronic Frontier Foundation
+ISSN 1062-9424
+
+effector: n, Computer Sci. A device for producing a
+desired change.
+
+: . : . : . : . : . : . : . : . : . : . : . : . : . : . :
+
+In our 677th issue:
+
+* A New Chapter in the Fight for Digital Rights
+
+This very special EFFector is a letter from our new
+executive director, Cindy Cohn
+
+In 1993, EFF founder John Gilmore approached me with an
+unusual proposition: he asked if I would serve as lead
+outside attorney working with a fairly new
+organization--the Electronic Frontier Foundation--on a case
+challenging the U.S. export restrictions against
+cryptography. Bernstein v. Department of Justice took over
+seven years to work its way through the courts, but
+eventually became the landmark case that first established
+that computer code is a form of protected speech under the
+First Amendment. It was a watershed moment for Internet
+law, and for my life.
+
+As Bernstein was entering its final phase, EFF's
+newly-appointed Executive Director Shari Steele offered me
+the job of legal director. It was the opportunity of a
+lifetime. As legal director for the last 15 years, I've
+worked on cases that ensured ongoing protection for civil
+liberties in our increasingly digital, networked world. As
+attacks materialized via copyright, patents, computer
+security hysteria, electronic voting machines, and more, we
+fought for digital freedom. This was all possible because
+of the leadership of my dear friend and our executive
+director of 15 years, Shari Steele.
+
+Shari has accepted a role on EFF's board of directors, and
+now I'm stepping up to fill her shoes as EFF's new
+executive director. I want to share with you my vision for
+the future of EFF's work, and how you can help us be even
+stronger.
+
+EFF is committed to a world where you are free to make your
+voice heard, access information, participate in culture,
+have a private conversation, join with others to make
+political change, or develop cool technology--a world where
+you're free to take advantage of the opportunities that
+digital tools make available to more people than ever
+before. Protecting privacy, free speech, association, and
+innovation is how we can build and maintain that world.
+
+Right now, our top objective is to end mass surveillance of
+our digital communications by government agencies like the
+NSA and ensure that the basic privacy and associational
+rights--along with our security--are strengthened, even as
+governments gain access to powerful new tracking tools. We
+have ground-breaking lawsuits to fight this surveillance in
+the courts, but we're also developing software to help you
+regain control over your privacy and make the Internet more
+secure. And because we have come to rely on platforms for
+much of what we do on the Internet, we’re pushing
+companies to make security features available and easy to
+use. We’re working with partners around the world to
+defend the privacy of people worldwide, including updating
+national laws for the digital age and helping to bring
+digital privacy issues before the United Nations. And we're
+extending our focus to the surveillance that happens in the
+streets, addressing the threats represented by
+irresponsible implementations of facial recognition,
+biometrics, license plate readers, and more.
+
+Reining in surveillance is only possible with real
+government transparency. That's why EFF is kicking off a
+major campaign this year to fight against what is known as
+over-classification, hiding documents away from the public.
+This problem has plagued our democracy for years and
+prevented reform in other areas. And we’ll continue our
+transparency work in the courts, including using the
+Freedom of Information Act and challenging overbroad
+secrecy that too often accompanies government demands for
+information about users.
+
+As our lives have become increasingly digital, the greatest
+free speech battles of our time have moved online. Over the
+last few years, we've seen attacks on free speech dressed
+up as fights over copyright policy, international trade
+agreements, anonymity, and network neutrality. EFF intends
+to stay on the cutting edge of the free speech fight,
+ensuring that our rights to publish and access content will
+be enhanced--not diminished--as our use of technology
+grows. And through initiatives like our DRM-eradicating
+Apollo 1201 Project, international copyright work, and
+patent busting, we'll continue to protect our right to
+innovate and enjoy remarkable new technologies.
+
+For 15 years, I've helped guide and grow EFF's legal team,
+and I'm deeply honored to have a chance to step into the
+role of executive director. I may be at the helm, but the
+organization's accomplishments are driven forward by the
+hard work of our staff--attorneys, activists, and
+technologists--who have dedicated their lives to defending
+civil liberties.
+
+But we don't do this alone. The heroes of this movement are
+the more than 25,000 members joining us to fight for a
+better digital future. We're grateful, and we’ve all been
+lucky. As threats to our digital rights have grown, the
+scope and profile of the digital rights movement has grown
+to meet those challenges. Given what we're facing, I'd like
+to see our membership double to match the emerging,
+world-spanning hazards and ensure that we can continue to
+combat them effectively.
+
+Please join us in fighting for digital rights. We've got
+major battles ahead, including a showdown in Congress over
+NSA reform, major legal struggles around software patents,
+surveillance, and copyright, and some extraordinary
+technical projects. There are many essential ways to
+participate and protect the future of privacy and free
+speech: educate people about the importance of their
+digital rights, speak out in our campaigns, and become a
+donating member to strengthen this vital, future-focused
+movement for users' rights worldwide:
+
+https://supporters.eff.org/donate/celebrating-twenty-five-years
+
+For a better digital future,
+
+Cindy Cohn
+EFF Executive Director
+
+Read more:
+https://www.eff.org/deeplinks/2015/05/new-chapter-fight-civil-liberties
+
+: . : . : . : . : . : . : . : . : . : . : . : . : . : . :
+
+Announcements
+
+* Come Work for EFF!
+EFF is hiring. Please join us in fighting for your rights
+in the digital world. We're seeking both a techno-activist
+and web developers. Check out the job descriptions and
+apply today.
+https://www.eff.org/about/opportunities/jobs
+
+* Deep Web
+After a San Francisco Film Society screening of director
+Alex Winter's new documentary "Deep Web," EFF Executive
+Director Cindy Cohn will participate in a panel discussion
+on the current state of surveillance, privacy, and
+journalism online. She'll be joined by EFF co-founder John
+Perry Barlow, the illustrator and journalist Susie Cagle,
+and Winter.
+May 4, 2015
+San Francisco, CA
+https://www.eff.org/event/deep-web
+
+* re:publica
+EFF's Director of Copyright Activism Parker Higgins,
+Director for International Freedom of Expression Jillian
+York, and Global Policy Analyst Eva Galperin will speak at
+this year's re:publica, considered one of the largest and
+most engaging conferences about digital culture in the
+world.
+May 5-7, 2015
+Berlin, Germany
+https://www.eff.org/event/republica-0
+
+* EFF at Open West
+EFF returns for the 7th Annual OpenWest Conference in Orem,
+Utah. Don't miss the Thursday morning keynote speech from
+EFF Activist Adi Kamdar.
+May 7-9, 2015
+Orem, UT
+https://www.eff.org/event/eff-openwest
+
+* Crypto-thon at Wikimedia
+Wikimedia's Crypto-thon will provide valuable information
+about security, as well as practical skills to improve
+privacy and communicate more securely. EFF staff will be on
+hand to help attendees assess their personal risk when it
+comes to security and privacy, and get started with the
+tools they need.
+May 7, 2015
+San Francisco, CA
+https://www.eff.org/event/crypto-thon-wikimedia
+
+* Civil Disobedience Beyond the State
+EFF's Director for International Freedom of Expression,
+Jillian C. York, will speak at Civil Disobedience Beyond
+the State.
+May 8, 2015
+Berlin, Germany
+https://www.eff.org/event/civil-disobedience-beyond-state
+
+* LACUNY Institute 2015
+EFF Activism Director Rainey Reitman will keynote LACUNY
+Institute's annual conference. This year's theme is Privacy
+and Surveillance: Library Advocacy for the 21st Century.
+May 8, 2015
+Manhattan, NY
+https://www.eff.org/event/privacy-and-surveillance-library-advocacy-21st-century
+
+: . : . : . : . : . : . : . : . : . : . : . : . : . : . :
+
+Supported by Members
+
+Our members make it possible for EFF to bring legal and technological
+expertise into crucial battles about online rights.  Whether defending
+free speech online or challenging unconstitutional surveillance, your
+participation makes a difference.  Every donation gives technology users
+who value freedom online a stronger voice and more formidable advocate.
+
+If you aren't already, please consider becoming an EFF member.
+
+Donate today: https://supporters.eff.org/join/effector
+
+: . : . : . : . : . : . : . : . : . : . : . : . : . : . :
+
+* Administrivia
+
+Editor:
+Rainey Reitman, Activism Director
+ editor@eff.org
+
+EFFector is published by:
+The Electronic Frontier Foundation
+https://www.eff.org/
+
+Membership & donation queries:
+ membership@eff.org
+
+General EFF, legal, policy, or online resources queries:
+ info@eff.org
+
+Reproduction of this publication in electronic media is
+encouraged. MiniLinks do not necessarily represent
+the views of EFF.
+
+Back issues of EFFector are available via the Web at:
+https://www.eff.org/effector/
+
+Unsubscribe from future mailings or change your email preferences: https://supporters.eff.org/civicrm/profile/edit?reset=1&gid=14&id=1311124&cs=199e39a0fa5587d0a01008b74d418123_1430766077_168
+
+Opt out of all EFF email: https://supporters.eff.org/civicrm/mailing/optout?reset=1&jid=7124&qid=36597258&h=ab9f5d7396fcb0b3
+
+815 Eddy Street
+San Francisco, CA 94109-7701
+United States
+
+--=_00dd50a00443ce430bb02988b77dc8a4
+Content-Transfer-Encoding: 8bit
+Content-Type: text/html; charset=utf-8
+
+<style type="text/css">#effector a, #effector a:link, #effector a:visited #effector a:hover #effector p #effector .text  #effector .text a, #effector a:link, #effector a:visited #effector h1 #effector h1 span.sub-title #effector h2 #effector h2.noline #effector h3 </style>
+<p style="margin:0; text-align:center;"><a href="https://supporters.eff.org/civicrm/mailing/view?reset=1&id=964" style="text-decoration:underline; font-size:.8em;  font-family: Helvetica, Arial, sans-serif;">View as a web page</a></p>
+
+<table bgcolor="#CCCCCC" border="0" cellspacing="0" id="effector" width="100%">
+	<tbody>
+		<tr>
+			<td colspan="3">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td bgcolor="#cc0000" style="padding:0px 20px 20px 20px; font-size: 1.0em; color: #ffffff; background-color: #cc0000; font-family: Helvetica, Arial, sans-serif; line-height: 1.5em;">
+			<table border="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr>
+						<td><a href="https://supporters.eff.org/civicrm/mailing/view?reset=1&id=964"><img alt="EFFector!" border="0" height="104" src="https://www.eff.org/sites/default/files/effector-title.png" style="margin:20px 0 0 0" width="330" /></a></td>
+						<td align="center" width="200"><a href="https://www.eff.org/"><img alt="Electronic Frontier Foundation" border="0" src="https://www.eff.org/sites/default/files/eff_logo.png" style="margin-top:20px;" /></a></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td width="33%">&nbsp;</td>
+			<td>
+			<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="20" width="780">
+				<tbody>
+					<tr>
+						<td bgcolor="#FFFFFF" style="padding:0px 20px 20px 20px; font-size: 1.0em; color: #333333; background-color: #ffffff; font-family: Helvetica, Arial, sans-serif; line-height: 1.5em;" valign="top">
+						<p>In our 677th issue:</p>
+
+						<h3><a href="https://www.eff.org/deeplinks/2015/05/new-chapter-fight-civil-liberties" style="color:#cc0000; text-decoration: bold;">A New Chapter in the Fight for Digital Rights</a></h3>
+
+						<p><em>This very special EFFector is a letter from our new executive director, Cindy Cohn.</em></p>
+
+						<p>In 1993, EFF founder John Gilmore approached me with an unusual proposition: he asked if I would serve as lead outside attorney working with a fairly new organization&mdash;the Electronic Frontier Foundation&mdash;on a case challenging the U.S. export restrictions against cryptography. <em>Bernstein v. Department of Justice</em> took over seven years to work its way through the courts, but eventually became the landmark case that first established that computer code is a form of protected speech under the First Amendment. It was a watershed moment for Internet law, and for my life.</p>
+
+						<p>As <em>Bernstein</em> was entering its final phase, EFF&rsquo;s newly-appointed Executive Director Shari Steele offered me the job of legal director. It was the opportunity of a lifetime. As legal director for the last 15 years, I&rsquo;ve worked on cases that ensured ongoing protection for civil liberties in our increasingly digital, networked world. As attacks materialized via copyright, patents, computer security hysteria, electronic voting machines, and more, we fought for digital freedom. This was all possible because of the leadership of my dear friend and our executive director of 15 years, Shari Steele.</p>
+
+						<p>Shari has accepted a role on EFF&rsquo;s board of directors, and now I&rsquo;m stepping up to fill her shoes as EFF&rsquo;s new executive director. I want to share with you my vision for the future of EFF&rsquo;s work, and how you can help us be even stronger.</p>
+
+						<p>EFF is committed to a world where you are free to make your voice heard, access information, participate in culture, have a private conversation, join with others to make political change, or develop cool technology&mdash;a world where you&rsquo;re free to take advantage of the opportunities that digital tools make available to more people than ever before. Protecting privacy, free speech, association, and innovation is how we can build and maintain that world.</p>
+
+						<p>Right now, our top objective is to end mass surveillance of our digital communications by government agencies like the NSA and ensure that the basic privacy and associational rights&mdash;along with our security&mdash;are strengthened, even as governments gain access to powerful new tracking tools. We have ground-breaking lawsuits to fight this surveillance in the courts, but we&rsquo;re also developing software to help you regain control over your privacy and make the Internet more secure. And because we have come to rely on platforms for much of what we do on the Internet, we&rsquo;re pushing companies to make security features available and easy to use. We&rsquo;re working with partners around the world to defend the privacy of
+people worldwide, including updating national laws for the digital age and helping to bring digital privacy issues before the United Nations. And we&rsquo;re extending our focus to the surveillance that happens in the streets, addressing the threats represented by irresponsible implementations of facial recognition, biometrics, license plate readers, and more.</p>
+
+						<p>Reining in surveillance is only possible with real government transparency. That&rsquo;s why EFF is kicking off a major campaign this year to fight against what is known as over-classification, hiding documents away from the public. This problem has plagued our democracy for years and prevented reform in other areas. And we&rsquo;ll continue our transparency work in the courts, including using the Freedom of Information Act and challenging overbroad secrecy that too often accompanies government demands for information about users.</p>
+
+						<p>As our lives have become increasingly digital, the greatest free speech battles of our time have moved online. Over the last few years, we&rsquo;ve seen attacks on free speech dressed up as fights over copyright policy, international trade agreements, anonymity, and network neutrality. EFF intends to stay on the cutting edge of the free speech fight, ensuring that our rights to publish and access content will be enhanced&mdash;not diminished&mdash;as our use of technology grows. And through initiatives like our DRM-eradicating Apollo 1201 Project, international copyright work, and patent busting, we&rsquo;ll continue to protect our right to innovate and enjoy remarkable new technologies.</p>
+
+						<p>For 15 years, I&rsquo;ve helped guide and grow EFF&rsquo;s legal team, and I&rsquo;m deeply honored to have a chance to step into the role of executive director. I may be at the helm, but the organization&rsquo;s accomplishments are driven forward by the hard work of our staff&mdash;attorneys, activists, and technologists&mdash;who have dedicated their lives to defending civil liberties.</p>
+						<p">But we don&#39;t do this alone. The heroes of this movement are the more than 25,000 members joining us to fight for a better digital future. We&rsquo;re grateful, and we&rsquo;ve all been lucky. As threats to our digital rights have grown, the scope and profile of the digital rights movement has grown to meet those challenges. Given what we&rsquo;re facing, I&rsquo;d like to see our membership double to match the emerging, world-spanning hazards and ensure that we can continue to combat them effectively.
+						<p>Please join us in fighting for digital rights. We&rsquo;ve got major battles ahead, including a showdown in Congress over NSA reform, major legal struggles around software patents, surveillance, and copyright, and some extraordinary technical projects. There are many essential ways to participate and protect the future of privacy and free speech: educate people about the importance of their digital rights, speak out in our campaigns, and <a href="https://supporters.eff.org/donate/celebrating-twenty-five-years">become a donating member</a> to strengthen this vital, future-focused movement for users&rsquo; rights worldwide.</p>
+
+						<p>For a better digital future,</p>
+						Cindy Cohn<br />
+						EFF Executive Director
+						<h2><a id="support" name="support"></a>Supported by Members</h2>
+
+						<p>Our members make it possible for EFF to bring legal and technological expertise into crucial battles about online rights. Whether defending free speech online or challenging unconstitutional surveillance, your participation makes a difference. Every donation gives technology users who value freedom online a stronger voice and more formidable advocate.</p>
+
+						<p>Please consider becoming an EFF member today.</p>
+
+						<p><a href="https://supporters.eff.org/join/effector" style="color:#cc0000; text-decoration: bold;">Donate Today</a></p>
+
+						<h2>Administrivia</h2>
+
+						<p>Editor: Rainey Reitman, Activism Director<br />
+						<a href="mailto:editor@eff.org" style="color:#cc0000; text-decoration: bold;"><strong>editor@eff.org</strong></a></p>
+
+						<p>EFFector is a publication of the Electronic Frontier Foundation.<br />
+						<a href="https://www.eff.org/" style="color:#cc0000; text-decoration: bold;"><strong>eff.org</strong></a></p>
+
+						<p>Membership &amp; donation queries: <a href="mailto:membership@eff.org" style="color:#cc0000; text-decoration: bold;"><strong>membership@eff.org</strong></a></p>
+
+						<p>General EFF, legal, policy, or online resources queries: <a href="mailto:info@eff.org" style="color:#cc0000; text-decoration: bold;"><strong>info@eff.org</strong></a></p>
+
+						<p><strong>Reproduction</strong> of this publication in electronic media is <strong>encouraged</strong>. MiniLinks do not necessarily represent the views of EFF.</p>
+
+						<p><a href="https://www.eff.org/effector/" style="color:#cc0000; text-decoration: bold;"><strong>Back issues of EFFector</strong></a></p>
+
+						<p>This newsletter is printed from 100% recycled electrons.</p>
+
+						<p>EFF appreciates your support and respects your privacy. <a href="http://www.eff.org/policy" style="color:#cc0000; text-decoration: bold;"><strong>Privacy Policy</strong></a>.</p>
+
+						<p><a href="https://supporters.eff.org/civicrm/profile/edit?reset=1&amp;gid=14&amp;id=1311124&amp;cs=199e39a0fa5587d0a01008b74d418123_1430766077_168"" style="color:#cc0000; text-decoration: bold;"><strong>Unsubscribe or change your email preferences</strong></a>, or <a href="https://supporters.eff.org/civicrm/mailing/optout?reset=1&amp;jid=7124&amp;qid=36597258&amp;h=ab9f5d7396fcb0b3" style="color:#cc0000; text-decoration: bold;"><strong>opt out of all EFF email</strong></a></p>
+
+						<p style="font-size:10px;color:#666"><div class="location vcard"><span class="adr"><span class="street-address">815 Eddy Street</span><br /><span class="locality">San Francisco</span>, <span class="region">CA</span> <span class="postal-code">94109-7701</span><br /><span class="country-name">United States</span></span></div></p>
+						</p"></td>
+						<td bgcolor="#FFFFFF" id="administrivia" valign="top" width="200">
+						<table border="0" cellpadding="4" cellspacing="0" width="200">
+							<tbody>
+								<tr>
+									<td bgcolor="#ffffff">
+									<table border="0" cellspacing="0" width="100%">
+										<tbody>
+											<tr>
+												<td align="center"><a href="https://supporters.eff.org/join/effector"><img alt="Join EFF!" border="0" height="38" src="https://www.eff.org/sites/default/files/join-button-large.png" vspace="0" width="167" /></a></td>
+											</tr>
+											<tr>
+												<td align="center">&nbsp;</td>
+											</tr>
+											<tr>
+												<td align="center" style="font-size: .8em; color: #999999">Members make it possible for EFF to fight for your rights. Become a member today.</td>
+											</tr>
+											<tr>
+												<td align="center">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding:15px; font-size: .9em; color: #333333; background-color: #efefef; font-family: Helvetica, Arial, sans-serif;">
+									<h3><a id="announcements" name="announcements"></a>Announcements</h3>
+
+									<p style="margin:0; font-weight:bold;"><a href="https://www.eff.org/about/opportunities/jobs" style="color:#cc0000">Come Work for EFF!</a></p>
+
+									<p>EFF is hiring. Please join us in fighting for your rights in the digital world. We&#39;re seeking both a techno-activist and web developers. Check out the job descriptions and apply today.</p>
+
+									<p style="margin:0; font-weight:bold;"><a href="https://www.eff.org/event/deep-web" style="color:#cc0000">Deep Web</a></p>
+
+									<p>After a San Francisco Film Society screening of director Alex Winter&#39;s new documentary &quot;Deep Web,&quot; EFF Executive Director Cindy Cohn will participate in a panel discussion on the current state of surveillance, privacy, and journalism online. She&#39;ll be joined by EFF co-founder John Perry Barlow, the illustrator and journalist Susie Cagle, and Winter.<br />
+									<b>May 4, 2015<br />
+									San Francisco, CA</b></p>
+
+									<p style="margin:0; font-weight:bold;"><a href="https://www.eff.org/event/republica-0" style="color:#cc0000">re:publica</a></p>
+
+									<p>EFF&#39;s Director of Copyright Activism Parker Higgins, Director for International Freedom of Expression Jillian York, and Global Policy Analyst Eva Galperin will speak at this year&#39;s re:publica, considered one of the largest and most engaging conferences about digital culture in the world.<br />
+									<b>May 5-7, 2015<br />
+									Berlin, Germany</b></p>
+
+									<p style="margin:0; font-weight:bold;"><a href="https://www.eff.org/event/eff-openwest" style="color:#cc0000">EFF at Open West</a></p>
+
+									<p>EFF returns for the 7th Annual OpenWest Conference in Orem, Utah. Don&#39;t miss the Thursday morning keynote speech from EFF Activist Adi Kamdar.<br />
+									<b>May 7-9, 2015<br />
+									Orem, UT</b></p>
+
+									<p style="margin:0; font-weight:bold;"><a href="https://www.eff.org/event/crypto-thon-wikimedia" style="color:#cc0000">Crypto-thon at Wikimedia</a></p>
+
+									<p>Wikimedia&#39;s Crypto-thon will provide valuable information about security, as well as practical skills to improve privacy and communicate more securely. EFF staff will be on hand to help attendees assess their personal risk when it comes to security and privacy, and get started with the tools they need.<br />
+									<b>May 7, 2015<br />
+									San Francisco, CA</b></p>
+
+									<p style="margin:0; font-weight:bold;"><a href="https://www.eff.org/event/civil-disobedience-beyond-state" style="color:#cc0000">Civil Disobedience Beyond the State</a></p>
+
+									<p>EFF&#39;s Director for International Freedom of Expression, Jillian C. York, will speak at Civil Disobedience Beyond the State.<br />
+									<b>May 8, 2015<br />
+									Berlin, Germany</b></p>
+
+									<p style="margin:0; font-weight:bold;"><a href="https://www.eff.org/event/privacy-and-surveillance-library-advocacy-21st-century" style="color:#cc0000">LACUNY Institute 2015</a></p>
+
+									<p>EFF Activism Director Rainey Reitman will keynote LACUNY Institute&#39;s annual conference. This year&#39;s theme is Privacy and Surveillance: Library Advocacy for the 21st Century.<br />
+									<b>May 8, 2015<br />
+									Manhattan, NY</b></p>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#FFFFFF" style="padding:20px; font-size: .9em; color: #333333; font-family: Helvetica, Arial, sans-serif;">
+									<table align="center" border="0" cellpadding="10" cellspacing="0" width="60%">
+										<tbody>
+											<tr>
+												<td align="center" colspan="4">EFF on</td>
+											</tr>
+											<tr>
+												<td align="center"><a href="http://twitter.com/eff" target="_blank"><img alt="twitter" border="0" height="32" src="https://www.eff.org/sites/all/themes/frontier/supporters/images/twitter32.png" width="32" /></a></td>
+												<td align="center"><a href="http://www.facebook.com/eff" target="_blank"><img alt="facebook" border="0" height="32" src="https://www.eff.org/sites/all/themes/frontier/supporters/images/facebook32.png" width="32" /></a></td>
+												<td align="center"><a href="https://plus.google.com/+eff" target="_blank"><img alt="google plus" border="0" height="32" src="https://www.eff.org/sites/all/themes/frontier/supporters/images/gplus32.png" width="32" /></a></td>
+												<td align="center"><a href="https://identi.ca/eff" target="_blank"><img alt="identica" border="0" height="32" src="https://www.eff.org/sites/all/themes/frontier/supporters/images/identica32.png" width="32" /></a></td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+			<td width="33%">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+
+--=_00dd50a00443ce430bb02988b77dc8a4--
+

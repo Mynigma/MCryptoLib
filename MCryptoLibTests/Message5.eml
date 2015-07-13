@@ -1,0 +1,111 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp1574802wma;
+        Thu, 14 May 2015 12:06:24 -0700 (PDT)
+X-Received: by 10.66.55.104 with SMTP id r8mr10570993pap.75.1431630384281;
+        Thu, 14 May 2015 12:06:24 -0700 (PDT)
+Return-Path: <webkitsdk-dev-bounces+roman.priebe=gmail.com@lists.apple.com>
+Received: from mail-in7.apple.com (mail-out7.apple.com. [17.151.62.29])
+        by mx.google.com with ESMTPS id ch2si29909823pbb.13.2015.05.14.12.06.23
+        for <roman.priebe@gmail.com>
+        (version=TLSv1 cipher=RC4-SHA bits=128/128);
+        Thu, 14 May 2015 12:06:24 -0700 (PDT)
+Received-SPF: pass (google.com: domain of webkitsdk-dev-bounces+roman.priebe=gmail.com@lists.apple.com designates 17.151.62.29 as permitted sender) client-ip=17.151.62.29;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of webkitsdk-dev-bounces+roman.priebe=gmail.com@lists.apple.com designates 17.151.62.29 as permitted sender) smtp.mail=webkitsdk-dev-bounces+roman.priebe=gmail.com@lists.apple.com;
+       dmarc=pass (p=NONE dis=NONE) header.from=apple.com
+X-AuditID: 11973e16-f79856d00000249a-86-5554f22fc391
+Received: from bz.apple.com (bz.apple.com [17.151.62.52])
+	(using TLS with cipher DHE-RSA-AES128-SHA (128/128 bits))
+	(Client did not present a certificate)
+	by mail-in7.apple.com (Apple Secure Mail Relay) with SMTP id AD.11.09370.F22F4555; Thu, 14 May 2015 12:06:23 -0700 (PDT)
+Received: from olida.apple.com ([17.128.115.105])
+ by local.bz.apple.com (Oracle Communications Messaging Server 7.0.5.34.0 64bit
+ (built Oct 14 2014)) with ESMTP id <0NOC00AN5T2FSZ60@local.bz.apple.com> for
+ roman.priebe@gmail.com; Thu, 14 May 2015 12:06:23 -0700 (PDT)
+From: webkitsdk-dev-request@lists.apple.com
+Subject: =?utf-8?q?Webkitsdk-dev_Digest=2C_Vol_12=2C_Issue_7?=
+To: webkitsdk-dev@lists.apple.com
+Reply-to: webkitsdk-dev@lists.apple.com
+Date: Thu, 14 May 2015 12:00:27 -0700
+Message-id: <mailman.21.1431630027.15635.webkitsdk-dev@lists.apple.com>
+MIME-version: 1.0
+Content-type: text/plain; charset=utf-8
+Content-transfer-encoding: base64
+X-BeenThere: webkitsdk-dev@lists.apple.com
+X-Mailman-Version: 2.1.14
+Precedence: list
+List-Id: "A discussion list for developers using Apple's WebKit SDK."
+	<webkitsdk-dev.lists.apple.com>
+List-Unsubscribe: <https://lists.apple.com/mailman/options/webkitsdk-dev>,
+	<mailto:webkitsdk-dev-request@lists.apple.com?subject=unsubscribe>
+List-Post: <mailto:webkitsdk-dev@lists.apple.com>
+List-Help: <mailto:webkitsdk-dev-request@lists.apple.com?subject=help>
+List-Subscribe: <https://lists.apple.com/mailman/listinfo/webkitsdk-dev>,
+	<mailto:webkitsdk-dev-request@lists.apple.com?subject=subscribe>
+Errors-to: webkitsdk-dev-bounces+roman.priebe=gmail.com@lists.apple.com
+Sender: webkitsdk-dev-bounces+roman.priebe=gmail.com@lists.apple.com
+X-Brightmail-Tracker: H4sIAAAAAAAAA+NgFrrPLMWRmVeSWpSXmKPExsUiON3ORFf/U0ioQfchDovLK14zOzB67Jx1
+	lz2AMYrLJiU1J7MstUjfLoEr48+aF2wFn+QrNpw6y9jA2CHfxcjJISFgItHwZhUzhC0mceHe
+	erYuRi4OIYGZTBKdF66wQjgTmSROH1nM1MXIwcEmoC0x4Y4siCksYCexdVURSK+IgKLE5FNv
+	2EBsIQF1iddTb7KD2CwCqhI/m/rAbF4Bd4nF3Y8ZIWxBiR+T77GAjGEGqp8yJRckzAw0Ztqi
+	BkaIc7Qklv/ugjpNUuJPxy0wW0BAQGLekp1MIDaPQLrE6TlzGUGu5BHoZ5TY2NrFCpEwlHgw
+	bwkbhO0mMeH/DnaIoh5GiTkdq8EOYgU66NqSXWDbhAVcJLad72SfwCg+C8l9sxDum4XkvgWM
+	zKsYhXITM3N0M/PM9RILCnJS9ZLzczcxQmJEbAfjw1VWhxgFOBiVeHhfOISECrEmlhVX5h5i
+	lOZgURLn7X4EFBJITyxJzU5NLUgtii8qzUktPsTIxMEp1cC4PZrtOqPvoYtVpgzHT6YeFv+3
+	3enE1bs3urWZLzrO/n4jc7La7nXrjc69eWF55ttS/1TzZ1MFE5+3n8x+ZGi6bZfVFbFniZIW
+	woWGJbtO27W9fnfn1f7152Nvhl87aFV7Lprr9NyeHR179nw2ez2P+1S6U+ze3Kln5v+4tq9y
+	U7iVpWiReZyhvBJLcUaioRZzUXEiAMO2brdyAgAA
+
+U2VuZCBXZWJraXRzZGstZGV2IG1haWxpbmcgbGlzdCBzdWJtaXNzaW9ucyB0bwoJd2Via2l0c2Rr
+LWRldkBsaXN0cy5hcHBsZS5jb20KClRvIHN1YnNjcmliZSBvciB1bnN1YnNjcmliZSB2aWEgdGhl
+IFdvcmxkIFdpZGUgV2ViLCB2aXNpdAoJaHR0cHM6Ly9saXN0cy5hcHBsZS5jb20vbWFpbG1hbi9s
+aXN0aW5mby93ZWJraXRzZGstZGV2Cm9yLCB2aWEgZW1haWwsIHNlbmQgYSBtZXNzYWdlIHdpdGgg
+c3ViamVjdCBvciBib2R5ICdoZWxwJyB0bwoJd2Via2l0c2RrLWRldi1yZXF1ZXN0QGxpc3RzLmFw
+cGxlLmNvbQoKWW91IGNhbiByZWFjaCB0aGUgcGVyc29uIG1hbmFnaW5nIHRoZSBsaXN0IGF0Cgl3
+ZWJraXRzZGstZGV2LW93bmVyQGxpc3RzLmFwcGxlLmNvbQoKV2hlbiByZXBseWluZywgcGxlYXNl
+IGVkaXQgeW91ciBTdWJqZWN0IGxpbmUgc28gaXQgaXMgbW9yZSBzcGVjaWZpYwp0aGFuICJSZTog
+Q29udGVudHMgb2YgV2Via2l0c2RrLWRldiBkaWdlc3QuLi4iCgoKVG9kYXkncyBUb3BpY3M6Cgog
+ICAxLiBIb3cgdG8gZHJhdyBhIE5TVmlldyBvbiB0b3Agb2YgYSBXZWJWaWV3IGFuZCBkb24ndCBn
+ZXQKICAgICAgb3ZlcnJpZGVuCXRyeWluZyAoSnVhbmpvIENvbnRpKQoKCi0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0K
+Ck1lc3NhZ2U6IDEKRGF0ZTogV2VkLCAxMyBNYXkgMjAxNSAyMjozMzowOSAtMDMwMApGcm9tOiBK
+dWFuam8gQ29udGkgPGpqY29udGlAY2Fyb3VzZWxhcHBzLmNvbT4KVG86IHdlYmtpdHNkay1kZXZA
+bGlzdHMuYXBwbGUuY29tClN1YmplY3Q6IEhvdyB0byBkcmF3IGEgTlNWaWV3IG9uIHRvcCBvZiBh
+IFdlYlZpZXcgYW5kIGRvbid0IGdldAoJb3ZlcnJpZGVuCXRyeWluZwpNZXNzYWdlLUlEOgoJPENB
+SDFKekFIb2M2Q21HQjVoaFdKb19kNFRCN3FhUnV1RUVuZ3VkcjFhOXpLYU95eUI9Z0BtYWlsLmdt
+YWlsLmNvbT4KQ29udGVudC1UeXBlOiB0ZXh0L3BsYWluOyBjaGFyc2V0PSJ1dGYtOCIKCkkgaGF2
+ZSBhIFdlYlZpZXcgYW5kIEkgd2FudCB0byBzaG93IHNvbWUgbWVzc2FnZXMgb3ZlciBpdC4gRm9y
+IHRoaXMgSSdtCnVzaW5nIGEgTlNWaWV3LgoKSWYgSSBhZGQgaXQgYXMgYSBzdWJWaWV3IG9mIFdl
+YlZpZXcgb3IgaWYgSSBhZGQgaXQgYXMgYSBzdWJWaWV3IG9mIHRoZQpXZWJWaWV3J3Mgc3VwZXJW
+aWV3LCBpdCdzIHNob3duIGZvciBhIHdoaWxlIGJ1dCBpZiB0aGUgV2ViVmlldyBnZXRzCnNjcm9s
+bGVkIG9yIGlmIEkgbG9hZCBzaXRlcyBnbWFpbC5jb20gb3IgdHdpdHRlciAod2l0aG91dCBsb2dn
+aW5nIGluKSwgdGhlCndlYnNpdGUgaGlkZXMgbXkgTlNWaWV3LgoKSXMgdGhpcyBhIGtub3duIHBy
+b2JsZW0/IGlzIHRoZXJlIGFueSBzb2x1dGlvbj8KCkFkZGl0aW9uYWxseSwgaSdtIHdyaXRpbmcg
+YSBzY3JlZW5zYXZlciwgc28gdXNpbmcgYW4gZXh0cmEgd2luZG93IGlzIG5vdCBhbgpvcHRpb24u
+CgpJIHdhcyB0b2xkIGluIGNvY29hLWRldiB0byBhc2sgaGVyZSwgc28gaGVyZSBJIGFtIDopCgpU
+aGFua3MgaW4gYWR2YW5jZSwKCi0tIAoKSnVhbmpvIENvbnRpIDxqamNvbnRpIDxodHRwOi8vZ29v
+Z18yMDIzNjQ2MzEyPkBjYXJvdXNlbGFwcHMuY29tCjxqamNvbnRpQGNhcm91c2VsYXBwcy5jb20+
+PgoKU29mdHdhcmUgRW5naW5lZXIgLSBDYXJvdXNlbCBBcHBzIDxodHRwczovL2Nhcm91c2VsYXBw
+cy5jb20+CgotLSAKQ2Fyb3VzZWwgQXBwcyBMaW1pdGVkLCByZWdpc3RlcmVkIGluIEVuZ2xhbmQg
+JiBXYWxlcyB3aXRoIHJlZ2lzdGVyZWQgbnVtYmVyIAo3Njg5NDQwIGFuZCByZWdpc3RlcmVkIG9m
+ZmljZSBVbml0IDIgQXJ0YnJhbmQgU3R1ZGlvcywgNyBMZWF0aGVybWFya2V0IApTdHJlZXQsIExv
+bmRvbiBTRTEgM0hOLiBBbnkgY29tbXVuaWNhdGlvbiBzZW50IGJ5IG9yIG9uIGJlaGFsZiBvZiBD
+YXJvdXNlbCAKQXBwIEx0ZCBvciBhbnkgb2YgaXRzIHN1YnNpZGlhcnksIGhvbGRpbmcgb3IgYWZm
+aWxpYXRlZCBjb21wYW5pZXMgb3IgCmVudGl0aWVzICh0b2dldGhlciAiV2F0dSIpIGlzIGNvbmZp
+ZGVudGlhbCBhbmQgbWF5IGJlIHByaXZpbGVnZWQgb3IgCm90aGVyd2lzZSBwcm90ZWN0ZWQuIElm
+IHlvdSByZWNlaXZlIGl0IGluIGVycm9yIHBsZWFzZSBpbmZvcm0gdXMgYW5kIHRoZW4gCmRlbGV0
+ZSBpdCBmcm9tIHlvdXIgc3lzdGVtLiBZb3Ugc2hvdWxkIG5vdCBjb3B5IGl0IG9yIGRpc2Nsb3Nl
+IGl0cyBjb250ZW50cyAKdG8gYW55b25lLiBNZXNzYWdlcyBzZW50IHRvIGFuZCBmcm9tIFdhdHUg
+bWF5IGJlIG1vbml0b3JlZCB0byBlbnN1cmUgCmNvbXBsaWFuY2Ugd2l0aCBvdXIgaW50ZXJuYWwg
+cG9saWNpZXMgYW5kIHRvIHByb3RlY3Qgb3VyIGJ1c2luZXNzLiBFbWFpbHMgCmFyZSBub3Qgc2Vj
+dXJlIGFuZCBjYW5ub3QgYmUgZ3VhcmFudGVlZCB0byBiZSBlcnJvciBmcmVlLiBBbnlvbmUgd2hv
+IApjb21tdW5pY2F0ZXMgd2l0aCB1cyBieSBlbWFpbCBpcyB0YWtlbiB0byBhY2NlcHQgdGhlc2Ug
+cmlza3MuCi0tLS0tLS0tLS0tLS0tIG5leHQgcGFydCAtLS0tLS0tLS0tLS0tLQpBbiBIVE1MIGF0
+dGFjaG1lbnQgd2FzIHNjcnViYmVkLi4uClVSTDogPGh0dHBzOi8vbGlzdHMuYXBwbGUuY29tL21h
+aWxtYW4vcHJpdmF0ZS93ZWJraXRzZGstZGV2L2F0dGFjaG1lbnRzLzIwMTUwNTEzLzJiMDIzMjc2
+L2F0dGFjaG1lbnQuaHRtbD4KCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKX19fX19f
+X19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX18KV2Via2l0c2RrLWRldiBt
+YWlsaW5nIGxpc3QKV2Via2l0c2RrLWRldkBsaXN0cy5hcHBsZS5jb20KaHR0cHM6Ly9saXN0cy5h
+cHBsZS5jb20vbWFpbG1hbi9saXN0aW5mby93ZWJraXRzZGstZGV2CgpFbmQgb2YgV2Via2l0c2Rr
+LWRldiBEaWdlc3QsIFZvbCAxMiwgSXNzdWUgNwoqKioqKioqKioqKioqKioqKioqKioqKioqKioq
+KioqKioqKioqKioqKioqKgo=

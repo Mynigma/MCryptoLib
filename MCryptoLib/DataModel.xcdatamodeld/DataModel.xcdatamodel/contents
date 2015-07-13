@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D136" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="EmailAddress" representedClassName="EmailAddress" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateCurrentKeyAnchored" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="accountUsesDevices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="usedByAccounts" inverseEntity="MynigmaDevice" syncable="YES"/>
+        <relationship name="activePGPUserID" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPUserID" inverseName="activeForEmailAddress" inverseEntity="PGPUserID" syncable="YES"/>
+        <relationship name="activeSMIMEEncryptionKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SMIMEPublicKey" inverseName="activeEncryptionKeyForEmail" inverseEntity="SMIMEPublicKey" syncable="YES"/>
+        <relationship name="activeSMIMESignatureKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SMIMEPublicKey" inverseName="activeSigningKeyForEmail" inverseEntity="SMIMEPublicKey" syncable="YES"/>
+        <relationship name="allKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GenericPublicKey" inverseName="keyForEmail" inverseEntity="GenericPublicKey" syncable="YES"/>
+        <relationship name="allPGPUserIDs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPUserID" inverseName="emailAddress" inverseEntity="PGPUserID" syncable="YES"/>
+        <relationship name="currentMynigmaKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="currentKeyForEmail" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="expectationsFrom" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KeyExpectation" inverseName="fromAddress" inverseEntity="KeyExpectation" syncable="YES"/>
+        <relationship name="expectationsTo" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KeyExpectation" inverseName="toAddress" inverseEntity="KeyExpectation" syncable="YES"/>
+    </entity>
+    <entity name="GenericPublicKey" representedClassName="GenericPublicKey" syncable="YES">
+        <attribute name="cachedFingerprint" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="firstAnchored" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="keyForEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="allKeys" inverseEntity="EmailAddress" syncable="YES"/>
+    </entity>
+    <entity name="KeyExpectation" representedClassName="KeyExpectation" syncable="YES">
+        <attribute name="dateLastChanged" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="expectedSignatureKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="expectedBy" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="fromAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="expectationsFrom" inverseEntity="EmailAddress" syncable="YES"/>
+        <relationship name="toAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="expectationsTo" inverseEntity="EmailAddress" syncable="YES"/>
+    </entity>
+    <entity name="MynigmaDevice" representedClassName="MynigmaDevice" syncable="YES">
+        <attribute name="alreadyProcessed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="deviceUUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isTrusted" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="lastSynced" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastUpdatedInfo" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="mynigmaVersion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="operatingSystemIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="syncDataStale" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="syncKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="syncKeyForDevice" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="usedByAccounts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="accountUsesDevices" inverseEntity="EmailAddress" syncable="YES"/>
+    </entity>
+    <entity name="MynigmaPrivateKey" representedClassName="MynigmaPrivateKey" parentEntity="MynigmaPublicKey" syncable="YES">
+        <attribute name="privateDecrKeyRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="privateSignKeyRef" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="MynigmaPublicKey" representedClassName="MynigmaPublicKey" parentEntity="GenericPublicKey" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dateObtained" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="isCompromised" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="keyLabel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicEncrKeyRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="publicVerifyKeyRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="currentKeyForEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="currentMynigmaKey" inverseEntity="EmailAddress" syncable="YES"/>
+        <relationship name="expectedBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KeyExpectation" inverseName="expectedSignatureKey" inverseEntity="KeyExpectation" syncable="YES"/>
+        <relationship name="introducesKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="isIntroducedByKeys" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="isIntroducedByKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaPublicKey" inverseName="introducesKeys" inverseEntity="MynigmaPublicKey" syncable="YES"/>
+        <relationship name="syncKeyForDevice" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MynigmaDevice" inverseName="syncKey" inverseEntity="MynigmaDevice" syncable="YES"/>
+    </entity>
+    <entity name="PGPBindingSignature" representedClassName="PGPBindingSignature" syncable="YES">
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="expiryDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="revocable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="sensitive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="trustAmount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="trustLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="signingKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="signedBindings" inverseEntity="PGPPublicKey" syncable="YES"/>
+    </entity>
+    <entity name="PGPCertificationSignature" representedClassName="PGPCertificationSignature" parentEntity="PGPBindingSignature" syncable="YES">
+        <attribute name="exportable" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="certifiedUserID" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPUserID" inverseName="certificationSignatures" inverseEntity="PGPUserID" syncable="YES"/>
+    </entity>
+    <entity name="PGPDirectKeySignature" representedClassName="PGPDirectKeySignature" parentEntity="PGPBindingSignature" syncable="YES"/>
+    <entity name="PGPPrivateKey" representedClassName="PGPPrivateKey" parentEntity="PGPPublicKey" syncable="YES">
+        <attribute name="privateKeychainRef" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="PGPPublicKey" representedClassName="PGPPublicKey" parentEntity="GenericPublicKey" syncable="YES">
+        <attribute name="algorithm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="creationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="expiryDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fingerprint" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="flags" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="keyID" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="publicKeychainRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="usage" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="userID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activeKeyForUserIDs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PGPUserID" inverseName="activeKey" inverseEntity="PGPUserID" syncable="YES"/>
+        <relationship name="boundBySubkeyBindings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PGPSubkeyBindingSignature" inverseName="subkey" inverseEntity="PGPSubkeyBindingSignature" syncable="YES"/>
+        <relationship name="primaryUserID" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPUserID" inverseName="primaryForKeys" inverseEntity="PGPUserID" syncable="YES"/>
+        <relationship name="revocableKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="revocationKey" inverseEntity="PGPPublicKey" syncable="YES"/>
+        <relationship name="revocationKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="revocableKeys" inverseEntity="PGPPublicKey" syncable="YES"/>
+        <relationship name="signedBindings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PGPBindingSignature" inverseName="signingKey" inverseEntity="PGPBindingSignature" syncable="YES"/>
+        <relationship name="subkeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="topLevelKey" inverseEntity="PGPPublicKey" syncable="YES"/>
+        <relationship name="topLevelKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="subkeys" inverseEntity="PGPPublicKey" syncable="YES"/>
+        <relationship name="userIDs" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PGPUserID" inverseName="keys" inverseEntity="PGPUserID" syncable="YES"/>
+    </entity>
+    <entity name="PGPSubkeyBindingSignature" representedClassName="PGPSubkeyBindingSignature" parentEntity="PGPBindingSignature" syncable="YES">
+        <relationship name="subkey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="boundBySubkeyBindings" inverseEntity="PGPPublicKey" syncable="YES"/>
+    </entity>
+    <entity name="PGPUserID" representedClassName="PGPUserID" syncable="YES">
+        <attribute name="preferredAsymmetricAlgorithms" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferredCompressionAlgorithms" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferredHashAlgorithms" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferredKeyServer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reasonForRevocation" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="supportedFeatures" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trustLevel" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="activeForEmailAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="activePGPUserID" inverseEntity="EmailAddress" syncable="YES"/>
+        <relationship name="activeKey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="activeKeyForUserIDs" inverseEntity="PGPPublicKey" syncable="YES"/>
+        <relationship name="certificationSignatures" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PGPCertificationSignature" inverseName="certifiedUserID" inverseEntity="PGPCertificationSignature" syncable="YES"/>
+        <relationship name="emailAddress" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="allPGPUserIDs" inverseEntity="EmailAddress" syncable="YES"/>
+        <relationship name="keys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="userIDs" inverseEntity="PGPPublicKey" syncable="YES"/>
+        <relationship name="primaryForKeys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PGPPublicKey" inverseName="primaryUserID" inverseEntity="PGPPublicKey" syncable="YES"/>
+    </entity>
+    <entity name="SMIMEPrivateKey" representedClassName="SMIMEPrivateKey" parentEntity="SMIMEPublicKey" syncable="YES">
+        <attribute name="privateKeychainRef" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="SMIMEPublicKey" representedClassName="SMIMEPublicKey" parentEntity="GenericPublicKey" syncable="YES">
+        <attribute name="capabilities" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="fingerprint" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="fingerprintAlgorithm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issuer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="keychainRef" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="keyUsage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signature" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="signatureAlgorithm" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subject" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validFrom" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="validUntil" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="activeEncryptionKeyForEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="activeSMIMEEncryptionKey" inverseEntity="EmailAddress" syncable="YES"/>
+        <relationship name="activeSigningKeyForEmail" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EmailAddress" inverseName="activeSMIMESignatureKey" inverseEntity="EmailAddress" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EmailAddress" positionX="9" positionY="180" width="128" height="225"/>
+        <element name="GenericPublicKey" positionX="18" positionY="63" width="128" height="90"/>
+        <element name="KeyExpectation" positionX="0" positionY="45" width="128" height="105"/>
+        <element name="MynigmaDevice" positionX="27" positionY="72" width="128" height="240"/>
+        <element name="MynigmaPrivateKey" positionX="-18" positionY="27" width="128" height="75"/>
+        <element name="MynigmaPublicKey" positionX="0" positionY="45" width="128" height="225"/>
+        <element name="PGPPrivateKey" positionX="36" positionY="81" width="128" height="60"/>
+        <element name="PGPPublicKey" positionX="-9" positionY="36" width="128" height="330"/>
+        <element name="SMIMEPrivateKey" positionX="9" positionY="54" width="128" height="60"/>
+        <element name="SMIMEPublicKey" positionX="18" positionY="63" width="128" height="285"/>
+        <element name="PGPUserID" positionX="9" positionY="180" width="128" height="255"/>
+        <element name="PGPBindingSignature" positionX="18" positionY="189" width="128" height="165"/>
+        <element name="PGPCertificationSignature" positionX="27" positionY="198" width="128" height="75"/>
+        <element name="PGPDirectKeySignature" positionX="36" positionY="207" width="128" height="45"/>
+        <element name="PGPSubkeyBindingSignature" positionX="45" positionY="216" width="128" height="60"/>
+    </elements>
+</model>

@@ -1,0 +1,75 @@
+Delivered-To: roman.priebe@gmail.com
+Received: by 10.28.61.197 with SMTP id k188csp3048044wma;
+        Thu, 30 Apr 2015 03:12:30 -0700 (PDT)
+X-Received: by 10.194.71.208 with SMTP id x16mr6707630wju.129.1430388749886;
+        Thu, 30 Apr 2015 03:12:29 -0700 (PDT)
+Return-Path: <debate-return-61082-roman.priebe=gmail.com@lists.ccc.de>
+Received: from mlmx.ccc.de (mlmx.ccc.de. [195.54.164.35])
+        by mx.google.com with SMTP id wg1si3141842wjb.196.2015.04.30.03.12.29
+        for <roman.priebe@gmail.com>;
+        Thu, 30 Apr 2015 03:12:29 -0700 (PDT)
+Received-SPF: none (google.com: debate-return-61082-roman.priebe=gmail.com@lists.ccc.de does not designate permitted sender hosts) client-ip=195.54.164.35;
+Authentication-Results: mx.google.com;
+       spf=none (google.com: debate-return-61082-roman.priebe=gmail.com@lists.ccc.de does not designate permitted sender hosts) smtp.mail=debate-return-61082-roman.priebe=gmail.com@lists.ccc.de;
+       dkim=neutral (body hash did not verify) header.i=@;
+       dmarc=fail (p=NONE dis=NONE) header.from=googlemail.com
+Received: (qmail 3961 invoked by alias); 30 Apr 2015 10:12:27 -0000
+Mailing-List: contact debate-help@lists.ccc.de; run by ezmlm
+Precedence: bulk
+List-Id: CCC Diskussionsliste <debate.lists.ccc.de>
+List-Post: <mailto:debate@lists.ccc.de>
+List-Help: <mailto:debate-help@lists.ccc.de> 
+List-Unsubscribe: <mailto:debate-unsubscribe@lists.ccc.de>
+List-Subscribe: <mailto:debate-subscribe@lists.ccc.de>
+Delivered-To: mailing list debate@lists.ccc.de
+Received: (qmail 3953 invoked from network); 30 Apr 2015 10:12:27 -0000
+Delivered-To: debate@ccc.de
+X-Virus-Scanned: amavisd-new at ccc.de
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=20120113;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=Z6EnLM6elNcGn3L048tR9/w9wiL4uegFr/F578B5aII=;
+        b=riqfi7K+VWzJVwIGEWCQS6QwGJycfZ5/uSpZHV0T46ysDlq8Iz82I+QbxcPBF+0A8D
+         z9IVmWtCH67gZMCefXBLGDDruyqsjtjixjJrEN+8q7PBK4ewHTio7yoBu9Fprro/eqH3
+         wloENn848D3IJwNyomQnZx8KRNfwBYu2G4xAMoxs5kw2X6rcLxorit1sai1XvSiGoyr8
+         2ZyEPHHmPOjxVu5NJQ84jITxffmctkottzTPBwZMWqsKe/E8M0TPzPrN4ASHR+OvOti8
+         TIfeD1bChzz5xFlCRZh51AK76hzsdmdBWzBVnBkSgHRj1G6weQqYDqxPEKH8l3V8DzSV
+         HU2w==
+MIME-Version: 1.0
+X-Received: by 10.112.167.228 with SMTP id zr4mr3071464lbb.113.1430388745973;
+ Thu, 30 Apr 2015 03:12:25 -0700 (PDT)
+Date: Thu, 30 Apr 2015 12:12:25 +0200
+Message-ID: <CAKeT=+0k8vED0mGswrO7mzYtRKAuqF07Q8ehFvODYdtKJXz_Qw@mail.gmail.com>
+Subject: Warum bist du im Internet politisch aktiv?
+From: Judith Stein <judittchen@googlemail.com>
+To: debate@lists.ccc.de
+Content-Type: multipart/alternative; boundary=001a11c2432a18339e0514ee550e
+
+--001a11c2432a18339e0514ee550e
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Hallo,
+
+
+Ich suche Deutsche, die sich politisch engagieren im Internet, damit meine
+ich alle Aktivit=C3=A4ten wie Petitionen unterschreiben/konzipieren; auf Fo=
+ren
+diskutieren und andere zum mitmachen animieren. Ich bin besonders an
+Motiven f=C3=BCr die Partizipation interessiert, da ich dar=C3=BCber meine
+Bachelorarbeit schreibe. Ich bin interessiert an deiner Meinung und deinen
+Erfahrungen!
+
+Hast du Interesse mit mir =C3=BCber Skype ein Gespr=C3=A4ch zu f=C3=BChren,=
+ dann melde
+dich gerne bei mir!
+Falls du mehr Fragen zu meiner Person hast, oder zu meinem
+Forschungsprojekt, dann schreib mir eine Nachricht.
+
+Ich freue mich auf m=C3=B6glichst viele Reaktionen.
+
+Liebe Gr=C3=BC=C3=9Fe,
+
+Judith
+
+--001a11c2432a18339e0514ee550e--
