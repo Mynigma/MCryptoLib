@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MCryptoLib"
-  s.version      = "0.8.0"
+  s.version      = "0.8.1"
   s.summary      = "A simple PGP, S/MIME and Mynigma encryption library."
 
   s.description  = <<-DESC 
@@ -26,8 +26,5 @@ Pod::Spec.new do |s|
   s.public_header_files = "MCryptoLib/MCryptoLib.h"
 
   s.requires_arc = true
-
-  s.ios.dependency 'mailcore2-ios'
-  s.osx.dependency 'mailcore2-osx'
 
 end
