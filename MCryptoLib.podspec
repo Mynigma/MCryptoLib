@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "MCryptoLib/**/*.{h,m}"
   
-  s.public_header_files = "MCryptoLib/MCryptoLib.h"
+  s.public_header_files = "MCryptoLib/**/*.h"
 
   s.requires_arc = true
 
