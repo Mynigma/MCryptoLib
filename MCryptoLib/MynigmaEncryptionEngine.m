@@ -61,7 +61,6 @@
 #import "PublicKeyData.h"
 #import "MynigmaAttachmentEncryptionContext.h"
 #import "OpenSSLEncryptionEngine.h"
-#import "MCOAbstractMessage+Convenience.h"
 #import "MynigmaErrorFactory.h"
 
 #import <MProtoBuf/SignedDataStructure.h>

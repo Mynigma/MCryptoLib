@@ -53,8 +53,7 @@
 
 
 #import "MynigmaAttachmentEncryptionContext.h"
-#import <MailCore/MailCore.h>
-#import "MimeHelper.h"
+
 #import "BasicEncryptionEngineProtocol.h"
 
 

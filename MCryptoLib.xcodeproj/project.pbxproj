@@ -1058,8 +1058,8 @@
 		1E65DCC31B106946000CFD52 /* MynigmaMessageEncryptionContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MynigmaMessageEncryptionContext.h; sourceTree = "<group>"; };
 		1E65DCC41B106946000CFD52 /* MynigmaMessageEncryptionContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MynigmaMessageEncryptionContext.m; sourceTree = "<group>"; };
 		1E69A6B01B17BEA100819181 /* MimeHelper_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MimeHelper_Tests.m; sourceTree = "<group>"; };
-		1E69A6B31B17C3A800819181 /* MCOAbstractMessage+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MCOAbstractMessage+Convenience.h"; path = "../MCryptoLib/MCOAbstractMessage+Convenience.h"; sourceTree = "<group>"; };
-		1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MCOAbstractMessage+Convenience.m"; path = "../MCryptoLib/MCOAbstractMessage+Convenience.m"; sourceTree = "<group>"; };
+		1E69A6B31B17C3A800819181 /* MCOAbstractMessage+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCOAbstractMessage+Convenience.h"; sourceTree = "<group>"; };
+		1E69A6B41B17C3A800819181 /* MCOAbstractMessage+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MCOAbstractMessage+Convenience.m"; sourceTree = "<group>"; };
 		1E69A6BD1B18607000819181 /* EncryptionSmokeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionSmokeTests.m; sourceTree = "<group>"; };
 		1E69A6C11B1860E600819181 /* Message1.eml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message1.eml; sourceTree = "<group>"; };
 		1E69A6C21B1860E600819181 /* Message10.eml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message10.eml; sourceTree = "<group>"; };
@@ -1216,8 +1216,8 @@
 		1E83597C1B1E532800FDCB33 /* substitute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = substitute.h; sourceTree = "<group>"; };
 		1E83597D1B1E532800FDCB33 /* template_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = template_util.h; sourceTree = "<group>"; };
 		1E83597E1B1E532800FDCB33 /* type_traits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = type_traits.h; sourceTree = "<group>"; };
-		1E8359801B1E532800FDCB33 /* golden_message */ = {isa = PBXFileReference; lastKnownFileType = file; path = golden_message; sourceTree = "<group>"; };
-		1E8359811B1E532800FDCB33 /* golden_packed_fields_message */ = {isa = PBXFileReference; lastKnownFileType = file; path = golden_packed_fields_message; sourceTree = "<group>"; };
+		1E8359801B1E532800FDCB33 /* golden_message */ = {isa = PBXFileReference; lastKnownFileType = text; path = golden_message; sourceTree = "<group>"; };
+		1E8359811B1E532800FDCB33 /* golden_packed_fields_message */ = {isa = PBXFileReference; lastKnownFileType = text; path = golden_packed_fields_message; sourceTree = "<group>"; };
 		1E8359821B1E532800FDCB33 /* text_format_unittest_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text_format_unittest_data.txt; sourceTree = "<group>"; };
 		1E8359831B1E532800FDCB33 /* text_format_unittest_extensions_data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text_format_unittest_extensions_data.txt; sourceTree = "<group>"; };
 		1E8359851B1E532800FDCB33 /* file.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = file.cc; sourceTree = "<group>"; };

@@ -57,6 +57,10 @@
 
 #import "DeviceConnectionHelper.h"
 
+#import "CommonHeader.h"
+
+#import "CoreDataHelper.h"
+
 #import "KeychainHelper.h"
 #import "ThreadHelper.h"
 #import "MynigmaKeyManager.h"
