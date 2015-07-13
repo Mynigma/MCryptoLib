@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Mynigma/MCryptoLib.git" }
 
 
-  s.source_files  = "MCryptoLib/**/*.{h,m}"
+  s.source_files  = "MCryptoLib/**/*.{h,m,mm,c,cc}"
   
   s.public_header_files = "MCryptoLib/**/*.h"
 
