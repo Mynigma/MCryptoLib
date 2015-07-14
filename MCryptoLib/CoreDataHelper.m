@@ -123,17 +123,22 @@
     if (managedObjectModel != nil) {
         return managedObjectModel;
     }
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    if(!bundle)
-    {
-        NSLog(@"No bundle!");
-        return nil;
-    }
-    managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:@[bundle]];
+    
+    NSURL *modelURL = [[NSBundle bundleForClass:self.class] URLForResource:@"MCryptoLib" withExtension:@"momd"];
+
+//    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+//    if(!bundle)
+//    {
+//        NSLog(@"No bundle!");
+//        return nil;
+//    }
+    managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    
     if(!managedObjectModel)
     {
         NSLog(@"No managed object model!!!");
     }
+    
     return managedObjectModel;
 }
 
@@ -145,7 +150,7 @@
     if (_managedObjectModel)
     {
         return _managedObjectModel;
-    }
+    }     
 
     NSURL *modelURL = [[NSBundle bundleForClass:self.class] URLForResource:@"MCryptoLib" withExtension:@"momd"];
 
