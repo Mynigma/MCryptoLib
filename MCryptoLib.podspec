@@ -27,6 +27,8 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
+  s.resource_bundles = { 'MCryptoLib' => "MCryptoLib/**/*.{xcdatamodeld, jpg, html, txt}" }
+
   s.dependency 'OpenSSL', '~> 1.0'
   s.dependency 'MProtoBuf'
 end
