@@ -97,6 +97,7 @@
 
 - (BOOL)areRecipientsSafe:(NSArray*)recipientEmailStrings;
 
+- (void)ensureValidCurrentKeyForSender:(NSString*)senderEmailString;
 
 
 @end
