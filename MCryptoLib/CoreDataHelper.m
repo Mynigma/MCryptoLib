@@ -140,7 +140,7 @@
     
     if(!modelURL)
     {
-        //
+        NSLog(@"No data model found!!!");
     }
 
 //    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
