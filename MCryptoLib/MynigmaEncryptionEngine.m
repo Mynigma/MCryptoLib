@@ -869,7 +869,10 @@
 }
 
 
-
+- (BOOL)isSenderSafe:(NSString*)senderEmailString
+{
+    return [self.keyManager haveCurrentPrivateKeyForEmailAddress:senderEmailString];
+}
 
 - (BOOL)isRecipientSafe:(NSString*)emailAddressString
 {
@@ -885,6 +888,14 @@
     }
     
     return YES;
+}
+
+- (void)ensureValidCurrentKeyForSender:(NSString*)senderEmailString
+{
+    if([self.keyManager haveCurrentPrivateKeyForEmailAddress:senderEmailString])
+        return;
+        
+    [self.keyManager generateMynigmaPrivateKeyForEmail:senderEmailString engine:[OpenSSLEncryptionEngine new] withCallback:nil];
 }
 
 

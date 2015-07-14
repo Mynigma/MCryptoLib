@@ -55,7 +55,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-
+#import "BasicEncryptionEngineProtocol.h"
 
 
 
@@ -74,6 +74,10 @@
 
 @property KeychainHelper* keychainHelper;
 @property CoreDataHelper* coreDataHelper;
+
+
+
+- (void)generateMynigmaPrivateKeyForEmail:(NSString*)emailAddress engine:(id<BasicEncryptionEngineProtocol>)engine withCallback:(void(^)(void))callback;
 
 
 

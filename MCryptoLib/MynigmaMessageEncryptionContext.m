@@ -58,8 +58,8 @@
 #import <MProtoBuf/EmailRecipientDataStructure.h>
 
 #import "MynigmaAttachmentEncryptionContext.h"
-#import "AppleEncryptionEngine.h"
 #import "BasicEncryptionEngineProtocol.h"
+#import "AppleEncryptionEngine.h"
 #import "SessionKeys.h"
 
 

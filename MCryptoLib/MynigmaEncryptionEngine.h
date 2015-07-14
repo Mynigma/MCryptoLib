@@ -91,6 +91,8 @@
 
 
 
+- (BOOL)isSenderSafe:(NSString*)senderEmailString;
+
 - (BOOL)isRecipientSafe:(NSString*)recipientEmailString;
 
 - (BOOL)areRecipientsSafe:(NSArray*)recipientEmailStrings;

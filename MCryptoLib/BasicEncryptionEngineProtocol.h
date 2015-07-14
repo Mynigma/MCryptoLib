@@ -53,7 +53,6 @@
 
 
 #import <Foundation/Foundation.h>
-#import "MynigmaKeyManager.h"
 
 
 

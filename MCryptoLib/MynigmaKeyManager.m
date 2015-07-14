@@ -62,6 +62,7 @@
 #import "NSString+EmailAddresses.h"
 #import "KeyExpectation.h"
 #import "AppleEncryptionEngine.h"
+#import "ThreadHelper.h"
 
 #import "MynigmaPublicKey.h"
 #import "MynigmaPrivateKey.h"
@@ -114,6 +115,26 @@
 }
 
 
+
++ (dispatch_group_t)keyGenerationGroup
+{
+    static dispatch_group_t _keyGenerationDispatchGroup = NULL;
+    
+    if(!_keyGenerationDispatchGroup)
+        _keyGenerationDispatchGroup = dispatch_group_create();
+    
+    return _keyGenerationDispatchGroup;
+}
+
++ (dispatch_queue_t)keyGenerationQueue
+{
+    static dispatch_queue_t _keyGenerationQueue = NULL;
+    
+    if(!_keyGenerationQueue)
+        _keyGenerationQueue = dispatch_queue_create("Mynigma key generation dispatch queue", NULL);
+    
+    return _keyGenerationQueue;
+}
 
 
 #pragma mark - Obtaining objects
@@ -451,11 +472,59 @@
     return returnValue;
 }
 
-- (BOOL)generatePrivateKeyWithLabel:(NSString*)keyLabel
+- (void)generateMynigmaPrivateKeyForEmail:(NSString*)emailAddress engine:(id<BasicEncryptionEngineProtocol>)engine withCallback:(void(^)(void))callback
 {
-    return NO;
-}
+    NSString* email = [emailAddress canonicalForm];
+    
+    if(!email)
+    {
+        if(callback)
+            callback();
+        return;
+    }
+    
+    dispatch_group_t keyGenerationDispatchGroup = [MynigmaKeyManager keyGenerationGroup];
+    dispatch_queue_t keyGenerationQueue = [MynigmaKeyManager keyGenerationQueue];
+    
+    dispatch_group_notify(keyGenerationDispatchGroup, keyGenerationQueue, ^{
 
+        dispatch_group_enter(keyGenerationDispatchGroup);
+        
+        if([self haveCurrentPrivateKeyForEmailAddress:emailAddress])
+        {
+            dispatch_group_leave(keyGenerationDispatchGroup);
+            if(callback)
+                callback();
+            return;
+        }
+        
+    [ThreadHelper runAsyncFreshLocalChildContext:^(NSManagedObjectContext *localContext){
+        
+        [engine generateNewPrivateKeyWithCallback:^(NSData *publicEncKeyData, NSData *privateDecKeyData, NSError *encGenError) {
+            
+            [engine generateNewPrivateKeyWithCallback:^(NSData *publicVerKeyData, NSData *privateSigKeyData, NSError *verGenError) {
+                
+                //use the current date for the second part of the keyLabel
+                __block NSDate* currentDate = [NSDate date];
+                
+                //the email address is the first part
+                __block NSString* keyLabel = [NSString stringWithFormat:@"%@|%f",email,[currentDate timeIntervalSince1970]];
+           
+                PrivateKeyData* privateKeyData = [[PrivateKeyData alloc] initWithKeyLabel:keyLabel decData:privateDecKeyData sigData:privateSigKeyData encData:publicEncKeyData verData:publicVerKeyData];
+                
+                if(!encGenError && !verGenError && [self addPrivateKeyWithData:privateKeyData])
+                {
+                    [self setCurrentKeyForEmailAddress:email keyLabel:keyLabel overwrite:YES];
+                }
+                
+                dispatch_group_leave(keyGenerationDispatchGroup);
+                if(callback)
+                    callback();
+            }];
+        }];
+    }];
+    });
+}
 
 - (BOOL)removePublicKeyWithLabel:(NSString*)keyLabel
 {
@@ -827,7 +896,7 @@
 
 
 
-
+#pragma mark - Easy reading fingerprints
 
 - (NSArray*)pronouns
 {

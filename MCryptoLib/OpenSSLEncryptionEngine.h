@@ -61,6 +61,8 @@
 
 
 
+@class MynigmaKeyManager;
+
 /**
  * The wrapper class for OpenSSL provided encryption primitives
  */
