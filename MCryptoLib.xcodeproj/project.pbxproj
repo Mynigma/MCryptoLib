@@ -497,8 +497,8 @@
 		1ED4DE7E1B036418002535A4 /* MCryptoLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED4DE7D1B036418002535A4 /* MCryptoLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1ED4DE841B036418002535A4 /* MCryptoLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ED4DE781B036418002535A4 /* MCryptoLib.framework */; };
 		1ED4DE8B1B036418002535A4 /* MCryptoLibTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4DE8A1B036418002535A4 /* MCryptoLibTests.mm */; };
-		1ED4DEA11B03C479002535A4 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4DE9F1B03C479002535A4 /* DataModel.xcdatamodeld */; };
-		1EE23CA41B1BB5350066DF76 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4DE9F1B03C479002535A4 /* DataModel.xcdatamodeld */; };
+		1ED4DEA11B03C479002535A4 /* MCryptoLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4DE9F1B03C479002535A4 /* MCryptoLib.xcdatamodeld */; };
+		1EE23CA41B1BB5350066DF76 /* MCryptoLib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4DE9F1B03C479002535A4 /* MCryptoLib.xcdatamodeld */; };
 		1EE23CE61B1BB56E0066DF76 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE4B3AD1B13D5030056091D /* CoreData.framework */; };
 		1EE23D781B1BB5F80066DF76 /* TestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4B3EC1B13E3880056091D /* TestHelper.m */; };
 		1EE23D7A1B1BB5FD0066DF76 /* MCryptoLibTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4DE8A1B036418002535A4 /* MCryptoLibTests.mm */; };
@@ -2533,7 +2533,7 @@
 				1E3455FB1B31C78500F8EEF3 /* PGPPublicKey.m */,
 				1E3455F31B31C78400F8EEF3 /* PGPBindingSignature.h */,
 				1E3455F41B31C78400F8EEF3 /* PGPBindingSignature.m */,
-				1ED4DE9F1B03C479002535A4 /* DataModel.xcdatamodeld */,
+				1ED4DE9F1B03C479002535A4 /* MCryptoLib.xcdatamodeld */,
 				1E2A6D691B1F528A00CC9EE2 /* Keys */,
 				1E3455F21B31C0E600F8EEF3 /* Associations */,
 			);
@@ -3545,7 +3545,7 @@
 				1EE827EE1B2C66E7003A8400 /* compress.c in Sources */,
 				1EB383DE1B11163E0033617D /* PrivateKeychainItemRefs.m in Sources */,
 				1EE828201B2C66E7003A8400 /* packet-parse.c in Sources */,
-				1ED4DEA11B03C479002535A4 /* DataModel.xcdatamodeld in Sources */,
+				1ED4DEA11B03C479002535A4 /* MCryptoLib.xcdatamodeld in Sources */,
 				1EE826F31B275A11003A8400 /* SMIMEPublicKey.m in Sources */,
 				1EE828101B2C66E7003A8400 /* netpgp.c in Sources */,
 				1EE8270F1B275A11003A8400 /* SMIMEPrivateKey.m in Sources */,
@@ -3835,7 +3835,7 @@
 				1EE828071B2C66E7003A8400 /* keyring.c in Sources */,
 				1EE827F91B2C66E7003A8400 /* crypto.c in Sources */,
 				1EE4B39C1B13D1CD0056091D /* PGPKeyManager.m in Sources */,
-				1EE23CA41B1BB5350066DF76 /* DataModel.xcdatamodeld in Sources */,
+				1EE23CA41B1BB5350066DF76 /* MCryptoLib.xcdatamodeld in Sources */,
 				1E8359DE1B1E532800FDCB33 /* zero_copy_stream_impl.cc in Sources */,
 				1E395E631B1C75D300D66920 /* CoreDataHelper.m in Sources */,
 				1E8359D91B1E532800FDCB33 /* zero_copy_stream.cc in Sources */,
@@ -4432,14 +4432,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		1ED4DE9F1B03C479002535A4 /* DataModel.xcdatamodeld */ = {
+		1ED4DE9F1B03C479002535A4 /* MCryptoLib.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				1E1B6F781B555A1A00E55897 /* DataModel 2.xcdatamodel */,
 				1ED4DEA01B03C479002535A4 /* DataModel.xcdatamodel */,
 			);
 			currentVersion = 1E1B6F781B555A1A00E55897 /* DataModel 2.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
+			path = MCryptoLib.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
