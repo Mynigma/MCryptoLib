@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MCryptoLib"
-  s.version      = "0.8.1"
+  s.version      = "0.8.2"
   s.summary      = "A simple PGP, S/MIME and Mynigma encryption library."
 
   s.description  = <<-DESC 
