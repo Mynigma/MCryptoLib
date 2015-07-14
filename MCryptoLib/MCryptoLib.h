@@ -66,4 +66,5 @@ FOUNDATION_EXPORT const unsigned char MCryptoLibVersionString[];
 #import <MCryptoLib/MynigmaEncryptionEngine.h>
 #import <MCryptoLib/MynigmaError.h>
 #import <MCryptoLib/MynigmaErrorFactory.h>
+#import <MCryptoLib/AppleEncryptionEngine.h>
 
