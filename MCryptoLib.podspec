@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MCryptoLib"
-  s.version      = "0.8.2"
+  s.version      = "0.8.3"
   s.summary      = "A simple PGP, S/MIME and Mynigma encryption library."
 
   s.description  = <<-DESC 
@@ -21,13 +21,13 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Mynigma/MCryptoLib.git" }
 
 
-  s.source_files  = "MCryptoLib/**/*.{h,m,mm,c,cc}"
+  s.source_files  = "MCryptoLib/**/*.{xcdatamodeld,h,m,mm,c,cc}"
   
   s.public_header_files = "MCryptoLib/**/*.h"
 
   s.requires_arc = true
 
-  s.resource_bundles = { 'MCryptoLib' => "MCryptoLib/**/*.{xcdatamodeld, jpg, html, txt}" }
+  s.resource_bundles = { 'MCryptoLib' => "MCryptoLib/**/*.{jpg, html, txt}" }
 
   s.dependency 'OpenSSL', '~> 1.0'
   s.dependency 'MProtoBuf'
