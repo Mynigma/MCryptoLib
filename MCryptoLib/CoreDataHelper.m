@@ -122,9 +122,9 @@
         return managedObjectModel;
     }
     
-    NSBundle* bundle = [NSBundle bundleWithIdentifier:@"]
+    NSBundle* bundle = [NSBundle bundleForClass:self.class];
     
-    NSURL *modelURL = [[NSBundle bundleForClass:self.class] URLForResource:@"MCryptoLib" withExtension:@"momd"];
+    NSURL *modelURL = [bundle URLForResource:@"MCryptoLib" withExtension:@"momd"];
     
     
 
