@@ -124,6 +124,8 @@
     
     NSBundle* bundle = [NSBundle bundleForClass:self.class];
     
+    NSLog(@"Bundle: %@, resourceURL: %@", bundle, bundle.resourceURL);
+    
     NSURL *modelURL = [bundle URLForResource:@"MCryptoLib" withExtension:@"momd"];
     
     
