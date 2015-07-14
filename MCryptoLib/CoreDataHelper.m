@@ -115,8 +115,6 @@
 }
 
 
-#if TARGET_OS_IPHONE
-
 // Creates if necessary and returns the managed object model for the application.
 - (NSManagedObjectModel *)managedObjectModel
 {
@@ -125,6 +123,8 @@
     }
     
     NSURL *modelURL = [[NSBundle bundleForClass:self.class] URLForResource:@"MCryptoLib" withExtension:@"momd"];
+    
+    
 
 //    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
 //    if(!bundle)
@@ -142,23 +142,6 @@
     return managedObjectModel;
 }
 
-#else
-
-// Creates if necessary and returns the managed object model for the application.
-- (NSManagedObjectModel *)managedObjectModel
-{
-    if (_managedObjectModel)
-    {
-        return _managedObjectModel;
-    }     
-
-    NSURL *modelURL = [[NSBundle bundleForClass:self.class] URLForResource:@"MCryptoLib" withExtension:@"momd"];
-
-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
-    return _managedObjectModel;
-}
-
-#endif
 
 
 + (NSURL *)applicationSupportSubDirectory

@@ -972,6 +972,7 @@
 
 /* Begin PBXFileReference section */
 		171F3426C169BB463266A12C /* Pods-MCryptoMac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MCryptoMac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MCryptoMac/Pods-MCryptoMac.debug.xcconfig"; sourceTree = "<group>"; };
+		1E1B6F781B555A1A00E55897 /* DataModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "DataModel 2.xcdatamodel"; sourceTree = "<group>"; };
 		1E2A6D441B1EF18900CC9EE2 /* 255BytesData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 255BytesData.txt; sourceTree = "<group>"; };
 		1E2A6D451B1EF18900CC9EE2 /* 256BytesData.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 256BytesData.txt; sourceTree = "<group>"; };
 		1E2A6D4C1B1EF1DF00CC9EE2 /* HMACOf255BytesWith16BytesSecret.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HMACOf255BytesWith16BytesSecret.txt; sourceTree = "<group>"; };
@@ -4434,9 +4435,10 @@
 		1ED4DE9F1B03C479002535A4 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				1E1B6F781B555A1A00E55897 /* DataModel 2.xcdatamodel */,
 				1ED4DEA01B03C479002535A4 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = 1ED4DEA01B03C479002535A4 /* DataModel.xcdatamodel */;
+			currentVersion = 1E1B6F781B555A1A00E55897 /* DataModel 2.xcdatamodel */;
 			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
