@@ -53,9 +53,10 @@
 
 
 #import <Foundation/Foundation.h>
-#import <MProtoBuf/FileAttachmentDataStructure.h>
 
 
+
+@class FileAttachmentDataStructure;
 
 @interface MynigmaAttachmentEncryptionContext : NSObject
 

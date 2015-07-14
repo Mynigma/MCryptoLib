@@ -62,9 +62,13 @@ FOUNDATION_EXPORT const unsigned char MCryptoLibVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <MCryptoLib/PublicHeader.h>
 
 
-#import <MCryptoLib/MynigmaMessageEncryptionContext.h>
 #import <MCryptoLib/MynigmaEncryptionEngine.h>
+
+#import <MCryptoLib/MynigmaMessageEncryptionContext.h>
+#import <MCryptoLib/MynigmaAttachmentEncryptionContext.h>
+
 #import <MCryptoLib/MynigmaError.h>
 #import <MCryptoLib/MynigmaErrorFactory.h>
+
 #import <MCryptoLib/AppleEncryptionEngine.h>
 

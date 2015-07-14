@@ -56,6 +56,8 @@
 
 #import "BasicEncryptionEngineProtocol.h"
 
+#import <MProtoBuf/FileAttachmentDataStructure.h>
+
 
 
 @implementation MynigmaAttachmentEncryptionContext

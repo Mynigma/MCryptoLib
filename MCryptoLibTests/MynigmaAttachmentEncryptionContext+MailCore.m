@@ -55,6 +55,8 @@
 
 #import <MailCore/MailCore.h>
 
+#import <MProtoBuf/FileAttachmentDataStructure.h>
+
 
 @implementation MynigmaAttachmentEncryptionContext (MailCore)
 

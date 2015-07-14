@@ -197,7 +197,7 @@
 		1E395E6C1B1C75F500D66920 /* EncryptionEngineProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EFD67B71B0A013F0044558D /* EncryptionEngineProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E395E6D1B1C75F500D66920 /* MynigmaMessageEncryptionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E65DCC31B106946000CFD52 /* MynigmaMessageEncryptionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E395E6E1B1C75F500D66920 /* MynigmaMessageEncryptionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E65DCC41B106946000CFD52 /* MynigmaMessageEncryptionContext.m */; };
-		1E395E6F1B1C75F500D66920 /* MynigmaAttachmentEncryptionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE4B29F1B139B0B0056091D /* MynigmaAttachmentEncryptionContext.h */; };
+		1E395E6F1B1C75F500D66920 /* MynigmaAttachmentEncryptionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE4B29F1B139B0B0056091D /* MynigmaAttachmentEncryptionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E395E701B1C75F500D66920 /* MynigmaAttachmentEncryptionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4B2A01B139B0B0056091D /* MynigmaAttachmentEncryptionContext.m */; };
 		1E395E711B1C75F500D66920 /* SessionKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C61B10BC310033617D /* SessionKeys.h */; };
 		1E395E721B1C75F500D66920 /* SessionKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB383C71B10BC310033617D /* SessionKeys.m */; };
@@ -215,7 +215,7 @@
 		1E395E801B1C76AB00D66920 /* EncryptionSmokeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A6BD1B18607000819181 /* EncryptionSmokeTests.m */; };
 		1E395E811B1C76B300D66920 /* NSString+EmailAddresses_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476E11B167616004A204D /* NSString+EmailAddresses_Tests.m */; };
 		1E395E821B1C76B600D66920 /* UnitTestMynigmaKeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E69A71C1B18633000819181 /* UnitTestMynigmaKeyManager.m */; };
-		1E395E871B1C77B500D66920 /* AppleEncryptionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C01B10B45A0033617D /* AppleEncryptionEngine.h */; };
+		1E395E871B1C77B500D66920 /* AppleEncryptionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C01B10B45A0033617D /* AppleEncryptionEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E395E881B1C77B900D66920 /* OpenSSLEncryptionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E65DB711B106503000CFD52 /* OpenSSLEncryptionEngine.h */; };
 		1E44D3271B1E076200BAC595 /* libPods-MCryptoLibTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E44D3261B1E076200BAC595 /* libPods-MCryptoLibTests.a */; };
 		1E65DB6F1B1064B8000CFD52 /* KeyParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E65DB6D1B1064B8000CFD52 /* KeyParser.h */; };
@@ -481,7 +481,7 @@
 		1E8A05881B540DFA00973B07 /* MimeHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476A31B150A5B004A204D /* MimeHelper.mm */; };
 		1E8A05891B540E0500973B07 /* MimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE476A21B150A5B004A204D /* MimeHelper.h */; };
 		1E8A058A1B540E0600973B07 /* MimeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE476A21B150A5B004A204D /* MimeHelper.h */; };
-		1EB383C21B10B45A0033617D /* AppleEncryptionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C01B10B45A0033617D /* AppleEncryptionEngine.h */; };
+		1EB383C21B10B45A0033617D /* AppleEncryptionEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C01B10B45A0033617D /* AppleEncryptionEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EB383C31B10B45A0033617D /* AppleEncryptionEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB383C11B10B45A0033617D /* AppleEncryptionEngine.m */; };
 		1EB383C51B10B4760033617D /* BasicEncryptionEngineProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C41B10B4760033617D /* BasicEncryptionEngineProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EB383C81B10BC310033617D /* SessionKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383C61B10BC310033617D /* SessionKeys.h */; };
@@ -514,7 +514,7 @@
 		1EE476E01B1675FA004A204D /* NSString+EmailAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476DD1B1675FA004A204D /* NSString+EmailAddresses.m */; };
 		1EE476E21B167616004A204D /* NSString+EmailAddresses_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476E11B167616004A204D /* NSString+EmailAddresses_Tests.m */; };
 		1EE476E31B167616004A204D /* NSString+EmailAddresses_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476E11B167616004A204D /* NSString+EmailAddresses_Tests.m */; };
-		1EE4B2A11B139B0B0056091D /* MynigmaAttachmentEncryptionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE4B29F1B139B0B0056091D /* MynigmaAttachmentEncryptionContext.h */; };
+		1EE4B2A11B139B0B0056091D /* MynigmaAttachmentEncryptionContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE4B29F1B139B0B0056091D /* MynigmaAttachmentEncryptionContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EE4B2A21B139B0B0056091D /* MynigmaAttachmentEncryptionContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4B2A01B139B0B0056091D /* MynigmaAttachmentEncryptionContext.m */; };
 		1EE4B3751B13D13D0056091D /* MCrypto_Static.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1EE4B3741B13D13D0056091D /* MCrypto_Static.h */; };
 		1EE4B3771B13D13D0056091D /* MCrypto_Static.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE4B3761B13D13D0056091D /* MCrypto_Static.m */; };

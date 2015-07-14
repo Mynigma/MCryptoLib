@@ -69,7 +69,7 @@
 #import <MProtoBuf/HMACDataStructure.h>
 #import <MProtoBuf/EncryptedDataStructure.h>
 #import <MProtoBuf/PayloadPartDataStructure.h>
-
+#import <MProtoBuf/FileAttachmentDataStructure.h>
 
 
 
