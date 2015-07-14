@@ -77,6 +77,8 @@
 #import "PrivateKeychainItemRefs.h"
 #import "MynigmaPrivateKey.h"
 
+#import "MynigmaKeyManager.h"
+
 //#import "ThreadHelper.h"
 
 
