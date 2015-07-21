@@ -110,7 +110,7 @@
 
 - (NSData*)PKCS8DataForOpsPGPPublicKey:(const __ops_key_t*)opsKey;
 
-- (NSData*)PKCS8DataForOpsPGPPrivateKey:(const __ops_key_t*)opsKey;
+- (NSData*)PKCS12DataForOpsPGPPrivateKey:(const __ops_key_t*)opsKey;
 
 
 

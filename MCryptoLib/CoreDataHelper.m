@@ -128,7 +128,7 @@
 
     //we may have found the app bundle instead of the MCryptoLib bundle
     //if so, keep looking
-    if(![bundle.resourceURL.lastPathComponent isEqualToString:@"MCryptoLib.bundle"])
+    if([bundle.resourceURL.lastPathComponent rangeOfString:@"MCryptoLib"].location == NSNotFound)
     {
         NSURL* actualBundleURL = [bundle URLForResource:@"MCryptoLib" withExtension:@"bundle"];
         bundle = [NSBundle bundleWithURL:actualBundleURL];

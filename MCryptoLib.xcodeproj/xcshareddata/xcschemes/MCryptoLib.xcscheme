@@ -56,6 +56,12 @@
                   Identifier = "KeyParser_Tests">
                </Test>
                <Test
+                  Identifier = "PGPEncryptionEngine_Tests">
+               </Test>
+               <Test
+                  Identifier = "PGPEncryptionEngine_Tests/testBasicEncryptionAndDecryption">
+               </Test>
+               <Test
                   Identifier = "PGPKeyManager_Tests">
                </Test>
                <Test

@@ -857,7 +857,6 @@
     }
 }
 
-
 - (BOOL)processPublicKeyInExtraHeaders:(NSDictionary*)extraHeaders fromSender:(NSString*)senderAddress
 {
     PublicKeyData* publicKeyData = [self.keyManager getPublicKeyDataFromExtraHeaderValues:extraHeaders];

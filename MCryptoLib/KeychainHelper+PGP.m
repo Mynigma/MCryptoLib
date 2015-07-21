@@ -118,7 +118,16 @@
         
         OSStatus status = SecItemAdd((__bridge CFDictionaryRef)passDict, &result);
         
-        if (status != noErr)
+        if(status == errSecDuplicateItem)
+        {
+            //the key already exists in the keychain
+            if(result)
+                CFRelease(result);
+
+            //use the existing item instead
+            status = SecItemCopyMatching((__bridge CFDictionaryRef)passDict, &result);
+        }
+        else if (status != noErr)
         {
             if(result)
                 CFRelease(result);
@@ -240,18 +249,20 @@
     //without problems or errors
     //but any attempts to use it for encryption/signature will fail
     //thanks, Apple.
-    NSString* passphrase = @"";
+    NSString* passphrase = @"Mynigma";
     
     if(passphrase)
     {
         if(!PKCS12KeyData)
             return nil;
         
+        NSData* dataWithPassphrase = PKCS12KeyData; //[self.openSSLEngine convertPrivateKeyData:PKCS12KeyData fromFormat:MynigmaKeyFormatPKCS12 toFormat:MynigmaKeyFormatPKCS12 inPassphrase:nil outPassphrase:@""];
+        
         NSDictionary* optionsDict = @{(__bridge id)kSecImportExportPassphrase:passphrase};
         
         CFArrayRef results = NULL;
         
-        OSStatus status = SecPKCS12Import((__bridge CFDataRef)PKCS12KeyData, (__bridge CFDictionaryRef)optionsDict, &results);
+        OSStatus status = SecPKCS12Import((__bridge CFDataRef)dataWithPassphrase, (__bridge CFDictionaryRef)optionsDict, &results);
         
         if (status != errSecSuccess || !results)
         {

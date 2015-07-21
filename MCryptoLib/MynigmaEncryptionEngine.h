@@ -89,6 +89,8 @@
 
 - (void)processIncomingMessageContext:(MynigmaMessageEncryptionContext*)messageContext;
 
+- (BOOL)encryptMessage:(MynigmaMessageEncryptionContext*)context;
+
 
 
 - (BOOL)isSenderSafe:(NSString*)senderEmailString;

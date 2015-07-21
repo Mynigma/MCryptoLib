@@ -96,6 +96,8 @@
     if(self)
     {
         [self setKeychainHelper:keychainHelper];
+        
+        [self setOpenSSLEngine:[OpenSSLEncryptionEngine new]];
 
         NSURL* homeDirectory = [[CoreDataHelper applicationSupportSubDirectory] URLByAppendingPathComponent:@"PGP"];
         
@@ -533,10 +535,11 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
 - (PGPPrivateKey*)addPGPPrivateKeyWithProperties:(NSDictionary*)keyProperties opsKey:(const __ops_key_t*)opsKey
 {
     NSData* PKCS8PublicKeyData = [self PKCS8DataForOpsPGPPublicKey:opsKey];
-    NSData* PKCS8PrivateKeyData = [self PKCS8DataForOpsPGPPrivateKey:opsKey];
+    NSData* PKCS12PrivateKeyData = [self PKCS12DataForOpsPGPPrivateKey:opsKey];
     
     NSData* persistentPublicRef = [self.keychainHelper addPublicPGPKeyWithPKCS8Data:PKCS8PublicKeyData];
-    NSData* persistentPrivateRef = [self.keychainHelper addPrivatePGPKeyWithPKCS12Data:PKCS8PrivateKeyData];
+    
+    NSData* persistentPrivateRef = [self.keychainHelper addPrivatePGPKeyWithPKCS12Data:PKCS12PrivateKeyData];
 
     if(!persistentPublicRef || !persistentPrivateRef)
     {
@@ -768,7 +771,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
     return nil;
 }
 
-- (NSData*)PKCS8DataForOpsPGPPrivateKey:(const __ops_key_t*)opsKey
+- (NSData*)PKCS12DataForOpsPGPPrivateKey:(const __ops_key_t*)opsKey
 {
     switch(opsKey->key.pubkey.alg)
     {
@@ -783,7 +786,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
             
             dsa->priv_key = opsKey->key.seckey.key.dsa.x;
             
-            NSData* returnValue = [[OpenSSLEncryptionEngine sharedInstance] dataForDSAPrivateKey:dsa format:MynigmaKeyFormatPKCS12 passphrase:@""];
+            NSData* returnValue = [[OpenSSLEncryptionEngine sharedInstance] dataForDSAPrivateKey:dsa format:MynigmaKeyFormatPKCS12 passphrase:@"Mynigma"];
             
             if(dsa)
                 DSA_free(dsa);
@@ -809,7 +812,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
             
             rsa->iqmp = opsKey->key.seckey.key.rsa.u;
             
-            NSData* returnValue = [[OpenSSLEncryptionEngine sharedInstance] dataForRSAPrivateKey:rsa format:MynigmaKeyFormatPKCS12 passphrase:@""];
+            NSData* returnValue = [[OpenSSLEncryptionEngine sharedInstance] dataForRSAPrivateKey:rsa format:MynigmaKeyFormatPKCS12 passphrase:@"Mynigma"];
             
             if(rsa)
                 RSA_free(rsa);

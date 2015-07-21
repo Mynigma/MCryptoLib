@@ -125,14 +125,25 @@
     
     context.attachmentEncryptionContexts = newAttachmentContexts;
     
+    //extra headers
+    NSMutableDictionary* extraHeaders = [NSMutableDictionary new];
+    for(NSString* extraHeaderName in message.header.allExtraHeadersNames)
+    {
+        NSString* extraHeaderValue = [message.header extraHeaderValueForName:extraHeaderName];
+        
+        if(extraHeaderValue)
+            extraHeaders[extraHeaderName.lowercaseString] = extraHeaderValue;
+    }
+    [context setExtraHeaders:extraHeaders];
+    
+    context.encryptedPayload = message.encryptedPayload;
+    
     return context;
 }
 
 + (MynigmaMessageEncryptionContext*)contextForIncomingMessage:(MCOAbstractMessage*)message
 {
-    //TODO
-    
-    return nil;
+    return [self contextForDecryptedMessage:message];
 }
 
 + (MynigmaMessageEncryptionContext*)contextForEncryptedMessage:(MCOAbstractMessage*)message
@@ -167,6 +178,17 @@
     }
     
     context.attachmentEncryptionContexts = newEncryptedAttachmentContexts;
+    
+    //extra headers
+    NSMutableDictionary* extraHeaders = [NSMutableDictionary new];
+    for(NSString* extraHeaderName in message.header.allExtraHeadersNames)
+    {
+        NSString* extraHeaderValue = [message.header extraHeaderValueForName:extraHeaderName];
+        
+        if(extraHeaderValue)
+            extraHeaders[extraHeaderName.lowercaseString] = extraHeaderValue;
+    }
+    [context setExtraHeaders:extraHeaders];
     
     return context;
 }
