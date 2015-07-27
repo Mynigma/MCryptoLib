@@ -1180,9 +1180,9 @@ static dispatch_queue_t _keychainHelperDispatchQueue;
     
     passDict[(__bridge id)kSecValuePersistentRef] = persistentRef;
     passDict[(__bridge id)kSecReturnData] = @YES;
-    passDict[(__bridge id)kSecAttrKeyClass] = (__bridge id)(isPrivate?kSecAttrKeyClassPrivate:kSecAttrKeyClassPublic);
-    passDict[(__bridge id)kSecAttrKeyType] = (__bridge id)(kSecAttrKeyTypeRSA);
-    passDict[(__bridge id)kSecAttrKeySizeInBits] = @4096;
+//    passDict[(__bridge id)kSecAttrKeyClass] = (__bridge id)(isPrivate?kSecAttrKeyClassPrivate:kSecAttrKeyClassPublic);
+//    passDict[(__bridge id)kSecAttrKeyType] = (__bridge id)(kSecAttrKeyTypeRSA);
+//    passDict[(__bridge id)kSecAttrKeySizeInBits] = @4096;
     
     CFTypeRef result = nil;
     
