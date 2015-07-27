@@ -1441,7 +1441,7 @@
 		1EF40D231B42EEE80049B8CC /* MynigmaErrorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MynigmaErrorFactory.h; sourceTree = "<group>"; };
 		1EF40D241B42EEE80049B8CC /* MynigmaErrorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MynigmaErrorFactory.m; sourceTree = "<group>"; };
 		1EF40D2E1B431F0F0049B8CC /* MynigmaErrorFactory_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MynigmaErrorFactory_Tests.m; sourceTree = "<group>"; };
-		1EF40D321B4322060049B8CC /* MynigmaErrors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MynigmaErrors.xml; path = MCryptoLibTests/MynigmaErrors.xml; sourceTree = SOURCE_ROOT; };
+		1EF40D321B4322060049B8CC /* MynigmaErrors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = MynigmaErrors.xml; path = MCryptoLib/MynigmaErrors.xml; sourceTree = SOURCE_ROOT; };
 		1EF40D381B4342B00049B8CC /* SessionKeys_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionKeys_Tests.m; sourceTree = "<group>"; };
 		1EFB90C71B1C5D62008C5E4D /* OpenSSLEncryptionEngine_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenSSLEncryptionEngine_Tests.m; sourceTree = "<group>"; };
 		1EFD67B71B0A013F0044558D /* EncryptionEngineProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionEngineProtocol.h; sourceTree = "<group>"; };
