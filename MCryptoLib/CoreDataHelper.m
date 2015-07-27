@@ -124,7 +124,7 @@
     
     NSBundle* bundle = [NSBundle bundleForClass:self.class];
     
-    NSLog(@"Bundle: %@, resourceURL: %@", bundle, bundle.resourceURL);
+//    NSLog(@"Bundle: %@, resourceURL: %@", bundle, bundle.resourceURL);
 
     //we may have found the app bundle instead of the MCryptoLib bundle
     //if so, keep looking
@@ -134,7 +134,7 @@
         bundle = [NSBundle bundleWithURL:actualBundleURL];
     }
     
-    NSLog(@"Bundle: %@, resourceURL: %@", bundle, bundle.resourceURL);
+//    NSLog(@"Bundle: %@, resourceURL: %@", bundle, bundle.resourceURL);
     
     NSURL *modelURL = [bundle URLForResource:@"MCryptoLib" withExtension:@"momd"];
     
