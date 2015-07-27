@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MCryptoLib"
-  s.version      = "0.8.7"
+  s.version      = "0.8.8"
   s.summary      = "A simple PGP, S/MIME and Mynigma encryption library."
 
   s.description  = <<-DESC 
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.resource_bundles = { 'MCryptoLib' => "MCryptoLib/**/*.{xcdatamodeld, jpg, html, txt, xml}" }
+  s.resource_bundles = { 'MCryptoLib' => "MCryptoLib/**/*.{xcdatamodeld,jpg,html,txt,xml}" }
 
   s.dependency 'OpenSSL', '~> 1.0'
   s.dependency 'MProtoBuf'

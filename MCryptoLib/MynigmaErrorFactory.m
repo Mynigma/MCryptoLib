@@ -89,6 +89,12 @@
 {
     NSURL* fileURL = [BUNDLE URLForResource:@"MynigmaErrors" withExtension:@"xml"];
     
+    if(!fileURL)
+    {
+        NSLog(@"Failed to find MynigmaErrors.xml");
+        return;
+    }
+    
     NSXMLParser* parser = [[NSXMLParser alloc] initWithContentsOfURL:fileURL];
     
     [parser setDelegate:self];
