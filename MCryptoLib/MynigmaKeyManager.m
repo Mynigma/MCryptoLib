@@ -472,6 +472,12 @@
     return returnValue;
 }
 
+- (BOOL)generatePrivateKeyWithLabel:(NSString*)keyLabel
+{
+    //TODO
+    return NO;
+}
+
 - (void)generateMynigmaPrivateKeyForEmail:(NSString*)emailAddress engine:(id<BasicEncryptionEngineProtocol>)engine withCallback:(void(^)(void))callback
 {
     NSString* email = [emailAddress canonicalForm];

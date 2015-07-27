@@ -62,6 +62,7 @@
 #import "MynigmaAttachmentEncryptionContext.h"
 #import "OpenSSLEncryptionEngine.h"
 #import "MynigmaErrorFactory.h"
+#import "CommonHeader.h"
 
 
 #import <MProtoBuf/EmailRecipientDataStructure.h>
