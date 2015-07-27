@@ -473,7 +473,7 @@
         if(!signatureKeyLabel)
         {
             //TODO: report an error(!)
-            return nil;
+            return;
         }
         
         for(NSString* recipientEmailString in context.recipientEmails)
