@@ -460,26 +460,27 @@
         [context setRecipientEmails:recipientEmails];
     }
     
+    if(!context.signatureKeyLabel)
+    {
+        context.signatureKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:context.senderEmail];
+        
+        if(!context.signatureKeyLabel)
+        {
+            //TODO: report an error(!)
+            //avoid crash later when trying to add nil to array
+            return;
+        }
+    }
+    
     if(!context.encryptionKeyLabels)
     {
         NSMutableArray* encryptionKeyLabels = [NSMutableArray new];
         NSMutableArray* expectedSignatureKeyLabels = [NSMutableArray new];
         
-        NSString* senderEmail = context.senderEmail;
-        
-        //use this if there is no expected signature key label available
-        NSString* signatureKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:senderEmail];
-        
-        if(!signatureKeyLabel)
-        {
-            //TODO: report an error(!)
-            return;
-        }
-        
         for(NSString* recipientEmailString in context.recipientEmails)
         {
             NSString* encryptionKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:recipientEmailString];
-            NSString* expectedSignatureKeyLabel = [self.keyManager expectedKeyLabelFrom:senderEmail to:recipientEmailString];
+            NSString* expectedSignatureKeyLabel = [self.keyManager expectedKeyLabelFrom:context.senderEmail to:recipientEmailString];
             
             //we do need encryptionKeyLabel to be non-nil
             //otherwise there will be an error later
@@ -489,7 +490,8 @@
             if(expectedSignatureKeyLabel)
                 [expectedSignatureKeyLabels addObject:expectedSignatureKeyLabel];
             else
-                [expectedSignatureKeyLabels addObject:signatureKeyLabel];
+                //use the actual signature label if there is no expected signature key label available
+               [expectedSignatureKeyLabels addObject:context.signatureKeyLabel];
         }
         
         [context setEncryptionKeyLabels:encryptionKeyLabels];
