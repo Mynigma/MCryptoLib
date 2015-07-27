@@ -114,6 +114,26 @@
     return url;
 }
 
++ (NSBundle*)bundle
+{
+    NSBundle* bundle = [NSBundle bundleForClass:self.class];
+    
+    //we may have found the app bundle instead of the MCryptoLib bundle
+    //if so, keep looking
+    if([bundle.resourceURL.lastPathComponent rangeOfString:@"MCryptoLib"].location == NSNotFound)
+    {
+        NSURL* actualBundleURL = [bundle URLForResource:@"MCryptoLib" withExtension:@"bundle"];
+        bundle = [NSBundle bundleWithURL:actualBundleURL];
+    }
+
+    return bundle;
+}
+
++ (NSString*)mynigmaVersion
+{
+    return [[self bundle] objectForInfoDictionaryKey:@"CFBundleVersion"];
+}
+
 
 // Creates if necessary and returns the managed object model for the application.
 - (NSManagedObjectModel *)managedObjectModel
@@ -122,19 +142,7 @@
         return managedObjectModel;
     }
     
-    NSBundle* bundle = [NSBundle bundleForClass:self.class];
-    
-//    NSLog(@"Bundle: %@, resourceURL: %@", bundle, bundle.resourceURL);
-
-    //we may have found the app bundle instead of the MCryptoLib bundle
-    //if so, keep looking
-    if([bundle.resourceURL.lastPathComponent rangeOfString:@"MCryptoLib"].location == NSNotFound)
-    {
-        NSURL* actualBundleURL = [bundle URLForResource:@"MCryptoLib" withExtension:@"bundle"];
-        bundle = [NSBundle bundleWithURL:actualBundleURL];
-    }
-    
-//    NSLog(@"Bundle: %@, resourceURL: %@", bundle, bundle.resourceURL);
+    NSBundle* bundle = [CoreDataHelper bundle];
     
     NSURL *modelURL = [bundle URLForResource:@"MCryptoLib" withExtension:@"momd"];
     

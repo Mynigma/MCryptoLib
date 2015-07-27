@@ -94,6 +94,10 @@
 - (instancetype)initWithFileName:(NSString*)fileName storeType:(NSString*)storeType;
 
 
++ (NSBundle*)bundle;
+
++ (NSString*)mynigmaVersion;
+
 
 //+ (NSString*)coreDataStoreType;
 //

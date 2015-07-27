@@ -87,11 +87,13 @@
 
 - (void)loadXMLFile
 {
-    NSURL* fileURL = [BUNDLE URLForResource:@"MynigmaErrors" withExtension:@"xml"];
+    NSBundle* bundle = [CoreDataHelper bundle];
+    
+    NSURL* fileURL = [bundle URLForResource:@"MynigmaErrors" withExtension:@"xml"];
     
     if(!fileURL)
     {
-        NSLog(@"Failed to find MynigmaErrors.xml");
+        NSLog(@"Failed to find MynigmaErrors.xml in bundle %@", bundle);
         return;
     }
     

@@ -61,9 +61,9 @@
 
 
 
-#define MYNIGMA_VERSION [[NSBundle bundleForClass:NSClassFromString(@"MynigmaEncryptionEngine")] objectForInfoDictionaryKey:@"CFBundleVersion"]
+#define MYNIGMA_VERSION [CoreDataHelper mynigmaVersion]
 
-#define BUNDLE [NSBundle bundleForClass:[self class]]
+#define BUNDLE [CoreDataHelper bundle]
 
 
 
