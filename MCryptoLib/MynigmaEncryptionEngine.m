@@ -456,13 +456,23 @@
         
         NSString* senderEmail = context.senderEmail;
         
+        //use this if there is no expected signature key label available
+        NSString* signatureKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:senderEmail];
+        
         for(NSString* recipientEmailString in context.recipientEmails)
         {
             NSString* encryptionKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:recipientEmailString];
             NSString* expectedSignatureKeyLabel = [self.keyManager expectedKeyLabelFrom:senderEmail to:recipientEmailString];
             
-            [encryptionKeyLabels addObject:encryptionKeyLabel];
-            [expectedSignatureKeyLabels addObject:expectedSignatureKeyLabel];
+            //we do need encryptionKeyLabel to be non-nil
+            //otherwise there will be an error later
+            if(encryptionKeyLabel)
+                [encryptionKeyLabels addObject:encryptionKeyLabel];
+            
+            if(expectedSignatureKeyLabel)
+                [expectedSignatureKeyLabels addObject:expectedSignatureKeyLabel];
+            else
+                [expectedSignatureKeyLabels addObject:signatureKeyLabel];
         }
         
         [context setEncryptionKeyLabels:encryptionKeyLabels];
