@@ -75,8 +75,6 @@
 
 
 
-#define MYNIGMA_VERSION [[NSBundle bundleForClass:NSClassFromString(@"MynigmaEncryptionEngine")] objectForInfoDictionaryKey:@"CFBundleVersion"]
-
 
 
 @interface MynigmaEncryptionEngine()

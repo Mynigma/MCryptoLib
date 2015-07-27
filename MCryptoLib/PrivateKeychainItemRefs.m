@@ -113,26 +113,26 @@
 {
     if(forEncryption)
     {
-        if(self.encKeyRef)
-            return self.encKeyRef;
+        if(self.decKeyRef)
+            return self.decKeyRef;
         
-        if(self.persistentEncKeyRef)
+        if(self.persistentDecKeyRef)
         {
-            self.encKeyRef = [KeychainHelper secKeyRefFromPersistentKeyRef:self.persistentEncKeyRef];
+            self.decKeyRef = [KeychainHelper secKeyRefFromPersistentKeyRef:self.persistentDecKeyRef];
             
-            return self.encKeyRef;
+            return self.decKeyRef;
         }
     }
     else
     {
-        if(self.verKeyRef)
-            return self.verKeyRef;
+        if(self.sigKeyRef)
+            return self.sigKeyRef;
         
-        if(self.persistentVerKeyRef)
+        if(self.persistentSigKeyRef)
         {
-            self.verKeyRef = [KeychainHelper secKeyRefFromPersistentKeyRef:self.persistentVerKeyRef];
+            self.sigKeyRef = [KeychainHelper secKeyRefFromPersistentKeyRef:self.persistentSigKeyRef];
             
-            return self.verKeyRef;
+            return self.sigKeyRef;
         }
     }
     
