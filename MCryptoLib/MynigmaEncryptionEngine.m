@@ -445,6 +445,8 @@
             if(email)
                 [recipientEmails addObject:email];
         }
+        
+        [context setRecipientEmails:recipientEmails];
     }
     
     if(!context.encryptionKeyLabels)
