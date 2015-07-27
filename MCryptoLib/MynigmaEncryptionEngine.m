@@ -63,6 +63,8 @@
 #import "OpenSSLEncryptionEngine.h"
 #import "MynigmaErrorFactory.h"
 
+
+#import <MProtoBuf/EmailRecipientDataStructure.h>
 #import <MProtoBuf/SignedDataStructure.h>
 #import <MProtoBuf/KeyIntroductionDataStructure.h>
 #import <MProtoBuf/SessionKeyEntryDataStructure.h>
@@ -424,12 +426,53 @@
 
 
 
+/**
+ *  Fill in recipientEmails, encryptionKeyLabels etc. if they are missing from the context
+ *
+ *  @param context The context containing the message encryption info
+ *
+ */
+- (void)fillInMissingRecipientAndKeyLabelInfoInContext:(MynigmaMessageEncryptionContext*)context
+{
+    if(!context.recipientEmails)
+    {
+        NSMutableArray* recipientEmails = [NSMutableArray new];
+        
+        for(EmailRecipientDataStructure* emailRecipientDataStructure in context.payloadPart.addressees)
+        {
+            NSString* email = emailRecipientDataStructure.email;
+            
+            if(email)
+                [recipientEmails addObject:email];
+        }
+    }
+    
+    if(!context.encryptionKeyLabels)
+    {
+        NSMutableArray* encryptionKeyLabels = [NSMutableArray new];
+        NSMutableArray* expectedSignatureKeyLabels = [NSMutableArray new];
+        
+        NSString* senderEmail = context.senderEmail;
+        
+        for(NSString* recipientEmailString in context.recipientEmails)
+        {
+            NSString* encryptionKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:recipientEmailString];
+            NSString* expectedSignatureKeyLabel = [self.keyManager expectedKeyLabelFrom:senderEmail to:recipientEmailString];
+            
+            [encryptionKeyLabels addObject:encryptionKeyLabel];
+            [expectedSignatureKeyLabels addObject:expectedSignatureKeyLabel];
+        }
+        
+        [context setEncryptionKeyLabels:encryptionKeyLabels];
+        [context setExpectedSignatureKeyLabels:expectedSignatureKeyLabels];
+    }
+}
+
 
 /**
  *  Encrypt a message previously loaded into the message encryption context
  *
  *  @param context The context containing the message encryption info
- *  @param error   Optional error information
  *
  *  @return YES if the operation was successful, NO otherwise
  */
@@ -456,6 +499,8 @@
             [context pushErrorWithCode:error.code];
         return NO;
     }
+    
+    [self fillInMissingRecipientAndKeyLabelInfoInContext:context];
     
     if(context.encryptionKeyLabels.count != context.expectedSignatureKeyLabels.count || context.encryptionKeyLabels.count != context.recipientEmails.count)
     {
