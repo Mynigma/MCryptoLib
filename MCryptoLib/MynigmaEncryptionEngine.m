@@ -438,7 +438,7 @@
     {
         for(EmailRecipientDataStructure* emailRecipientDataStructure in context.payloadPart.addressees)
         {
-            if(emailRecipientDataStructure.addresseeType == AddresseeTypeFrom && context.senderEmail)
+            if(emailRecipientDataStructure.addresseeType == AddresseeTypeFrom && emailRecipientDataStructure.email)
             {
                 context.senderEmail = emailRecipientDataStructure.email;
             }
