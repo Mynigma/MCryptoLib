@@ -434,6 +434,17 @@
  */
 - (void)fillInMissingRecipientAndKeyLabelInfoInContext:(MynigmaMessageEncryptionContext*)context
 {
+    if(!context.senderEmail)
+    {
+        for(EmailRecipientDataStructure* emailRecipientDataStructure in context.payloadPart.addressees)
+        {
+            if(emailRecipientDataStructure.addresseeType == AddresseeTypeFrom && context.senderEmail)
+            {
+                context.senderEmail = emailRecipientDataStructure.email;
+            }
+        }
+    }
+    
     if(!context.recipientEmails)
     {
         NSMutableArray* recipientEmails = [NSMutableArray new];
@@ -458,6 +469,12 @@
         
         //use this if there is no expected signature key label available
         NSString* signatureKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:senderEmail];
+        
+        if(!signatureKeyLabel)
+        {
+            //TODO: report an error(!)
+            return nil;
+        }
         
         for(NSString* recipientEmailString in context.recipientEmails)
         {
