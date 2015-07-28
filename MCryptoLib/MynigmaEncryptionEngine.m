@@ -63,6 +63,7 @@
 #import "OpenSSLEncryptionEngine.h"
 #import "MynigmaErrorFactory.h"
 #import "CommonHeader.h"
+#import "GenericEmailMessage.h"
 
 
 #import <MProtoBuf/EmailRecipientDataStructure.h>
@@ -915,32 +916,6 @@
     
 }
 
-- (void)processIncomingMessageContext:(MynigmaMessageEncryptionContext*)messageContext
-{
-    // first check if the message is safe
-    NSString* safeMessageHeaderIndicator = messageContext.extraHeaders[[@"X-Mynigma-Safe-Message" lowercaseString]];
-    
-    BOOL messageIsSafe = safeMessageHeaderIndicator.length > 0;
-    
-    if (messageIsSafe)
-    {
-        [self decryptMessage:messageContext];
-    }
-    else
-    {
-        [self processPublicKeyInExtraHeaders:messageContext.extraHeaders fromSender:messageContext.senderEmail];
-    }
-}
-
-- (BOOL)processPublicKeyInExtraHeaders:(NSDictionary*)extraHeaders fromSender:(NSString*)senderAddress
-{
-    PublicKeyData* publicKeyData = [self.keyManager getPublicKeyDataFromExtraHeaderValues:extraHeaders];
-    
-    if (![self.keyManager addPublicKeyWithData:publicKeyData])
-        return false;
-    
-    return [self.keyManager setCurrentKeyForEmailAddress:senderAddress keyLabel:publicKeyData.keyLabel overwrite:NO];
-}
 
 
 - (BOOL)isSenderSafe:(NSString*)senderEmailString
@@ -974,5 +949,67 @@
 
 
 
+- (BOOL)processPublicKeyInExtraHeaders:(NSDictionary*)extraHeaders fromSender:(NSString*)senderAddress
+{
+    PublicKeyData* publicKeyData = [self.keyManager getPublicKeyDataFromExtraHeaderValues:extraHeaders];
+    
+    if (![self.keyManager addPublicKeyWithData:publicKeyData])
+        return false;
+    
+    return [self.keyManager setCurrentKeyForEmailAddress:senderAddress keyLabel:publicKeyData.keyLabel overwrite:NO];
+}
+
+
+
+
+#pragma mark - PUBLIC METHODS
+
+- (GenericEmailMessage*)processIncomingMessage:(GenericEmailMessage*)message
+{
+    // first check if the message is safe
+    NSString* safeMessageHeaderIndicator = message.extraHeaders[[@"X-Mynigma-Safe-Message" lowercaseString]];
+    
+    BOOL messageIsSafe = safeMessageHeaderIndicator.length > 0;
+    
+    if (messageIsSafe)
+    {
+        MynigmaMessageEncryptionContext* messageContext = [[MynigmaMessageEncryptionContext alloc] initWithEncryptedEmailMessage:message];
+        
+        [self decryptMessage:messageContext];
+        
+        return messageContext.decryptedMessage;
+    }
+    else
+    {
+        [self processPublicKeyInExtraHeaders:message.extraHeaders fromSender:message.senderEmail];
+        
+        return message;
+    }
+}
+
+- (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message withHeaderField:(BOOL)hasHeaderField
+{
+    NSString* safeMessageHeaderIndicator = message.extraHeaders[MCryptoWillSentSafelyHeaderField];
+    
+    BOOL needsToBeEncrypted = (safeMessageHeaderIndicator.length > 0) && hasHeaderField;
+
+    if(needsToBeEncrypted)
+    {
+        MynigmaMessageEncryptionContext* context = [[MynigmaMessageEncryptionContext alloc] initWithUnencryptedEmailMessage:message];
+                                                    
+        [[MynigmaEncryptionEngine sharedInstance] encryptMessage:context];
+        
+        return context.encryptedMessage;
+    }
+    
+    //TODO: encrypt if the header field neither exists nor is required, but the recipients are safe
+   
+    return message;
+}
+
+- (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message
+{
+    return [self processOutgoingMessage:message withHeaderField:YES];
+}
 
 @end

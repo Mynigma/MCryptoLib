@@ -55,12 +55,42 @@
 #import "MynigmaAttachmentEncryptionContext.h"
 
 #import "BasicEncryptionEngineProtocol.h"
+#import "GenericEmailAttachment.h"
 
 #import <MProtoBuf/FileAttachmentDataStructure.h>
 
 
 
 @implementation MynigmaAttachmentEncryptionContext
+
+
+- (instancetype)initWithEncryptedAttachment:(GenericEmailAttachment*)genericEmailAttachment
+{
+    self = [super init];
+    if (self) {
+        
+        //we are interested in the metadata of the decrypted attachment
+        //file name etc. won't be known at this point
+        self.attachmentMetaDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:nil contentID:genericEmailAttachment.contentID size:0 hashedValue:nil partID:nil remoteURL:nil isInline:genericEmailAttachment.isInline.boolValue contentType:genericEmailAttachment.MIMEType];
+        
+        self.encryptedData = genericEmailAttachment.data;
+    }
+    return self;
+}
+
+
+- (instancetype)initWithUnencryptedAttachment:(GenericEmailAttachment*)genericEmailAttachment
+{
+    self = [super init];
+    if (self) {
+        
+        self.attachmentMetaDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:genericEmailAttachment.fileName contentID:genericEmailAttachment.contentID size:genericEmailAttachment.size.integerValue hashedValue:nil partID:nil remoteURL:nil isInline:genericEmailAttachment.isInline.boolValue contentType:genericEmailAttachment.MIMEType];
+        
+        self.encryptedData = genericEmailAttachment.data;
+    }
+    return self;
+}
+
 
 
 - (instancetype)initWithFileName:(NSString*)fileName contentID:(NSString*)contentID decryptedData:(NSData*)decryptedData hashedValue:(NSData*)hashedValue partID:(NSString*)partID remoteURLString:(NSString*)remoteURLString isInline:(BOOL)isInline contentType:(NSString*)contentType
@@ -97,5 +127,35 @@
 
 
 
+
+- (GenericEmailAttachment*)encryptedAttachmentWithIndex:(NSInteger)index
+{
+    GenericEmailAttachment* genericAttachment = [GenericEmailAttachment new];
+    
+    [genericAttachment setContentID:self.attachmentMetaDataStructure.contentID];
+    [genericAttachment setData:self.encryptedData];
+    [genericAttachment setFileName:[NSString stringWithFormat:NSLocalizedString(@"%ld.myn", @"Safe attachment file name"), (long)index]];
+    [genericAttachment setIsInline:@(self.attachmentMetaDataStructure.isInline)];
+    [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
+    [genericAttachment setSize:@(self.attachmentMetaDataStructure.size)];
+    
+    return genericAttachment;
+}
+
+- (GenericEmailAttachment*)decryptedAttachment
+{
+#warning TODO: deal with missing and superfluous attachments
+    
+    GenericEmailAttachment* genericAttachment = [GenericEmailAttachment new];
+    
+    [genericAttachment setContentID:self.attachmentMetaDataStructure.contentID];
+    [genericAttachment setData:self.encryptedData];
+    [genericAttachment setFileName:[NSString stringWithFormat:NSLocalizedString(@"%ld.myn", @"Safe attachment file name"), (long)index]];
+    [genericAttachment setIsInline:@(self.attachmentMetaDataStructure.isInline)];
+    [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
+    [genericAttachment setSize:@(self.attachmentMetaDataStructure.size)];
+    
+    return genericAttachment;
+}
 
 @end

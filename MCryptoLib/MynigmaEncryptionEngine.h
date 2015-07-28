@@ -58,9 +58,11 @@
 #import <MCryptoLib/BasicEncryptionEngineProtocol.h>
 
 
+NSString *const MCryptoWillSentSafelyHeaderField = @"x-mynigma-will-be-sent-safely";
+NSString *const MCryptoWasSentSafelyHeaderField = @"x-mynigma-was-sent-safely";
 
 
-@class MynigmaMessageEncryptionContext, MCOAbstractMessage, MCOAttachment;
+@class MynigmaMessageEncryptionContext, MCOAbstractMessage, MCOAttachment, GenericEmailMessage;
 
 
 @interface MynigmaEncryptionEngine : NSObject <EncryptionEngineProtocol>
@@ -86,9 +88,6 @@
 
 
 
-
-- (void)processIncomingMessageContext:(MynigmaMessageEncryptionContext*)messageContext;
-
 - (BOOL)encryptMessage:(MynigmaMessageEncryptionContext*)context;
 
 
@@ -101,5 +100,10 @@
 
 - (void)ensureValidCurrentKeyForSender:(NSString*)senderEmailString;
 
+
+
+- (GenericEmailMessage*)processIncomingMessage:(GenericEmailMessage*)message;
+
+- (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message;
 
 @end

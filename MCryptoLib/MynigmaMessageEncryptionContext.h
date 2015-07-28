@@ -57,9 +57,20 @@
 #import "MynigmaError.h"
 
 
-@class SessionKeys, PayloadPartDataStructure, MCOAbstractMessage;
+@class SessionKeys, PayloadPartDataStructure, MCOAbstractMessage, GenericEmailMessage;
 
 @interface MynigmaMessageEncryptionContext : NSObject <NSCoding>
+
+
+- (instancetype)initWithUnencryptedEmailMessage:(GenericEmailMessage*)genericEmailMessage;
+
+- (instancetype)initWithEncryptedEmailMessage:(GenericEmailMessage*)genericEmailMessage;
+
+
+- (GenericEmailMessage*)encryptedMessage;
+
+- (GenericEmailMessage*)decryptedMessage;
+
 
 
 + (MynigmaMessageEncryptionContext*)contextForDecryptedDeviceMessageWithPayload:(NSData*)payloadData;
@@ -119,5 +130,6 @@
 - (void)pushErrorWithCode:(MynigmaErrorCode)code;
 
 - (BOOL)hasErrors;
+
 
 @end

@@ -58,6 +58,7 @@
 
 #import "AppleEncryptionEngine.h"
 
+#import "CoreDataHelper.h"
 #import "MimeHelper.h"
 #import "MCOAbstractMessage+Convenience.h"
 
@@ -205,12 +206,7 @@
     //		plainPart.setText(plainText);
     //		mainBodyInPlainAndHTML.addBodyPart(plainPart);
     
-    NSURL* HTMLTemplateURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"MynigmaMessage" withExtension:@"html"];
-    
-    NSString* HTMLTemplate = [NSString stringWithContentsOfURL:HTMLTemplateURL encoding:NSUTF8StringEncoding error:nil];
-    
-    [message setHTMLBody:HTMLTemplate];
-    
+    [message setHTMLBody:[self safeMessageBody]];
     
     // Attach template image
     NSURL* templateImageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"MynigmaIconForLetter" withExtension:@"jpg"];
@@ -248,7 +244,7 @@
     }
     
     //set the main boundary
-    [message.header setSubject:[NSString stringWithFormat:NSLocalizedString(@"Safe message from %@", nil), self.senderName]];
+    [message.header setSubject:[self safeMessageSubject]];
     
     [message.header setExtraHeaderValue:@"Mynigma Safe Email" forName:@"X-Mynigma-Safe-Message"];
     

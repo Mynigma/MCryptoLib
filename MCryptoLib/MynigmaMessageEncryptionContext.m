@@ -58,9 +58,15 @@
 #import <MProtoBuf/EmailRecipientDataStructure.h>
 
 #import "MynigmaAttachmentEncryptionContext.h"
+
+#import "GenericEmailMessage.h"
+#import "GenericEmailAttachment.h"
+#import "GenericEmailAddressee.h"
+
 #import "BasicEncryptionEngineProtocol.h"
 #import "AppleEncryptionEngine.h"
 #import "SessionKeys.h"
+#import "CoreDataHelper.h"
 
 
 
@@ -68,10 +74,221 @@
 
 @implementation MynigmaMessageEncryptionContext
 
+
+#pragma mark - Init with generic email object
+
+- (instancetype)initWithUnencryptedEmailMessage:(GenericEmailMessage*)genericEmailMessage
+{
+    self = [super init];
+    if (self) {
+        
+        self.sentDate = genericEmailMessage.sentDate;
+        
+        
+        //look for the sender
+        self.senderEmail = [genericEmailMessage senderEmail];
+        
+        self.messageID = genericEmailMessage.messageID;
+        
+        self.recipientEmails = [genericEmailMessage.addressees valueForKey:@"address"];
+        
+        
+        //now initialise the attachment contexts
+        NSMutableArray* newEncryptedAttachmentContexts = [NSMutableArray new];
+        
+        NSArray* attachments = genericEmailMessage.attachments;
+        
+        for(GenericEmailAttachment* attachment in attachments)
+        {
+            MynigmaAttachmentEncryptionContext* attachmentContext = [[MynigmaAttachmentEncryptionContext alloc] initWithEncryptedAttachment:attachment];
+            
+            [newEncryptedAttachmentContexts addObject:attachmentContext];
+        }
+        
+        self.attachmentEncryptionContexts = newEncryptedAttachmentContexts;
+        
+        //extra headers
+        NSMutableDictionary* extraHeaders = [NSMutableDictionary new];
+        for(NSString* extraHeaderName in genericEmailMessage.extraHeaders.allKeys)
+        {
+            NSString* extraHeaderValue = [genericEmailMessage.extraHeaders objectForKey:extraHeaderName];
+            
+            if(extraHeaderValue)
+                extraHeaders[extraHeaderName.lowercaseString] = extraHeaderValue;
+        }
+        [self setExtraHeaders:extraHeaders];
+    }
+    return self;
+}
+
+- (instancetype)initWithEncryptedEmailMessage:(GenericEmailMessage*)genericEmailMessage
+{
+    self = [super init];
+    if (self) {
+        
+        self.sentDate = genericEmailMessage.sentDate;
+        
+        
+        //look for the sender
+        for(GenericEmailAddressee* addressee in genericEmailMessage.addressees)
+        {
+            if(addressee.addresseeType == AddresseeTypeFrom)
+            {
+                self.senderEmail = addressee.address;
+                self.senderName = addressee.name;
+                break;
+            }
+        }
+        
+        self.messageID = genericEmailMessage.messageID;
+        
+        self.recipientEmails = [genericEmailMessage.addressees valueForKey:@"address"];
+        
+        //first wrap the message data
+        self.encryptedPayload = genericEmailMessage.encryptedPayload;
+        
+        
+        //now initialise the attachment contexts
+        NSMutableArray* newEncryptedAttachmentContexts = [NSMutableArray new];
+        
+        NSArray* attachments = genericEmailMessage.encryptedAttachments;
+        
+        for(GenericEmailAttachment* attachment in attachments)
+        {
+            MynigmaAttachmentEncryptionContext* attachmentContext = [[MynigmaAttachmentEncryptionContext alloc] initWithEncryptedAttachment:attachment];
+            
+            [newEncryptedAttachmentContexts addObject:attachmentContext];
+        }
+        
+        self.attachmentEncryptionContexts = newEncryptedAttachmentContexts;
+        
+        //extra headers
+        NSMutableDictionary* extraHeaders = [NSMutableDictionary new];
+        for(NSString* extraHeaderName in genericEmailMessage.extraHeaders.allKeys)
+        {
+            NSString* extraHeaderValue = [genericEmailMessage.extraHeaders objectForKey:extraHeaderName];
+            
+            if(extraHeaderValue)
+                extraHeaders[extraHeaderName.lowercaseString] = extraHeaderValue;
+        }
+        [self setExtraHeaders:extraHeaders];
+    }
+    return self;
+}
+
+
+
+#pragma mark - Obtain generic email object
+
+- (GenericEmailMessage*)encryptedMessage
+{
+    GenericEmailMessage* message = [GenericEmailMessage new];
+    
+    //first set the message body
+    NSURL* mynigmaMessageURL = [[CoreDataHelper bundle] URLForResource:@"MynigmaMessage" withExtension:@"html"];
+    
+    NSString* formatString = [NSString stringWithContentsOfURL:mynigmaMessageURL encoding:NSUTF8StringEncoding error:nil];
+    
+    NSString* displayedSenderEmail = self.senderEmail?self.senderEmail:@"";
+    
+    NSString* displayedSenderName = self.senderName?self.senderName:self.senderEmail;
+    
+    if(!displayedSenderName)
+        displayedSenderName = @"";
+    
+    NSString* bodyString = [NSString stringWithFormat:formatString, [displayedSenderEmail cStringUsingEncoding:NSUTF8StringEncoding], [displayedSenderName cStringUsingEncoding:NSUTF8StringEncoding], [self.messageID cStringUsingEncoding:NSUTF8StringEncoding], [self.messageID cStringUsingEncoding:NSUTF8StringEncoding]];
+    
+    [message setHTMLBody:bodyString];
+    
+    
+    //set the subject
+    if(displayedSenderName.length)
+        [message setSubject:[NSString stringWithFormat:NSLocalizedString(@"Safe message from %@", @"Safe message template"), displayedSenderName]];
+    else
+        [message setSubject:NSLocalizedString(@"Safe message", @"Safe message template")];
+
+    
+    // Attach template image
+    NSURL* templateImageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"MynigmaIconForLetter" withExtension:@"jpg"];
+    
+    NSData* templateImageData = [NSData dataWithContentsOfURL:templateImageURL];
+    
+    GenericEmailAttachment* imageAttachment = [GenericEmailAttachment new];
+    
+    [imageAttachment setData:templateImageData];
+    [imageAttachment setFileName:@"MynigmaIconForLetter.jpg"];
+    
+    [imageAttachment setIsInline:@YES];
+    [imageAttachment setMIMEType:@"image/jpg"];
+    
+    [message addAttachment:imageAttachment];
+    
+    
+    // Attach encrypted payload
+    GenericEmailAttachment* payloadAttachment = [GenericEmailAttachment new];
+    
+    [payloadAttachment setData:self.encryptedPayload];
+    [payloadAttachment setFileName:NSLocalizedString(@"Secure message.myn", nil)];
+    
+    [payloadAttachment setIsInline:@NO];
+    [payloadAttachment setMIMEType:@"application/mynigma-payload"];
+    
+    [message addAttachment:payloadAttachment];
+    
+    
+    // Attach encrypted attachments
+    for(int i = 0; i < self.attachmentEncryptionContexts.count; i++)
+    {
+        MynigmaAttachmentEncryptionContext* attachmentEncryptionContext = self.attachmentEncryptionContexts[i];
+        
+        [message addAttachment:[attachmentEncryptionContext encryptedAttachmentWithIndex:i+1]];
+    }
+    
+    [message setExtraHeaders:@{ @"X-Mynigma-Safe-Message" : @"Mynigma Safe Email" }];
+    
+    [message setSentDate:self.sentDate];
+    
+    return message;
+}
+
+- (GenericEmailMessage*)decryptedMessage
+{
+    GenericEmailMessage* message = [GenericEmailMessage new];
+    
+    //first set the message body
+    [message setHTMLBody:self.payloadPart.HTMLBody];
+    [message setPlainBody:self.payloadPart.body];
+    
+    // Attach decrypted attachments
+    for(int i = 0; i < self.attachmentEncryptionContexts.count; i++)
+    {
+        MynigmaAttachmentEncryptionContext* attachmentEncryptionContext = self.attachmentEncryptionContexts[i];
+        
+        [message addAttachment:[attachmentEncryptionContext decryptedAttachment]];
+    }
+    
+    //set the main boundary
+    [message setSubject:self.payloadPart.subject];
+    
+    [message setExtraHeaders:@{ /*@"x-mynigma-was-sent-safely" : @"Mynigma Safe Email"*/ }];
+    
+    [message setSentDate:self.sentDate];
+    
+    return message;
+}
+
+
+
+
+
+
 + (MynigmaMessageEncryptionContext*)contextForDecryptedDeviceMessageWithPayload:(NSData*)payloadData
 {
     return nil;
 }
+
+
+#pragma mark - Errors
 
 - (void)pushErrorWithCode:(MynigmaErrorCode)code
 {
@@ -95,7 +312,9 @@
 
 
 
-#define SESSION_KEYS_ENCODER_KEY
+
+
+#pragma mark - NSCoding
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
@@ -112,7 +331,6 @@
     }
     return self;
 }
-
 
 
 

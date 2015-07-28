@@ -56,9 +56,15 @@
 
 
 
-@class FileAttachmentDataStructure;
+@class FileAttachmentDataStructure, GenericEmailAttachment;
 
 @interface MynigmaAttachmentEncryptionContext : NSObject
+
+
+
+- (instancetype)initWithEncryptedAttachment:(GenericEmailAttachment*)genericEmailAttachment;
+
+- (instancetype)initWithUnencryptedAttachment:(GenericEmailAttachment*)genericEmailAttachment;
 
 
 - (instancetype)initWithFileName:(NSString*)fileName contentID:(NSString*)contentID decryptedData:(NSData*)decryptedData hashedValue:(NSData*)hashedValue partID:(NSString*)partID remoteURLString:(NSString*)remoteURLString isInline:(BOOL)isInline contentType:(NSString*)contentType;
@@ -76,5 +82,9 @@
 @property NSData* encryptedData;
 @property BOOL isMissing;
 @property BOOL isSuperfluous;
+
+
+- (GenericEmailAttachment*)encryptedAttachmentWithIndex:(NSInteger)index;
+- (GenericEmailAttachment*)decryptedAttachment;
 
 @end

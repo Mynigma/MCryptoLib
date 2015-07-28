@@ -56,7 +56,7 @@
 
 #define MIME_TYPE_ENCRYPTED @"application/mynigma"
 #define MIME_TYPE_ENCRYPTED_PAYLOAD @"application/mynigma-payload"
-#define MIME_TYPE_ENCRYPTED_ATTACHMENTS @"applciation/mynigma-attachment"
+#define MIME_TYPE_ENCRYPTED_ATTACHMENTS @"application/mynigma-attachment"
 
 
 
