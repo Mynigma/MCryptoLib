@@ -15,6 +15,18 @@ NSString* const addresseeTypeKey    = @"MCryptoGenericAddresseeAddresseeType";
 
 @implementation GenericEmailAddressee
 
+- (instancetype)initWithName:(NSString*)name emailAddress:(NSString*)emailAddress addresseeType:(NSNumber*)addresseeType
+{
+    self = [super init];
+    if (self) {
+        
+        self.name = name;
+        self.address = emailAddress;
+        self.addresseeType = addresseeType;
+    }
+    return self;
+}
+
 
 
 - (instancetype)initWithCoder:(NSCoder*)coder

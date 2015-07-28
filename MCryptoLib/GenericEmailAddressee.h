@@ -14,6 +14,11 @@
 
 @interface GenericEmailAddressee : NSObject <NSCoding>
 
+
+- (instancetype)initWithName:(NSString*)name emailAddress:(NSString*)emailAddress addresseeType:(NSNumber*)addresseeType;
+
+
+
 @property NSString* name;
 @property NSString* address;
 
