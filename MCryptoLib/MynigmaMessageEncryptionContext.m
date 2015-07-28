@@ -68,6 +68,7 @@
 #import "AppleEncryptionEngine.h"
 #import "SessionKeys.h"
 #import "CoreDataHelper.h"
+#import "MIMEHelper.h"
 
 
 
@@ -90,6 +91,9 @@
         self.senderEmail = [genericEmailMessage senderEmail];
         
         self.messageID = genericEmailMessage.messageID;
+        
+        if(!self.messageID)
+            self.messageID = [MimeHelper generateFreshMessageID];
         
         self.recipientEmails = [genericEmailMessage.addressees valueForKey:@"address"];
         
@@ -162,6 +166,9 @@
         }
         
         self.messageID = genericEmailMessage.messageID;
+        
+        if(!self.messageID)
+            self.messageID = [MimeHelper generateFreshMessageID];
         
         self.recipientEmails = [genericEmailMessage.addressees valueForKey:@"address"];
         
