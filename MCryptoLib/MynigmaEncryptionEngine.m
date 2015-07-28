@@ -64,6 +64,7 @@
 #import "MynigmaErrorFactory.h"
 #import "CommonHeader.h"
 #import "GenericEmailMessage.h"
+#import "GenericEmailAddressee.h"
 
 
 #import <MProtoBuf/EmailRecipientDataStructure.h>
