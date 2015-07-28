@@ -269,6 +269,8 @@
     
     [message setSentDate:self.sentDate];
     
+    [message setMessageID:self.messageID];
+    
     return message;
 }
 
@@ -294,6 +296,8 @@
     [message setExtraHeaders:@{ /*@"x-mynigma-was-sent-safely" : @"Mynigma Safe Email"*/ }];
     
     [message setSentDate:self.sentDate];
+    
+    [message setMessageID:self.messageID];
     
     return message;
 }
