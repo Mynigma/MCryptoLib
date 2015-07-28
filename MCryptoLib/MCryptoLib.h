@@ -72,3 +72,8 @@ FOUNDATION_EXPORT const unsigned char MCryptoLibVersionString[];
 
 #import <MCryptoLib/AppleEncryptionEngine.h>
 
+#import <MCryptoLib/GenericEmailAddressee.h>
+#import <MCryptoLib/GenericEmailMessage.h>
+#import <MCryptoLib/GenericEmailAttachment.h>
+
+

@@ -58,8 +58,8 @@
 #import <MCryptoLib/BasicEncryptionEngineProtocol.h>
 
 
-NSString *const MCryptoWillSentSafelyHeaderField = @"x-mynigma-will-be-sent-safely";
-NSString *const MCryptoWasSentSafelyHeaderField = @"x-mynigma-was-sent-safely";
+#define MCryptoWillSentSafelyHeaderField @"x-mynigma-will-be-sent-safely"
+#define MCryptoWasSentSafelyHeaderField @"x-mynigma-was-sent-safely"
 
 
 @class MynigmaMessageEncryptionContext, MCOAbstractMessage, MCOAttachment, GenericEmailMessage;
