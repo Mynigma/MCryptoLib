@@ -56,6 +56,7 @@
 
 #import <MProtoBuf/PayloadPartDataStructure.h>
 #import <MProtoBuf/EmailRecipientDataStructure.h>
+#import <MProtoBuf/FileAttachmentDataStructure.h>
 
 #import "MynigmaAttachmentEncryptionContext.h"
 
@@ -93,8 +94,19 @@
         self.recipientEmails = [genericEmailMessage.addressees valueForKey:@"address"];
         
         
+        NSMutableArray* addresseesAsEmailRecipientDataStructures = [NSMutableArray new];
+        
+        for(GenericEmailAddressee* genericAddressee in genericEmailMessage.addressees)
+        {
+            EmailRecipientDataStructure* emailRecipient = [[EmailRecipientDataStructure alloc] initWithName:genericAddressee.name emailAddress:genericAddressee.address addresseeType:genericAddressee.addresseeType.integerValue];
+            
+            [addresseesAsEmailRecipientDataStructures addObject:emailRecipient];
+        }
+        
         //now initialise the attachment contexts
         NSMutableArray* newEncryptedAttachmentContexts = [NSMutableArray new];
+        
+        NSMutableArray* newFileAttachmentDataStructures = [NSMutableArray new];
         
         NSArray* attachments = genericEmailMessage.attachments;
         
@@ -103,9 +115,18 @@
             MynigmaAttachmentEncryptionContext* attachmentContext = [[MynigmaAttachmentEncryptionContext alloc] initWithEncryptedAttachment:attachment];
             
             [newEncryptedAttachmentContexts addObject:attachmentContext];
+            
+            FileAttachmentDataStructure* fileAttachentDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:attachment.fileName contentID:attachment.contentID size:attachment.size.integerValue hashedValue:nil partID:nil remoteURL:nil isInline:attachment.isInline.boolValue contentType:attachment.MIMEType];
+            
+            [newFileAttachmentDataStructures addObject:fileAttachentDataStructure];
         }
         
         self.attachmentEncryptionContexts = newEncryptedAttachmentContexts;
+
+        
+        self.payloadPart = [[PayloadPartDataStructure alloc] initWithBody:genericEmailMessage.plainBody HTMLBody:genericEmailMessage.HTMLBody subject:genericEmailMessage.subject dateSent:genericEmailMessage.sentDate addressees:addresseesAsEmailRecipientDataStructures attachments:newFileAttachmentDataStructures];
+        
+        
         
         //extra headers
         NSMutableDictionary* extraHeaders = [NSMutableDictionary new];
