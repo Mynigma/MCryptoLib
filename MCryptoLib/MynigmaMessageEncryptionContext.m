@@ -237,7 +237,7 @@
 
     
     // Attach template image
-    NSURL* templateImageURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"MynigmaIconForLetter" withExtension:@"jpg"];
+    NSURL* templateImageURL = [[CoreDataHelper bundle] URLForResource:@"MynigmaIconForLetter" withExtension:@"jpg"];
     
     NSData* templateImageData = [NSData dataWithContentsOfURL:templateImageURL];
     
