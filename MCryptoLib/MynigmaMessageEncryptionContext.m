@@ -229,8 +229,16 @@
     [message setHTMLBody:bodyString];
     
     
-    //TODO: set addressees
-//    [message setAddressees:]
+    NSMutableArray* addressees = [NSMutableArray new];
+    
+    for(EmailRecipientDataStructure* emailRecipient in self.payloadPart.addressees)
+    {
+        GenericEmailAddressee* addressee = [[GenericEmailAddressee alloc] initWithName:emailRecipient.name emailAddress:emailRecipient.email addresseeType:@(emailRecipient.addresseeType)];
+        
+        [addressees addObject:addressee];
+    }
+    
+    [message setAddressees:addressees];
     
     
     //set the subject
