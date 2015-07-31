@@ -106,7 +106,7 @@ NSString* const addresseesKey       = @"MCryptoGenericEmailMessageAddressees";
 {
     for(GenericEmailAddressee* addressee in self.addressees)
     {
-        if(addressee.addresseeType == AddresseeTypeFrom)
+        if(addressee.addresseeType.integerValue == AddresseeTypeFrom)
         {
             return addressee.address;
         }
