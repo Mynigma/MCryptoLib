@@ -544,8 +544,21 @@
         }
     }
     
+    [self fillInMissingRecipientAndKeyLabelInfoInContext:context];
     
-    NSData* encryptedMessageData = [self.basicEngine AESEncryptData:payloadPartDataStructure.serialisedData withSessionKey:AESSessionKey error:&error];
+    NSData* dataToBeSigned = payloadPartDataStructure.serialisedData;
+    
+    NSData* signedData = [self signData:dataToBeSigned withKeyLabel:context.signatureKeyLabel error:&error];
+                          
+    if(!signedData.length || error)
+    {
+        NSLog(@"Signature operation failed!!!! Key label: %@", context.signatureKeyLabel);
+        if(error)
+            [context pushErrorWithCode:error.code];
+        return NO;
+    }
+    
+    NSData* encryptedMessageData = [self.basicEngine AESEncryptData:signedData withSessionKey:AESSessionKey error:&error];
     
     if(!encryptedMessageData.length || error)
     {
@@ -554,8 +567,6 @@
             [context pushErrorWithCode:error.code];
         return NO;
     }
-    
-    [self fillInMissingRecipientAndKeyLabelInfoInContext:context];
     
     if(context.encryptionKeyLabels.count != context.expectedSignatureKeyLabels.count || context.encryptionKeyLabels.count != context.recipientEmails.count)
     {
@@ -867,8 +878,21 @@
         
         if(decryptedData.length && !decryptionError)
         {
-            [context setDecryptedData:decryptedData];
-            context.payloadPart = [PayloadPartDataStructure deserialiseData:decryptedData];
+            SignedDataStructure* signedDataStructure = [SignedDataStructure deserialiseData:decryptedData];
+            
+            NSData* unwrappedData = signedDataStructure.dataToBeSigned;
+            
+#warning TODO: verify signature
+            
+            
+            
+            
+            
+            
+            
+            
+            [context setDecryptedData:unwrappedData];
+            context.payloadPart = [PayloadPartDataStructure deserialiseData:unwrappedData];
             
             //now decrypt the attachments
             [context setAttachmentHMACValues:encryptedDataStructure.attachmentHMACs];
