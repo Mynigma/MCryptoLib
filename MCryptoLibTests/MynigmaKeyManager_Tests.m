@@ -169,7 +169,7 @@
     
     MynigmaEncryptionEngine* engine = [[MynigmaEncryptionEngine alloc] initWithKeyManager:keyManager];
     
-    XCTAssertNotNil([engine processIncomingMessage:message]);
+    XCTAssertNotNil([engine processIncomingMessage:message.genericMessage]);
     
     NSString* senderEmail = message.sender.mailbox;
     NSString* recipientEmail = [message.allRecipients.firstObject mailbox];
@@ -206,7 +206,7 @@
     
     MynigmaEncryptionEngine* engine = [[MynigmaEncryptionEngine alloc] initWithKeyManager:keyManager];
     
-    XCTAssertNotNil([engine processIncomingMessage:message]);
+    XCTAssertNotNil([engine processIncomingMessage:message.genericMessage]);
     
     NSString* senderEmail = message.sender.mailbox;
     XCTAssertNotNil(senderEmail);

@@ -67,7 +67,7 @@
 
 @interface PayloadPartDataStructure (MessageParsing)
 
-- (instancetype)initWithMessage:(MCOAbstractMessage*)message withBasicEncryptionEngine:(id<BasicEncryptionEngineProtocol>)basicEngine;
+- (instancetype)initWithMessage:(MCOAbstractMessage*)message;
 
 @end
 
@@ -75,11 +75,11 @@
 
 @interface MynigmaMessageEncryptionContext (MailCore)
 
-+ (MynigmaMessageEncryptionContext*)contextForDecryptedMessage:(MCOAbstractMessage*)message;
-
-+ (MynigmaMessageEncryptionContext*)contextForEncryptedMessage:(MCOAbstractMessage*)message;
-
-+ (MynigmaMessageEncryptionContext*)contextForIncomingMessage:(MCOAbstractMessage*)message;
+//+ (MynigmaMessageEncryptionContext*)contextForDecryptedMessage:(MCOAbstractMessage*)message;
+//
+//+ (MynigmaMessageEncryptionContext*)contextForEncryptedMessage:(MCOAbstractMessage*)message;
+//
+//+ (MynigmaMessageEncryptionContext*)contextForIncomingMessage:(MCOAbstractMessage*)message;
 
 
 - (MCOAbstractMessage*)encryptedMessage;

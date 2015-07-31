@@ -8,6 +8,7 @@
 
 #import "GenericEmailAddressee.h"
 
+
 NSString* const nameKey             = @"MCryptoGenericAddresseeName";
 NSString* const addressKey          = @"MCryptoGenericAddresseeAddress";
 NSString* const addresseeTypeKey    = @"MCryptoGenericAddresseeAddresseeType";
@@ -20,7 +21,7 @@ NSString* const addresseeTypeKey    = @"MCryptoGenericAddresseeAddresseeType";
     self = [super init];
     if (self) {
         
-        self.name = name;
+        self.name = name?name:@"";
         self.address = emailAddress;
         self.addresseeType = addresseeType;
     }
@@ -48,6 +49,35 @@ NSString* const addresseeTypeKey    = @"MCryptoGenericAddresseeAddresseeType";
     [coder encodeObject:self.addresseeType forKey:addresseeTypeKey];
 }
 
+- (BOOL)isEqual:(GenericEmailAddressee*)object
+{
+    if(object == self)
+        return YES;
+    
+    if(![object isKindOfClass:[GenericEmailAddressee class]])
+        return NO;
+    
+    if((self.name && !object.name) || (!self.name && object.name))
+        return NO;
+    if(self.name && ![self.name isEqual:object.name])
+        return NO;
+    
+    if((self.address && !object.address) || (!self.address && object.address))
+        return NO;
+    if(self.address && ![self.address isEqual:object.address])
+        return NO;
+    
+    if((self.addresseeType && !object.addresseeType) || (!self.addresseeType && object.addresseeType))
+        return NO;
+    if(self.addresseeType && ![self.addresseeType isEqual:object.addresseeType])
+        return NO;
+    
+    return YES;
+}
 
+- (NSUInteger)hash
+{
+    return self.name.hash ^ self.address.hash ^ self.addresseeType.hash;
+}
 
 @end

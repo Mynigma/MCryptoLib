@@ -116,7 +116,7 @@
         
         for(GenericEmailAttachment* attachment in attachments)
         {
-            MynigmaAttachmentEncryptionContext* attachmentContext = [[MynigmaAttachmentEncryptionContext alloc] initWithEncryptedAttachment:attachment];
+            MynigmaAttachmentEncryptionContext* attachmentContext = [[MynigmaAttachmentEncryptionContext alloc] initWithUnencryptedAttachment:attachment];
             
             [newEncryptedAttachmentContexts addObject:attachmentContext];
             
@@ -157,7 +157,7 @@
         //look for the sender
         for(GenericEmailAddressee* addressee in genericEmailMessage.addressees)
         {
-            if(addressee.addresseeType == AddresseeTypeFrom)
+            if(addressee.addresseeType.integerValue == AddresseeTypeFrom)
             {
                 self.senderEmail = addressee.address;
                 self.senderName = addressee.name;
@@ -229,6 +229,10 @@
     [message setHTMLBody:bodyString];
     
     
+    //TODO: set addressees
+//    [message setAddressees:]
+    
+    
     //set the subject
     if(displayedSenderName.length)
         [message setSubject:[NSString stringWithFormat:NSLocalizedString(@"Safe message from %@", @"Safe message template"), displayedSenderName]];
@@ -244,6 +248,9 @@
     GenericEmailAttachment* imageAttachment = [GenericEmailAttachment new];
     
     [imageAttachment setData:templateImageData];
+    [imageAttachment setSize:@(templateImageData.length)];
+    [imageAttachment setContentID:@"TXluaWdtYUljb25Gb3JMZXR0ZXI@mynigma.org"];
+    
     [imageAttachment setFileName:@"MynigmaIconForLetter.jpg"];
     
     [imageAttachment setIsInline:@YES];
@@ -256,6 +263,9 @@
     GenericEmailAttachment* payloadAttachment = [GenericEmailAttachment new];
     
     [payloadAttachment setData:self.encryptedPayload];
+    [payloadAttachment setSize:@(self.encryptedPayload.length)];
+    [payloadAttachment setContentID:[MimeHelper generateFreshMessageID]];
+    
     [payloadAttachment setFileName:NSLocalizedString(@"Secure message.myn", nil)];
     
     [payloadAttachment setIsInline:@NO];
@@ -272,7 +282,7 @@
         [message addAttachment:[attachmentEncryptionContext encryptedAttachmentWithIndex:i+1]];
     }
     
-    [message setExtraHeaders:@{ @"X-Mynigma-Safe-Message" : @"Mynigma Safe Email" }];
+    [message setExtraHeaders:self.extraHeaders];
     
     [message setSentDate:self.sentDate];
     
@@ -286,8 +296,19 @@
     GenericEmailMessage* message = [GenericEmailMessage new];
     
     //first set the message body
-    [message setHTMLBody:self.payloadPart.HTMLBody];
-    [message setPlainBody:self.payloadPart.body];
+    [message setHTMLBody:self.payloadPart.HTMLBody.length?self.payloadPart.HTMLBody:nil];
+    [message setPlainBody:self.payloadPart.body.length?self.payloadPart.body:nil];
+    
+    NSMutableArray* addressees = [NSMutableArray new];
+    for(EmailRecipientDataStructure* emailRecipient in self.payloadPart.addressees)
+    {
+        GenericEmailAddressee* addressee = [[GenericEmailAddressee alloc] initWithName:emailRecipient.name emailAddress:emailRecipient.email addresseeType:@(emailRecipient.addresseeType)];
+        
+        [addressees addObject:addressee];
+    }
+    
+    [message setAddressees:addressees];
+    
     
     // Attach decrypted attachments
     for(int i = 0; i < self.attachmentEncryptionContexts.count; i++)
@@ -300,11 +321,13 @@
     //set the main boundary
     [message setSubject:self.payloadPart.subject];
     
-    [message setExtraHeaders:@{ /*@"x-mynigma-was-sent-safely" : @"Mynigma Safe Email"*/ }];
+    [message setExtraHeaders:self.extraHeaders];
     
     [message setSentDate:self.sentDate];
     
     [message setMessageID:self.messageID];
+    
+    [message setExtraHeaders:self.extraHeaders];
     
     return message;
 }

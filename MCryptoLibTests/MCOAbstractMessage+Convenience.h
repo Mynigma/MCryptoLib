@@ -54,12 +54,13 @@
 #import "MCOAbstractMessage.h"
 #import <MailCore/MailCore.h>
 #import "BasicEncryptionEngineProtocol.h"
+#import "GenericEmailMessage.h"
 
 
 
 @interface MCOAbstractMessage (Convenience)
 
-- (NSArray*)allAttachmentsAsAttachmentDataStructuresWithBasicEncryptionEngine:(id<BasicEncryptionEngineProtocol>)basicEngine;
+- (NSArray*)allAttachmentsAsAttachmentDataStructures;
 - (NSArray*)allAttachments;
 - (NSArray*)encryptedAttachments;
 - (NSArray*)inlineAttachments;
@@ -81,6 +82,14 @@
 
 - (NSArray*)allRecipients;
 
+
+
+@end
+
+@interface MCOAbstractMessage (MailCoreAdditions)
+
+
+- (GenericEmailMessage*)genericMessage;
 
 
 @end

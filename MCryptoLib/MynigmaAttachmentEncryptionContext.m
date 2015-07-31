@@ -56,6 +56,7 @@
 
 #import "BasicEncryptionEngineProtocol.h"
 #import "GenericEmailAttachment.h"
+#import "MimeHelper.h"
 
 #import <MProtoBuf/FileAttachmentDataStructure.h>
 
@@ -86,7 +87,7 @@
         
         self.attachmentMetaDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:genericEmailAttachment.fileName contentID:genericEmailAttachment.contentID size:genericEmailAttachment.size.integerValue hashedValue:nil partID:nil remoteURL:nil isInline:genericEmailAttachment.isInline.boolValue contentType:genericEmailAttachment.MIMEType];
         
-        self.encryptedData = genericEmailAttachment.data;
+        self.decryptedData = genericEmailAttachment.data;
     }
     return self;
 }
@@ -101,6 +102,9 @@
         self.attachmentMetaDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:fileName contentID:contentID size:decryptedData.length hashedValue:hashedValue partID:partID remoteURL:remoteURLString isInline:isInline contentType:contentType];
         
         self.decryptedData = decryptedData;
+        
+        self.isMissing = NO;
+        self.isSuperfluous = NO;
     }
     return self;
 }
@@ -136,7 +140,7 @@
     [genericAttachment setData:self.encryptedData];
     [genericAttachment setFileName:[NSString stringWithFormat:NSLocalizedString(@"%ld.myn", @"Safe attachment file name"), (long)index]];
     [genericAttachment setIsInline:@(self.attachmentMetaDataStructure.isInline)];
-    [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
+    [genericAttachment setMIMEType:MIME_TYPE_ENCRYPTED_ATTACHMENTS];
     [genericAttachment setSize:@(self.attachmentMetaDataStructure.size)];
     
     return genericAttachment;
@@ -144,13 +148,39 @@
 
 - (GenericEmailAttachment*)decryptedAttachment
 {
-#warning TODO: deal with missing and superfluous attachments
+    if([self isMissing])
+    {
+        GenericEmailAttachment* genericAttachment = [GenericEmailAttachment new];
+        
+        [genericAttachment setContentID:self.attachmentMetaDataStructure.contentID];
+        [genericAttachment setData:[NSData new]];
+        [genericAttachment setFileName:[NSString stringWithFormat:NSLocalizedString(@"Missing attachment", @"Missing safe attachment replacement name"), (long)index]];
+        [genericAttachment setIsInline:@YES];
+        [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
+        [genericAttachment setSize:0];
+        
+        return genericAttachment;
+    }
+    
+    if([self isSuperfluous])
+    {
+        GenericEmailAttachment* genericAttachment = [GenericEmailAttachment new];
+        
+        [genericAttachment setContentID:self.attachmentMetaDataStructure.contentID];
+        [genericAttachment setData:[NSData new]];
+        [genericAttachment setFileName:[NSString stringWithFormat:NSLocalizedString(@"Superfluous attachment", @"Superfluous safe attachment replacement name"), (long)index]];
+        [genericAttachment setIsInline:@YES];
+        [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
+        [genericAttachment setSize:0];
+        
+        return genericAttachment;
+    }
     
     GenericEmailAttachment* genericAttachment = [GenericEmailAttachment new];
     
     [genericAttachment setContentID:self.attachmentMetaDataStructure.contentID];
-    [genericAttachment setData:self.encryptedData];
-    [genericAttachment setFileName:[NSString stringWithFormat:NSLocalizedString(@"%ld.myn", @"Safe attachment file name"), (long)index]];
+    [genericAttachment setData:self.decryptedData];
+    [genericAttachment setFileName:self.attachmentMetaDataStructure.fileName];
     [genericAttachment setIsInline:@(self.attachmentMetaDataStructure.isInline)];
     [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
     [genericAttachment setSize:@(self.attachmentMetaDataStructure.size)];

@@ -60,4 +60,52 @@ NSString* const isInlineKey     = @"MCryptoGenericAttachmentIsInline";
 }
 
 
+
+- (BOOL)isEqual:(GenericEmailAttachment*)object
+{
+    if(object == self)
+        return YES;
+    
+    if(![object isKindOfClass:[GenericEmailAttachment class]])
+        return NO;
+    
+    if((self.contentID && !object.contentID) || (!self.contentID && object.contentID))
+        return NO;
+    if(self.contentID && ![self.contentID isEqual:object.contentID])
+        return NO;
+    
+    if((self.fileName && !object.fileName) || (!self.fileName && object.fileName))
+        return NO;
+    if(self.fileName && ![self.fileName isEqual:object.fileName])
+        return NO;
+
+    if((self.MIMEType && !object.MIMEType) || (!self.MIMEType && object.MIMEType))
+        return NO;
+    if(self.MIMEType && ![self.MIMEType isEqual:object.MIMEType])
+        return NO;
+
+    if((self.size && !object.size) || (!self.size && object.size))
+        return NO;
+    if(self.size && ![self.size isEqual:object.size])
+        return NO;
+
+    if((self.data && !object.data) || (!self.data && object.data))
+        return NO;
+    if(self.data && ![self.data isEqual:object.data])
+        return NO;
+
+    if((self.isInline && !object.isInline) || (!self.isInline && object.isInline))
+        return NO;
+    if(self.isInline && ![self.isInline isEqual:object.isInline])
+        return NO;
+
+    return YES;
+}
+
+
+- (NSUInteger)hash
+{
+    return self.contentID.hash ^ self.fileName.hash ^ self.MIMEType.hash ^ self.size.hash ^ self.data.hash ^ self.isInline.hash;
+}
+
 @end

@@ -758,6 +758,9 @@
  
     if(!date)
         date = [NSDate date];
+    
+    if(!senderEmail.length || !recipientEmail.length || !keyLabel.length)
+        return NO;
 
     [self.coreDataHelper runSyncOnKeyContext:^(NSManagedObjectContext *keyContext)
     {

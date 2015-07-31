@@ -180,7 +180,7 @@
 		1E395E4A1B1C75AC00D66920 /* PublicKeychainItemRefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB383D81B1109A70033617D /* PublicKeychainItemRefs.m */; };
 		1E395E4B1B1C75AC00D66920 /* PrivateKeychainItemRefs.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EB383DB1B11163E0033617D /* PrivateKeychainItemRefs.h */; };
 		1E395E4C1B1C75AC00D66920 /* PrivateKeychainItemRefs.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB383DC1B11163E0033617D /* PrivateKeychainItemRefs.m */; };
-		1E395E4D1B1C75B000D66920 /* MCryptoLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED4DE7D1B036418002535A4 /* MCryptoLib.h */; };
+		1E395E4D1B1C75B000D66920 /* MCryptoLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 1ED4DE7D1B036418002535A4 /* MCryptoLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E395E591B1C75C600D66920 /* NSString+EmailAddresses.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE476DC1B1675FA004A204D /* NSString+EmailAddresses.h */; };
 		1E395E5A1B1C75C600D66920 /* NSString+EmailAddresses.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE476DD1B1675FA004A204D /* NSString+EmailAddresses.m */; };
 		1E395E5B1B1C75C600D66920 /* CoreDataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E65DCBD1B1068E7000CFD52 /* CoreDataHelper.h */; };
@@ -882,21 +882,24 @@
 		1EE828FC1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE828FB1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m */; };
 		1EE828FD1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE828FB1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m */; };
 		1EE828FE1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE828FB1B2CD646003A8400 /* SMIMEEncryptionEngine_Tests.m */; };
-		1EF01FE51B67C0A5001A9A1E /* GenericEmailAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FE11B67C0A5001A9A1E /* GenericEmailAttachment.h */; };
-		1EF01FE61B67C0A5001A9A1E /* GenericEmailAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FE11B67C0A5001A9A1E /* GenericEmailAttachment.h */; };
+		1EF01FE51B67C0A5001A9A1E /* GenericEmailAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FE11B67C0A5001A9A1E /* GenericEmailAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF01FE61B67C0A5001A9A1E /* GenericEmailAttachment.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FE11B67C0A5001A9A1E /* GenericEmailAttachment.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EF01FE71B67C0A5001A9A1E /* GenericEmailAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FE21B67C0A5001A9A1E /* GenericEmailAttachment.m */; };
 		1EF01FE81B67C0A5001A9A1E /* GenericEmailAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FE21B67C0A5001A9A1E /* GenericEmailAttachment.m */; };
 		1EF01FE91B67C0A5001A9A1E /* GenericEmailAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FE21B67C0A5001A9A1E /* GenericEmailAttachment.m */; };
-		1EF01FEA1B67C0A5001A9A1E /* GenericEmailMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FE31B67C0A5001A9A1E /* GenericEmailMessage.h */; };
-		1EF01FEB1B67C0A5001A9A1E /* GenericEmailMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FE31B67C0A5001A9A1E /* GenericEmailMessage.h */; };
+		1EF01FEA1B67C0A5001A9A1E /* GenericEmailMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FE31B67C0A5001A9A1E /* GenericEmailMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF01FEB1B67C0A5001A9A1E /* GenericEmailMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FE31B67C0A5001A9A1E /* GenericEmailMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EF01FEC1B67C0A5001A9A1E /* GenericEmailMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FE41B67C0A5001A9A1E /* GenericEmailMessage.m */; };
 		1EF01FED1B67C0A5001A9A1E /* GenericEmailMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FE41B67C0A5001A9A1E /* GenericEmailMessage.m */; };
 		1EF01FEE1B67C0A5001A9A1E /* GenericEmailMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FE41B67C0A5001A9A1E /* GenericEmailMessage.m */; };
-		1EF01FF21B67C9C7001A9A1E /* GenericEmailAddressee.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FF01B67C9C7001A9A1E /* GenericEmailAddressee.h */; };
-		1EF01FF31B67C9C7001A9A1E /* GenericEmailAddressee.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FF01B67C9C7001A9A1E /* GenericEmailAddressee.h */; };
+		1EF01FF21B67C9C7001A9A1E /* GenericEmailAddressee.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FF01B67C9C7001A9A1E /* GenericEmailAddressee.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EF01FF31B67C9C7001A9A1E /* GenericEmailAddressee.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EF01FF01B67C9C7001A9A1E /* GenericEmailAddressee.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1EF01FF41B67C9C7001A9A1E /* GenericEmailAddressee.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FF11B67C9C7001A9A1E /* GenericEmailAddressee.m */; };
 		1EF01FF51B67C9C7001A9A1E /* GenericEmailAddressee.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FF11B67C9C7001A9A1E /* GenericEmailAddressee.m */; };
 		1EF01FF61B67C9C7001A9A1E /* GenericEmailAddressee.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF01FF11B67C9C7001A9A1E /* GenericEmailAddressee.m */; };
+		1EF020251B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF020241B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m */; };
+		1EF020261B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF020241B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m */; };
+		1EF020271B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF020241B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m */; };
 		1EF40D141B4010870049B8CC /* PubKey1.asc in Resources */ = {isa = PBXBuildFile; fileRef = 1EF40D131B4010870049B8CC /* PubKey1.asc */; };
 		1EF40D151B4010870049B8CC /* PubKey1.asc in Resources */ = {isa = PBXBuildFile; fileRef = 1EF40D131B4010870049B8CC /* PubKey1.asc */; };
 		1EF40D161B4010870049B8CC /* PubKey1.asc in Resources */ = {isa = PBXBuildFile; fileRef = 1EF40D131B4010870049B8CC /* PubKey1.asc */; };
@@ -1457,6 +1460,8 @@
 		1EF01FE41B67C0A5001A9A1E /* GenericEmailMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericEmailMessage.m; sourceTree = "<group>"; };
 		1EF01FF01B67C9C7001A9A1E /* GenericEmailAddressee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericEmailAddressee.h; sourceTree = "<group>"; };
 		1EF01FF11B67C9C7001A9A1E /* GenericEmailAddressee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericEmailAddressee.m; sourceTree = "<group>"; };
+		1EF020231B6A41A9001A9A1E /* GenericEmailMessage+MailCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GenericEmailMessage+MailCore.h"; sourceTree = "<group>"; };
+		1EF020241B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GenericEmailMessage+MailCore.m"; sourceTree = "<group>"; };
 		1EF40D131B4010870049B8CC /* PubKey1.asc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PubKey1.asc; sourceTree = "<group>"; };
 		1EF40D171B402C360049B8CC /* KeyParser_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyParser_Tests.m; sourceTree = "<group>"; };
 		1EF40D231B42EEE80049B8CC /* MynigmaErrorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MynigmaErrorFactory.h; sourceTree = "<group>"; };
@@ -1993,6 +1998,8 @@
 				1E8A05771B5408BD00973B07 /* MynigmaMessageEncryptionContext+MailCore.m */,
 				1E8A05811B540D4D00973B07 /* MimeHelper+MailCore.h */,
 				1E8A05821B540D4D00973B07 /* MimeHelper+MailCore.m */,
+				1EF020231B6A41A9001A9A1E /* GenericEmailMessage+MailCore.h */,
+				1EF020241B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m */,
 			);
 			name = MailCore;
 			sourceTree = "<group>";
@@ -3662,6 +3669,7 @@
 				1E69A71D1B18633000819181 /* UnitTestMynigmaKeyManager.m in Sources */,
 				1E2A6D5A1B1EF64D00CC9EE2 /* MynigmaEncryptionEngine_Tests.m in Sources */,
 				1E8A057D1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m in Sources */,
+				1EF020251B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m in Sources */,
 				1E395E211B1C6CB300D66920 /* AppleEncryptionEngine_Tests.m in Sources */,
 				1EF40D2F1B431F0F0049B8CC /* MynigmaErrorFactory_Tests.m in Sources */,
 				1EE476E21B167616004A204D /* NSString+EmailAddresses_Tests.m in Sources */,
@@ -3760,6 +3768,7 @@
 			files = (
 				1E34551A1B2DAEB300F8EEF3 /* PGPEncryptionEngine_Tests.m in Sources */,
 				1E8A05751B54076000973B07 /* MynigmaAttachmentEncryptionContext+MailCore.m in Sources */,
+				1EF020271B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m in Sources */,
 				1EFB90CB1B1C6095008C5E4D /* MimeHelper_Tests.m in Sources */,
 				1E395E231B1C6CB300D66920 /* AppleEncryptionEngine_Tests.m in Sources */,
 				1E395E821B1C76B600D66920 /* UnitTestMynigmaKeyManager.m in Sources */,
@@ -3917,6 +3926,7 @@
 				1EE476E31B167616004A204D /* NSString+EmailAddresses_Tests.m in Sources */,
 				1E2A6D5B1B1EF64D00CC9EE2 /* MynigmaEncryptionEngine_Tests.m in Sources */,
 				1E8A057E1B540ADC00973B07 /* MynigmaEncryptionEngine+MailCore.m in Sources */,
+				1EF020261B6A41A9001A9A1E /* GenericEmailMessage+MailCore.m in Sources */,
 				1E395E221B1C6CB300D66920 /* AppleEncryptionEngine_Tests.m in Sources */,
 				1EF40D301B431F0F0049B8CC /* MynigmaErrorFactory_Tests.m in Sources */,
 				1E69A71E1B18633000819181 /* UnitTestMynigmaKeyManager.m in Sources */,

@@ -245,9 +245,9 @@
     
     MynigmaEncryptionEngine* engine = [[MynigmaEncryptionEngine alloc] initWithKeyManager:[UnitTestMynigmaKeyManager new] basicEncryptionEngine:[[OpenSSLEncryptionEngine alloc] initWithKeyManager:[UnitTestMynigmaKeyManager new]]];
     
-    MynigmaMessageEncryptionContext* context = [MynigmaMessageEncryptionContext contextForDecryptedMessage:message];
+    MynigmaMessageEncryptionContext* context = [[MynigmaMessageEncryptionContext alloc] initWithUnencryptedEmailMessage:message.genericMessage];
     
-    
+
     //encrypt the message with the standard sample keys
     context.signatureKeyLabel = TEST_KEY_LABEL1;
     
@@ -260,42 +260,42 @@
     XCTAssertTrue([engine encryptMessage:context]);
     XCTAssertFalse(context.hasErrors);
     
-    MynigmaMessageEncryptionContext* restoredContext = [MynigmaMessageEncryptionContext contextForEncryptedMessage:[context encryptedMessage]];
+    MynigmaMessageEncryptionContext* restoredContext = [[MynigmaMessageEncryptionContext alloc] initWithEncryptedEmailMessage:[context encryptedMessage]];
     
-    XCTAssertTrue([engine decryptMessage:restoredContext]);
+    XCTAssertTrue([engine decryptMessage:restoredContext insertHeaderValue:NO]);
     XCTAssertFalse(context.hasErrors);
-    
+        
     //check we got a valid result
-    [self assertStructuralEqualityOfMessage:message withMessage:restoredContext.decryptedMessage];
+    XCTAssertEqualObjects(message.genericMessage, restoredContext.decryptedMessage);
 }
 
-- (void)assertStructuralEqualityOfMessage:(MCOAbstractMessage*)message1 withMessage:(MCOAbstractMessage*)message2
-{
-    NSString* HTMLPart1 = message1.HTMLBodyString;
-    NSString* HTMLPart2 = message2.HTMLBodyString;
-    
-    //not all messages have an HTML part
-    if(HTMLPart1.length || HTMLPart2.length)
-        XCTAssertEqualObjects(HTMLPart1, HTMLPart2);
-    
-    NSString* bodyPart1 = message1.plainBodyString;
-    NSString* bodyPart2 = message2.plainBodyString;
-    XCTAssertEqualObjects(bodyPart1, bodyPart2);
-    
-    NSArray* allAttachments1 = message1.allAttachments;
-    NSArray* allAttachments2 = message2.allAttachments;
-    
-    XCTAssertEqual(allAttachments1.count, allAttachments2.count);
-    
-    for(int i = 0; i < allAttachments1.count; i++)
-    {
-        MCOAttachment* attachmentPart1 = allAttachments1[i];
-        MCOAttachment* attachmentPart2 = allAttachments2[i];
-        
-        XCTAssertEqualObjects(attachmentPart1.filename, attachmentPart2.filename);
-        XCTAssertEqualObjects(attachmentPart1.data, attachmentPart2.data);
-    }
-}
+//- (void)assertStructuralEqualityOfMessage:(MCOAbstractMessage*)message1 withMessage:(MCOAbstractMessage*)message2
+//{
+//    NSString* HTMLPart1 = message1.HTMLBodyString;
+//    NSString* HTMLPart2 = message2.HTMLBodyString;
+//    
+//    //not all messages have an HTML part
+//    if(HTMLPart1.length || HTMLPart2.length)
+//        XCTAssertEqualObjects(HTMLPart1, HTMLPart2);
+//    
+//    NSString* bodyPart1 = message1.plainBodyString;
+//    NSString* bodyPart2 = message2.plainBodyString;
+//    XCTAssertEqualObjects(bodyPart1, bodyPart2);
+//    
+//    NSArray* allAttachments1 = message1.allAttachments;
+//    NSArray* allAttachments2 = message2.allAttachments;
+//    
+//    XCTAssertEqual(allAttachments1.count, allAttachments2.count);
+//    
+//    for(int i = 0; i < allAttachments1.count; i++)
+//    {
+//        MCOAttachment* attachmentPart1 = allAttachments1[i];
+//        MCOAttachment* attachmentPart2 = allAttachments2[i];
+//        
+//        XCTAssertEqualObjects(attachmentPart1.filename, attachmentPart2.filename);
+//        XCTAssertEqualObjects(attachmentPart1.data, attachmentPart2.data);
+//    }
+//}
 
 
 @end

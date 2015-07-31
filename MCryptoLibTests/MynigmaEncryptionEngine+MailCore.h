@@ -56,13 +56,13 @@
 @interface MynigmaEncryptionEngine (MailCore)
 
 
-- (MCOAbstractMessage*)processIncomingMessage:(MCOAbstractMessage*)message;
+- (MCOAbstractMessage*)processIncomingMCOMessage:(MCOAbstractMessage*)message;
 
-- (MCOAbstractMessage*)processOutgoingMessage:(MCOAbstractMessage*)message;
+- (MCOAbstractMessage*)processOutgoingMCOMessage:(MCOAbstractMessage*)message;
 
 
 
-- (MCOAbstractMessage*)overrideErrorsForMessage:(MCOAbstractMessage*)message;
+- (MCOAbstractMessage*)overrideErrorsForMCOMessage:(MCOAbstractMessage*)message;
 
 - (MCOAttachment*)decryptAttachment:(MCOAttachment*)attachment forMessage:(MCOAbstractMessage*)message;
 

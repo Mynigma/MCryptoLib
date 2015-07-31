@@ -256,7 +256,7 @@
         
         return nil;
     }
-
+    
     return dataToBeSigned;
 }
 
@@ -314,41 +314,41 @@
     
     if(!signedDataWithNewKeyLabel)
         return NO;
-
+    
     SignedDataStructure* signedDataStructureWithOldKeyLabel = [SignedDataStructure deserialiseData:signedDataWithNewKeyLabel];
-        
+    
     NSData* signedDataWithOldKeyLabel = [self verifySignedData:signedDataStructureWithOldKeyLabel error:nil];
-        
+    
     if(!signedDataWithOldKeyLabel)
         return NO;
-
+    
     KeyIntroductionDataStructure* keyIntroductionDataStructure = [KeyIntroductionDataStructure deserialiseData:signedDataWithOldKeyLabel];
-            
+    
     if(!keyIntroductionDataStructure)
         return NO;
-
+    
     PublicKeyData* newPublicKeyData = [[PublicKeyData alloc] initWithKeyLabel:keyIntroductionDataStructure.theNewKeyLabel encData:keyIntroductionDataStructure.theNewEncKey verData:keyIntroductionDataStructure.theNewVerKey];
-                
+    
     NSString* oldKeyLabel = keyIntroductionDataStructure.theOldKeyLabel;
-                
+    
     //check that the keyLabels coincide
     if(![newPublicKeyData.keyLabel isEqual:signedDataStructureWithNewKeyLabel.keyLabel])
         return NO;
     
     if(![oldKeyLabel isEqual:signedDataStructureWithOldKeyLabel.keyLabel])
         return NO;
-
+    
     //if the addition of the new key fails, it means that the key already in the story is different - abort!
     if(![self.keyManager addPublicKeyWithData:newPublicKeyData])
         return NO;
-
+    
     //the origin public key may not yet exist
     //in this case we need to create it before verifying the introduction
     if(!senderEmailString)
         return NO;
-
+    
     NSString* previousKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:senderEmailString];
-                        
+    
     if(!previousKeyLabel || [oldKeyLabel isEqual:previousKeyLabel])
     {
         return [self.keyManager setCurrentKeyForEmailAddress:senderEmailString keyLabel:newPublicKeyData.keyLabel overwrite:YES];
@@ -415,13 +415,13 @@
 //        //this was not done when the context was initialised, as it requires SHA512 and hence a basic encryption engine
 //        NSData* data = attachmentContext.decryptedData;
 //        NSData* hashedValue = [self.basicEngine SHA512DigestOfData:data];
-//        
+//
 //        [attachmentContext.attachmentMetaDataStructure setHashedValue:hashedValue];
-//        
+//
 //        //now encrypt the attachment
-//        
+//
 //    }
-//    
+//
 //    return YES;
 //}
 
@@ -492,7 +492,7 @@
                 [expectedSignatureKeyLabels addObject:expectedSignatureKeyLabel];
             else
                 //use the actual signature label if there is no expected signature key label available
-               [expectedSignatureKeyLabels addObject:context.signatureKeyLabel];
+                [expectedSignatureKeyLabels addObject:context.signatureKeyLabel];
         }
         
         [context setEncryptionKeyLabels:encryptionKeyLabels];
@@ -521,6 +521,29 @@
     context.sessionKeys = sessionKeys;
     
     NSError* error = nil;
+    
+    
+    //compute and set the hash value of each attachment
+    //it will be needed in the payload
+    NSMutableArray* hashedValues = [NSMutableArray new];
+    for(MynigmaAttachmentEncryptionContext* attachmentContext in context.attachmentEncryptionContexts)
+    {
+        NSData* unencryptedData = [attachmentContext decryptedData];
+        NSData* hashedValue = [self.basicEngine SHA512DigestOfData:unencryptedData];
+        [hashedValues addObject:hashedValue];
+    }
+    
+    for(FileAttachmentDataStructure* attachmentMetaData in payloadPartDataStructure.attachments)
+    {
+        NSInteger index = [payloadPartDataStructure.attachments indexOfObject:attachmentMetaData];
+        
+        if(index >=0 && index < hashedValues.count)
+        {
+            NSData* hashedValue = hashedValues[index];
+            [attachmentMetaData setHashedValue:hashedValue];
+        }
+    }
+    
     
     NSData* encryptedMessageData = [self.basicEngine AESEncryptData:payloadPartDataStructure.serialisedData withSessionKey:AESSessionKey error:&error];
     
@@ -595,7 +618,16 @@
     
     context.encryptedPayload = HMACStructure.serialisedData;
     
-        return YES;
+        NSMutableDictionary* extraHeaders = [NSMutableDictionary new];
+        
+        if(context.extraHeaders)
+            [extraHeaders addEntriesFromDictionary:context.extraHeaders];
+        
+        [extraHeaders addEntriesFromDictionary:@{ @"x-mynigma-safe-message" : @"Mynigma Safe Email" }];
+        
+        [context setExtraHeaders:extraHeaders];
+
+    return YES;
 }
 
 + (NSString*)extractVersionFromData:(NSData*)data
@@ -676,7 +708,7 @@
         if(index < messageContext.attachmentHMACValues.count)
         {
             NSData* HMACValue = messageContext.attachmentHMACValues[index];
-        
+            
             attachmentContext.HMACOfEncryptedData = HMACValue;
         }
         
@@ -691,8 +723,12 @@
     }
 }
 
-
 - (BOOL)decryptMessage:(MynigmaMessageEncryptionContext*)context
+{
+    return [self decryptMessage:context insertHeaderValue:YES];
+}
+
+- (BOOL)decryptMessage:(MynigmaMessageEncryptionContext*)context insertHeaderValue:(BOOL)insertHeaderValue
 {
     //TODO: use version to deal with deprecated encryption formats
     //NSString* versionString = [self extractVersionFromData:context.encryptedPayload];
@@ -766,22 +802,22 @@
         return NO;
     }
     
-//    //update the expected key
-//    //that is, the key that should be used as the basis for introductions sent to this contact
-//    //it should be the same that this contact used to encrypt the message to us
-//        for(NSString* recipientEmailAddress in context.recipientEmails)
-//        {
-//            
-//            
-//            if(recipientEmailAddress)
-//            {
-//                //this is a simplification
-//                //if several matching decryption keys are found, we cannot actually assume that the sender expects this key to be used by this address
-//                //ususally, it should make little difference
-//                //this is an edge case we need to consider at a later date
-//                [self.keyManager updateExpectedKeyLabelFrom:emailString to:recipientEmailAddress keyLabel:keyPairLabel date:date];
-//            }
-//        }
+    //    //update the expected key
+    //    //that is, the key that should be used as the basis for introductions sent to this contact
+    //    //it should be the same that this contact used to encrypt the message to us
+    //        for(NSString* recipientEmailAddress in context.recipientEmails)
+    //        {
+    //
+    //
+    //            if(recipientEmailAddress)
+    //            {
+    //                //this is a simplification
+    //                //if several matching decryption keys are found, we cannot actually assume that the sender expects this key to be used by this address
+    //                //ususally, it should make little difference
+    //                //this is an edge case we need to consider at a later date
+    //                [self.keyManager updateExpectedKeyLabelFrom:emailString to:recipientEmailAddress keyLabel:keyPairLabel date:date];
+    //            }
+    //        }
     
     if(!encrSessionKeyData.length)
     {
@@ -826,7 +862,7 @@
         }
         
         MynigmaError* decryptionError = nil;
-
+        
         NSData* decryptedData = [self.basicEngine AESDecryptData:messageData withSessionKey:sessionKeys.AESSessionKey error:&decryptionError];
         
         if(decryptedData.length && !decryptionError)
@@ -837,6 +873,21 @@
             //now decrypt the attachments
             [context setAttachmentHMACValues:encryptedDataStructure.attachmentHMACs];
             [self decryptAttachmentsForContext:context];
+            
+            //alter the header values
+            NSMutableDictionary* extraHeaders = [NSMutableDictionary new];
+            
+            if(context.extraHeaders)
+                [extraHeaders addEntriesFromDictionary:context.extraHeaders];
+            
+            //remove the safe message indicator
+            [extraHeaders removeObjectForKey:@"x-mynigma-safe-message"];
+            
+            if(insertHeaderValue)
+                [extraHeaders addEntriesFromDictionary:@{ @"x-mynigma-was-sent-safely" : @"yes"}];
+            
+            [context setExtraHeaders:extraHeaders];
+
             
             return YES;
         }
@@ -944,7 +995,7 @@
 {
     if([self.keyManager haveCurrentPrivateKeyForEmailAddress:senderEmailString])
         return;
-        
+    
     [self.keyManager generateMynigmaPrivateKeyForEmail:senderEmailString engine:[OpenSSLEncryptionEngine new] withCallback:nil];
 }
 
@@ -968,7 +1019,7 @@
 - (GenericEmailMessage*)processIncomingMessage:(GenericEmailMessage*)message
 {
     // first check if the message is safe
-    NSString* safeMessageHeaderIndicator = message.extraHeaders[[@"X-Mynigma-Safe-Message" lowercaseString]];
+    NSString* safeMessageHeaderIndicator = message.extraHeaders[MCryptoSafeMessageHeaderField];
     
     BOOL messageIsSafe = safeMessageHeaderIndicator.length > 0;
     
@@ -993,18 +1044,18 @@
     NSString* safeMessageHeaderIndicator = message.extraHeaders[MCryptoWillSentSafelyHeaderField];
     
     BOOL needsToBeEncrypted = (safeMessageHeaderIndicator.length > 0) && hasHeaderField;
-
+    
     if(needsToBeEncrypted)
     {
         MynigmaMessageEncryptionContext* context = [[MynigmaMessageEncryptionContext alloc] initWithUnencryptedEmailMessage:message];
-                                                    
+        
         [[MynigmaEncryptionEngine sharedInstance] encryptMessage:context];
         
         return context.encryptedMessage;
     }
     
     //TODO: encrypt if the header field neither exists nor is required, but the recipients are safe
-   
+    
     return message;
 }
 

@@ -58,6 +58,7 @@
 #import <MCryptoLib/BasicEncryptionEngineProtocol.h>
 
 
+#define MCryptoSafeMessageHeaderField @"x-mynigma-safe-message"
 #define MCryptoWillSentSafelyHeaderField @"x-mynigma-will-be-sent-safely"
 #define MCryptoWasSentSafelyHeaderField @"x-mynigma-was-sent-safely"
 
@@ -89,6 +90,9 @@
 
 
 - (BOOL)encryptMessage:(MynigmaMessageEncryptionContext*)context;
+
+- (BOOL)decryptMessage:(MynigmaMessageEncryptionContext*)context;
+- (BOOL)decryptMessage:(MynigmaMessageEncryptionContext*)context insertHeaderValue:(BOOL)insertHeaderValue;
 
 
 

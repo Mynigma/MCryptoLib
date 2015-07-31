@@ -62,7 +62,7 @@
 
 + (NSString*)generateFreshMessageID
 {
-    return [NSString stringWithFormat:@"%@@mynigma.org", [NSUUID UUID]];
+    return [NSString stringWithFormat:@"%@@mynigma.org", [NSUUID UUID].UUIDString];
 }
 
 + (NSData*)deviceMessageDataWithPayloadData:(NSData*)payloadData

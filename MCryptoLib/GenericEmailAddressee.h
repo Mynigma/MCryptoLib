@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import <MProtoBuf/EmailRecipientDataStructure.h>
 
 
 

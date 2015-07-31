@@ -60,12 +60,16 @@
 #import <MProtoBuf/EmailRecipientDataStructure.h>
 #import <MProtoBuf/FileAttachmentDataStructure.h>
 
+#import "GenericEmailAddressee.h"
+#import "GenericEmailMessage.h"
+#import "GenericEmailAttachment.h"
+
 
 
 
 @implementation MCOAbstractMessage (Convenience)
 
-- (NSArray*)allAttachmentsAsAttachmentDataStructuresWithBasicEncryptionEngine:(id<BasicEncryptionEngineProtocol>)basicEngine
+- (NSArray*)allAttachmentsAsAttachmentDataStructures
 {
     NSArray* allAttachments = self.allAttachments;
     
@@ -73,11 +77,9 @@
     
     for(MCOAttachment* attachment in allAttachments)
     {
-        NSData* hashedValue = [basicEngine SHA512DigestOfData:attachment.data];
-        
         NSString* contentID = [attachment contentIDGeneratingIfNeeded:YES];
         
-        FileAttachmentDataStructure* attachmentDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:attachment.filename contentID:contentID size:attachment.data.length hashedValue:hashedValue partID:nil remoteURL:nil isInline:attachment.isInlineAttachment contentType:attachment.mimeType];
+        FileAttachmentDataStructure* attachmentDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:attachment.filename contentID:contentID size:attachment.data.length hashedValue:nil partID:nil remoteURL:nil isInline:attachment.isInlineAttachment contentType:attachment.mimeType];
         
         [allAttachmentDataStructures addObject:attachmentDataStructure];
     }
@@ -401,3 +403,76 @@
 }
 
 @end
+
+@implementation MCOAbstractMessage (MailCoreAdditions)
+
+
+- (GenericEmailMessage*)genericMessage
+{
+    GenericEmailMessage* genericMessage = [GenericEmailMessage new];
+    
+    [genericMessage setHTMLBody:self.HTMLBodyString];
+    [genericMessage setPlainBody:self.plainBodyString];
+    [genericMessage setSentDate:self.header.date];
+    [genericMessage setSubject:self.header.subject];
+    [genericMessage setMessageID:self.header.messageID];
+    
+    NSMutableArray* addressees = [NSMutableArray new];
+    
+    [addressees addObject:[[GenericEmailAddressee alloc] initWithName:self.header.from.displayName emailAddress:self.header.from.mailbox addresseeType:@(AddresseeTypeFrom)]];
+    
+    for(MCOAddress* address in self.header.replyTo)
+    {
+        [addressees addObject:[[GenericEmailAddressee alloc] initWithName:address.displayName emailAddress:address.mailbox addresseeType:@(AddresseeTypeReplyTo)]];
+    }
+    
+    for(MCOAddress* address in self.header.to)
+    {
+        [addressees addObject:[[GenericEmailAddressee alloc] initWithName:address.displayName emailAddress:address.mailbox addresseeType:@(AddresseeTypeTo)]];
+    }
+    
+    for(MCOAddress* address in self.header.cc)
+    {
+        [addressees addObject:[[GenericEmailAddressee alloc] initWithName:address.displayName emailAddress:address.mailbox addresseeType:@(AddresseeTypeCc)]];
+    }
+    
+    for(MCOAddress* address in self.header.bcc)
+    {
+        [addressees addObject:[[GenericEmailAddressee alloc] initWithName:address.displayName emailAddress:address.mailbox addresseeType:@(AddresseeTypeBcc)]];
+    }
+    
+    [genericMessage setAddressees:addressees];
+    
+    for(MCOAttachment* attachment in self.attachments)
+    {
+        GenericEmailAttachment* genericAttachment = [GenericEmailAttachment new];
+        
+        if(!attachment.contentID)
+            [attachment setContentID:[MimeHelper generateFreshMessageID]];
+        
+        [genericAttachment setContentID:attachment.contentID];
+        [genericAttachment setData:attachment.data];
+        [genericAttachment setFileName:attachment.filename];
+        [genericAttachment setIsInline:@(attachment.isInlineAttachment)];
+        [genericAttachment setMIMEType:attachment.mimeType];
+        [genericAttachment setSize:@(attachment.data.length)];
+        
+        [genericMessage addAttachment:genericAttachment];
+    }
+    
+    NSMutableDictionary* headerValues = [NSMutableDictionary new];
+    for(NSString* headerKey in self.header.allExtraHeadersNames)
+    {
+        NSString* headerValue = [self.header extraHeaderValueForName:headerKey];
+        
+        if(headerValue)
+            headerValues[headerKey.lowercaseString] = headerValue;
+    }
+    
+    [genericMessage setExtraHeaders:headerValues];
+    
+    return genericMessage;
+}
+
+@end
+

@@ -56,6 +56,8 @@
 #import <MailCore/MailCore.h>
 
 #import "MynigmaMessageEncryptionContext+MailCore.h"
+#import "MCOAbstractMessage+Convenience.h"
+#import "GenericEmailMessage+MailCore.h"
 
 
 
@@ -63,60 +65,26 @@
 @implementation MynigmaEncryptionEngine (MailCore)
 
 
-- (MCOAbstractMessage*)processIncomingMessage:(MCOAbstractMessage*)message
+- (MCOAbstractMessage*)processIncomingMCOMessage:(MCOAbstractMessage*)message
 {
-    MynigmaMessageEncryptionContext* context = [MynigmaMessageEncryptionContext contextForIncomingMessage:message];
+    GenericEmailMessage* genericMessage = [message genericMessage];
     
-    [self processIncomingMessageContext:context];
+    GenericEmailMessage* resultingMessage = [self processIncomingMessage:genericMessage];
     
-    return context.decryptedMessage;
+    return resultingMessage.MCOMessage;
+}
+
+- (MCOAbstractMessage*)processOutgoingMCOMessage:(MCOAbstractMessage*)message
+{
+    GenericEmailMessage* genericMessage = [message genericMessage];
+    
+    GenericEmailMessage* resultingMessage = [self processOutgoingMessage:genericMessage];
+    
+    return resultingMessage.MCOMessage;
 }
 
 
-- (BOOL)processPublicKeyInHeaders:(MCOAbstractMessage*)message
-{
-//    PublicKeyData* publicKeyData = [self.keyManager getPublicKeyDataFromHeader:message];
-//    
-//    if (![self.keyManager addPublicKeyWithData:publicKeyData])
-//        return false;
-//    
-//    NSString* senderAddress = message.sender.mailbox;
-//    
-//    return [self.keyManager setCurrentKeyForEmailAddress:senderAddress keyLabel:publicKeyData.keyLabel overwrite:NO];
-    
-    return NO;
-}
-
-
-
-- (MCOAbstractMessage*)processOutgoingMessage:(MCOAbstractMessage*)message
-{
-    return nil;
-    
-    // first check if the message is safe
-//    NSString* safeMessageHeaderIndicator = [message.header extraHeaderValueForName:@"X-Mynigma-Safe-Message"];
-//    
-//    BOOL messageIsSafe = safeMessageHeaderIndicator.length > 0;
-//    
-//    if (messageIsSafe)
-//    {
-//        MynigmaMessageEncryptionContext* context = [MynigmaMessageEncryptionContext contextForDecryptedMessage:message];
-//        
-//        if(![self decryptMessage:context])
-//            return nil;
-//        
-//        return context.decryptedMessage;
-//    }
-//    else
-//    {
-//        [self processPublicKeyInHeaders:message];
-//        
-//        return message;
-//    }
-}
-
-
-- (MCOAbstractMessage*)overrideErrorsForMessage:(MCOAbstractMessage*)message
+- (MCOAbstractMessage*)overrideErrorsForMCOMessage:(MCOAbstractMessage*)message
 {
     return nil;
 }
