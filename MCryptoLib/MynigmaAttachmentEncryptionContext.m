@@ -176,6 +176,7 @@
         [genericAttachment setIsInline:@YES];
         [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
         [genericAttachment setSize:0];
+        [genericAttachment setIndex:self.index];
         
         return genericAttachment;
     }
@@ -188,6 +189,7 @@
     [genericAttachment setIsInline:@(self.attachmentMetaDataStructure.isInline)];
     [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
     [genericAttachment setSize:@(self.attachmentMetaDataStructure.size)];
+    [genericAttachment setIndex:self.index];
     
     return genericAttachment;
 }
