@@ -15,6 +15,8 @@ NSString* const MIMETypeKey     = @"MCryptoGenericAttachmentMIMEType";
 NSString* const sizeKey         = @"MCryptoGenericAttachmentSize";
 NSString* const dataKey         = @"MCryptoGenericAttachmentData";
 NSString* const isInlineKey     = @"MCryptoGenericAttachmentIsInline";
+NSString* const indexKey        = @"MCryptoGenericAttachmentIndex";
+
 
 
 
@@ -45,6 +47,7 @@ NSString* const isInlineKey     = @"MCryptoGenericAttachmentIsInline";
         self.size = [coder decodeObjectForKey:sizeKey];
         self.data = [coder decodeObjectForKey:dataKey];
         self.isInline = [coder decodeObjectForKey:isInlineKey];
+        self.index = [coder decodeObjectForKey:indexKey];
     }
     return self;
 }
@@ -57,6 +60,7 @@ NSString* const isInlineKey     = @"MCryptoGenericAttachmentIsInline";
     [coder encodeObject:self.size forKey:sizeKey];
     [coder encodeObject:self.data forKey:dataKey];
     [coder encodeObject:self.isInline forKey:isInlineKey];
+    [coder encodeObject:self.index forKey:indexKey];
 }
 
 
@@ -99,13 +103,18 @@ NSString* const isInlineKey     = @"MCryptoGenericAttachmentIsInline";
     if(self.isInline && ![self.isInline isEqual:object.isInline])
         return NO;
 
+    if((self.index && !object.index) || (!self.index && object.index))
+        return NO;
+    if(self.index && ![self.index isEqual:object.index])
+        return NO;
+
     return YES;
 }
 
 
 - (NSUInteger)hash
 {
-    return self.contentID.hash ^ self.fileName.hash ^ self.MIMEType.hash ^ self.size.hash ^ self.data.hash ^ self.isInline.hash;
+    return self.contentID.hash ^ self.fileName.hash ^ self.MIMEType.hash ^ self.size.hash ^ self.data.hash ^ self.isInline.hash ^ self.index.hash;
 }
 
 @end

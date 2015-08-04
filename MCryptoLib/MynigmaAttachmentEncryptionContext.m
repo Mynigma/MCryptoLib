@@ -143,6 +143,9 @@
     [genericAttachment setMIMEType:MIME_TYPE_ENCRYPTED_ATTACHMENTS];
     [genericAttachment setSize:@(self.attachmentMetaDataStructure.size)];
     
+    //this is the index within the *original* unencrypted message
+    [genericAttachment setIndex:self.index];
+    
     return genericAttachment;
 }
 
@@ -158,6 +161,7 @@
         [genericAttachment setIsInline:@YES];
         [genericAttachment setMIMEType:self.attachmentMetaDataStructure.contentType];
         [genericAttachment setSize:0];
+        [genericAttachment setIndex:self.index];
         
         return genericAttachment;
     }

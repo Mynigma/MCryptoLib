@@ -83,6 +83,9 @@
 @property BOOL isMissing;
 @property BOOL isSuperfluous;
 
+//index of the attachment within the original message
+@property NSNumber* index;
+
 
 - (GenericEmailAttachment*)encryptedAttachmentWithIndex:(NSInteger)index;
 - (GenericEmailAttachment*)decryptedAttachment;

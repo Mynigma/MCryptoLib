@@ -185,6 +185,11 @@
         {
             MynigmaAttachmentEncryptionContext* attachmentContext = [[MynigmaAttachmentEncryptionContext alloc] initWithEncryptedAttachment:attachment];
             
+            NSInteger index = [genericEmailMessage.attachments indexOfObject:attachment];
+            
+            if(index != NSNotFound)
+                [attachmentContext setIndex:@(index)];
+            
             [newEncryptedAttachmentContexts addObject:attachmentContext];
         }
         

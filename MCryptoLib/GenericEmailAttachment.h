@@ -21,4 +21,7 @@
 @property NSData* data;
 @property NSNumber* isInline;
 
+//the index of the attachment within the original, encrypted message
+@property NSNumber* index;
+
 @end

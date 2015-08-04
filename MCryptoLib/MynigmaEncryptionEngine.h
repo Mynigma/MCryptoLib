@@ -59,7 +59,7 @@
 
 
 #define MCryptoSafeMessageHeaderField @"x-mynigma-safe-message"
-#define MCryptoWillSentSafelyHeaderField @"x-mynigma-will-be-sent-safely"
+#define MCryptoWillBeSentSafelyHeaderField @"x-mynigma-will-be-sent-safely"
 #define MCryptoWasSentSafelyHeaderField @"x-mynigma-was-sent-safely"
 
 

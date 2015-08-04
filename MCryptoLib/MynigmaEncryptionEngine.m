@@ -1065,7 +1065,7 @@
 
 - (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message withHeaderField:(BOOL)hasHeaderField
 {
-    NSString* safeMessageHeaderIndicator = message.extraHeaders[MCryptoWillSentSafelyHeaderField];
+    NSString* safeMessageHeaderIndicator = message.extraHeaders[MCryptoWillBeSentSafelyHeaderField];
     
     BOOL needsToBeEncrypted = (safeMessageHeaderIndicator.length > 0) && hasHeaderField;
     
