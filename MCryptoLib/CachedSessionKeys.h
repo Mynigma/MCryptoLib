@@ -58,6 +58,6 @@
 @interface CachedSessionKeys : NSManagedObject
 
 @property (nonatomic, retain) NSData * encryptionContextData;
-@property (nonatomic, retain) NSString * uniqueID;
+@property (nonatomic, retain) NSString * uniqueKey;
 
 @end

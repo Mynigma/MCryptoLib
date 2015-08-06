@@ -81,6 +81,7 @@
         CachedSessionKeys* addedEntry = [[CachedSessionKeys alloc] initWithEntity:[NSEntityDescription entityForName:@"CachedSessionKeys" inManagedObjectContext:localContext] insertIntoManagedObjectContext:localContext];
         
         addedEntry.encryptionContextData = attachmentContext.serialisedData;
+        addedEntry.uniqueKey = uniqueKey;
     }
     }];
 }

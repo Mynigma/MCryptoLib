@@ -57,6 +57,6 @@
 @implementation CachedSessionKeys
 
 @dynamic encryptionContextData;
-@dynamic uniqueID;
+@dynamic uniqueKey;
 
 @end

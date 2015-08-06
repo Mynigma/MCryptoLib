@@ -2,7 +2,7 @@
 <model userDefinedModelVersionIdentifier="2" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="CachedSessionKeys" representedClassName="CachedSessionKeys" syncable="YES">
         <attribute name="encryptionContextData" optional="YES" attributeType="Binary" syncable="YES"/>
-        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uniqueKey" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="EmailAddress" representedClassName="EmailAddress" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
