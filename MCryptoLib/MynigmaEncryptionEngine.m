@@ -65,6 +65,7 @@
 #import "CommonHeader.h"
 #import "GenericEmailMessage.h"
 #import "GenericEmailAddressee.h"
+#import "SessionKeyCache.h"
 
 
 #import <MProtoBuf/EmailRecipientDataStructure.h>
@@ -700,6 +701,9 @@
     // check if any attachments have been added
     for (MynigmaAttachmentEncryptionContext* attachmentContext in encryptionContexts)
     {
+        //set the session keys
+        [attachmentContext setSessionKeys:messageContext.sessionKeys];
+        
         if (![sortedContexts containsObject:attachmentContext])
         {
             [sortedContexts addObject:MynigmaAttachmentEncryptionContext.contextForSuperfluousAttachment];
@@ -725,11 +729,21 @@
         
         NSError* error = nil;
         
-        [self decryptFileAttachment:attachmentContext withMessageContext:messageContext error:&error];
+        if(attachmentContext.encryptedData)
+        {
+        [self decryptFileAttachment:attachmentContext error:&error];
         
         if(error)
         {
             [messageContext pushErrorWithCode:error.code];
+        }
+        }
+        else
+        {
+            //without the data, we cannot decrypt the attachment
+            //cache the context so we can decrypt it when the data has been downloaded
+            NSString* uniqueKey = [NSString stringWithFormat:@"%@\n%@", messageContext.messageID, attachmentContext.index];
+            [SessionKeyCache cacheAttachmentEncryptionContext:attachmentContext forUniqueKey:uniqueKey];
         }
     }
 }
@@ -932,7 +946,20 @@
 }
 
 
-- (BOOL)decryptFileAttachment:(MynigmaAttachmentEncryptionContext*)attachmentContext withMessageContext:(MynigmaMessageEncryptionContext*)messageContext error:(NSError**)error
+- (MynigmaAttachmentEncryptionContext*)decryptAttachmentData:(NSData*)encryptedData forMessageID:(NSString*)messageID atIndex:(NSNumber*)index error:(NSError**)error
+{
+    NSString* uniqueKey = [NSString stringWithFormat:@"%@\n%@", messageID, index];
+
+    MynigmaAttachmentEncryptionContext* attachmentEncryptionContext = [SessionKeyCache attachmentContextForUniqueKey:uniqueKey];
+    
+    [attachmentEncryptionContext setEncryptedData:encryptedData];
+    
+    [self decryptFileAttachment:attachmentEncryptionContext error:error];
+    
+    return attachmentEncryptionContext;
+}
+
+- (BOOL)decryptFileAttachment:(MynigmaAttachmentEncryptionContext*)attachmentContext error:(NSError**)error
 {
     NSData* encryptedData = [attachmentContext encryptedData];
     
@@ -944,14 +971,14 @@
     }
     
     //check the HMAC, if present
-    if(attachmentContext.HMACOfEncryptedData && ![self.basicEngine verifyHMAC:attachmentContext.HMACOfEncryptedData ofMessage:encryptedData withSecret:messageContext.sessionKeys.HMACSecret])
+    if(attachmentContext.HMACOfEncryptedData && ![self.basicEngine verifyHMAC:attachmentContext.HMACOfEncryptedData ofMessage:encryptedData withSecret:attachmentContext.sessionKeys.HMACSecret])
     {
         if(error)
             *error = [[MynigmaErrorFactory sharedInstance] errorWithCode:MynigmaDecryptionErrorInvalidHMAC];
         return NO;
     }
     
-    NSData* decryptedData = [self.basicEngine AESDecryptData:encryptedData withSessionKey:messageContext.sessionKeys.AESSessionKey error:error];
+    NSData* decryptedData = [self.basicEngine AESDecryptData:encryptedData withSessionKey:attachmentContext.sessionKeys.AESSessionKey error:error];
     
     if(!decryptedData.length || (error && *error))
     {

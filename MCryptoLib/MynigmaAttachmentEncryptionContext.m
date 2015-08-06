@@ -62,6 +62,12 @@
 
 
 
+
+NSString* const hashedValueKey                  = @"MCryptoLibAttachmentHashedValue";
+NSString* const HMACOfEncryptedDataKey          = @"MCryptoLibAttachmentContextHMAC";
+
+
+
 @implementation MynigmaAttachmentEncryptionContext
 
 
@@ -193,5 +199,50 @@
     
     return genericAttachment;
 }
+
+
+
+
+- (instancetype)initWithCoder:(NSCoder*)coder
+{
+    self = [super init];
+    if(self)
+    {
+        NSData* hashedValue = [coder decodeObjectForKey:hashedValueKey];
+        
+        self.attachmentMetaDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:nil contentID:nil size:0 hashedValue:hashedValue partID:nil remoteURL:nil isInline:NO contentType:nil];
+        
+        //TODO: parse meta data other properties
+        //perhaps serialise the entire structure
+        
+        self.HMACOfEncryptedData = [coder decodeObjectForKey:HMACOfEncryptedDataKey];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder*)coder
+{
+    [coder encodeObject:self.attachmentMetaDataStructure.hashedValue forKey:hashedValueKey];
+    [coder encodeObject:self.HMACOfEncryptedData forKey:HMACOfEncryptedDataKey];
+}
+
+
+- (MynigmaAttachmentEncryptionContext*)initWithData:(NSData*)serialisedData
+{
+    NSKeyedUnarchiver* keyedUnarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:serialisedData];
+
+    return [self initWithCoder:keyedUnarchiver];
+}
+
+- (NSData*)serialisedData
+{
+    NSMutableData* mutableData = [NSMutableData new];
+    NSKeyedArchiver* keyedArchiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:mutableData];
+    
+    [self encodeWithCoder:keyedArchiver];
+    
+    return mutableData;
+}
+
 
 @end

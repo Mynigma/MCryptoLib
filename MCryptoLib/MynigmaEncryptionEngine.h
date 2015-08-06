@@ -63,7 +63,7 @@
 #define MCryptoWasSentSafelyHeaderField @"x-mynigma-was-sent-safely"
 
 
-@class MynigmaMessageEncryptionContext, MCOAbstractMessage, MCOAttachment, GenericEmailMessage;
+@class MynigmaMessageEncryptionContext, MynigmaAttachmentEncryptionContext, MCOAbstractMessage, MCOAttachment, GenericEmailMessage;
 
 
 @interface MynigmaEncryptionEngine : NSObject <EncryptionEngineProtocol>
@@ -94,6 +94,7 @@
 - (BOOL)decryptMessage:(MynigmaMessageEncryptionContext*)context;
 - (BOOL)decryptMessage:(MynigmaMessageEncryptionContext*)context insertHeaderValue:(BOOL)insertHeaderValue;
 
+- (MynigmaAttachmentEncryptionContext*)decryptAttachmentData:(NSData*)attachmentData forMessageID:(NSString*)messageID atIndex:(NSNumber*)index error:(NSError**)error;
 
 
 - (BOOL)isSenderSafe:(NSString*)senderEmailString;

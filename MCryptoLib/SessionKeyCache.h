@@ -51,52 +51,18 @@
 //	along with M.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-
 #import <Foundation/Foundation.h>
 
 
 
-@class FileAttachmentDataStructure, GenericEmailAttachment, SessionKeys;
+@class CachedSessionKeys, MynigmaAttachmentEncryptionContext, SessionKeys;
 
-@interface MynigmaAttachmentEncryptionContext : NSObject <NSCoding>
+@interface SessionKeyCache : NSObject
 
++ (void)cacheAttachmentEncryptionContext:(MynigmaAttachmentEncryptionContext*)attachmentContext forUniqueKey:(NSString*)uniqueKey;
 
++ (MynigmaAttachmentEncryptionContext*)attachmentContextForUniqueKey:(NSString*)uniqueKey;
 
-- (instancetype)initWithEncryptedAttachment:(GenericEmailAttachment*)genericEmailAttachment;
-
-- (instancetype)initWithUnencryptedAttachment:(GenericEmailAttachment*)genericEmailAttachment;
-
-
-- (instancetype)initWithFileName:(NSString*)fileName contentID:(NSString*)contentID decryptedData:(NSData*)decryptedData hashedValue:(NSData*)hashedValue partID:(NSString*)partID remoteURLString:(NSString*)remoteURLString isInline:(BOOL)isInline contentType:(NSString*)contentType;
-
-
-+ (MynigmaAttachmentEncryptionContext*)contextForMissingAttachment;
-
-+ (MynigmaAttachmentEncryptionContext*)contextForSuperfluousAttachment;
-
-
-@property FileAttachmentDataStructure* attachmentMetaDataStructure;
-
-@property NSData* HMACOfEncryptedData;
-@property NSData* decryptedData;
-@property NSData* encryptedData;
-@property BOOL isMissing;
-@property BOOL isSuperfluous;
-
-@property SessionKeys* sessionKeys;
-
-//index of the attachment within the original message
-@property NSNumber* index;
-
-
-- (GenericEmailAttachment*)encryptedAttachmentWithIndex:(NSInteger)index;
-- (GenericEmailAttachment*)decryptedAttachment;
-
-
-
-- (MynigmaAttachmentEncryptionContext*)initWithData:(NSData*)serialisedData;
-
-- (NSData*)serialisedData;
-
++ (void)purgeCache;
 
 @end

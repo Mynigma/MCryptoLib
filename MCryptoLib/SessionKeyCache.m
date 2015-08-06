@@ -51,52 +51,68 @@
 //	along with M.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+#import "SessionKeyCache.h"
 
-#import <Foundation/Foundation.h>
+#import "CoreDataHelper.h"
 
-
-
-@class FileAttachmentDataStructure, GenericEmailAttachment, SessionKeys;
-
-@interface MynigmaAttachmentEncryptionContext : NSObject <NSCoding>
-
+#import "CachedSessionKeys.h"
+#import "SessionKeys.h"
+#import "MynigmaAttachmentEncryptionContext.h"
 
 
-- (instancetype)initWithEncryptedAttachment:(GenericEmailAttachment*)genericEmailAttachment;
+@implementation SessionKeyCache
 
-- (instancetype)initWithUnencryptedAttachment:(GenericEmailAttachment*)genericEmailAttachment;
++ (void)cacheAttachmentEncryptionContext:(MynigmaAttachmentEncryptionContext*)attachmentContext forUniqueKey:(NSString*)uniqueKey
+{
+    [[CoreDataHelper sharedInstance] runAsyncFreshLocalChildContext:^(NSManagedObjectContext *localContext) {
+        
+        NSFetchRequest* fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"CachedSessionKeys"];
+        [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"uniqueKey == %@", uniqueKey]];
+        [fetchRequest setFetchLimit:1];
+        
+        CachedSessionKeys* existingEntry = [localContext executeFetchRequest:fetchRequest error:nil].firstObject;
+        
+    if(existingEntry)
+    {
+        existingEntry.encryptionContextData = attachmentContext.serialisedData;
+    }
+    else
+    {
+        CachedSessionKeys* addedEntry = [[CachedSessionKeys alloc] initWithEntity:[NSEntityDescription entityForName:@"CachedSessionKeys" inManagedObjectContext:localContext] insertIntoManagedObjectContext:localContext];
+        
+        addedEntry.encryptionContextData = attachmentContext.serialisedData;
+    }
+    }];
+}
 
++ (MynigmaAttachmentEncryptionContext*)attachmentContextForUniqueKey:(NSString*)uniqueKey
+{
+    __block MynigmaAttachmentEncryptionContext* returnValue = nil;
+    [[CoreDataHelper sharedInstance] runSyncOnKeyContext:^(NSManagedObjectContext *localContext) {
 
-- (instancetype)initWithFileName:(NSString*)fileName contentID:(NSString*)contentID decryptedData:(NSData*)decryptedData hashedValue:(NSData*)hashedValue partID:(NSString*)partID remoteURLString:(NSString*)remoteURLString isInline:(BOOL)isInline contentType:(NSString*)contentType;
+        NSFetchRequest* fetchRequest = [NSFetchRequest fetchRequestWithEntityName:@"CachedSessionKeys"];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"uniqueKey == %@", uniqueKey]];
+    [fetchRequest setFetchLimit:1];
+    
+    CachedSessionKeys* sessionKeys = [localContext executeFetchRequest:fetchRequest error:nil].firstObject;
+       
+        returnValue = [[MynigmaAttachmentEncryptionContext alloc] initWithData:sessionKeys.encryptionContextData];
+    }];
+    
+    return returnValue;
+}
 
-
-+ (MynigmaAttachmentEncryptionContext*)contextForMissingAttachment;
-
-+ (MynigmaAttachmentEncryptionContext*)contextForSuperfluousAttachment;
-
-
-@property FileAttachmentDataStructure* attachmentMetaDataStructure;
-
-@property NSData* HMACOfEncryptedData;
-@property NSData* decryptedData;
-@property NSData* encryptedData;
-@property BOOL isMissing;
-@property BOOL isSuperfluous;
-
-@property SessionKeys* sessionKeys;
-
-//index of the attachment within the original message
-@property NSNumber* index;
-
-
-- (GenericEmailAttachment*)encryptedAttachmentWithIndex:(NSInteger)index;
-- (GenericEmailAttachment*)decryptedAttachment;
-
-
-
-- (MynigmaAttachmentEncryptionContext*)initWithData:(NSData*)serialisedData;
-
-- (NSData*)serialisedData;
-
++ (void)purgeCache
+{
+    [[CoreDataHelper sharedInstance] runAsyncFreshLocalChildContext:^(NSManagedObjectContext *localContext) {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"CachedSessionKeys"];
+    [fetchRequest setIncludesPropertyValues:NO];
+    
+    for (NSManagedObject *object in [localContext executeFetchRequest:fetchRequest error:nil])
+    {
+        [localContext deleteObject:object];
+    }
+    }];
+}
 
 @end

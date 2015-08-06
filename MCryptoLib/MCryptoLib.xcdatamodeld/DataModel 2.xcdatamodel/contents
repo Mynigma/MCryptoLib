@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="2" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CachedSessionKeys" representedClassName="CachedSessionKeys" syncable="YES">
+        <attribute name="encryptionContextData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="EmailAddress" representedClassName="EmailAddress" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dateAdded" optional="YES" attributeType="Date" syncable="YES"/>
@@ -153,5 +157,6 @@
         <element name="PGPUserID" positionX="9" positionY="180" width="128" height="255"/>
         <element name="SMIMEPrivateKey" positionX="9" positionY="54" width="128" height="60"/>
         <element name="SMIMEPublicKey" positionX="18" positionY="63" width="128" height="285"/>
+        <element name="CachedSessionKeys" positionX="18" positionY="180" width="128" height="75"/>
     </elements>
 </model>
