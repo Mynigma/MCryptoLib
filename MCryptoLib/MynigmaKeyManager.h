@@ -142,6 +142,11 @@
 - (NSString*)easyReadingFingerprintForKeyWithLabel:(NSString*)keyLabel;
 
 
+
+#pragma mark - Extra headers
+
+- (NSDictionary*)extraHeaderValuesForEmailAddress:(NSString*)emailAddress;
+
 - (PublicKeyData*)getPublicKeyDataFromExtraHeaderValues:(NSDictionary*)headerValues;
 
 

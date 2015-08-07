@@ -902,6 +902,41 @@
     return nil;
 }
 
+- (NSDictionary*)extraHeaderValuesForPublicKeyData:(PublicKeyData*)publicKeyData
+{
+    NSString* keyLabel = publicKeyData.keyLabel;
+
+    if(!keyLabel)
+        return nil;
+    
+    NSData* ownCurrentKeyLabelData = [keyLabel dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSString* ownCurrentKeyLabelInBase64 = [ownCurrentKeyLabelData base64In64ByteChunksWithCarriageReturn:YES];
+    
+    if(!publicKeyData)
+        return nil;
+    
+    NSData* encData = publicKeyData.publicKeyEncData;
+    
+    NSData* verData = publicKeyData.publicKeyVerData;
+    
+    NSString* encString = [encData base64In64ByteChunksWithCarriageReturn:YES];
+    
+    NSString* verString = [verData base64In64ByteChunksWithCarriageReturn:YES];
+    
+    NSString* completeString = [NSString stringWithFormat:@"%@\r\n -\r\n %@", encString, verString];
+    
+    return @{ @"x-myn-pk" : completeString, @"x-myn-kl" : ownCurrentKeyLabelInBase64 };
+}
+
+- (NSDictionary*)extraHeaderValuesForEmailAddress:(NSString*)emailAddress
+{
+    NSString* publicKeyLabel = [self currentKeyLabelForEmailAddress:emailAddress];
+    
+    PublicKeyData* publicKeyData = [self dataForPublicKeyWithLabel:publicKeyLabel];
+    
+    return [self extraHeaderValuesForPublicKeyData:publicKeyData];
+}
 
 
 

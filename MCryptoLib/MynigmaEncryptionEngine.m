@@ -1059,6 +1059,18 @@
 }
 
 
+- (void)injectPublicKeyIntoHeaders:(GenericEmailMessage*)message
+{
+    NSDictionary* publicKeyExtraHeaderValues = [self.keyManager extraHeaderValuesForEmailAddress:message.senderEmail];
+    
+    NSMutableDictionary* extraHeaders = [message.extraHeaders mutableCopy];
+    
+    if(publicKeyExtraHeaderValues)
+        [extraHeaders addEntriesFromDictionary:publicKeyExtraHeaderValues];
+    
+    [message setExtraHeaders:extraHeaders];
+}
+
 
 - (BOOL)processPublicKeyInExtraHeaders:(NSDictionary*)extraHeaders fromSender:(NSString*)senderAddress
 {
@@ -1111,6 +1123,10 @@
         [[MynigmaEncryptionEngine sharedInstance] encryptMessage:context];
         
         return context.encryptedMessage;
+    }
+    else
+    {
+        [self injectPublicKeyIntoHeaders:message];
     }
     
     //TODO: encrypt if the header field neither exists nor is required, but the recipients are safe
