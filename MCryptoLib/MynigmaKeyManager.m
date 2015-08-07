@@ -713,7 +713,7 @@
         returnValue = keyExpectation.expectedSignatureKey.keyLabel;
     }];
     
-    return returnValue;
+    return returnValue?returnValue:[self currentKeyLabelForEmailAddress:senderEmail];
 }
 
 - (NSDate*)anchorDateFrom:(NSString*)senderEmail to:(NSString*)recipientEmail
