@@ -1100,7 +1100,18 @@
         
         [self decryptMessage:messageContext];
         
-        return messageContext.decryptedMessage;
+        GenericEmailMessage* decryptedMessage = messageContext.decryptedMessage;
+        
+        if(!decryptedMessage.HTMLBody)
+        {
+//            NSError* firstError = messageContext.errors.firstObject;
+            
+            [decryptedMessage setSubject:NSLocalizedString(@"Sichere Nachricht", nil)];
+            
+            [decryptedMessage setHTMLBody:NSLocalizedString(@"Die Nachricht konnte nicht entschlüsselt werden", nil)];
+        }
+        
+        return decryptedMessage;
     }
     else
     {
