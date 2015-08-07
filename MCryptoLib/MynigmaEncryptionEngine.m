@@ -1102,7 +1102,7 @@
 {
     NSString* safeMessageHeaderIndicator = message.extraHeaders[MCryptoWillBeSentSafelyHeaderField];
     
-    BOOL needsToBeEncrypted = (safeMessageHeaderIndicator.length > 0) && hasHeaderField;
+    BOOL needsToBeEncrypted = (safeMessageHeaderIndicator.length > 0) && hasHeaderField && !([safeMessageHeaderIndicator.lowercaseString isEqual:@"no"]);
     
     if(needsToBeEncrypted)
     {
