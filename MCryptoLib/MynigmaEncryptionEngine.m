@@ -1110,12 +1110,15 @@
     }
 }
 
-- (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message withHeaderField:(BOOL)hasHeaderField
+- (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message withHeaderField:(BOOL)hasHeaderField didEncrypt:(BOOL*)didEncrypt
 {
     NSString* safeMessageHeaderIndicator = message.extraHeaders[MCryptoWillBeSentSafelyHeaderField];
     
     BOOL needsToBeEncrypted = (safeMessageHeaderIndicator.length > 0) && hasHeaderField && !([safeMessageHeaderIndicator.lowercaseString isEqual:@"no"]);
     
+    if(didEncrypt)
+        *didEncrypt = needsToBeEncrypted;
+
     if(needsToBeEncrypted)
     {
         MynigmaMessageEncryptionContext* context = [[MynigmaMessageEncryptionContext alloc] initWithUnencryptedEmailMessage:message];
@@ -1136,7 +1139,7 @@
 
 - (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message
 {
-    return [self processOutgoingMessage:message withHeaderField:YES];
+    return [self processOutgoingMessage:message withHeaderField:YES didEncrypt:nil];
 }
 
 @end

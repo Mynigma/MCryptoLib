@@ -109,6 +109,8 @@
 
 - (GenericEmailMessage*)processIncomingMessage:(GenericEmailMessage*)message;
 
+- (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message withHeaderField:(BOOL)hasHeaderField didEncrypt:(BOOL*)didEncrypt;
+
 - (GenericEmailMessage*)processOutgoingMessage:(GenericEmailMessage*)message;
 
 @end
