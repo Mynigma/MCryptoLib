@@ -1109,6 +1109,19 @@
             [decryptedMessage setSubject:NSLocalizedString(@"Sichere Nachricht", nil)];
             
             [decryptedMessage setHTMLBody:NSLocalizedString(@"Die Nachricht konnte nicht entschlüsselt werden", nil)];
+            
+//            //alter the header values
+//            NSMutableDictionary* extraHeaders = [NSMutableDictionary new];
+//            
+//            if(decryptedMessage.extraHeaders)
+//                [extraHeaders addEntriesFromDictionary:decryptedMessage.extraHeaders];
+//            
+//            //remove the safe message indicator
+//            [extraHeaders removeObjectForKey:@"x-mynigma-safe-message"];
+//            
+//            [extraHeaders addEntriesFromDictionary:@{ @"x-mynigma-was-sent-safely" : @"yes"}];
+//            
+//            [decryptedMessage setExtraHeaders:extraHeaders];
         }
         
         return decryptedMessage;
