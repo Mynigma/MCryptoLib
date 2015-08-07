@@ -487,6 +487,7 @@
             //we do need encryptionKeyLabel to be non-nil
             //otherwise there will be an error later
             if(encryptionKeyLabel)
+            {
                 [encryptionKeyLabels addObject:encryptionKeyLabel];
             
             if(expectedSignatureKeyLabel)
@@ -494,6 +495,13 @@
             else
                 //use the actual signature label if there is no expected signature key label available
                 [expectedSignatureKeyLabels addObject:context.signatureKeyLabel];
+            }
+            else
+            {
+                NSLog(@"Failed to find current key for email address: %@", recipientEmailString);
+                
+                [context pushErrorWithCode:MynigmaEncryptionErrorNoCurrentPublicKeyLabel];
+            }
         }
         
         [context setEncryptionKeyLabels:encryptionKeyLabels];

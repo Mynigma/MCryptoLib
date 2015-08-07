@@ -93,6 +93,7 @@ typedef NS_ENUM(NSInteger, MynigmaErrorCode)
     MynigmaEncryptionErrorObtainingPermanentObjectID = 253,
     MynigmaEncryptionErrorNoPublicKeyLabels = 254,
     MynigmaEncryptionErrorNoExpectedPublicKeyLabels = 255,
+    MynigmaEncryptionErrorNoCurrentPublicKeyLabel = 256,
 
     
     
