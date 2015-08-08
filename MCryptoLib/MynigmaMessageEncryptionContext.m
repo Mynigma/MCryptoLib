@@ -346,12 +346,7 @@
     
     if(self.hasErrors)
     {
-        NSMutableArray* errorCodes = [NSMutableArray new];
-        for(NSError* error in self.errors)
-        {
-            [errorCodes addObject:@(error.code)];
-        }
-        NSString* errorCodesList = [errorCodes componentsJoinedByString:@","];
+        NSString* errorCodesList = [self.errors componentsJoinedByString:@","];
         
         [extraHeaders addEntriesFromDictionary:@{ MCryptoDecryptionErrorsHeaderField : errorCodesList }];
     }
