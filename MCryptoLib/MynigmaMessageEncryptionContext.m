@@ -351,7 +351,7 @@
         [extraHeaders addEntriesFromDictionary:@{ MCryptoDecryptionErrorsHeaderField : errorCodesList }];
     }
     
-    [message setExtraHeaders:self.extraHeaders];
+    [message setExtraHeaders:extraHeaders];
     
     return message;
 }
