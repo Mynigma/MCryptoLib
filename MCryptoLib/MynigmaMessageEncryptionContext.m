@@ -65,6 +65,8 @@
 #import "GenericEmailAddressee.h"
 
 #import "BasicEncryptionEngineProtocol.h"
+
+#import "MynigmaEncryptionEngine.h"
 #import "AppleEncryptionEngine.h"
 #import "SessionKeys.h"
 #import "CoreDataHelper.h"
@@ -339,6 +341,20 @@
     [message setSentDate:self.sentDate];
     
     [message setMessageID:self.messageID];
+    
+    NSMutableDictionary* extraHeaders = [self.extraHeaders mutableCopy];
+    
+    if(self.hasErrors)
+    {
+        NSMutableArray* errorCodes = [NSMutableArray new];
+        for(NSError* error in self.errors)
+        {
+            [errorCodes addObject:@(error.code)];
+        }
+        NSString* errorCodesList = [errorCodes componentsJoinedByString:@","];
+        
+        [extraHeaders addEntriesFromDictionary:@{ MCryptoDecryptionErrorsHeaderField : errorCodesList }];
+    }
     
     [message setExtraHeaders:self.extraHeaders];
     

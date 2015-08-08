@@ -61,6 +61,7 @@
 #define MCryptoSafeMessageHeaderField @"x-mynigma-safe-message"
 #define MCryptoWillBeSentSafelyHeaderField @"x-mynigma-will-be-sent-safely"
 #define MCryptoWasSentSafelyHeaderField @"x-mynigma-was-sent-safely"
+#define MCryptoDecryptionErrorsHeaderField @"x-mynigma-decryption-errors"
 
 
 @class MynigmaMessageEncryptionContext, MynigmaAttachmentEncryptionContext, MCOAbstractMessage, MCOAttachment, GenericEmailMessage;
