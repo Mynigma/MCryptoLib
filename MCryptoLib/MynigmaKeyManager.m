@@ -924,7 +924,11 @@
     
     NSString* encString = [encData base64In64ByteChunksWithCarriageReturn:YES];
     
+    encString = [encString stringByReplacingOccurrencesOfString:@"\n" withString:@"\n "];
+    
     NSString* verString = [verData base64In64ByteChunksWithCarriageReturn:YES];
+    
+    verString = [verString stringByReplacingOccurrencesOfString:@"\n" withString:@"\n "];
     
     NSString* completeString = [NSString stringWithFormat:@"%@\r\n -\r\n %@", encString, verString];
     
