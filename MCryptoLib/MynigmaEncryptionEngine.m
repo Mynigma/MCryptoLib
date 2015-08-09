@@ -1063,8 +1063,6 @@
     [self.keyManager generateMynigmaPrivateKeyForEmail:senderEmailString engine:[OpenSSLEncryptionEngine new] withCallback:callback];
 }
 
-
-
 - (void)injectPublicKeyIntoHeaders:(GenericEmailMessage*)message
 {
     NSDictionary* publicKeyExtraHeaderValues = [self.keyManager extraHeaderValuesForEmailAddress:message.senderEmail];

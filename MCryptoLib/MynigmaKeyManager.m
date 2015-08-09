@@ -913,6 +913,8 @@
     
     NSString* ownCurrentKeyLabelInBase64 = [ownCurrentKeyLabelData base64In64ByteChunksWithCarriageReturn:YES];
     
+    ownCurrentKeyLabelInBase64 = [ownCurrentKeyLabelInBase64 stringByReplacingOccurrencesOfString:@"\n" withString:@"\n "];
+    
     if(!publicKeyData)
         return nil;
     
