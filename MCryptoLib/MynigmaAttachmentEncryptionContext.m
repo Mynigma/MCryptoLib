@@ -241,6 +241,8 @@ NSString* const HMACOfEncryptedDataKey          = @"MCryptoLibAttachmentContextH
     
     [self encodeWithCoder:keyedArchiver];
     
+    [keyedArchiver finishEncoding];
+    
     return mutableData;
 }
 
