@@ -105,6 +105,7 @@
 - (BOOL)areRecipientsSafe:(NSArray*)recipientEmailStrings;
 
 - (void)ensureValidCurrentKeyForSender:(NSString*)senderEmailString;
+- (void)ensureValidCurrentKeyForSender:(NSString*)senderEmailString withCallback:(void(^)(void))callback;
 
 
 

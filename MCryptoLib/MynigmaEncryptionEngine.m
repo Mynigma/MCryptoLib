@@ -1052,11 +1052,17 @@
 
 - (void)ensureValidCurrentKeyForSender:(NSString*)senderEmailString
 {
+    return [self ensureValidCurrentKeyForSender:senderEmailString withCallback:nil];
+}
+
+- (void)ensureValidCurrentKeyForSender:(NSString*)senderEmailString withCallback:(void(^)(void))callback
+{
     if([self.keyManager haveCurrentPrivateKeyForEmailAddress:senderEmailString])
         return;
     
-    [self.keyManager generateMynigmaPrivateKeyForEmail:senderEmailString engine:[OpenSSLEncryptionEngine new] withCallback:nil];
+    [self.keyManager generateMynigmaPrivateKeyForEmail:senderEmailString engine:[OpenSSLEncryptionEngine new] withCallback:callback];
 }
+
 
 
 - (void)injectPublicKeyIntoHeaders:(GenericEmailMessage*)message
