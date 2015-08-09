@@ -83,6 +83,9 @@
         addedEntry.encryptionContextData = attachmentContext.serialisedData;
         addedEntry.uniqueKey = uniqueKey;
     }
+        
+        [localContext save:nil];
+        [[CoreDataHelper sharedInstance] save];
     }];
 }
 
@@ -113,6 +116,9 @@
     {
         [localContext deleteObject:object];
     }
+        
+        [localContext save:nil];
+        [[CoreDataHelper sharedInstance] save];
     }];
 }
 

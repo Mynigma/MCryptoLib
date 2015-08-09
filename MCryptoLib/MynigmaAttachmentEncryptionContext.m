@@ -65,6 +65,7 @@
 
 NSString* const hashedValueKey                  = @"MCryptoLibAttachmentHashedValue";
 NSString* const HMACOfEncryptedDataKey          = @"MCryptoLibAttachmentContextHMAC";
+NSString* const SessionKeysKey                  = @"MCryptoLibAttachmentContextSessionKeys";
 
 
 
@@ -216,6 +217,8 @@ NSString* const HMACOfEncryptedDataKey          = @"MCryptoLibAttachmentContextH
         //perhaps serialise the entire structure
         
         self.HMACOfEncryptedData = [coder decodeObjectForKey:HMACOfEncryptedDataKey];
+        
+        self.sessionKeys = [coder decodeObjectForKey:SessionKeysKey];
     }
     return self;
 }
@@ -224,6 +227,7 @@ NSString* const HMACOfEncryptedDataKey          = @"MCryptoLibAttachmentContextH
 {
     [coder encodeObject:self.attachmentMetaDataStructure.hashedValue forKey:hashedValueKey];
     [coder encodeObject:self.HMACOfEncryptedData forKey:HMACOfEncryptedDataKey];
+    [coder encodeObject:self.sessionKeys forKey:SessionKeysKey];
 }
 
 
