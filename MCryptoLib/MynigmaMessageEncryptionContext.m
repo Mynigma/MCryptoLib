@@ -220,6 +220,7 @@
 
 #pragma mark - Obtain generic email object
 
+
 - (GenericEmailMessage*)encryptedMessage
 {
     GenericEmailMessage* message = [GenericEmailMessage new];

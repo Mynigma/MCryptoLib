@@ -108,6 +108,8 @@
 - (void)ensureValidCurrentKeyForSender:(NSString*)senderEmailString withCallback:(void(^)(void))callback;
 
 
+- (void)injectPublicKeyIntoHeaders:(GenericEmailMessage*)message;
+
 
 - (GenericEmailMessage*)processIncomingMessage:(GenericEmailMessage*)message;
 
