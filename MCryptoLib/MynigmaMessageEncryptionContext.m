@@ -127,6 +127,8 @@
             
             FileAttachmentDataStructure* fileAttachentDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:attachment.fileName contentID:attachment.contentID size:attachment.size.integerValue hashedValue:nil partID:nil remoteURL:nil isInline:attachment.isInline.boolValue contentType:attachment.MIMEType];
             
+            [attachmentContext setAttachmentMetaDataStructure:fileAttachentDataStructure];
+            
             [newFileAttachmentDataStructures addObject:fileAttachentDataStructure];
         }
         
