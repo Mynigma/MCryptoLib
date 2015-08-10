@@ -120,6 +120,9 @@
         {
             MynigmaAttachmentEncryptionContext* attachmentContext = [[MynigmaAttachmentEncryptionContext alloc] initWithUnencryptedAttachment:attachment];
             
+            if(!attachment.contentID)
+                [attachment setContentID:[MimeHelper generateFreshMessageID]];
+            
             [newEncryptedAttachmentContexts addObject:attachmentContext];
             
             FileAttachmentDataStructure* fileAttachentDataStructure = [[FileAttachmentDataStructure alloc] initWithFileName:attachment.fileName contentID:attachment.contentID size:attachment.size.integerValue hashedValue:nil partID:nil remoteURL:nil isInline:attachment.isInline.boolValue contentType:attachment.MIMEType];
