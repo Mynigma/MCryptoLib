@@ -333,11 +333,11 @@
     
     PublicKeyData* newPublicKeyData = [[PublicKeyData alloc] initWithKeyLabel:keyIntroductionDataStructure.theNewKeyLabel encData:keyIntroductionDataStructure.theNewEncKey verData:keyIntroductionDataStructure.theNewVerKey];
     
-    NSString* oldKeyLabel = keyIntroductionDataStructure.theOldKeyLabel;
-    
     //check that the keyLabels coincide
     if(![newPublicKeyData.keyLabel isEqual:signedDataStructureWithNewKeyLabel.keyLabel])
         return NO;
+    
+    NSString* oldKeyLabel = keyIntroductionDataStructure.theOldKeyLabel;
     
     if(![oldKeyLabel isEqual:signedDataStructureWithOldKeyLabel.keyLabel])
         return NO;
@@ -345,7 +345,6 @@
     //if the addition of the new key fails, it means that the key already in the store is different - abort!
     if(![self.keyManager addPublicKeyWithData:newPublicKeyData])
         return NO;
-    
     
     if(![self verifySignedData:signedDataStructureWithNewKeyLabel error:nil])
         return NO;
@@ -544,7 +543,10 @@
     {
         NSData* unencryptedData = [attachmentContext decryptedData];
         NSData* hashedValue = [self.basicEngine SHA512DigestOfData:unencryptedData];
-        [hashedValues addObject:hashedValue];
+        if(hashedValue)
+            [hashedValues addObject:hashedValue];
+        
+        //TO DO: deal gracefully with missing attachment data...
     }
     
     for(FileAttachmentDataStructure* attachmentMetaData in payloadPartDataStructure.attachments)
