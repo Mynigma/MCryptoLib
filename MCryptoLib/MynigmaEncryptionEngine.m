@@ -1087,8 +1087,11 @@
 {
     PublicKeyData* publicKeyData = [self.keyManager getPublicKeyDataFromExtraHeaderValues:extraHeaders];
     
+    if(!publicKeyData)
+        return NO;
+    
     if (![self.keyManager addPublicKeyWithData:publicKeyData])
-        return false;
+        return NO;
     
     return [self.keyManager setCurrentKeyForEmailAddress:senderAddress keyLabel:publicKeyData.keyLabel overwrite:NO];
 }
