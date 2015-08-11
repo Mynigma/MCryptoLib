@@ -311,14 +311,17 @@
     // (the signed keyIntroduction data that was signed using the new key)
     SignedDataStructure* signedDataStructureWithNewKeyLabel = [SignedDataStructure deserialiseData:introductionData];
     
-    NSData* signedDataWithNewKeyLabel = [self verifySignedData:signedDataStructureWithNewKeyLabel error:nil];
+    if(!senderEmailString)
+        return NO;
+    
+    NSData* signedDataWithNewKeyLabel = signedDataStructureWithNewKeyLabel.dataToBeSigned;
     
     if(!signedDataWithNewKeyLabel)
         return NO;
-    
+
     SignedDataStructure* signedDataStructureWithOldKeyLabel = [SignedDataStructure deserialiseData:signedDataWithNewKeyLabel];
     
-    NSData* signedDataWithOldKeyLabel = [self verifySignedData:signedDataStructureWithOldKeyLabel error:nil];
+    NSData* signedDataWithOldKeyLabel = signedDataStructureWithOldKeyLabel.dataToBeSigned;
     
     if(!signedDataWithOldKeyLabel)
         return NO;
@@ -339,13 +342,15 @@
     if(![oldKeyLabel isEqual:signedDataStructureWithOldKeyLabel.keyLabel])
         return NO;
     
-    //if the addition of the new key fails, it means that the key already in the story is different - abort!
+    //if the addition of the new key fails, it means that the key already in the store is different - abort!
     if(![self.keyManager addPublicKeyWithData:newPublicKeyData])
         return NO;
     
-    //the origin public key may not yet exist
-    //in this case we need to create it before verifying the introduction
-    if(!senderEmailString)
+    
+    if(![self verifySignedData:signedDataStructureWithNewKeyLabel error:nil])
+        return NO;
+    
+    if(![self verifySignedData:signedDataStructureWithOldKeyLabel error:nil])
         return NO;
     
     NSString* previousKeyLabel = [self.keyManager currentKeyLabelForEmailAddress:senderEmailString];
