@@ -115,6 +115,40 @@
 
 
 
+- (instancetype)initWithEncryptionEngine:(MynigmaEncryptionEngine*)engine
+{
+    self = [super init];
+    if (self) {
+        [self setEngine:engine];
+        [self setKeyManager:engine.keyManager];
+        [self setCoreDataHelper:engine.keyManager.coreDataHelper];
+    }
+    return self;
+}
+
+- (instancetype)initWithKeyManager:(MynigmaKeyManager*)keyManager
+{
+    self = [super init];
+    if (self) {
+        
+        MynigmaEncryptionEngine* engine = [[MynigmaEncryptionEngine alloc] initWithKeyManager:keyManager];
+        
+        [self setEngine:engine];
+        [self setKeyManager:engine.keyManager];
+        [self setCoreDataHelper:engine.keyManager.coreDataHelper];
+    }
+    return self;
+}
+
+
+
+- (instancetype)init
+{
+    return [self initWithEncryptionEngine:[MynigmaEncryptionEngine sharedInstance]];
+}
+
+
+
 + (instancetype)sharedInstance
 {
     static dispatch_once_t p = 0;

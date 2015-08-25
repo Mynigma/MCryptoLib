@@ -64,6 +64,11 @@
 
 + (instancetype)sharedInstance;
 
+- (instancetype)initWithEncryptionEngine:(MynigmaEncryptionEngine*)engine;
+
+- (instancetype)initWithKeyManager:(MynigmaKeyManager*)keyManager;
+
+
 
 @property MynigmaKeyManager* keyManager;
 

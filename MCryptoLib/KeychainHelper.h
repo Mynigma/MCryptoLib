@@ -60,7 +60,7 @@
 
 
 
-@class PublicKeyData, PrivateKeyData, PublicKeychainItemRefs, PrivateKeychainItemRefs, OpenSSLEncryptionEngine, MynigmaPublicKey, MynigmaPrivateKey;
+@class PublicKeyData, PrivateKeyData, PublicKeychainItemRefs, PrivateKeychainItemRefs, OpenSSLEncryptionEngine, MynigmaPublicKey, MynigmaPrivateKey, MynigmaKeyManager;
 
 @interface KeychainHelper : NSObject
 
@@ -70,6 +70,7 @@
 
 + (KeychainHelper*)sharedInstance;
 
+- (instancetype)initWithKeyManager:(MynigmaKeyManager*)keyManager;
 
 #pragma mark - UUID
 

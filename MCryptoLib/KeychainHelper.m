@@ -109,17 +109,19 @@ static dispatch_queue_t _keychainHelperDispatchQueue;
     return sharedObject;
 }
 
-
-- (instancetype)init
+- (instancetype)initWithKeyManager:(MynigmaKeyManager*)keyManager
 {
     self = [super init];
     if (self) {
         
-        MynigmaKeyManager* keyManager = [[MynigmaKeyManager alloc] initWithKeychainHelper:self];
-        
         self.openSSLEngine = [[OpenSSLEncryptionEngine alloc] initWithKeyManager:keyManager];
     }
     return self;
+}
+
+- (instancetype)init
+{
+    return [self initWithKeyManager:[[MynigmaKeyManager alloc] initWithKeychainHelper:self]];
 }
 
 

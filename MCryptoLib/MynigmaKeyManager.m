@@ -111,7 +111,7 @@
 
 - (instancetype)init
 {
-    return [self initWithKeychainHelper:[KeychainHelper sharedInstance] coreDataHelper:[CoreDataHelper sharedInstance]];
+    return [self initWithKeychainHelper:[[KeychainHelper alloc] initWithKeyManager:self] coreDataHelper:[CoreDataHelper sharedInstance]];
 }
 
 
