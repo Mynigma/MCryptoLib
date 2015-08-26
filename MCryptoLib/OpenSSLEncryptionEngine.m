@@ -273,7 +273,7 @@ static void tearDownLocks(void)
     
     NSData* data = forEncryption?privateKeyData.privateKeyDecData:privateKeyData.privateKeySigData;
     
-    return [self RSAPrivateKeyFromData:data];
+    return [KeyParser RSAPrivateKeyFromData:data];
 }
 
 
@@ -810,9 +810,9 @@ static void tearDownLocks(void)
     
     exponent = NULL;
     
-    NSData* publicKeyData = [self dataForRSAPublicKey:RSAKey];
+    NSData* publicKeyData = [KeyParser dataForRSAPublicKey:RSAKey];
     
-    NSData* privateKeyData = [self dataForRSAPrivateKey:RSAKey];
+    NSData* privateKeyData = [KeyParser dataForRSAPrivateKey:RSAKey];
     
     if(RSAKey)
         RSA_free(RSAKey);

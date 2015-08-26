@@ -283,7 +283,7 @@
         
 #if TARGET_OS_IPHONE
         
-        NSData* X509CertificateData = [self.openSSLEngine convertPublicKeyData:rawKeyData fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatX509];
+        NSData* X509CertificateData = [KeyParser convertPublicKeyData:rawKeyData fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatX509];
         
         //get a SecKeyRef without adding the key to any keychains
         SecCertificateRef cert = SecCertificateCreateWithData (kCFAllocatorDefault, (__bridge CFDataRef)(X509CertificateData));
@@ -337,7 +337,7 @@
 #if TARGET_OS_IPHONE
         
         NSString* password = @"TEST PASSWORD";
-        NSData* p12Data = [self.openSSLEngine convertPrivateKeyData:keyData fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatPKCS12 inPassphrase:nil outPassphrase:password];
+        NSData* p12Data = [KeyParser convertPrivateKeyData:keyData fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatPKCS12 inPassphrase:nil outPassphrase:password];
         
         NSMutableDictionary *options = [[NSMutableDictionary alloc] init];
         SecKeyRef privateKey = NULL;

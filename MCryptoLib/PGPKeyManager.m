@@ -685,7 +685,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
     
     NSData* PKCS8Data = [self.keychainHelper dataForPersistentRef:publicKey.publicKeychainRef isPrivate:NO];
     
-    RSA* RSAObject = [self.openSSLEngine RSAPublicKeyFromData:PKCS8Data];
+    RSA* RSAObject = [KeyParser RSAPublicKeyFromData:PKCS8Data];
     
     __ops_key_t* key = __ops_keydata_new();
     
@@ -746,7 +746,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
             dsa->q = opsKey->key.pubkey.key.dsa.q;
             dsa->pub_key = opsKey->key.pubkey.key.dsa.y;
             
-            return [[OpenSSLEncryptionEngine sharedInstance] dataForDSAPublicKey:dsa format:MynigmaKeyFormatPKCS8WithOID];
+            return [KeyParser dataForDSAPublicKey:dsa format:MynigmaKeyFormatPKCS8WithOID];
         }
             
         case OPS_PKA_RSA:
@@ -758,7 +758,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
             rsa->e = opsKey->key.pubkey.key.rsa.e;
             rsa->n = opsKey->key.pubkey.key.rsa.n;
             
-            return [[OpenSSLEncryptionEngine sharedInstance] dataForRSAPublicKey:rsa format:MynigmaKeyFormatPKCS8WithOID];
+            return [KeyParser dataForRSAPublicKey:rsa format:MynigmaKeyFormatPKCS8WithOID];
         }
             
         case OPS_PKA_ELGAMAL:
@@ -786,7 +786,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
             
             dsa->priv_key = opsKey->key.seckey.key.dsa.x;
             
-            NSData* returnValue = [[OpenSSLEncryptionEngine sharedInstance] dataForDSAPrivateKey:dsa format:MynigmaKeyFormatPKCS12 passphrase:@"Mynigma"];
+            NSData* returnValue = [KeyParser dataForDSAPrivateKey:dsa format:MynigmaKeyFormatPKCS12 passphrase:@"Mynigma"];
             
             if(dsa)
                 DSA_free(dsa);
@@ -812,7 +812,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
             
             rsa->iqmp = opsKey->key.seckey.key.rsa.u;
             
-            NSData* returnValue = [[OpenSSLEncryptionEngine sharedInstance] dataForRSAPrivateKey:rsa format:MynigmaKeyFormatPKCS12 passphrase:@"Mynigma"];
+            NSData* returnValue = [KeyParser dataForRSAPrivateKey:rsa format:MynigmaKeyFormatPKCS12 passphrase:@"Mynigma"];
             
             if(rsa)
                 RSA_free(rsa);
@@ -833,7 +833,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
 
 - (__ops_key_t*)opsPublicKeyWithData:(NSData*)PKCS8Data
 {
-    RSA* RSAObject = [self.openSSLEngine RSAPublicKeyFromData:PKCS8Data];
+    RSA* RSAObject = [KeyParser RSAPublicKeyFromData:PKCS8Data];
     
     __ops_key_t* key = __ops_keydata_new();
     
@@ -847,7 +847,7 @@ str2keyid(const char *userid, uint8_t *keyid, size_t len)
 
 - (__ops_key_t*)opsPrivateKeyWithData:(NSData*)PKCS8Data
 {
-    RSA* RSAObject = [self.openSSLEngine RSAPublicKeyFromData:PKCS8Data];
+    RSA* RSAObject = [KeyParser RSAPublicKeyFromData:PKCS8Data];
     
     if(!RSAObject)
         return nil;

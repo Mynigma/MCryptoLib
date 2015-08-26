@@ -217,7 +217,7 @@ static dispatch_queue_t _keychainHelperDispatchQueue;
         return nil;
     }
     
-    data = [self.openSSLEngine convertPublicKeyData:data fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatX509];
+    data = [KeyParser convertPublicKeyData:data fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatX509];
     
     if(!data)
     {
@@ -578,7 +578,7 @@ static dispatch_queue_t _keychainHelperDispatchQueue;
     
     if(passphrase)
     {
-        NSData* PKCS12KeyData = [self.openSSLEngine convertPrivateKeyData:keyData fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatPKCS12 inPassphrase:nil outPassphrase:passphrase];
+        NSData* PKCS12KeyData = [KeyParser convertPrivateKeyData:keyData fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatPKCS12 inPassphrase:nil outPassphrase:passphrase];
         
         if(!PKCS12KeyData)
             return nil;
@@ -1013,7 +1013,7 @@ static dispatch_queue_t _keychainHelperDispatchQueue;
     NSData* decKeyData = CFBridgingRelease(result);
     
     //armour the base64 encoded data
-    decKeyData = [[OpenSSLEncryptionEngine armourPrivateKeyData:decKeyData] dataUsingEncoding:NSUTF8StringEncoding];
+    decKeyData = [[KeyParser armourPrivateKeyData:decKeyData] dataUsingEncoding:NSUTF8StringEncoding];
     
     passDict = [KeychainHelper privateKeySearchDictForLabel:keyLabel forEncryption:NO];
     
@@ -1032,7 +1032,7 @@ static dispatch_queue_t _keychainHelperDispatchQueue;
     NSData* sigKeyData = CFBridgingRelease(result);
     
     //armour the base64 encoded data
-    sigKeyData = [[OpenSSLEncryptionEngine armourPrivateKeyData:sigKeyData] dataUsingEncoding:NSUTF8StringEncoding];
+    sigKeyData = [[KeyParser armourPrivateKeyData:sigKeyData] dataUsingEncoding:NSUTF8StringEncoding];
     
     if(decKeyData && sigKeyData && publicKeyData.publicKeyEncData && publicKeyData.publicKeyVerData)
         return [[PrivateKeyData alloc] initWithKeyLabel:keyLabel decData:decKeyData sigData:sigKeyData encData:publicKeyData.publicKeyEncData verData:publicKeyData.publicKeyVerData];
@@ -1207,7 +1207,7 @@ static dispatch_queue_t _keychainHelperDispatchQueue;
     }
     
     //for public keys, we need to change the format appending the object identifier 1.2.840.113549.1.1, applying base64 encoding and adding an armour
-    return [OpenSSLEncryptionEngine armourPKCS1PublicKeyData:extractedKeyData];
+    return [KeyParser armourPKCS1PublicKeyData:extractedKeyData];
 }
 
 #else
@@ -1316,7 +1316,7 @@ static dispatch_queue_t _keychainHelperDispatchQueue;
     }
     
     //for public keys, we need to change the format appending the object identifier 1.2.840.113549.1.1, applying base64 encoding and adding an armour
-    return [OpenSSLEncryptionEngine armourPKCS1PublicKeyData:extractedKeyData];
+    return [KeyParser armourPKCS1PublicKeyData:extractedKeyData];
 }
 
 #else

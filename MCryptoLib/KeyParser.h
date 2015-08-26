@@ -123,7 +123,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
 
 
 
-@interface OpenSSLEncryptionEngine (KeyParsing)
+@interface KeyParser : NSObject
 
 
 
@@ -137,7 +137,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in Mynigma's default format (PKCS#8)
  */
-- (NSData*)dataForRSAPublicKey:(RSA*)RSAKey;
++ (NSData*)dataForRSAPublicKey:(RSA*)RSAKey;
 
 /**
  *  Export RSA public key
@@ -146,7 +146,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in the specified format
  */
-- (NSData*)dataForRSAPublicKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format;
++ (NSData*)dataForRSAPublicKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format;
 
 
 
@@ -157,7 +157,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in Mynigma's default format (PKCS#1)
  */
-- (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey;
++ (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey;
 
 /**
  *  Export RSA private key
@@ -166,7 +166,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in the specified format
  */
-- (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format;
++ (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format;
 
 /**
  *  Export a passphrase encrypted RSA private key in the specified format
@@ -185,7 +185,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in the specified format, encrypted with the given passphrase
  */
-- (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
++ (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
 
 /**
  *  Export an EVP_PKEY object as public key data
@@ -195,10 +195,10 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in the specified format
  */
-- (NSData*)dataForEVPPublicKey:(EVP_PKEY*)publicKey format:(MynigmaKeyFormat)format;
++ (NSData*)dataForEVPPublicKey:(EVP_PKEY*)publicKey format:(MynigmaKeyFormat)format;
 
 
-- (NSData*)dataForEVPPublicKey:(EVP_PKEY*)publicKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
++ (NSData*)dataForEVPPublicKey:(EVP_PKEY*)publicKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
 
 
 
@@ -212,7 +212,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in the specified format
  */
-- (NSData*)dataForDSAPublicKey:(DSA*)DSAKey format:(MynigmaKeyFormat)format;
++ (NSData*)dataForDSAPublicKey:(DSA*)DSAKey format:(MynigmaKeyFormat)format;
 
 /**
  *  Export DSA private key
@@ -223,7 +223,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in the specified format
  */
-- (NSData*)dataForDSAPrivateKey:(DSA*)DSAKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
++ (NSData*)dataForDSAPrivateKey:(DSA*)DSAKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
 
 
 /**
@@ -235,7 +235,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return The key data in the specified format
  */
-- (NSData*)dataForEVPPrivateKey:(EVP_PKEY*)privateKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
++ (NSData*)dataForEVPPrivateKey:(EVP_PKEY*)privateKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
 
 
 
@@ -259,7 +259,7 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return An EVP_PKEY object containing the imported key
  */
-- (EVP_PKEY*)EVPPublicKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
++ (EVP_PKEY*)EVPPublicKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
 
 
 /**
@@ -269,29 +269,29 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
  *
  *  @return An EVP_PKEY object containing the imported key
  */
-- (EVP_PKEY*)EVPPrivateKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
++ (EVP_PKEY*)EVPPrivateKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
 
 
 #pragma mark - RSA OBJECTS
 
-- (RSA*)RSAPublicKeyFromData:(NSData*)data;
++ (RSA*)RSAPublicKeyFromData:(NSData*)data;
 
-- (RSA*)RSAPrivateKeyFromData:(NSData*)data;
++ (RSA*)RSAPrivateKeyFromData:(NSData*)data;
 
-- (RSA*)RSAPublicKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
++ (RSA*)RSAPublicKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
 
-- (RSA*)RSAPrivateKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
++ (RSA*)RSAPrivateKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase;
 
 
 #pragma mark - CROSS-CONVERSION
 
-- (NSData*)convertPublicKeyData:(NSData*)publicKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat;
++ (NSData*)convertPublicKeyData:(NSData*)publicKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat;
 
-- (NSData*)convertPublicKeyData:(NSData*)publicKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat inPassphrase:(NSString*)inPassphrase outPassphrase:(NSString*)outPassphrase;
++ (NSData*)convertPublicKeyData:(NSData*)publicKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat inPassphrase:(NSString*)inPassphrase outPassphrase:(NSString*)outPassphrase;
 
-- (NSData*)convertPrivateKeyData:(NSData*)privateKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat;
++ (NSData*)convertPrivateKeyData:(NSData*)privateKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat;
 
-- (NSData*)convertPrivateKeyData:(NSData*)privateKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat inPassphrase:(NSString*)inPassphrase outPassphrase:(NSString*)outPassphrase;
++ (NSData*)convertPrivateKeyData:(NSData*)privateKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat inPassphrase:(NSString*)inPassphrase outPassphrase:(NSString*)outPassphrase;
 
 
 
@@ -317,9 +317,9 @@ typedef NS_ENUM(NSUInteger, MynigmaKeyFormat)
 #pragma mark - KEYCHAIN
 
 
-- (SecKeyRef)transientSecKeyRefForPublicKeyData:(NSData*)keyData format:(MynigmaKeyFormat)format;
++ (SecKeyRef)transientSecKeyRefForPublicKeyData:(NSData*)keyData format:(MynigmaKeyFormat)format;
 
-- (SecKeyRef)transientSecKeyRefForPrivateKeyData:(NSData*)keyData format:(MynigmaKeyFormat)format passphrase:(NSString*)inPassphrase;
++ (SecKeyRef)transientSecKeyRefForPrivateKeyData:(NSData*)keyData format:(MynigmaKeyFormat)format passphrase:(NSString*)inPassphrase;
 
 
 @end

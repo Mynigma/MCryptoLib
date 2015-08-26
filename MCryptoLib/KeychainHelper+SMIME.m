@@ -247,7 +247,7 @@
     //thanks, Apple.
     NSString* passphrase = @"";
     
-    NSData* PKCS12KeyData = [self.openSSLEngine convertPrivateKeyData:keyData fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatPKCS12 inPassphrase:nil outPassphrase:passphrase];
+    NSData* PKCS12KeyData = [KeyParser convertPrivateKeyData:keyData fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatPKCS12 inPassphrase:nil outPassphrase:passphrase];
     
     if(!PKCS12KeyData)
         return nil;

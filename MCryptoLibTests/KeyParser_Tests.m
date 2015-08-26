@@ -77,40 +77,40 @@
     
     OpenSSLEncryptionEngine* engine = [OpenSSLEncryptionEngine sharedInstance];
     
-    EVP_PKEY* pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:nil];
+    EVP_PKEY* pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:nil];
     XCTAssert(pubKey);
     
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatDefault];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatDefault];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:nil];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:nil];
     XCTAssert(pubKey);
     
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS12];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS12];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS12 passphrase:nil];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS12 passphrase:nil];
     XCTAssert(pubKey);
 
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS1WithoutOID];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS1WithoutOID];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:nil];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:nil];
     XCTAssert(pubKey);
 
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS8WithOID];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS8WithOID];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS8WithOID passphrase:nil];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS8WithOID passphrase:nil];
     XCTAssert(pubKey);
 
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatX509];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatX509];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatX509 passphrase:nil];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatX509 passphrase:nil];
     XCTAssert(pubKey);
     
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatDefault];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatDefault];
     XCTAssertNotNil(rawData);
     
     XCTAssertEqualObjects(rawData, publicKeyData.publicKeyEncData);
@@ -124,42 +124,40 @@
     
     NSData* rawData = publicKeyData.publicKeyEncData;
     
-    OpenSSLEncryptionEngine* engine = [OpenSSLEncryptionEngine sharedInstance];
-    
-    EVP_PKEY* pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:passphrase];
+    EVP_PKEY* pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:passphrase];
     XCTAssert(pubKey);
     
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatDefault passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatDefault passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:passphrase];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:passphrase];
     XCTAssert(pubKey);
     
-//    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
+//    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
 //    XCTAssertNotNil(rawData);
 //    
-//    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
+//    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
 //    XCTAssert(pubKey);
     
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS1WithoutOID passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS1WithoutOID passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:passphrase];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:passphrase];
     XCTAssert(pubKey);
     
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS8WithOID passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatPKCS8WithOID passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS8WithOID passphrase:passphrase];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatPKCS8WithOID passphrase:passphrase];
     XCTAssert(pubKey);
     
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatX509 passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatX509 passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
-    pubKey = [engine EVPPublicKeyFromData:rawData format:MynigmaKeyFormatX509 passphrase:passphrase];
+    pubKey = [KeyParser EVPPublicKeyFromData:rawData format:MynigmaKeyFormatX509 passphrase:passphrase];
     XCTAssert(pubKey);
     
-    rawData = [engine dataForEVPPublicKey:pubKey format:MynigmaKeyFormatDefault passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPublicKey:pubKey format:MynigmaKeyFormatDefault passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
     XCTAssertEqualObjects(rawData, publicKeyData.publicKeyEncData);
@@ -172,36 +170,34 @@
     
     NSData* rawData = privateKeyData.privateKeyDecData;
     
-    OpenSSLEncryptionEngine* engine = [OpenSSLEncryptionEngine sharedInstance];
-    
-    EVP_PKEY* privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:nil];
+    EVP_PKEY* privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:nil];
     XCTAssert(privKey);
     
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatDefault passphrase:nil];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatDefault passphrase:nil];
     XCTAssertNotNil(rawData);
   
-    privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:nil];
+    privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:nil];
     XCTAssert(privKey);
     
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS12 passphrase:nil];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS12 passphrase:nil];
     XCTAssertNotNil(rawData);
  
-    privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS12 passphrase:nil];
+    privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS12 passphrase:nil];
     XCTAssert(privKey);
     
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS1WithoutOID passphrase:nil];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS1WithoutOID passphrase:nil];
     XCTAssertNotNil(rawData);
    
-    privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:nil];
+    privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:nil];
     XCTAssert(privKey);
     
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS8WithOID passphrase:nil];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS8WithOID passphrase:nil];
     XCTAssertNotNil(rawData);
     
-    privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS8WithOID passphrase:nil];
+    privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS8WithOID passphrase:nil];
     XCTAssert(privKey);
 
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatDefault passphrase:nil];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatDefault passphrase:nil];
     XCTAssertNotNil(rawData);
     
     XCTAssertEqualObjects(rawData, privateKeyData.privateKeyDecData);
@@ -214,39 +210,37 @@
     PrivateKeyData* privateKeyData = [TestHelper privateKeyData:@1];
     
     NSData* rawData = privateKeyData.privateKeyDecData;
-    
-    OpenSSLEncryptionEngine* engine = [OpenSSLEncryptionEngine sharedInstance];
-    
-    EVP_PKEY* privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:passphrase];
+        
+    EVP_PKEY* privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:passphrase];
     XCTAssert(privKey);
     
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatDefault passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatDefault passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
-    privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:passphrase];
+    privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatDefault passphrase:passphrase];
     XCTAssert(privKey);
 
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
-    privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
+    privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
     XCTAssert(privKey);
 
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS1WithoutOID passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS1WithoutOID passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
-    privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:passphrase];
+    privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:passphrase];
     XCTAssert(privKey);
 
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS8WithOID passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatPKCS8WithOID passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
-    privKey = [engine EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS8WithOID passphrase:passphrase];
+    privKey = [KeyParser EVPPrivateKeyFromData:rawData format:MynigmaKeyFormatPKCS8WithOID passphrase:passphrase];
     XCTAssert(privKey);
     
 //    SecKeyRef keyRef = [engine tran]
 
-    rawData = [engine dataForEVPPrivateKey:privKey format:MynigmaKeyFormatDefault passphrase:passphrase];
+    rawData = [KeyParser dataForEVPPrivateKey:privKey format:MynigmaKeyFormatDefault passphrase:passphrase];
     XCTAssertNotNil(rawData);
     
     XCTAssertEqualObjects(rawData, privateKeyData.privateKeyDecData);

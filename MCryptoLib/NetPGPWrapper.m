@@ -186,7 +186,7 @@ static PGPKeyManager* _keyManager;
         case OPS_PKA_RSA_SIGN_ONLY:
         {
             NSData* PKCS8Data = [_keyManager.keychainHelper dataForPersistentRef:publicKey.publicKeychainRef isPrivate:NO];
-            RSA* RSAObject = [_keyManager.openSSLEngine RSAPublicKeyFromData:PKCS8Data];
+            RSA* RSAObject = [KeyParser RSAPublicKeyFromData:PKCS8Data];
             key->key.pubkey.key.rsa.e = RSAObject->e;
             key->key.pubkey.key.rsa.n = RSAObject->n;
         }

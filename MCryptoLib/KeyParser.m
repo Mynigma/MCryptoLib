@@ -88,7 +88,7 @@
 
 
 
-@implementation OpenSSLEncryptionEngine (KeyParsing)
+@implementation KeyParser
 
 
 
@@ -98,7 +98,7 @@
  *
  * @param bio
  */
-- (NSData*)dataFromBIO:(BIO*)bio
++ (NSData*)dataFromBIO:(BIO*)bio
 {
     int lengthOfData = BIO_pending(bio);
     
@@ -115,7 +115,7 @@
 }
 
 
-- (void*)logErrorAndReturnNil
++ (void*)logErrorAndReturnNil
 {
     unsigned long error_code = ERR_get_error();
     
@@ -133,7 +133,7 @@
 
 #pragma mark specific
 
-- (NSData*)PKCS1DataForEVPRSAPublicKey:(EVP_PKEY*)publicKey
++ (NSData*)PKCS1DataForEVPRSAPublicKey:(EVP_PKEY*)publicKey
 {
     if(!publicKey)
         return nil;
@@ -151,7 +151,7 @@
     return outputData;
 }
 
-- (NSData*)PKCS8DataForEVPPublicKey:(EVP_PKEY*)publicKey
++ (NSData*)PKCS8DataForEVPPublicKey:(EVP_PKEY*)publicKey
 {
     if(!publicKey)
         return [self logErrorAndReturnNil];
@@ -169,7 +169,7 @@
 }
 
 
-- (NSData*)X509CertificateDataForEVPPublicKey:(EVP_PKEY*)publicKey
++ (NSData*)X509CertificateDataForEVPPublicKey:(EVP_PKEY*)publicKey
 {
     if(!publicKey)
         return [self logErrorAndReturnNil];
@@ -195,7 +195,7 @@
     return outputData;
 }
 
-- (NSData*)PKCS12DataFromEVPPublicKey:(EVP_PKEY*)publicKey passphrase:(NSString*)passphrase
++ (NSData*)PKCS12DataFromEVPPublicKey:(EVP_PKEY*)publicKey passphrase:(NSString*)passphrase
 {
     if(!publicKey)
         return [self logErrorAndReturnNil];
@@ -243,12 +243,12 @@
 #pragma mark generic
 
 
-- (NSData*)dataForRSAPublicKey:(RSA*)RSAKey
++ (NSData*)dataForRSAPublicKey:(RSA*)RSAKey
 {
     return [self dataForRSAPublicKey:RSAKey format:MynigmaKeyFormatDefault];
 }
 
-- (NSData*)dataForRSAPublicKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format
++ (NSData*)dataForRSAPublicKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format
 {
     if(!RSAKey)
         return [self logErrorAndReturnNil];
@@ -260,12 +260,12 @@
     return [self dataForEVPPublicKey:publicKey format:format];
 }
 
-- (NSData*)dataForEVPPublicKey:(EVP_PKEY*)publicKey format:(MynigmaKeyFormat)format
++ (NSData*)dataForEVPPublicKey:(EVP_PKEY*)publicKey format:(MynigmaKeyFormat)format
 {
     return [self dataForEVPPublicKey:publicKey format:format passphrase:nil];
 }
 
-- (NSData*)dataForEVPPublicKey:(EVP_PKEY*)publicKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
++ (NSData*)dataForEVPPublicKey:(EVP_PKEY*)publicKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
 {
     switch (format) {
         case MynigmaKeyFormatDefault:
@@ -288,7 +288,7 @@
     return nil;
 }
 
-- (NSData*)dataForDSAPublicKey:(DSA*)DSAKey format:(MynigmaKeyFormat)format
++ (NSData*)dataForDSAPublicKey:(DSA*)DSAKey format:(MynigmaKeyFormat)format
 {
     if(!DSAKey)
         return [self logErrorAndReturnNil];
@@ -310,7 +310,7 @@
 
 #pragma mark specific
 
-- (NSData*)PKCS1DataForEVPPrivateKey:(EVP_PKEY*)privateKey
++ (NSData*)PKCS1DataForEVPPrivateKey:(EVP_PKEY*)privateKey
 {
     if(!privateKey)
         return nil;
@@ -328,7 +328,7 @@
     return outputData;
 }
 
-- (NSData*)PKCS8DataForEVPPrivateKey:(EVP_PKEY*)privateKey
++ (NSData*)PKCS8DataForEVPPrivateKey:(EVP_PKEY*)privateKey
 {
     if(!privateKey)
         return [self logErrorAndReturnNil];
@@ -346,7 +346,7 @@
     return outputData;
 }
 
-- (NSData*)PKCS12DataFromEVPPrivateKey:(EVP_PKEY*)privateKey withPassphrase:(NSString*)passphrase
++ (NSData*)PKCS12DataFromEVPPrivateKey:(EVP_PKEY*)privateKey withPassphrase:(NSString*)passphrase
 {
     if(!privateKey)
         return [self logErrorAndReturnNil];
@@ -454,19 +454,19 @@
 
 #pragma mark generic
 
-- (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey
++ (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey
 {
     return [self dataForRSAPrivateKey:RSAKey format:MynigmaKeyFormatDefault passphrase:nil];
 }
 
 
-- (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format
++ (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format
 {
     return [self dataForRSAPrivateKey:RSAKey format:format passphrase:nil];
 }
 
 
-- (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
++ (NSData*)dataForRSAPrivateKey:(RSA*)RSAKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
 {
     if(!RSAKey)
         return [self logErrorAndReturnNil];
@@ -479,7 +479,7 @@
 }
 
 
-- (NSData*)dataForDSAPrivateKey:(DSA*)DSAKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
++ (NSData*)dataForDSAPrivateKey:(DSA*)DSAKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
 {
     if(!DSAKey)
         return [self logErrorAndReturnNil];
@@ -492,7 +492,7 @@
 }
 
 
-- (NSData*)dataForEVPPrivateKey:(EVP_PKEY*)privateKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
++ (NSData*)dataForEVPPrivateKey:(EVP_PKEY*)privateKey format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
 {
     switch(format)
     {
@@ -555,7 +555,7 @@
 //    return x509;
 //}
 
-- (EVP_PKEY*)EVPRSAPublicKeyFromPKCS1Data:(NSData*)PKCS1Data
++ (EVP_PKEY*)EVPRSAPublicKeyFromPKCS1Data:(NSData*)PKCS1Data
 {
     if(!PKCS1Data)
         return nil;
@@ -580,7 +580,7 @@
 }
 
 
-- (EVP_PKEY*)EVPPublicKeyFromPKCS8Data:(NSData*)PKCS1Data
++ (EVP_PKEY*)EVPPublicKeyFromPKCS8Data:(NSData*)PKCS1Data
 {
     if(!PKCS1Data)
         return nil;
@@ -597,7 +597,7 @@
     return EVPKey;
 }
 
-- (EVP_PKEY*)EVPPublicKeyFromX509Data:(NSData*)data
++ (EVP_PKEY*)EVPPublicKeyFromX509Data:(NSData*)data
 {
     SecKeyRef transientRef = [self transientSecKeyRefForPublicKeyData:data format:MynigmaKeyFormatX509];
     
@@ -635,7 +635,7 @@
     //    return nil;
 }
 
-- (EVP_PKEY*)EVPPublicKeyFromPKCS12Data:(NSData*)data passphrase:(NSString*)passphrase
++ (EVP_PKEY*)EVPPublicKeyFromPKCS12Data:(NSData*)data passphrase:(NSString*)passphrase
 {
     SecKeyRef transientRef = [self transientSecKeyRefForPublicKeyData:data format:MynigmaKeyFormatPKCS12];
     
@@ -670,9 +670,9 @@
 //    return pubKey;
 }
 
-- (EVP_PKEY*)EVPPublicKeyFromSecKeyRef:(SecKeyRef)keyRef
++ (EVP_PKEY*)EVPPublicKeyFromSecKeyRef:(SecKeyRef)keyRef
 {
-    NSData* keyData = [self.keyManager.keychainHelper dataForSecKeyRef:keyRef isPrivate:NO];
+    NSData* keyData = [[KeychainHelper sharedInstance] dataForSecKeyRef:keyRef isPrivate:NO];
     
     return [self EVPPublicKeyFromPKCS8Data:keyData];
 }
@@ -682,7 +682,7 @@
 
 #pragma mark generic
 
-- (EVP_PKEY*)EVPPublicKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
++ (EVP_PKEY*)EVPPublicKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
 {
     if(!data)
         return nil;
@@ -716,7 +716,7 @@
 
 #pragma mark specific
 
-- (EVP_PKEY*)EVPPrivateKeyFromPKCS1Data:(NSData*)PKCS1Data passphrase:(NSString*)passphrase
++ (EVP_PKEY*)EVPPrivateKeyFromPKCS1Data:(NSData*)PKCS1Data passphrase:(NSString*)passphrase
 {
     if(!PKCS1Data)
         return nil;
@@ -736,7 +736,7 @@
 }
 
 
-- (EVP_PKEY*)EVPPrivateKeyFromPKCS8Data:(NSData*)PKCS1Data passphrase:(NSString*)passphrase
++ (EVP_PKEY*)EVPPrivateKeyFromPKCS8Data:(NSData*)PKCS1Data passphrase:(NSString*)passphrase
 {
     if(!PKCS1Data)
         return nil;
@@ -762,7 +762,7 @@
     return privKey;
 }
 
-- (EVP_PKEY*)EVPPrivateKeyFromPKCS12Data:(NSData*)data passphrase:(NSString*)passphrase
++ (EVP_PKEY*)EVPPrivateKeyFromPKCS12Data:(NSData*)data passphrase:(NSString*)passphrase
 {
     SecKeyRef transientRef = [self transientSecKeyRefForPrivateKeyData:data format:MynigmaKeyFormatPKCS12 passphrase:passphrase];
     
@@ -794,9 +794,9 @@
 }
 
 
-- (EVP_PKEY*)EVPPrivateKeyFromSecKeyRef:(SecKeyRef)keyRef
++ (EVP_PKEY*)EVPPrivateKeyFromSecKeyRef:(SecKeyRef)keyRef
 {
-    NSData* keyData = [self.keyManager.keychainHelper dataForSecKeyRef:keyRef isPrivate:YES];
+    NSData* keyData = [[KeychainHelper sharedInstance] dataForSecKeyRef:keyRef isPrivate:YES];
     
     return [self EVPPrivateKeyFromData:keyData format:MynigmaKeyFormatPKCS1WithoutOID passphrase:nil];
 }
@@ -806,7 +806,7 @@
 #pragma mark generic
 
 
-- (EVP_PKEY*)EVPPrivateKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
++ (EVP_PKEY*)EVPPrivateKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
 {
     if(!data)
         return nil;
@@ -832,12 +832,12 @@
 
 #pragma mark - RSA OBJECTS
 
-- (RSA*)RSAPublicKeyFromData:(NSData*)data
++ (RSA*)RSAPublicKeyFromData:(NSData*)data
 {
     return [self RSAPublicKeyFromData:data format:MynigmaKeyFormatDefault passphrase:nil];
 }
 
-- (RSA*)RSAPublicKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
++ (RSA*)RSAPublicKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
 {
     if(!data)
         return nil;
@@ -854,12 +854,12 @@
     return rsa;
 }
 
-- (RSA*)RSAPrivateKeyFromData:(NSData*)data
++ (RSA*)RSAPrivateKeyFromData:(NSData*)data
 {
     return [self RSAPrivateKeyFromData:data format:MynigmaKeyFormatDefault passphrase:nil];
 }
 
-- (RSA*)RSAPrivateKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
++ (RSA*)RSAPrivateKeyFromData:(NSData*)data format:(MynigmaKeyFormat)format passphrase:(NSString*)passphrase
 {
     if(!data)
         return nil;
@@ -880,23 +880,23 @@
 
 #pragma mark - CROSS-CONVERSION
 
-- (NSData*)convertPublicKeyData:(NSData*)publicKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat
++ (NSData*)convertPublicKeyData:(NSData*)publicKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat
 {
     return [self convertPublicKeyData:publicKeyData fromFormat:inFormat toFormat:outFormat inPassphrase:nil outPassphrase:nil];
 }
 
-- (NSData*)convertPublicKeyData:(NSData*)publicKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat inPassphrase:(NSString *)inPassphrase outPassphrase:(NSString *)outPassphrase
++ (NSData*)convertPublicKeyData:(NSData*)publicKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat inPassphrase:(NSString *)inPassphrase outPassphrase:(NSString *)outPassphrase
 {
     EVP_PKEY* EVPKey = [self EVPPublicKeyFromData:publicKeyData format:inFormat passphrase:inPassphrase];
     return [self dataForEVPPublicKey:EVPKey format:outFormat passphrase:outPassphrase];
 }
 
-- (NSData*)convertPrivateKeyData:(NSData*)privateKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat
++ (NSData*)convertPrivateKeyData:(NSData*)privateKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat
 {
     return [self convertPrivateKeyData:privateKeyData fromFormat:inFormat toFormat:outFormat inPassphrase:nil outPassphrase:nil];
 }
 
-- (NSData*)convertPrivateKeyData:(NSData*)privateKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat inPassphrase:(NSString*)inPassphrase outPassphrase:(NSString*)outPassphrase
++ (NSData*)convertPrivateKeyData:(NSData*)privateKeyData fromFormat:(MynigmaKeyFormat)inFormat toFormat:(MynigmaKeyFormat)outFormat inPassphrase:(NSString*)inPassphrase outPassphrase:(NSString*)outPassphrase
 {
     EVP_PKEY* EVPKey = [self EVPPrivateKeyFromData:privateKeyData format:inFormat passphrase:inPassphrase];
     return [self dataForEVPPrivateKey:EVPKey format:outFormat passphrase:outPassphrase];
@@ -978,7 +978,7 @@
 #pragma mark - KEYCHAIN
 
 
-- (SecKeyRef)transientSecKeyRefForPublicKeyData:(NSData*)keyData format:(MynigmaKeyFormat)format
++ (SecKeyRef)transientSecKeyRefForPublicKeyData:(NSData*)keyData format:(MynigmaKeyFormat)format
 {
 #if TARGET_OS_IPHONE
         
@@ -1027,7 +1027,7 @@
 
 
 
-- (SecKeyRef)transientSecKeyRefForPrivateKeyData:(NSData*)keyData format:(MynigmaKeyFormat)format passphrase:(NSString*)inPassphrase
++ (SecKeyRef)transientSecKeyRefForPrivateKeyData:(NSData*)keyData format:(MynigmaKeyFormat)format passphrase:(NSString*)inPassphrase
 {
 #if TARGET_OS_IPHONE
     

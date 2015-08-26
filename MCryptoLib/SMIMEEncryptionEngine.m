@@ -431,10 +431,10 @@
 
             NSData* fingerprint = [NSData dataWithBytes:fingerprintData length:fingerprintLength];
             
-            NSData* PKCS8Data = [self.openSSLEngine dataForEVPPrivateKey:privateKeyEVP format:MynigmaKeyFormatPKCS8WithOID passphrase:nil];
+            NSData* PKCS8Data = [KeyParser dataForEVPPrivateKey:privateKeyEVP format:MynigmaKeyFormatPKCS8WithOID passphrase:nil];
             
             //we can actually use the private key here
-            NSData* X509Data = [self.openSSLEngine dataForEVPPublicKey:privateKeyEVP format:MynigmaKeyFormatX509];
+            NSData* X509Data = [KeyParser dataForEVPPublicKey:privateKeyEVP format:MynigmaKeyFormatX509];
             
             SMIMEPrivateKey* addedKey = [self.keyManager addPrivateKeyWithPKCS8Data:PKCS8Data andX509Data:X509Data SHA256Fingerprint:fingerprint];
             
@@ -458,7 +458,7 @@
             
             EVP_PKEY* publicKeyEVP = X509_PUBKEY_get(certPublicKey);
             
-            NSData* publicKeyData = [self.openSSLEngine dataForEVPPublicKey:publicKeyEVP format:MynigmaKeyFormatX509];
+            NSData* publicKeyData = [KeyParser dataForEVPPublicKey:publicKeyEVP format:MynigmaKeyFormatX509];
             
             if(!publicKeyData.length)
                 return nil;
@@ -607,7 +607,7 @@
             RSA->p = rsaPrivKey.q;
             RSA->q = rsaPrivKey.p;
             
-        NSData* returnValue = [self.openSSLEngine dataForRSAPrivateKey:RSA];
+        NSData* returnValue = [KeyParser dataForRSAPrivateKey:RSA];
         
             RSA_free(RSA);
             
@@ -621,7 +621,7 @@
         RSA->e = rsaPubKey.e;
         RSA->n = rsaPubKey.n;
         
-        NSData* returnValue = [self.openSSLEngine dataForRSAPublicKey:RSA];
+        NSData* returnValue = [KeyParser dataForRSAPublicKey:RSA];
         
         RSA_free(RSA);
         

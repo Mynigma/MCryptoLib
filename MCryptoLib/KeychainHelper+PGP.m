@@ -81,7 +81,7 @@
         return nil;
     }
     
-    data = [self.openSSLEngine convertPublicKeyData:data fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatX509];
+    data = [KeyParser convertPublicKeyData:data fromFormat:MynigmaKeyFormatDefault toFormat:MynigmaKeyFormatX509];
 
     if(!data)
     {
